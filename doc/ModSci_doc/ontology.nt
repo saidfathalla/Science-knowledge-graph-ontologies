@@ -1,0 +1,1106 @@
+<https://w3id.org/skgo/modsci#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/skgo/modsci#> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/skgo/modsci#> <http://purl.org/dc/elements/1.1/creator> "Said Fathalla" .
+<https://w3id.org/skgo/modsci#> <http://purl.org/dc/terms/created> "2019-09-01"@en .
+<https://w3id.org/skgo/modsci#> <http://purl.org/dc/terms/description> "ModSci is a reference ontology for modelling different types of modern sciences."@en .
+<https://w3id.org/skgo/modsci#> <http://purl.org/dc/terms/title> "ModSci, Modern Science Ontology."@en .
+<https://w3id.org/skgo/modsci#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "modsci" .
+<https://w3id.org/skgo/modsci#> <http://www.w3.org/2000/01/rdf-schema#label> "Modern Science Ontology"@en .
+<https://w3id.org/skgo/modsci#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/skgo/modsci#AcidbaseChemistry
+<https://w3id.org/skgo/modsci#AcidbaseChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#AcidbaseChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#AcidbaseChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "For chemicals that can behave as acids or bases" .
+<https://w3id.org/skgo/modsci#AcidbaseChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Acid–base Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#Acoustics
+<https://w3id.org/skgo/modsci#Acoustics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Acoustics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#Acoustics> <http://www.w3.org/2000/01/rdf-schema#comment> "Acoustics is a branch of continuum mechanics and is the study of sound, mechanical waves in gases, liquids, and solids." .
+<https://w3id.org/skgo/modsci#Acoustics> <http://www.w3.org/2000/01/rdf-schema#label> "Acoustics" .
+# 
+# https://w3id.org/skgo/modsci#Agriculture
+<https://w3id.org/skgo/modsci#Agriculture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Agriculture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#Agriculture> <http://www.w3.org/2000/01/rdf-schema#comment> "Agriculture, also known as farming, is the process of producing food, feed, fiber and other desired products by cultivation of certain plants and the raising of domesticated animals." .
+<https://w3id.org/skgo/modsci#Agriculture> <http://www.w3.org/2000/01/rdf-schema#label> "Agriculture" .
+# 
+# https://w3id.org/skgo/modsci#AnalyticalChemistry
+<https://w3id.org/skgo/modsci#AnalyticalChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#AnalyticalChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#AnalyticalChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Analytical chemistry is the analysis of material samples to gain an understanding of their chemical composition and structure." .
+<https://w3id.org/skgo/modsci#AnalyticalChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Analytical Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#Anatomy
+<https://w3id.org/skgo/modsci#Anatomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Anatomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Anatomy> <http://www.w3.org/2000/01/rdf-schema#comment> "Anatomy is the study of the structure and organization of living things." .
+<https://w3id.org/skgo/modsci#Anatomy> <http://www.w3.org/2000/01/rdf-schema#label> "Anatomy" .
+# 
+# https://w3id.org/skgo/modsci#Anthropology
+<https://w3id.org/skgo/modsci#Anthropology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Anthropology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#SocialSciences> .
+<https://w3id.org/skgo/modsci#Anthropology> <http://www.w3.org/2000/01/rdf-schema#comment> "Anthropology is the scientific study of humans, human behavior and societies in the past and present." .
+<https://w3id.org/skgo/modsci#Anthropology> <http://www.w3.org/2000/01/rdf-schema#label> "Anthropology" .
+# 
+# https://w3id.org/skgo/modsci#AppliedMathematics
+<https://w3id.org/skgo/modsci#AppliedMathematics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#AppliedMathematics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#AppliedMathematics> <http://www.w3.org/2000/01/rdf-schema#comment> "Applied mathematics is a branch of mathematics that concerns itself with the application of mathematical knowledge to other domains." .
+<https://w3id.org/skgo/modsci#AppliedMathematics> <http://www.w3.org/2000/01/rdf-schema#label> "Applied Mathematics" .
+# 
+# https://w3id.org/skgo/modsci#AppliedPhysics
+<https://w3id.org/skgo/modsci#AppliedPhysics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#AppliedPhysics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#AppliedPhysics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Physics> .
+<https://w3id.org/skgo/modsci#AppliedPhysics> <http://www.w3.org/2000/01/rdf-schema#comment> "Applied physics is intended for a particular technological or practical use." .
+<https://w3id.org/skgo/modsci#AppliedPhysics> <http://www.w3.org/2000/01/rdf-schema#label> "Applied and Interdisciplinary Physics" .
+# 
+# https://w3id.org/skgo/modsci#AppliedSciences
+<https://w3id.org/skgo/modsci#AppliedSciences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#AppliedSciences> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Science> .
+<https://w3id.org/skgo/modsci#AppliedSciences> <http://www.w3.org/2000/01/rdf-schema#comment> "Applied science is the use or the study of the use of scientific knowledge to develop technology." .
+<https://w3id.org/skgo/modsci#AppliedSciences> <http://www.w3.org/2000/01/rdf-schema#label> "Applied Sciences" .
+# 
+# https://w3id.org/skgo/modsci#Archaeology
+<https://w3id.org/skgo/modsci#Archaeology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Archaeology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#SocialSciences> .
+<https://w3id.org/skgo/modsci#Archaeology> <http://www.w3.org/2000/01/rdf-schema#comment> "Archaeology, or archeology, is the study of human activity through the recovery and analysis of material culture." .
+<https://w3id.org/skgo/modsci#Archaeology> <http://www.w3.org/2000/01/rdf-schema#label> "Archaeology" .
+# 
+# https://w3id.org/skgo/modsci#Architecture
+<https://w3id.org/skgo/modsci#Architecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Architecture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#Architecture> <http://www.w3.org/2000/01/rdf-schema#comment> "Architecture is the art and science of designing buildings." .
+<https://w3id.org/skgo/modsci#Architecture> <http://www.w3.org/2000/01/rdf-schema#label> "Architecture" .
+# 
+# https://w3id.org/skgo/modsci#ArtificialIntelligence
+<https://w3id.org/skgo/modsci#ArtificialIntelligence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ArtificialIntelligence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#ArtificialIntelligence> <http://www.w3.org/2000/01/rdf-schema#comment> "In computer science, artificial intelligence (AI), sometimes called machine intelligence, is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans. Colloquially, the term \"artificial intelligence\" is often used to describe machines (or computers) that mimic \"cognitive\" functions that humans associate with the human mind, such as \"learning\" and \"problem solving\"." .
+<https://w3id.org/skgo/modsci#ArtificialIntelligence> <http://www.w3.org/2000/01/rdf-schema#label> "Artificial Intelligence" .
+# 
+# https://w3id.org/skgo/modsci#Astrobiology
+<https://w3id.org/skgo/modsci#Astrobiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Astrobiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Astrobiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Astrobiology, formerly known as exobiology, is an interdisciplinary scientific field concerned with the origins, early evolution, distribution, and future of life in the universe." .
+<https://w3id.org/skgo/modsci#Astrobiology> <http://www.w3.org/2000/01/rdf-schema#label> "Astrobiology" .
+# 
+# https://w3id.org/skgo/modsci#Astrochemistry
+<https://w3id.org/skgo/modsci#Astrochemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Astrochemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#Astrochemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Astrochemistry is the study of the abundance and reactions of molecules in the Universe, and their interaction with radiation." .
+<https://w3id.org/skgo/modsci#Astrochemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Astrochemistry" .
+# 
+# https://w3id.org/skgo/modsci#Astrometry
+<https://w3id.org/skgo/modsci#Astrometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Astrometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Astronomy> .
+<https://w3id.org/skgo/modsci#Astrometry> <http://www.w3.org/2000/01/rdf-schema#comment> "Astrometry is the study of the positions, distances between, and motions of astronomical objects." .
+<https://w3id.org/skgo/modsci#Astrometry> <http://www.w3.org/2000/01/rdf-schema#label> "Astrometry" .
+# 
+# https://w3id.org/skgo/modsci#Astronomy
+<https://w3id.org/skgo/modsci#Astronomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Astronomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#NaturalScience> .
+<https://w3id.org/skgo/modsci#Astronomy> <http://www.w3.org/2000/01/rdf-schema#comment> "is a science involving the observation and explanation of events occurring outside Earth and its atmosphere." .
+<https://w3id.org/skgo/modsci#Astronomy> <http://www.w3.org/2000/01/rdf-schema#label> "Astronomy" .
+# 
+# https://w3id.org/skgo/modsci#AtmosphericSciences
+<https://w3id.org/skgo/modsci#AtmosphericSciences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#AtmosphericSciences> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#AtmosphericSciences> <http://www.w3.org/2000/01/rdf-schema#comment> "Atmospheric science is an umbrella term for the study of the atmosphere and its processes." .
+<https://w3id.org/skgo/modsci#AtmosphericSciences> <http://www.w3.org/2000/01/rdf-schema#label> "Atmospheric Sciences" .
+# 
+# https://w3id.org/skgo/modsci#Atomic
+<https://w3id.org/skgo/modsci#Atomic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Atomic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Physics> .
+<https://w3id.org/skgo/modsci#Atomic> <http://www.w3.org/2000/01/rdf-schema#comment> "Atomic, molecular, and optical physics (AMO) is the study of matter-matter and light-matter interactions; at the scale of one or a few atoms and energy scales around several electron volts." .
+<https://w3id.org/skgo/modsci#Atomic> <http://www.w3.org/2000/01/rdf-schema#label> "Atomic, Molecular, and Optical Physics" .
+# 
+# https://w3id.org/skgo/modsci#BehaviouralSciences
+<https://w3id.org/skgo/modsci#BehaviouralSciences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#BehaviouralSciences> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Science> .
+<https://w3id.org/skgo/modsci#BehaviouralSciences> <http://www.w3.org/2000/01/rdf-schema#comment> "Behavioural sciences explore the cognitive processes within organisms and the behavioural interactions between organisms in the natural world." .
+<https://w3id.org/skgo/modsci#BehaviouralSciences> <http://www.w3.org/2000/01/rdf-schema#label> "Behavioural Sciences" .
+# 
+# https://w3id.org/skgo/modsci#Biochemistry
+<https://w3id.org/skgo/modsci#Biochemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Biochemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Biochemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#Biochemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Biochemistry is the chemistry of life." .
+<https://w3id.org/skgo/modsci#Biochemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Biochemistry" .
+# 
+# https://w3id.org/skgo/modsci#Bioengineering
+<https://w3id.org/skgo/modsci#Bioengineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Bioengineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Bioengineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Engineering> .
+<https://w3id.org/skgo/modsci#Bioengineering> <http://www.w3.org/2000/01/rdf-schema#comment> "Biological engineering, or bioengineering/bio-engineering, is the application of principles of biology and the tools of engineering to create usable, tangible, economically viable products." .
+<https://w3id.org/skgo/modsci#Bioengineering> <http://www.w3.org/2000/01/rdf-schema#label> "Biological Engineering" .
+# 
+# https://w3id.org/skgo/modsci#Bioethics
+<https://w3id.org/skgo/modsci#Bioethics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Bioethics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Bioethics> <http://www.w3.org/2000/01/rdf-schema#comment> "Bioethics is the study of the ethical issues emerging from advances in biology and medicine." .
+<https://w3id.org/skgo/modsci#Bioethics> <http://www.w3.org/2000/01/rdf-schema#label> "Bioethics" .
+# 
+# https://w3id.org/skgo/modsci#Biogeography
+<https://w3id.org/skgo/modsci#Biogeography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Biogeography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Biogeography> <http://www.w3.org/2000/01/rdf-schema#comment> "Biogeography is the study of the distribution of species and ecosystems in geographic space and through geological time." .
+<https://w3id.org/skgo/modsci#Biogeography> <http://www.w3.org/2000/01/rdf-schema#label> "Biogeography" .
+# 
+# https://w3id.org/skgo/modsci#Bioinformatics
+<https://w3id.org/skgo/modsci#Bioinformatics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Bioinformatics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Bioinformatics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#Bioinformatics> <http://www.w3.org/2000/01/rdf-schema#comment> "Bioinformatics and Computational biology are interdisciplinary fields of research, development and application of algorithms, computational and statistical methods for management and analysis of biological data, and for solving basic biological problems." .
+<https://w3id.org/skgo/modsci#Bioinformatics> <http://www.w3.org/2000/01/rdf-schema#label> "Bioinformatics" .
+# 
+# https://w3id.org/skgo/modsci#Biology
+<https://w3id.org/skgo/modsci#Biology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Biology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#NaturalScience> .
+<https://w3id.org/skgo/modsci#Biology> <http://www.w3.org/2000/01/rdf-schema#comment> "Biology is the science of life. It is concerned with the characteristics and behaviors of organisms" .
+<https://w3id.org/skgo/modsci#Biology> <http://www.w3.org/2000/01/rdf-schema#label> "Biology" .
+# 
+# https://w3id.org/skgo/modsci#BiomedicalEngineering
+<https://w3id.org/skgo/modsci#BiomedicalEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#BiomedicalEngineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#BiomedicalEngineering> <http://www.w3.org/2000/01/rdf-schema#comment> "Biomedical engineering (BME) or medical engineering is the application of engineering principles and design concepts to medicine and biology for healthcare purposes (e.g. diagnostic or therapeutic)." .
+<https://w3id.org/skgo/modsci#BiomedicalEngineering> <http://www.w3.org/2000/01/rdf-schema#label> "Biomedical Engineering" .
+# 
+# https://w3id.org/skgo/modsci#Biophysics
+<https://w3id.org/skgo/modsci#Biophysics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Biophysics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Biophysics> <http://www.w3.org/2000/01/rdf-schema#comment> "Biophysics is an interdisciplinary science that applies approaches and methods traditionally used in physics to study biological phenomena." .
+<https://w3id.org/skgo/modsci#Biophysics> <http://www.w3.org/2000/01/rdf-schema#label> "Biophysics" .
+# 
+# https://w3id.org/skgo/modsci#Biopsychology
+<https://w3id.org/skgo/modsci#Biopsychology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Biopsychology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Biopsychology> <http://www.w3.org/2000/01/rdf-schema#comment> "Biological psychology,is the application of the principles of biology to the study of physiological and developmental mechanisms of behavior in humans and other animals." .
+<https://w3id.org/skgo/modsci#Biopsychology> <http://www.w3.org/2000/01/rdf-schema#label> "Biopsychology" .
+# 
+# https://w3id.org/skgo/modsci#Biostatistics
+<https://w3id.org/skgo/modsci#Biostatistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Biostatistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Biostatistics> <http://www.w3.org/2000/01/rdf-schema#comment> "Biostatistics are the development and application of statistical methods to a wide range of topics in biology." .
+<https://w3id.org/skgo/modsci#Biostatistics> <http://www.w3.org/2000/01/rdf-schema#label> "Biostatistics" .
+# 
+# https://w3id.org/skgo/modsci#Biotechnology
+<https://w3id.org/skgo/modsci#Biotechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Biotechnology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Biotechnology> <http://www.w3.org/2000/01/rdf-schema#comment> "Biotechnology is a technology based on biology, especially when used in agriculture, food science, medicine, and genetic engineering." .
+<https://w3id.org/skgo/modsci#Biotechnology> <http://www.w3.org/2000/01/rdf-schema#label> "Biotechnology" .
+# 
+# https://w3id.org/skgo/modsci#Botany
+<https://w3id.org/skgo/modsci#Botany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Botany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Botany> <http://www.w3.org/2000/01/rdf-schema#comment> "Botany also called plant science(s), plant biology or phytology, is the science of plant life and a branch of biology." .
+<https://w3id.org/skgo/modsci#Botany> <http://www.w3.org/2000/01/rdf-schema#label> "Botany" .
+# 
+# https://w3id.org/skgo/modsci#CellBiology
+<https://w3id.org/skgo/modsci#CellBiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#CellBiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#CellBiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Cell biology is a branch of biology that studies the structure and function of the cell, which is the basic unit of life." .
+<https://w3id.org/skgo/modsci#CellBiology> <http://www.w3.org/2000/01/rdf-schema#label> "Cell Biology" .
+# 
+# https://w3id.org/skgo/modsci#ChemicalEngineering
+<https://w3id.org/skgo/modsci#ChemicalEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ChemicalEngineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#ChemicalEngineering> <http://www.w3.org/2000/01/rdf-schema#comment> "Chemical engineering is the application of science, in particular chemistry, fluid physics, and biology, along with mathematics and economics to the human endeavor of converting raw materials or chemicals into more useful or valuable forms." .
+<https://w3id.org/skgo/modsci#ChemicalEngineering> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical Engineering" .
+# 
+# https://w3id.org/skgo/modsci#Chemistry
+<https://w3id.org/skgo/modsci#Chemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Chemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#NaturalScience> .
+<https://w3id.org/skgo/modsci#Chemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Chemistry is defined as the science of matter, different from physics, in terms of matter's chemical structure, reactivity, properties and reactions or transformations." .
+<https://w3id.org/skgo/modsci#Chemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#CognitiveScience
+<https://w3id.org/skgo/modsci#CognitiveScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#CognitiveScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#CognitiveScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Cognitive science is the interdisciplinary, scientific study of the mind and its processes." .
+<https://w3id.org/skgo/modsci#CognitiveScience> <http://www.w3.org/2000/01/rdf-schema#label> "Cognitive Science" .
+# 
+# https://w3id.org/skgo/modsci#ColloidalChemistry
+<https://w3id.org/skgo/modsci#ColloidalChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ColloidalChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#ColloidalChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Interface and colloid science is an interdisciplinary intersection of branches of chemistry, physics, nanoscience and other fields dealing with colloids, heterogeneous systems consisting of a mechanical mixture of particles between 1 nm and 1000 nm dispersed in a continuous medium." .
+<https://w3id.org/skgo/modsci#ColloidalChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Colloidal Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#CommunicationStudies
+<https://w3id.org/skgo/modsci#CommunicationStudies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#CommunicationStudies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#SocialSciences> .
+<https://w3id.org/skgo/modsci#CommunicationStudies> <http://www.w3.org/2000/01/rdf-schema#comment> "Communication is the act of conveying meanings from one entity or group to another through the use of mutually understood signs, symbols, and semiotic rules." .
+<https://w3id.org/skgo/modsci#CommunicationStudies> <http://www.w3.org/2000/01/rdf-schema#label> "Communication" .
+# 
+# https://w3id.org/skgo/modsci#ComputationalLinguistics
+<https://w3id.org/skgo/modsci#ComputationalLinguistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ComputationalLinguistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#ComputationalLinguistics> <http://www.w3.org/2000/01/rdf-schema#comment> "Computational linguistics is an interdisciplinary field concerned with the statistical or rule-based modeling of natural language from a computational perspective, as well as the study of appropriate computational approaches to linguistic questions." .
+<https://w3id.org/skgo/modsci#ComputationalLinguistics> <http://www.w3.org/2000/01/rdf-schema#label> "Computational Linguistics" .
+# 
+# https://w3id.org/skgo/modsci#ComputationalPhysics
+<https://w3id.org/skgo/modsci#ComputationalPhysics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ComputationalPhysics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Physics> .
+<https://w3id.org/skgo/modsci#ComputationalPhysics> <http://www.w3.org/2000/01/rdf-schema#comment> "Computational physics is the study and implementation of numerical algorithms in order to solve problems in physics for which a quantitative theory already exists." .
+<https://w3id.org/skgo/modsci#ComputationalPhysics> <http://www.w3.org/2000/01/rdf-schema#label> "Computational Physics" .
+# 
+# https://w3id.org/skgo/modsci#ComputerScience
+<https://w3id.org/skgo/modsci#ComputerScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ComputerScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#ComputerScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Computer science is the study of processes that interact with data and that can be represented as data in the form of programs." .
+<https://w3id.org/skgo/modsci#ComputerScience> <http://www.w3.org/2000/01/rdf-schema#label> "Computer Science" .
+# 
+# https://w3id.org/skgo/modsci#CondensedMatterPhysics
+<https://w3id.org/skgo/modsci#CondensedMatterPhysics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#CondensedMatterPhysics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Physics> .
+<https://w3id.org/skgo/modsci#CondensedMatterPhysics> <http://www.w3.org/2000/01/rdf-schema#comment> "Condensed matter physics is the field of physics that deals with the macroscopic physical properties of matter." .
+<https://w3id.org/skgo/modsci#CondensedMatterPhysics> <http://www.w3.org/2000/01/rdf-schema#label> "Condensed Matter Physics" .
+# 
+# https://w3id.org/skgo/modsci#Cosmology
+<https://w3id.org/skgo/modsci#Cosmology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Cosmology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Astronomy> .
+<https://w3id.org/skgo/modsci#Cosmology> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical cosmology is the study of the largest-scale structures and dynamics of the Universe and is concerned with fundamental questions about its origin, structure, evolution, and ultimate fate." .
+<https://w3id.org/skgo/modsci#Cosmology> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Cosmology" .
+# 
+# https://w3id.org/skgo/modsci#Cryobiology
+<https://w3id.org/skgo/modsci#Cryobiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Cryobiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Cryobiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Cryobiology is the study of living organisms, organs, biological tissues or biological cells at low temperatures." .
+<https://w3id.org/skgo/modsci#Cryobiology> <http://www.w3.org/2000/01/rdf-schema#label> "Cryobiology" .
+# 
+# https://w3id.org/skgo/modsci#Crystallography
+<https://w3id.org/skgo/modsci#Crystallography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Crystallography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#Crystallography> <http://www.w3.org/2000/01/rdf-schema#comment> "Crystallography is the scientific study of crystals." .
+<https://w3id.org/skgo/modsci#Crystallography> <http://www.w3.org/2000/01/rdf-schema#label> "Crystallography" .
+# 
+# https://w3id.org/skgo/modsci#CulturalStudies
+<https://w3id.org/skgo/modsci#CulturalStudies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#CulturalStudies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#CulturalStudies> <http://www.w3.org/2000/01/rdf-schema#comment> "Cultural studies is a field of theoretically, politically, and empirically engaged cultural analysis that concentrates upon the political dynamics of contemporary culture, its historical foundations, defining traits, conflicts, and contingencies." .
+<https://w3id.org/skgo/modsci#CulturalStudies> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Studies" .
+# 
+# https://w3id.org/skgo/modsci#Cybernetics
+<https://w3id.org/skgo/modsci#Cybernetics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Cybernetics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#Cybernetics> <http://www.w3.org/2000/01/rdf-schema#comment> "Cybernetics is a transdisciplinary approach for exploring regulatory systems with feedback, their structures, constraints, and possibilities." .
+<https://w3id.org/skgo/modsci#Cybernetics> <http://www.w3.org/2000/01/rdf-schema#label> "Cybernetics" .
+# 
+# https://w3id.org/skgo/modsci#Dentistry
+<https://w3id.org/skgo/modsci#Dentistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Dentistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#HealthSciences> .
+<https://w3id.org/skgo/modsci#Dentistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Dentistry, also known as Dental and Oral Medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity, commonly in the dentition but also the oral mucosa, and of adjacent and related structures and tissues, particularly in the maxillofacial (jaw and facial) area." .
+<https://w3id.org/skgo/modsci#Dentistry> <http://www.w3.org/2000/01/rdf-schema#label> "Dentistry" .
+# 
+# https://w3id.org/skgo/modsci#DevelopmentalBiology
+<https://w3id.org/skgo/modsci#DevelopmentalBiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#DevelopmentalBiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#DevelopmentalBiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Developmental biology is the study of the process by which animals and plants grow and develop." .
+<https://w3id.org/skgo/modsci#DevelopmentalBiology> <http://www.w3.org/2000/01/rdf-schema#label> "Developmental Biology" .
+# 
+# https://w3id.org/skgo/modsci#EarthScience
+<https://w3id.org/skgo/modsci#EarthScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#EarthScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#NaturalScience> .
+<https://w3id.org/skgo/modsci#EarthScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Earth science (also known as geoscience, the geosciences, or the Earth sciences) includes all the sciences related to the planet Earth." .
+<https://w3id.org/skgo/modsci#EarthScience> <http://www.w3.org/2000/01/rdf-schema#label> "Earth Science" .
+# 
+# https://w3id.org/skgo/modsci#Ecology
+<https://w3id.org/skgo/modsci#Ecology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Ecology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Ecology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Ecology> <http://www.w3.org/2000/01/rdf-schema#comment> "Ecology is the branch of science that studies the distribution and interactions between living things and the physical environment." .
+<https://w3id.org/skgo/modsci#Ecology> <http://www.w3.org/2000/01/rdf-schema#label> "Ecology" .
+# 
+# https://w3id.org/skgo/modsci#Economics
+<https://w3id.org/skgo/modsci#Economics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Economics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#SocialSciences> .
+<https://w3id.org/skgo/modsci#Economics> <http://www.w3.org/2000/01/rdf-schema#comment> "Economics is the social science that studies the production, distribution, and consumption of goods and services." .
+<https://w3id.org/skgo/modsci#Economics> <http://www.w3.org/2000/01/rdf-schema#label> "Economics" .
+# 
+# https://w3id.org/skgo/modsci#Education
+<https://w3id.org/skgo/modsci#Education> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Education> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#Education> <http://www.w3.org/2000/01/rdf-schema#comment> "Education is the teaching or learning of knowledge, especially to develop the reasoning, judgement and skill required in adult life and professional occupations." .
+<https://w3id.org/skgo/modsci#Education> <http://www.w3.org/2000/01/rdf-schema#label> "Education" .
+# 
+# https://w3id.org/skgo/modsci#Engineering
+<https://w3id.org/skgo/modsci#Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Engineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#Engineering> <http://www.w3.org/2000/01/rdf-schema#comment> "Engineering is the practical application of science. This is accomplished through knowledge, mathematics, and practical experience applied to the design of useful objects or processes." .
+<https://w3id.org/skgo/modsci#Engineering> <http://www.w3.org/2000/01/rdf-schema#label> "Engineering" .
+# 
+# https://w3id.org/skgo/modsci#EnvironmentalChemistry
+<https://w3id.org/skgo/modsci#EnvironmentalChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#EnvironmentalChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#EnvironmentalChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Environmental chemistry is the scientific study of the physical, chemical and biochemical properties and processes of polluting substances in the environment." .
+<https://w3id.org/skgo/modsci#EnvironmentalChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#EnvironmentalScience
+<https://w3id.org/skgo/modsci#EnvironmentalScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#EnvironmentalScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#EnvironmentalScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Environmental science is the science of the interactions between the physical, chemical, and biological components of the environment, but with particular attention to the effects of humans on the natural environment." .
+<https://w3id.org/skgo/modsci#EnvironmentalScience> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Science" .
+# 
+# https://w3id.org/skgo/modsci#Epidemiology
+<https://w3id.org/skgo/modsci#Epidemiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Epidemiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#HealthSciences> .
+<https://w3id.org/skgo/modsci#Epidemiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Epidemiology is the study and analysis of the distribution (who, when, and where), patterns and determinants of health and disease conditions in defined populations." .
+<https://w3id.org/skgo/modsci#Epidemiology> <http://www.w3.org/2000/01/rdf-schema#label> "Epidemiology" .
+# 
+# https://w3id.org/skgo/modsci#Ergonomics
+<https://w3id.org/skgo/modsci#Ergonomics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Ergonomics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#Ergonomics> <http://www.w3.org/2000/01/rdf-schema#comment> "Human factors and ergonomics is the application of psychological and physiological principles to the (engineering and) design of products, processes, and systems." .
+<https://w3id.org/skgo/modsci#Ergonomics> <http://www.w3.org/2000/01/rdf-schema#label> "Ergonomics" .
+# 
+# https://w3id.org/skgo/modsci#EthnicStudies
+<https://w3id.org/skgo/modsci#EthnicStudies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#EthnicStudies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#EthnicStudies> <http://www.w3.org/2000/01/rdf-schema#comment> "Ethnic studies, in the United States, is the interdisciplinary study of difference—chiefly race, ethnicity, and nation, but also sexuality, gender, and other such markings—and power, as expressed by the state, by civil society, and by individuals." .
+<https://w3id.org/skgo/modsci#EthnicStudies> <http://www.w3.org/2000/01/rdf-schema#label> "Ethnic Studies" .
+# 
+# https://w3id.org/skgo/modsci#Ethnobiology
+<https://w3id.org/skgo/modsci#Ethnobiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Ethnobiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Ethnobiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Ethnobiology is the scientific study of the way living things are treated or used by different human cultures." .
+<https://w3id.org/skgo/modsci#Ethnobiology> <http://www.w3.org/2000/01/rdf-schema#label> "Ethnobiology" .
+# 
+# https://w3id.org/skgo/modsci#Ethnology
+<https://w3id.org/skgo/modsci#Ethnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Ethnology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#SocialSciences> .
+<https://w3id.org/skgo/modsci#Ethnology> <http://www.w3.org/2000/01/rdf-schema#comment> "Ethnology is the science that analyzes human cultures and compares them." .
+<https://w3id.org/skgo/modsci#Ethnology> <http://www.w3.org/2000/01/rdf-schema#label> "Ethnology" .
+# 
+# https://w3id.org/skgo/modsci#Ethology
+<https://w3id.org/skgo/modsci#Ethology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Ethology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#BehaviouralSciences> .
+<https://w3id.org/skgo/modsci#Ethology> <http://www.w3.org/2000/01/rdf-schema#comment> "Ethology is the scientific and objective study of animal behaviour, usually with a focus on behaviour under natural conditions, and viewing behaviour as an evolutionarily adaptive trait." .
+<https://w3id.org/skgo/modsci#Ethology> <http://www.w3.org/2000/01/rdf-schema#label> "Ethology" .
+# 
+# https://w3id.org/skgo/modsci#EvolutionaryBiology
+<https://w3id.org/skgo/modsci#EvolutionaryBiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#EvolutionaryBiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#EvolutionaryBiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Evolutionary biology is a sub-field of biology concerned with the study of the evolutionary processes that produced the diversity of life on Earth." .
+<https://w3id.org/skgo/modsci#EvolutionaryBiology> <http://www.w3.org/2000/01/rdf-schema#label> "Evolutionary Biology" .
+# 
+# https://w3id.org/skgo/modsci#EvolutionaryPsychology
+<https://w3id.org/skgo/modsci#EvolutionaryPsychology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#EvolutionaryPsychology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#EvolutionaryPsychology> <http://www.w3.org/2000/01/rdf-schema#comment> "Evolutionary psychology is a theoretical approach in the social and natural sciences that examines psychological structure from a modern evolutionary perspective." .
+<https://w3id.org/skgo/modsci#EvolutionaryPsychology> <http://www.w3.org/2000/01/rdf-schema#label> "Evolutionary Psychology" .
+# 
+# https://w3id.org/skgo/modsci#ExperimentalPhysics
+<https://w3id.org/skgo/modsci#ExperimentalPhysics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ExperimentalPhysics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Physics> .
+<https://w3id.org/skgo/modsci#ExperimentalPhysics> <http://www.w3.org/2000/01/rdf-schema#comment> "Experimental physics is the category of disciplines and sub-disciplines in the field of physics that are concerned with the observation of physical phenomena and experiments." .
+<https://w3id.org/skgo/modsci#ExperimentalPhysics> <http://www.w3.org/2000/01/rdf-schema#label> "Experimental Physics" .
+# 
+# https://w3id.org/skgo/modsci#ExtragalacticAstronomy
+<https://w3id.org/skgo/modsci#ExtragalacticAstronomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ExtragalacticAstronomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Astronomy> .
+<https://w3id.org/skgo/modsci#ExtragalacticAstronomy> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the study of all astronomical objects which are not covered by galactic astronomy." .
+<https://w3id.org/skgo/modsci#ExtragalacticAstronomy> <http://www.w3.org/2000/01/rdf-schema#label> "Extragalactic Astronomy" .
+# 
+# https://w3id.org/skgo/modsci#FoodChemistry
+<https://w3id.org/skgo/modsci#FoodChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#FoodChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#FoodChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Food chemistry is the study of chemical processes and interactions of all biological and non-biological components of foods." .
+<https://w3id.org/skgo/modsci#FoodChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Food Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#Forensics
+<https://w3id.org/skgo/modsci#Forensics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Forensics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#Forensics> <http://www.w3.org/2000/01/rdf-schema#comment> "Forensic science, also known as criminalistics, is the application of science to criminal and civil laws, mainly—on the criminal side—during criminal investigation, as governed by the legal standards of admissible evidence and criminal procedure." .
+<https://w3id.org/skgo/modsci#Forensics> <http://www.w3.org/2000/01/rdf-schema#label> "Forensics" .
+# 
+# https://w3id.org/skgo/modsci#Forestry
+<https://w3id.org/skgo/modsci#Forestry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Forestry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Forestry> <http://www.w3.org/2000/01/rdf-schema#comment> "Forestry is the art, science, and practice of studying and managing forests and related natural resources." .
+<https://w3id.org/skgo/modsci#Forestry> <http://www.w3.org/2000/01/rdf-schema#label> "Forestry" .
+# 
+# https://w3id.org/skgo/modsci#FormalScience
+<https://w3id.org/skgo/modsci#FormalScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#FormalScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Science> .
+<https://w3id.org/skgo/modsci#FormalScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Formal sciences are a branch of science studying formal language disciplines concerned with formal systems, such as logic, mathematics, statistics, theoretical computer science, artificial intelligence, information theory, game theory, systems theory, decision theory, and theoretical linguistics." .
+<https://w3id.org/skgo/modsci#FormalScience> <http://www.w3.org/2000/01/rdf-schema#label> "Formal Science" .
+# 
+# https://w3id.org/skgo/modsci#GalacticAstronomy
+<https://w3id.org/skgo/modsci#GalacticAstronomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#GalacticAstronomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Astronomy> .
+<https://w3id.org/skgo/modsci#GalacticAstronomy> <http://www.w3.org/2000/01/rdf-schema#comment> "The study of everything outside our galaxy, including all other galaxies." .
+<https://w3id.org/skgo/modsci#GalacticAstronomy> <http://www.w3.org/2000/01/rdf-schema#label> "Galactic Astronomy" .
+# 
+# https://w3id.org/skgo/modsci#Genetics
+<https://w3id.org/skgo/modsci#Genetics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Genetics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Genetics> <http://www.w3.org/2000/01/rdf-schema#comment> "Genetics is the study of genes, heredity, and the variation of organisms, as well as the medical practice of diagnosing, treating, and counseling patients with genetic disorders." .
+<https://w3id.org/skgo/modsci#Genetics> <http://www.w3.org/2000/01/rdf-schema#label> "Genetics" .
+# 
+# https://w3id.org/skgo/modsci#Geochemistry
+<https://w3id.org/skgo/modsci#Geochemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Geochemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#Geochemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Geochemistry is the science that uses the tools and principles of chemistry to explain the mechanisms behind major geological systems such as the Earth's crust and its oceans." .
+<https://w3id.org/skgo/modsci#Geochemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Geochemistry" .
+# 
+# https://w3id.org/skgo/modsci#Geodesy
+<https://w3id.org/skgo/modsci#Geodesy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Geodesy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Geodesy> <http://www.w3.org/2000/01/rdf-schema#comment> "Geodesy is the Earth science of accurately measuring and understanding Earth's geometric shape, orientation in space and gravitational field." .
+<https://w3id.org/skgo/modsci#Geodesy> <http://www.w3.org/2000/01/rdf-schema#label> "Geodesy" .
+# 
+# https://w3id.org/skgo/modsci#Geography
+<https://w3id.org/skgo/modsci#Geography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Geography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Geography> <http://www.w3.org/2000/01/rdf-schema#comment> "Geography is a field of science devoted to the study of the lands, features, inhabitants, and phenomena of the Earth and planets." .
+<https://w3id.org/skgo/modsci#Geography> <http://www.w3.org/2000/01/rdf-schema#label> "Geography" .
+# 
+# https://w3id.org/skgo/modsci#GeologicalSciences
+<https://w3id.org/skgo/modsci#GeologicalSciences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#GeologicalSciences> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#NaturalScience> .
+<https://w3id.org/skgo/modsci#GeologicalSciences> <http://www.w3.org/2000/01/rdf-schema#label> "Geological Sciences" .
+# 
+# https://w3id.org/skgo/modsci#Geology
+<https://w3id.org/skgo/modsci#Geology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Geology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Geology> <http://www.w3.org/2000/01/rdf-schema#comment> "Geology is an earth science concerned with the solid Earth, the rocks of which it is composed, and the processes by which they change over time." .
+<https://w3id.org/skgo/modsci#Geology> <http://www.w3.org/2000/01/rdf-schema#label> "Geology" .
+# 
+# https://w3id.org/skgo/modsci#Geomorphology
+<https://w3id.org/skgo/modsci#Geomorphology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Geomorphology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Geomorphology> <http://www.w3.org/2000/01/rdf-schema#comment> "Geomorphology is the science of surface features and landforms including the forces and processes that create them." .
+<https://w3id.org/skgo/modsci#Geomorphology> <http://www.w3.org/2000/01/rdf-schema#label> "Geomorphology" .
+# 
+# https://w3id.org/skgo/modsci#Geophysics
+<https://w3id.org/skgo/modsci#Geophysics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Geophysics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Geophysics> <http://www.w3.org/2000/01/rdf-schema#comment> "Geophysics the physics of the Earth and its environment in space, and study of earth sciences using quantitative physics methods." .
+<https://w3id.org/skgo/modsci#Geophysics> <http://www.w3.org/2000/01/rdf-schema#label> "Geophysics" .
+# 
+# https://w3id.org/skgo/modsci#Gerontology
+<https://w3id.org/skgo/modsci#Gerontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Gerontology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Gerontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Gerontology is the study of the social, cultural, psychological, cognitive, and biological aspects of ageing." .
+<https://w3id.org/skgo/modsci#Gerontology> <http://www.w3.org/2000/01/rdf-schema#label> "Gerontology" .
+# 
+# https://w3id.org/skgo/modsci#Glaciology
+<https://w3id.org/skgo/modsci#Glaciology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Glaciology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Glaciology> <http://www.w3.org/2000/01/rdf-schema#comment> "Glaciology is the scientific study of glaciers, or more generally ice and natural phenomena that involve ice." .
+<https://w3id.org/skgo/modsci#Glaciology> <http://www.w3.org/2000/01/rdf-schema#label> "Glaciology" .
+# 
+# https://w3id.org/skgo/modsci#GreenChemistry
+<https://w3id.org/skgo/modsci#GreenChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#GreenChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#GreenChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Green chemistry is the use of chemistry for pollutant source reduction; the definition encompasses therefore all aspects of chemical processes that reduce impact on human health and on the environment." .
+<https://w3id.org/skgo/modsci#GreenChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Green Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#Health
+<https://w3id.org/skgo/modsci#Health> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Health> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#Health> <http://www.w3.org/2000/01/rdf-schema#comment> "Health is a state of physical, mental and social well-being in which disease and infirmity are absent." .
+<https://w3id.org/skgo/modsci#Health> <http://www.w3.org/2000/01/rdf-schema#label> "Health" .
+# 
+# https://w3id.org/skgo/modsci#HealthSciences
+<https://w3id.org/skgo/modsci#HealthSciences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#HealthSciences> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Science> .
+<https://w3id.org/skgo/modsci#HealthSciences> <http://www.w3.org/2000/01/rdf-schema#comment> "Health sciences are those sciences which focus on health, or health care, as core parts of their subject matter." .
+<https://w3id.org/skgo/modsci#HealthSciences> <http://www.w3.org/2000/01/rdf-schema#label> "Health Sciences" .
+# 
+# https://w3id.org/skgo/modsci#Healthcare
+<https://w3id.org/skgo/modsci#Healthcare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Healthcare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#HealthSciences> .
+<https://w3id.org/skgo/modsci#Healthcare> <http://www.w3.org/2000/01/rdf-schema#comment> "Health care is the maintenance or improvement of health via the prevention, diagnosis, and treatment of disease, illness, injury, and other physical and mental impairments in people." .
+<https://w3id.org/skgo/modsci#Healthcare> <http://www.w3.org/2000/01/rdf-schema#label> "Healthcare" .
+# 
+# https://w3id.org/skgo/modsci#History
+<https://w3id.org/skgo/modsci#History> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#History> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#FormalScience> .
+<https://w3id.org/skgo/modsci#History> <http://www.w3.org/2000/01/rdf-schema#comment> "The history of science is the study of the development of science and scientific knowledge, including both the natural and social sciences (the history of the arts and humanities is termed history of scholarship)." .
+<https://w3id.org/skgo/modsci#History> <http://www.w3.org/2000/01/rdf-schema#label> "History of Science" .
+# 
+# https://w3id.org/skgo/modsci#HumanSciences
+<https://w3id.org/skgo/modsci#HumanSciences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#HumanSciences> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#HumanSciences> <http://www.w3.org/2000/01/rdf-schema#comment> "Human science is a term applied to the investigation of human life and activities by a rational, systematic and verifiable methodology that acknowledges the validity of both data derived by impartial observation of sensory experience (objective phenomena) and data derived by means of impartial observation of psychological experience (subjective phenomena)." .
+<https://w3id.org/skgo/modsci#HumanSciences> <http://www.w3.org/2000/01/rdf-schema#label> "Human Sciences" .
+# 
+# https://w3id.org/skgo/modsci#Hydrology
+<https://w3id.org/skgo/modsci#Hydrology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Hydrology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Hydrology> <http://www.w3.org/2000/01/rdf-schema#comment> "Hydrology is the scientific study of the movement, distribution, and quality of water on Earth and other planets, including the water cycle, water resources and environmental watershed sustainability." .
+<https://w3id.org/skgo/modsci#Hydrology> <http://www.w3.org/2000/01/rdf-schema#label> "Hydrology" .
+# 
+# https://w3id.org/skgo/modsci#Immunology
+<https://w3id.org/skgo/modsci#Immunology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Immunology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Immunology> <http://www.w3.org/2000/01/rdf-schema#comment> "Immunology is the study of the immune system and its reaction to pathogens, as well as its malfunctions (autoimmune diseases, allergies, rejection of organ transplants, immune deficiency)." .
+<https://w3id.org/skgo/modsci#Immunology> <http://www.w3.org/2000/01/rdf-schema#label> "Immunology" .
+# 
+# https://w3id.org/skgo/modsci#IndustrialProcess
+<https://w3id.org/skgo/modsci#IndustrialProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#IndustrialProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#IndustrialProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "An industrial process alters materials or substances." .
+<https://w3id.org/skgo/modsci#IndustrialProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Process" .
+# 
+# https://w3id.org/skgo/modsci#InformationScience
+<https://w3id.org/skgo/modsci#InformationScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#InformationScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#InformationScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Information science is a field primarily concerned with the analysis, collection, classification, manipulation, storage, retrieval, movement, dissemination, and protection of information." .
+<https://w3id.org/skgo/modsci#InformationScience> <http://www.w3.org/2000/01/rdf-schema#label> "Information Science" .
+# 
+# https://w3id.org/skgo/modsci#InorganicChemistry
+<https://w3id.org/skgo/modsci#InorganicChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#InorganicChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#InorganicChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Inorganic chemistry is a catch-all discipline that covers everything in chemistry that is not organic chemistry." .
+<https://w3id.org/skgo/modsci#InorganicChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Inorganic Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#InterdisciplinaryStudies
+<https://w3id.org/skgo/modsci#InterdisciplinaryStudies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#InterdisciplinaryStudies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Science> .
+<https://w3id.org/skgo/modsci#InterdisciplinaryStudies> <http://www.w3.org/2000/01/rdf-schema#comment> "Interdisciplinarity or interdisciplinary studies involves the combining of two or more academic disciplines into one activity (e.g., a research project)." .
+<https://w3id.org/skgo/modsci#InterdisciplinaryStudies> <http://www.w3.org/2000/01/rdf-schema#label> "Interdisciplinary Studies" .
+# 
+# https://w3id.org/skgo/modsci#LibraryScience
+<https://w3id.org/skgo/modsci#LibraryScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#LibraryScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#LibraryScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#LibraryScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Library science is an interdisciplinary or multidisciplinary field that applies the practices, perspectives, and tools of management, information technology, education, and other areas to libraries; the collection, organization, preservation, and dissemination of information resources; and the political economy of information." .
+<https://w3id.org/skgo/modsci#LibraryScience> <http://www.w3.org/2000/01/rdf-schema#label> "Library Science" .
+# 
+# https://w3id.org/skgo/modsci#Limnology
+<https://w3id.org/skgo/modsci#Limnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Limnology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Limnology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Limnology> <http://www.w3.org/2000/01/rdf-schema#comment> "Limnology is a discipline that concerns the study of fresh waters, specifically natural and constructed lakes, ponds, streams, and rivers," .
+<https://w3id.org/skgo/modsci#Limnology> <http://www.w3.org/2000/01/rdf-schema#label> "Limnology" .
+# 
+# https://w3id.org/skgo/modsci#Linguistics
+<https://w3id.org/skgo/modsci#Linguistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Linguistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#SocialSciences> .
+<https://w3id.org/skgo/modsci#Linguistics> <http://www.w3.org/2000/01/rdf-schema#comment> "Linguistics is the scientific study of language." .
+<https://w3id.org/skgo/modsci#Linguistics> <http://www.w3.org/2000/01/rdf-schema#label> "Linguistics" .
+# 
+# https://w3id.org/skgo/modsci#Logic
+<https://w3id.org/skgo/modsci#Logic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Logic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#Logic> <http://www.w3.org/2000/01/rdf-schema#comment> "Logic is the study of reasoning, or the study of the principles and criteria of valid inference and demonstration." .
+<https://w3id.org/skgo/modsci#Logic> <http://www.w3.org/2000/01/rdf-schema#label> "Logic" .
+# 
+# https://w3id.org/skgo/modsci#MarineBiology
+<https://w3id.org/skgo/modsci#MarineBiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#MarineBiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#MarineBiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Marine biology is the scientific study of organisms that live in the ocean" .
+<https://w3id.org/skgo/modsci#MarineBiology> <http://www.w3.org/2000/01/rdf-schema#label> "Marine Biology" .
+# 
+# https://w3id.org/skgo/modsci#MaterialsScience
+<https://w3id.org/skgo/modsci#MaterialsScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#MaterialsScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#MaterialsScience> <http://www.w3.org/2000/01/rdf-schema#comment> "The interdisciplinary field of materials science is the design and discovery of new materials, particularly solids." .
+<https://w3id.org/skgo/modsci#MaterialsScience> <http://www.w3.org/2000/01/rdf-schema#label> "Materials Science" .
+# 
+# https://w3id.org/skgo/modsci#MathematicalAndTheoreticalBiology
+<https://w3id.org/skgo/modsci#MathematicalAndTheoreticalBiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#MathematicalAndTheoreticalBiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#MathematicalAndTheoreticalBiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Mathematical and theoretical biology is a branch of biology which employs theoretical analysis, mathematical models and abstractions of the living organisms to investigate the principles that govern the structure, development and behavior of the systems" .
+<https://w3id.org/skgo/modsci#MathematicalAndTheoreticalBiology> <http://www.w3.org/2000/01/rdf-schema#label> "Mathematical and Theoretical Biology" .
+# 
+# https://w3id.org/skgo/modsci#MathematicalPhysics
+<https://w3id.org/skgo/modsci#MathematicalPhysics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#MathematicalPhysics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#MathematicalPhysics> <http://www.w3.org/2000/01/rdf-schema#comment> "Mathematical physics refers to the development of mathematical methods for application to problems in physics." .
+<https://w3id.org/skgo/modsci#MathematicalPhysics> <http://www.w3.org/2000/01/rdf-schema#label> "Mathematical Physics" .
+# 
+# https://w3id.org/skgo/modsci#Mathematics
+<https://w3id.org/skgo/modsci#Mathematics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Mathematics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#FormalScience> .
+<https://w3id.org/skgo/modsci#Mathematics> <http://www.w3.org/2000/01/rdf-schema#comment> "Mathematics (colloquially, maths, or math), is the body of knowledge centered on concepts such as quantity, structure, space, and change, and also the academic discipline that studies them." .
+<https://w3id.org/skgo/modsci#Mathematics> <http://www.w3.org/2000/01/rdf-schema#label> "Mathematics" .
+# 
+# https://w3id.org/skgo/modsci#Measurement
+<https://w3id.org/skgo/modsci#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Measurement is the assignment of a number to a characteristic of an object or event, which can be compared with other objects or events." .
+<https://w3id.org/skgo/modsci#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement" .
+# 
+# https://w3id.org/skgo/modsci#Mechanics
+<https://w3id.org/skgo/modsci#Mechanics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Mechanics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Physics> .
+<https://w3id.org/skgo/modsci#Mechanics> <http://www.w3.org/2000/01/rdf-schema#comment> "Mechanics is the branch of science concerned with the behavior of physical bodies when subjected to forces or displacements, and the subsequent effects of the bodies on their environment." .
+<https://w3id.org/skgo/modsci#Mechanics> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanics" .
+# 
+# https://w3id.org/skgo/modsci#MedicinalChemistry
+<https://w3id.org/skgo/modsci#MedicinalChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#MedicinalChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#MedicinalChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Medicinal chemistry and pharmaceutical chemistry are disciplines at the intersection of chemistry, especially synthetic organic chemistry, and pharmacology and various other biological specialties, where they are involved with design, chemical synthesis and development for market of pharmaceutical agents, or bio-active molecules (drugs)." .
+<https://w3id.org/skgo/modsci#MedicinalChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Medicinal Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#Medicine
+<https://w3id.org/skgo/modsci#Medicine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Medicine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#HealthSciences> .
+<https://w3id.org/skgo/modsci#Medicine> <http://www.w3.org/2000/01/rdf-schema#comment> "Medicine is a branch of health science concerned with maintaining human health and restoring it by treating disease and injury; it is both an area of knowledge, a science of body systems and diseases and their treatment, and the applied practice of that knowledge." .
+<https://w3id.org/skgo/modsci#Medicine> <http://www.w3.org/2000/01/rdf-schema#label> "Medicine" .
+# 
+# https://w3id.org/skgo/modsci#Metabolism
+<https://w3id.org/skgo/modsci#Metabolism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Metabolism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Metabolism> <http://www.w3.org/2000/01/rdf-schema#comment> "Metabolism is the set of life-sustaining chemical reactions in organisms." .
+<https://w3id.org/skgo/modsci#Metabolism> <http://www.w3.org/2000/01/rdf-schema#label> "Metabolism" .
+# 
+# https://w3id.org/skgo/modsci#Metallurgy
+<https://w3id.org/skgo/modsci#Metallurgy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Metallurgy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#Metallurgy> <http://www.w3.org/2000/01/rdf-schema#comment> "Metallurgy is a domain of materials science and engineering that studies the physical and chemical behavior of metallic elements, their inter-metallic compounds, and their mixtures, which are called alloys." .
+<https://w3id.org/skgo/modsci#Metallurgy> <http://www.w3.org/2000/01/rdf-schema#label> "Metallurgy" .
+# 
+# https://w3id.org/skgo/modsci#Metrology
+<https://w3id.org/skgo/modsci#Metrology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Metrology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#Metrology> <http://www.w3.org/2000/01/rdf-schema#comment> "Metrology is the science of measurement." .
+<https://w3id.org/skgo/modsci#Metrology> <http://www.w3.org/2000/01/rdf-schema#label> "Metrology" .
+# 
+# https://w3id.org/skgo/modsci#MilitaryScience
+<https://w3id.org/skgo/modsci#MilitaryScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#MilitaryScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#MilitaryScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Military science is the study of military processes, institutions, and behavior, along with the study of warfare, and the theory and application of organized coercive force." .
+<https://w3id.org/skgo/modsci#MilitaryScience> <http://www.w3.org/2000/01/rdf-schema#label> "Military Science" .
+# 
+# https://w3id.org/skgo/modsci#MolecularBiology
+<https://w3id.org/skgo/modsci#MolecularBiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#MolecularBiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#MolecularBiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Molecular biology is the study of biology at a molecular level." .
+<https://w3id.org/skgo/modsci#MolecularBiology> <http://www.w3.org/2000/01/rdf-schema#label> "Molecular Biology" .
+# 
+# https://w3id.org/skgo/modsci#MolecularPhysics
+<https://w3id.org/skgo/modsci#MolecularPhysics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#MolecularPhysics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#MolecularPhysics> <http://www.w3.org/2000/01/rdf-schema#comment> "Molecular physics deals with the physics and chemistry of molecules." .
+<https://w3id.org/skgo/modsci#MolecularPhysics> <http://www.w3.org/2000/01/rdf-schema#label> "Molecular Physics" .
+# 
+# https://w3id.org/skgo/modsci#Museology
+<https://w3id.org/skgo/modsci#Museology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Museology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#Museology> <http://www.w3.org/2000/01/rdf-schema#comment> "Museology or museum studies is the study of museums. It explores the history of museums and their role in society, as well as the activities they engage in, including curating, preservation, public programming, and education." .
+<https://w3id.org/skgo/modsci#Museology> <http://www.w3.org/2000/01/rdf-schema#label> "Museology" .
+# 
+# https://w3id.org/skgo/modsci#NaturalScience
+<https://w3id.org/skgo/modsci#NaturalScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#NaturalScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Science> .
+<https://w3id.org/skgo/modsci#NaturalScience> <http://www.w3.org/2000/01/rdf-schema#comment> "The natural sciences are those branches of empirical science that produce a comprehension of the natural world through the use of data collected from it by observation and measurement to construct deterministic and/or stochastic quantitative models of its phenomena." .
+<https://w3id.org/skgo/modsci#NaturalScience> <http://www.w3.org/2000/01/rdf-schema#label> "Natural Sciences" .
+# 
+# https://w3id.org/skgo/modsci#NeuralEngineering
+<https://w3id.org/skgo/modsci#NeuralEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#NeuralEngineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#NeuralEngineering> <http://www.w3.org/2000/01/rdf-schema#comment> "Neural engineering is a discipline within biomedical engineering that uses engineering techniques to understand, repair, replace, or enhance neural systems." .
+<https://w3id.org/skgo/modsci#NeuralEngineering> <http://www.w3.org/2000/01/rdf-schema#label> "Neural Engineering" .
+# 
+# https://w3id.org/skgo/modsci#Neuroscience
+<https://w3id.org/skgo/modsci#Neuroscience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Neuroscience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Neuroscience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#Neuroscience> <http://www.w3.org/2000/01/rdf-schema#comment> "Neuroscience is a field of study which deals with the structure, development, genetics, biochemistry, physiology, pharmacology and pathology of the nervous system." .
+<https://w3id.org/skgo/modsci#Neuroscience> <http://www.w3.org/2000/01/rdf-schema#label> "Neuroscience" .
+# 
+# https://w3id.org/skgo/modsci#NuclearChemistry
+<https://w3id.org/skgo/modsci#NuclearChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#NuclearChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#NuclearChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Nuclear chemistry is the subfield of chemistry dealing with radioactivity, nuclear processes, and transformations in the nuclei of atoms, such as nuclear transmutation and nuclear properties." .
+<https://w3id.org/skgo/modsci#NuclearChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Nuclear Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#Nursing
+<https://w3id.org/skgo/modsci#Nursing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Nursing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#HealthSciences> .
+<https://w3id.org/skgo/modsci#Nursing> <http://www.w3.org/2000/01/rdf-schema#comment> "Nursing is a profession within the health care sector focused on the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life." .
+<https://w3id.org/skgo/modsci#Nursing> <http://www.w3.org/2000/01/rdf-schema#label> "Nursing" .
+# 
+# https://w3id.org/skgo/modsci#Oceanography
+<https://w3id.org/skgo/modsci#Oceanography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Oceanography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Oceanography> <http://www.w3.org/2000/01/rdf-schema#comment> "Oceanography also known as oceanology, is the study of the physical and biological aspects of the ocean." .
+<https://w3id.org/skgo/modsci#Oceanography> <http://www.w3.org/2000/01/rdf-schema#label> "Oceanography" .
+# 
+# https://w3id.org/skgo/modsci#Optics
+<https://w3id.org/skgo/modsci#Optics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Optics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#Optics> <http://www.w3.org/2000/01/rdf-schema#comment> "Optics is the branch of physics that studies the behaviour and properties of light, including its interactions with matter and the construction of instruments that use or detect it." .
+<https://w3id.org/skgo/modsci#Optics> <http://www.w3.org/2000/01/rdf-schema#label> "Optics" .
+# 
+# https://w3id.org/skgo/modsci#OrganicChemistry
+<https://w3id.org/skgo/modsci#OrganicChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#OrganicChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#OrganicChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Organic chemistry is the study of organic, or carbon based, molecules." .
+<https://w3id.org/skgo/modsci#OrganicChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Organic Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#OrganometallicChemistry
+<https://w3id.org/skgo/modsci#OrganometallicChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#OrganometallicChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#OrganometallicChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Organometallic chemistry is the study of chemical compounds containing bonds between carbon and a metal." .
+<https://w3id.org/skgo/modsci#OrganometallicChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Organometallic Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#Paleoclimatology
+<https://w3id.org/skgo/modsci#Paleoclimatology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Paleoclimatology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Paleoclimatology> <http://www.w3.org/2000/01/rdf-schema#comment> "Paleoclimatology is the study of climates for which systematic measurements were not taken." .
+<https://w3id.org/skgo/modsci#Paleoclimatology> <http://www.w3.org/2000/01/rdf-schema#label> "Paleoclimatology" .
+# 
+# https://w3id.org/skgo/modsci#Paleontology
+<https://w3id.org/skgo/modsci#Paleontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Paleontology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Paleontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Paleontology is the study of the developing history of life on earth, of ancient plants and animals based on the fossil record, evidence of their existence preserved in rocks." .
+<https://w3id.org/skgo/modsci#Paleontology> <http://www.w3.org/2000/01/rdf-schema#label> "Paleontology" .
+# 
+# https://w3id.org/skgo/modsci#Palynology
+<https://w3id.org/skgo/modsci#Palynology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Palynology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Palynology> <http://www.w3.org/2000/01/rdf-schema#comment> "Palynology is literally the \"study of dust\" or of \"particles that are strewn\"." .
+<https://w3id.org/skgo/modsci#Palynology> <http://www.w3.org/2000/01/rdf-schema#label> "Palynology" .
+# 
+# https://w3id.org/skgo/modsci#Parasitology
+<https://w3id.org/skgo/modsci#Parasitology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Parasitology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Parasitology> <http://www.w3.org/2000/01/rdf-schema#comment> "Parasitology is the study of parasites in host organisms, including humans (medical parasitology)." .
+<https://w3id.org/skgo/modsci#Parasitology> <http://www.w3.org/2000/01/rdf-schema#label> "Parasitology" .
+# 
+# https://w3id.org/skgo/modsci#ParticlePhysics
+<https://w3id.org/skgo/modsci#ParticlePhysics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ParticlePhysics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Physics> .
+<https://w3id.org/skgo/modsci#ParticlePhysics> <http://www.w3.org/2000/01/rdf-schema#comment> "Particle physics is a branch of physics that studies the elementary constituents of matter and radiation, and the interactions between them." .
+<https://w3id.org/skgo/modsci#ParticlePhysics> <http://www.w3.org/2000/01/rdf-schema#label> "Particle Physics" .
+# 
+# https://w3id.org/skgo/modsci#Pharmacology
+<https://w3id.org/skgo/modsci#Pharmacology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Pharmacology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Pharmacology> <http://www.w3.org/2000/01/rdf-schema#comment> "Pharmacology is the study of how chemical substances interact with living systems." .
+<https://w3id.org/skgo/modsci#Pharmacology> <http://www.w3.org/2000/01/rdf-schema#label> "Pharmacology" .
+# 
+# https://w3id.org/skgo/modsci#Pharmacy
+<https://w3id.org/skgo/modsci#Pharmacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Pharmacy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#HealthSciences> .
+<https://w3id.org/skgo/modsci#Pharmacy> <http://www.w3.org/2000/01/rdf-schema#comment> "Pharmacy is the science and technique of preparing, dispensing, and reviewing drugs and providing additional clinical services." .
+<https://w3id.org/skgo/modsci#Pharmacy> <http://www.w3.org/2000/01/rdf-schema#label> "Pharmacy" .
+# 
+# https://w3id.org/skgo/modsci#Philosophy
+<https://w3id.org/skgo/modsci#Philosophy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Philosophy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#FormalScience> .
+<https://w3id.org/skgo/modsci#Philosophy> <http://www.w3.org/2000/01/rdf-schema#comment> "Philosophy of science is a branch of philosophy concerned with the foundations, methods, and implications of science." .
+<https://w3id.org/skgo/modsci#Philosophy> <http://www.w3.org/2000/01/rdf-schema#label> "Philosophy of Science" .
+# 
+# https://w3id.org/skgo/modsci#Photochemistry
+<https://w3id.org/skgo/modsci#Photochemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Photochemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#Photochemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Photochemistry, a sub-discipline of chemistry, is the study of the interactions between atoms, small molecules, and light (or electromagnetic radiation)." .
+<https://w3id.org/skgo/modsci#Photochemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Photochemistry" .
+# 
+# https://w3id.org/skgo/modsci#PhysicalChemistry
+<https://w3id.org/skgo/modsci#PhysicalChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#PhysicalChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#PhysicalChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical chemistry is the study of macroscopic, atomic, subatomic, and particulate phenomena in chemical systems in terms of the principles, practices, and concepts of physics such as motion, energy, force, time, thermodynamics, quantum chemistry, statistical mechanics, analytical dynamics and chemical equilibrium." .
+<https://w3id.org/skgo/modsci#PhysicalChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#PhysicalGeography
+<https://w3id.org/skgo/modsci#PhysicalGeography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#PhysicalGeography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#PhysicalGeography> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical geography is a subfield of geography, closely related to geology, that focuses on the spatial characteristics of natural processes, within the hydrosphere, biosphere, atmosphere and lithosphere." .
+<https://w3id.org/skgo/modsci#PhysicalGeography> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Geography" .
+# 
+# https://w3id.org/skgo/modsci#Physics
+<https://w3id.org/skgo/modsci#Physics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Physics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#NaturalScience> .
+<https://w3id.org/skgo/modsci#Physics> <http://www.w3.org/2000/01/rdf-schema#comment> "Physics is the science of the natural world. It deals with matter, energy, and the fundamental forces that govern the interactions between particles." .
+<https://w3id.org/skgo/modsci#Physics> <http://www.w3.org/2000/01/rdf-schema#label> "Physics" .
+# 
+# https://w3id.org/skgo/modsci#Physiology
+<https://w3id.org/skgo/modsci#Physiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Physiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Physiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Physiology is the branch of science that describes the mechanisms of cell, tissue and organ function in organisms." .
+<https://w3id.org/skgo/modsci#Physiology> <http://www.w3.org/2000/01/rdf-schema#label> "Physiology" .
+# 
+# https://w3id.org/skgo/modsci#PlanetaryScience
+<https://w3id.org/skgo/modsci#PlanetaryScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#PlanetaryScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Astronomy> .
+<https://w3id.org/skgo/modsci#PlanetaryScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Planetary science is a broad field of science that studies all planets." .
+<https://w3id.org/skgo/modsci#PlanetaryScience> <http://www.w3.org/2000/01/rdf-schema#label> "Planetary Science" .
+# 
+# https://w3id.org/skgo/modsci#PlasmaPhysics
+<https://w3id.org/skgo/modsci#PlasmaPhysics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#PlasmaPhysics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Physics> .
+<https://w3id.org/skgo/modsci#PlasmaPhysics> <http://www.w3.org/2000/01/rdf-schema#comment> "Plasma physics is the study of ionized gases." .
+<https://w3id.org/skgo/modsci#PlasmaPhysics> <http://www.w3.org/2000/01/rdf-schema#label> "Plasma Physics" .
+# 
+# https://w3id.org/skgo/modsci#PoliticalEconomy
+<https://w3id.org/skgo/modsci#PoliticalEconomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#PoliticalEconomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#PoliticalEconomy> <http://www.w3.org/2000/01/rdf-schema#comment> "Political economy is the study of production and trade and their relations with law, custom and government; and with the distribution of national income and wealth." .
+<https://w3id.org/skgo/modsci#PoliticalEconomy> <http://www.w3.org/2000/01/rdf-schema#label> "Political Economy" .
+# 
+# https://w3id.org/skgo/modsci#PoliticalScience
+<https://w3id.org/skgo/modsci#PoliticalScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#PoliticalScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#SocialSciences> .
+<https://w3id.org/skgo/modsci#PoliticalScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Political science is a social science which deals with systems of governance, and the analysis of political activities, political thoughts, and political behavior." .
+<https://w3id.org/skgo/modsci#PoliticalScience> <http://www.w3.org/2000/01/rdf-schema#label> "Political Science" .
+# 
+# https://w3id.org/skgo/modsci#Psychology
+<https://w3id.org/skgo/modsci#Psychology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Psychology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#BehaviouralSciences> .
+<https://w3id.org/skgo/modsci#Psychology> <http://www.w3.org/2000/01/rdf-schema#comment> "Psychology is a collection of academic, clinical and industrial disciplines concerned with the explanation and prediction of behavior, thinking, emotions, motivations, relationships, potentials and pathologies." .
+<https://w3id.org/skgo/modsci#Psychology> <http://www.w3.org/2000/01/rdf-schema#label> "Psychology" .
+# 
+# https://w3id.org/skgo/modsci#QuantumMechanics
+<https://w3id.org/skgo/modsci#QuantumMechanics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#QuantumMechanics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Physics> .
+<https://w3id.org/skgo/modsci#QuantumMechanics> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantum mechanics (also called quantum physics or quantum theory) is a physical theory that is believed to be the formalism underlying the description of all physical systems." .
+<https://w3id.org/skgo/modsci#QuantumMechanics> <http://www.w3.org/2000/01/rdf-schema#label> "Quantum Mechanics" .
+# 
+# https://w3id.org/skgo/modsci#Radiobiology
+<https://w3id.org/skgo/modsci#Radiobiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Radiobiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Radiobiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Radiobiology is a field of clinical and basic medical sciences that involves the study of the action of ionizing radiation on living things, especially health effects of radiation." .
+<https://w3id.org/skgo/modsci#Radiobiology> <http://www.w3.org/2000/01/rdf-schema#label> "Radiation Biology" .
+# 
+# https://w3id.org/skgo/modsci#Radiochemistry
+<https://w3id.org/skgo/modsci#Radiochemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Radiochemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#Radiochemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Radiochemistry is the chemistry of radioactive materials, where radioactive isotopes of elements are used to study the properties and chemical reactions of non-radioactive isotopes (often within radiochemistry the absence of radioactivity leads to a substance being described as being inactive as the isotopes are stable)." .
+<https://w3id.org/skgo/modsci#Radiochemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Radiochemistry" .
+# 
+# https://w3id.org/skgo/modsci#Science
+<https://w3id.org/skgo/modsci#Science> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Science> <http://www.w3.org/2000/01/rdf-schema#comment> "Science is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe." .
+<https://w3id.org/skgo/modsci#Science> <http://www.w3.org/2000/01/rdf-schema#label> "Science" .
+# 
+# https://w3id.org/skgo/modsci#ScienceAndTechnologyStudies
+<https://w3id.org/skgo/modsci#ScienceAndTechnologyStudies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ScienceAndTechnologyStudies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#ScienceAndTechnologyStudies> <http://www.w3.org/2000/01/rdf-schema#comment> "Science and technology studies is the study of how society, politics, and culture affect scientific research and technological innovation, and how these, in turn, affect society, politics and culture." .
+<https://w3id.org/skgo/modsci#ScienceAndTechnologyStudies> <http://www.w3.org/2000/01/rdf-schema#label> "Science and Technology Studies" .
+# 
+# https://w3id.org/skgo/modsci#ScienceStudies
+<https://w3id.org/skgo/modsci#ScienceStudies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ScienceStudies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#ScienceStudies> <http://www.w3.org/2000/01/rdf-schema#comment> "Science studies is an interdisciplinary research area that seeks to situate scientific expertise in broad social, historical, and philosophical contexts." .
+<https://w3id.org/skgo/modsci#ScienceStudies> <http://www.w3.org/2000/01/rdf-schema#label> "Science Studies" .
+# 
+# https://w3id.org/skgo/modsci#ScientificMethod
+<https://w3id.org/skgo/modsci#ScientificMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ScientificMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#FormalScience> .
+<https://w3id.org/skgo/modsci#ScientificMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "A scientific method is a sequence or collection of processes that are considered characteristic of scientific investigation and the acquisition of new scientific knowledge based upon physical evidence." .
+<https://w3id.org/skgo/modsci#ScientificMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Method" .
+# 
+# https://w3id.org/skgo/modsci#ScientificModeling
+<https://w3id.org/skgo/modsci#ScientificModeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#ScientificModeling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#ScientificModeling> <http://www.w3.org/2000/01/rdf-schema#comment> "Scientific modelling is a scientific activity, the aim of which is to make a particular part or feature of the world easier to understand, define, quantify, visualize, or simulate by referencing it to existing and usually commonly accepted knowledge." .
+<https://w3id.org/skgo/modsci#ScientificModeling> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Modelling" .
+# 
+# https://w3id.org/skgo/modsci#Semiotics
+<https://w3id.org/skgo/modsci#Semiotics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Semiotics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#Semiotics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#SocialSciences> .
+<https://w3id.org/skgo/modsci#Semiotics> <http://www.w3.org/2000/01/rdf-schema#comment> "Semiotics is the study of signs (symbols) and signification systems, or rather semiotics are general theories of signs." .
+<https://w3id.org/skgo/modsci#Semiotics> <http://www.w3.org/2000/01/rdf-schema#label> "Semiotics" .
+# 
+# https://w3id.org/skgo/modsci#SocialPsychology
+<https://w3id.org/skgo/modsci#SocialPsychology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#SocialPsychology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#BehaviouralSciences> .
+<https://w3id.org/skgo/modsci#SocialPsychology> <http://www.w3.org/2000/01/rdf-schema#comment> "Social psychology is the scientific study of how people's thoughts, feelings, and behaviors are influenced by the actual, imagined or implied presence of others." .
+<https://w3id.org/skgo/modsci#SocialPsychology> <http://www.w3.org/2000/01/rdf-schema#label> "Social Psychology" .
+# 
+# https://w3id.org/skgo/modsci#SocialSciences
+<https://w3id.org/skgo/modsci#SocialSciences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#SocialSciences> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Science> .
+<https://w3id.org/skgo/modsci#SocialSciences> <http://www.w3.org/2000/01/rdf-schema#comment> "The social sciences are academic disciplines concerned with the study of the social life of human groups and individuals including anthropology, economics, geography, history, political science, psychology, social studies, and sociology." .
+<https://w3id.org/skgo/modsci#SocialSciences> <http://www.w3.org/2000/01/rdf-schema#label> "Social Sciences" .
+# 
+# https://w3id.org/skgo/modsci#SocialWork
+<https://w3id.org/skgo/modsci#SocialWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#SocialWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#HealthSciences> .
+<https://w3id.org/skgo/modsci#SocialWork> <http://www.w3.org/2000/01/rdf-schema#comment> "Social work is an academic discipline and profession that concerns itself with individuals, families, groups and communities in an effort to enhance social functioning and overall well-being." .
+<https://w3id.org/skgo/modsci#SocialWork> <http://www.w3.org/2000/01/rdf-schema#label> "Social Work" .
+# 
+# https://w3id.org/skgo/modsci#Sociobiology
+<https://w3id.org/skgo/modsci#Sociobiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Sociobiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#BehaviouralSciences> .
+<https://w3id.org/skgo/modsci#Sociobiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Sociobiology is a field of biology that aims to examine and explain social behavior in terms of evolution." .
+<https://w3id.org/skgo/modsci#Sociobiology> <http://www.w3.org/2000/01/rdf-schema#label> "Sociobiology" .
+# 
+# https://w3id.org/skgo/modsci#Sociology
+<https://w3id.org/skgo/modsci#Sociology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Sociology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#SocialSciences> .
+<https://w3id.org/skgo/modsci#Sociology> <http://www.w3.org/2000/01/rdf-schema#comment> "Sociology is the study of social behaviour or society, including its origins, development, organization, networks, and institutions. and critical analysis to develop a body of knowledge about social order, disorder, and change." .
+<https://w3id.org/skgo/modsci#Sociology> <http://www.w3.org/2000/01/rdf-schema#label> "Sociology" .
+# 
+# https://w3id.org/skgo/modsci#SoilBiology
+<https://w3id.org/skgo/modsci#SoilBiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#SoilBiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#SoilBiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Soil biology is the study of microbial and faunal activity and ecology in soil." .
+<https://w3id.org/skgo/modsci#SoilBiology> <http://www.w3.org/2000/01/rdf-schema#label> "Soil Biology" .
+# 
+# https://w3id.org/skgo/modsci#SoilScience
+<https://w3id.org/skgo/modsci#SoilScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#SoilScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#SoilScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Soil science is the study of soil as a natural resource on the surface of the Earth including soil formation, classification and mapping; physical, chemical, biological, and fertility properties of soils; and these properties in relation to the use and management of soils." .
+<https://w3id.org/skgo/modsci#SoilScience> <http://www.w3.org/2000/01/rdf-schema#label> "Soil Science" .
+# 
+# https://w3id.org/skgo/modsci#SolidMechanics
+<https://w3id.org/skgo/modsci#SolidMechanics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#SolidMechanics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Physics> .
+<https://w3id.org/skgo/modsci#SolidMechanics> <http://www.w3.org/2000/01/rdf-schema#comment> "Solid mechanics is a mathematical discipline within continuum mechanics, dealing with the mechanical behavior of solid materials." .
+<https://w3id.org/skgo/modsci#SolidMechanics> <http://www.w3.org/2000/01/rdf-schema#label> "Solid Mechanics" .
+# 
+# https://w3id.org/skgo/modsci#SolidStateChemistry
+<https://w3id.org/skgo/modsci#SolidStateChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#SolidStateChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#SolidStateChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Solid-state chemistry, also sometimes referred as materials chemistry, is the study of the synthesis, structure, and properties of solid phase materials, particularly, but not necessarily exclusively of, non-molecular solids." .
+<https://w3id.org/skgo/modsci#SolidStateChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Solid-State Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#SpaceScience
+<https://w3id.org/skgo/modsci#SpaceScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#SpaceScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#SpaceScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Space science encompasses all of the scientific disciplines that involve space exploration and study natural phenomena and physical bodies occurring in outer space, such as space medicine and astrobiology." .
+<https://w3id.org/skgo/modsci#SpaceScience> <http://www.w3.org/2000/01/rdf-schema#label> "Space Science" .
+# 
+# https://w3id.org/skgo/modsci#SportsScience
+<https://w3id.org/skgo/modsci#SportsScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#SportsScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#AppliedSciences> .
+<https://w3id.org/skgo/modsci#SportsScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Sports science is a discipline that studies how the healthy human body works during exercise, and how sport and physical activity promote health and performance from cellular to whole body perspectives." .
+<https://w3id.org/skgo/modsci#SportsScience> <http://www.w3.org/2000/01/rdf-schema#label> "Sports Science" .
+# 
+# https://w3id.org/skgo/modsci#Statistics
+<https://w3id.org/skgo/modsci#Statistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Statistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#FormalScience> .
+<https://w3id.org/skgo/modsci#Statistics> <http://www.w3.org/2000/01/rdf-schema#comment> "Statistics is the discipline that concerns the collection, organization, displaying, analysis, interpretation and presentation of data." .
+<https://w3id.org/skgo/modsci#Statistics> <http://www.w3.org/2000/01/rdf-schema#label> "Statistics" .
+# 
+# https://w3id.org/skgo/modsci#StellarAstronomy
+<https://w3id.org/skgo/modsci#StellarAstronomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#StellarAstronomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Astronomy> .
+<https://w3id.org/skgo/modsci#StellarAstronomy> <http://www.w3.org/2000/01/rdf-schema#comment> "The study of stars and stellar evolution is fundamental to our understanding of the Universe." .
+<https://w3id.org/skgo/modsci#StellarAstronomy> <http://www.w3.org/2000/01/rdf-schema#label> "Stellar Astronomy" .
+# 
+# https://w3id.org/skgo/modsci#Stereochemistry
+<https://w3id.org/skgo/modsci#Stereochemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Stereochemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#Stereochemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Stereochemistry, a subdiscipline of chemistry, involves the study of the relative spatial arrangement of atoms that form the structure of molecules and their manipulation." .
+<https://w3id.org/skgo/modsci#Stereochemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Stereochemistry" .
+# 
+# https://w3id.org/skgo/modsci#SupramolecularChemistry
+<https://w3id.org/skgo/modsci#SupramolecularChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#SupramolecularChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#SupramolecularChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Supramolecular chemistry is a branch of chemistry that describes self-organization or self-assembly of systems to well-defined molecular architectures." .
+<https://w3id.org/skgo/modsci#SupramolecularChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Supramolecular Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#SurfaceChemistry
+<https://w3id.org/skgo/modsci#SurfaceChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#SurfaceChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#SurfaceChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Surface chemistry is the study of chemical phenomena that occur at the interface of two phases" .
+<https://w3id.org/skgo/modsci#SurfaceChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Surface Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#SystemsScience
+<https://w3id.org/skgo/modsci#SystemsScience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#SystemsScience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#SystemsScience> <http://www.w3.org/2000/01/rdf-schema#comment> "Systems science is the field of science surrounding systems theory, cybernetics, the science of complex systems." .
+<https://w3id.org/skgo/modsci#SystemsScience> <http://www.w3.org/2000/01/rdf-schema#label> "Systems Science" .
+# 
+# https://w3id.org/skgo/modsci#Technology
+<https://w3id.org/skgo/modsci#Technology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Technology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#FormalScience> .
+<https://w3id.org/skgo/modsci#Technology> <http://www.w3.org/2000/01/rdf-schema#comment> "Technology is the collection of techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation." .
+<https://w3id.org/skgo/modsci#Technology> <http://www.w3.org/2000/01/rdf-schema#label> "Technology" .
+# 
+# https://w3id.org/skgo/modsci#TheoreticalBiology
+<https://w3id.org/skgo/modsci#TheoreticalBiology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#TheoreticalBiology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#TheoreticalBiology> <http://www.w3.org/2000/01/rdf-schema#comment> "Theoretical biology is a branch of biology which employs theoretical analysis, mathematical models and abstractions of the living organisms to investigate the principles that govern the structure, development and behavior of the systems" .
+<https://w3id.org/skgo/modsci#TheoreticalBiology> <http://www.w3.org/2000/01/rdf-schema#label> "Theoretical Biology" .
+# 
+# https://w3id.org/skgo/modsci#TheoreticalChemistry
+<https://w3id.org/skgo/modsci#TheoreticalChemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#TheoreticalChemistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Chemistry> .
+<https://w3id.org/skgo/modsci#TheoreticalChemistry> <http://www.w3.org/2000/01/rdf-schema#comment> "Theoretical chemistry is the application of theoretical reasoning to chemistry." .
+<https://w3id.org/skgo/modsci#TheoreticalChemistry> <http://www.w3.org/2000/01/rdf-schema#label> "Theoretical Chemistry" .
+# 
+# https://w3id.org/skgo/modsci#TheoreticalLinguistics
+<https://w3id.org/skgo/modsci#TheoreticalLinguistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#TheoreticalLinguistics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#FormalScience> .
+<https://w3id.org/skgo/modsci#TheoreticalLinguistics> <http://www.w3.org/2000/01/rdf-schema#comment> "Theoretical linguistics, or general linguistics, is the branch of linguistics which inquires into the nature of language itself and seeks to answer fundamental questions as to what language is; how it works; how universal grammar (UG) as a domain-specific mental organ operates, if it exists at all; what are its unique properties; how does language relate to other cognitive processes, etc." .
+<https://w3id.org/skgo/modsci#TheoreticalLinguistics> <http://www.w3.org/2000/01/rdf-schema#label> "Theoretical Linguistics" .
+# 
+# https://w3id.org/skgo/modsci#Thermodynamics
+<https://w3id.org/skgo/modsci#Thermodynamics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Thermodynamics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Physics> .
+<https://w3id.org/skgo/modsci#Thermodynamics> <http://www.w3.org/2000/01/rdf-schema#comment> "Thermodynamics concerns the physics of heat, work, temperature, energy, and entropy." .
+<https://w3id.org/skgo/modsci#Thermodynamics> <http://www.w3.org/2000/01/rdf-schema#label> "Thermodynamics" .
+# 
+# https://w3id.org/skgo/modsci#Toxicology
+<https://w3id.org/skgo/modsci#Toxicology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Toxicology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Toxicology> <http://www.w3.org/2000/01/rdf-schema#comment> "Toxicology is a scientific discipline, overlapping with biology, chemistry, pharmacology, and medicine, that involves the study of the adverse effects of chemical substances on living organisms and the practice of diagnosing and treating exposures to toxins and toxicants." .
+<https://w3id.org/skgo/modsci#Toxicology> <http://www.w3.org/2000/01/rdf-schema#label> "Toxicology" .
+# 
+# https://w3id.org/skgo/modsci#Transdisciplinarity
+<https://w3id.org/skgo/modsci#Transdisciplinarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Transdisciplinarity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#Transdisciplinarity> <http://www.w3.org/2000/01/rdf-schema#comment> "Transdisciplinarity connotes a research strategy that crosses many disciplinary boundaries to create a holistic approach." .
+<https://w3id.org/skgo/modsci#Transdisciplinarity> <http://www.w3.org/2000/01/rdf-schema#label> "Transdisciplinarity" .
+# 
+# https://w3id.org/skgo/modsci#UrbanPlanning
+<https://w3id.org/skgo/modsci#UrbanPlanning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#UrbanPlanning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#InterdisciplinaryStudies> .
+<https://w3id.org/skgo/modsci#UrbanPlanning> <http://www.w3.org/2000/01/rdf-schema#comment> "Urban planning is a technical and political process concerned with the development and design of land use and the built environment, including air, water, and the infrastructure passing into and out of urban areas, such as transportation, communications, and distribution networks." .
+<https://w3id.org/skgo/modsci#UrbanPlanning> <http://www.w3.org/2000/01/rdf-schema#label> "Urban Planning" .
+# 
+# https://w3id.org/skgo/modsci#VeterinaryMedicine
+<https://w3id.org/skgo/modsci#VeterinaryMedicine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#VeterinaryMedicine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#HealthSciences> .
+<https://w3id.org/skgo/modsci#VeterinaryMedicine> <http://www.w3.org/2000/01/rdf-schema#comment> "Veterinary medicine is the branch of medicine that deals with the prevention, diagnosis and treatment of disease, disorder and injury in animals." .
+<https://w3id.org/skgo/modsci#VeterinaryMedicine> <http://www.w3.org/2000/01/rdf-schema#label> "Veterinary Medicine" .
+# 
+# https://w3id.org/skgo/modsci#Volcanology
+<https://w3id.org/skgo/modsci#Volcanology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Volcanology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#EarthScience> .
+<https://w3id.org/skgo/modsci#Volcanology> <http://www.w3.org/2000/01/rdf-schema#comment> "Volcanology is a branch of geology that deals with the study of volcanoes, lava, magma, and related geological phenomena." .
+<https://w3id.org/skgo/modsci#Volcanology> <http://www.w3.org/2000/01/rdf-schema#label> "Volcanology" .
+# 
+# https://w3id.org/skgo/modsci#Zoology
+<https://w3id.org/skgo/modsci#Zoology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Zoology> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/modsci#Biology> .
+<https://w3id.org/skgo/modsci#Zoology> <http://www.w3.org/2000/01/rdf-schema#comment> "Zoology is the study of the biology of animals." .
+<https://w3id.org/skgo/modsci#Zoology> <http://www.w3.org/2000/01/rdf-schema#label> "Zoology" .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

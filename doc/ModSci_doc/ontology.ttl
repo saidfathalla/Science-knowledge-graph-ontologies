@@ -1,0 +1,1286 @@
+@prefix : <https://w3id.org/skgo/modsci#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/skgo/modsci#> .
+
+<https://w3id.org/skgo/modsci#> rdf:type owl:Ontology ;
+                                 owl:imports <http://xmlns.com/foaf/0.1/> ;
+                                 <http://purl.org/dc/elements/1.1/creator> "Said Fathalla" ;
+                                 <http://purl.org/dc/terms/created> "2019-09-01"@en ;
+                                 <http://purl.org/dc/terms/description> "ModSci is a reference ontology for modelling different types of modern sciences."@en ;
+                                 <http://purl.org/dc/terms/title> "ModSci, Modern Science Ontology."@en ;
+                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "modsci" ;
+                                 rdfs:label "Modern Science Ontology"@en ;
+                                 owl:versionInfo 1.0 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/skgo/modsci#AcidbaseChemistry
+:AcidbaseChemistry rdf:type owl:Class ;
+                   rdfs:subClassOf :Chemistry ;
+                   rdfs:comment "For chemicals that can behave as acids or bases" ;
+                   rdfs:label "Acid–base Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Acoustics
+:Acoustics rdf:type owl:Class ;
+           rdfs:subClassOf :AppliedSciences ;
+           rdfs:comment "Acoustics is a branch of continuum mechanics and is the study of sound, mechanical waves in gases, liquids, and solids." ;
+           rdfs:label "Acoustics" .
+
+
+###  https://w3id.org/skgo/modsci#Agriculture
+:Agriculture rdf:type owl:Class ;
+             rdfs:subClassOf :AppliedSciences ;
+             rdfs:comment "Agriculture, also known as farming, is the process of producing food, feed, fiber and other desired products by cultivation of certain plants and the raising of domesticated animals." ;
+             rdfs:label "Agriculture" .
+
+
+###  https://w3id.org/skgo/modsci#AnalyticalChemistry
+:AnalyticalChemistry rdf:type owl:Class ;
+                     rdfs:subClassOf :Chemistry ;
+                     rdfs:comment "Analytical chemistry is the analysis of material samples to gain an understanding of their chemical composition and structure." ;
+                     rdfs:label "Analytical Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Anatomy
+:Anatomy rdf:type owl:Class ;
+         rdfs:subClassOf :Biology ;
+         rdfs:comment "Anatomy is the study of the structure and organization of living things." ;
+         rdfs:label "Anatomy" .
+
+
+###  https://w3id.org/skgo/modsci#Anthropology
+:Anthropology rdf:type owl:Class ;
+              rdfs:subClassOf :SocialSciences ;
+              rdfs:comment "Anthropology is the scientific study of humans, human behavior and societies in the past and present." ;
+              rdfs:label "Anthropology" .
+
+
+###  https://w3id.org/skgo/modsci#AppliedMathematics
+:AppliedMathematics rdf:type owl:Class ;
+                    rdfs:subClassOf :AppliedSciences ;
+                    rdfs:comment "Applied mathematics is a branch of mathematics that concerns itself with the application of mathematical knowledge to other domains." ;
+                    rdfs:label "Applied Mathematics" .
+
+
+###  https://w3id.org/skgo/modsci#AppliedPhysics
+:AppliedPhysics rdf:type owl:Class ;
+                rdfs:subClassOf :InterdisciplinaryStudies ,
+                                :Physics ;
+                rdfs:comment "Applied physics is intended for a particular technological or practical use." ;
+                rdfs:label "Applied and Interdisciplinary Physics" .
+
+
+###  https://w3id.org/skgo/modsci#AppliedSciences
+:AppliedSciences rdf:type owl:Class ;
+                 rdfs:subClassOf :Science ;
+                 rdfs:comment "Applied science is the use or the study of the use of scientific knowledge to develop technology." ;
+                 rdfs:label "Applied Sciences" .
+
+
+###  https://w3id.org/skgo/modsci#Archaeology
+:Archaeology rdf:type owl:Class ;
+             rdfs:subClassOf :SocialSciences ;
+             rdfs:comment "Archaeology, or archeology, is the study of human activity through the recovery and analysis of material culture." ;
+             rdfs:label "Archaeology" .
+
+
+###  https://w3id.org/skgo/modsci#Architecture
+:Architecture rdf:type owl:Class ;
+              rdfs:subClassOf :AppliedSciences ;
+              rdfs:comment "Architecture is the art and science of designing buildings." ;
+              rdfs:label "Architecture" .
+
+
+###  https://w3id.org/skgo/modsci#ArtificialIntelligence
+:ArtificialIntelligence rdf:type owl:Class ;
+                        rdfs:subClassOf :InterdisciplinaryStudies ;
+                        rdfs:comment "In computer science, artificial intelligence (AI), sometimes called machine intelligence, is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans. Colloquially, the term \"artificial intelligence\" is often used to describe machines (or computers) that mimic \"cognitive\" functions that humans associate with the human mind, such as \"learning\" and \"problem solving\"." ;
+                        rdfs:label "Artificial Intelligence" .
+
+
+###  https://w3id.org/skgo/modsci#Astrobiology
+:Astrobiology rdf:type owl:Class ;
+              rdfs:subClassOf :Biology ;
+              rdfs:comment "Astrobiology, formerly known as exobiology, is an interdisciplinary scientific field concerned with the origins, early evolution, distribution, and future of life in the universe." ;
+              rdfs:label "Astrobiology" .
+
+
+###  https://w3id.org/skgo/modsci#Astrochemistry
+:Astrochemistry rdf:type owl:Class ;
+                rdfs:subClassOf :Chemistry ;
+                rdfs:comment "Astrochemistry is the study of the abundance and reactions of molecules in the Universe, and their interaction with radiation." ;
+                rdfs:label "Astrochemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Astrometry
+:Astrometry rdf:type owl:Class ;
+            rdfs:subClassOf :Astronomy ;
+            rdfs:comment "Astrometry is the study of the positions, distances between, and motions of astronomical objects." ;
+            rdfs:label "Astrometry" .
+
+
+###  https://w3id.org/skgo/modsci#Astronomy
+:Astronomy rdf:type owl:Class ;
+           rdfs:subClassOf :NaturalScience ;
+           rdfs:comment "is a science involving the observation and explanation of events occurring outside Earth and its atmosphere." ;
+           rdfs:label "Astronomy" .
+
+
+###  https://w3id.org/skgo/modsci#AtmosphericSciences
+:AtmosphericSciences rdf:type owl:Class ;
+                     rdfs:subClassOf :EarthScience ;
+                     rdfs:comment "Atmospheric science is an umbrella term for the study of the atmosphere and its processes." ;
+                     rdfs:label "Atmospheric Sciences" .
+
+
+###  https://w3id.org/skgo/modsci#Atomic
+:Atomic rdf:type owl:Class ;
+        rdfs:subClassOf :Physics ;
+        rdfs:comment "Atomic, molecular, and optical physics (AMO) is the study of matter-matter and light-matter interactions; at the scale of one or a few atoms and energy scales around several electron volts." ;
+        rdfs:label "Atomic, Molecular, and Optical Physics" .
+
+
+###  https://w3id.org/skgo/modsci#BehaviouralSciences
+:BehaviouralSciences rdf:type owl:Class ;
+                     rdfs:subClassOf :Science ;
+                     rdfs:comment "Behavioural sciences explore the cognitive processes within organisms and the behavioural interactions between organisms in the natural world." ;
+                     rdfs:label "Behavioural Sciences" .
+
+
+###  https://w3id.org/skgo/modsci#Biochemistry
+:Biochemistry rdf:type owl:Class ;
+              rdfs:subClassOf :Biology ,
+                              :Chemistry ;
+              rdfs:comment "Biochemistry is the chemistry of life." ;
+              rdfs:label "Biochemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Bioengineering
+:Bioengineering rdf:type owl:Class ;
+                rdfs:subClassOf :Biology ,
+                                :Engineering ;
+                rdfs:comment "Biological engineering, or bioengineering/bio-engineering, is the application of principles of biology and the tools of engineering to create usable, tangible, economically viable products." ;
+                rdfs:label "Biological Engineering" .
+
+
+###  https://w3id.org/skgo/modsci#Bioethics
+:Bioethics rdf:type owl:Class ;
+           rdfs:subClassOf :Biology ;
+           rdfs:comment "Bioethics is the study of the ethical issues emerging from advances in biology and medicine." ;
+           rdfs:label "Bioethics" .
+
+
+###  https://w3id.org/skgo/modsci#Biogeography
+:Biogeography rdf:type owl:Class ;
+              rdfs:subClassOf :Biology ;
+              rdfs:comment "Biogeography is the study of the distribution of species and ecosystems in geographic space and through geological time." ;
+              rdfs:label "Biogeography" .
+
+
+###  https://w3id.org/skgo/modsci#Bioinformatics
+:Bioinformatics rdf:type owl:Class ;
+                rdfs:subClassOf :Biology ,
+                                :InterdisciplinaryStudies ;
+                rdfs:comment "Bioinformatics and Computational biology are interdisciplinary fields of research, development and application of algorithms, computational and statistical methods for management and analysis of biological data, and for solving basic biological problems." ;
+                rdfs:label "Bioinformatics" .
+
+
+###  https://w3id.org/skgo/modsci#Biology
+:Biology rdf:type owl:Class ;
+         rdfs:subClassOf :NaturalScience ;
+         rdfs:comment "Biology is the science of life. It is concerned with the characteristics and behaviors of organisms" ;
+         rdfs:label "Biology" .
+
+
+###  https://w3id.org/skgo/modsci#BiomedicalEngineering
+:BiomedicalEngineering rdf:type owl:Class ;
+                       rdfs:subClassOf :InterdisciplinaryStudies ;
+                       rdfs:comment "Biomedical engineering (BME) or medical engineering is the application of engineering principles and design concepts to medicine and biology for healthcare purposes (e.g. diagnostic or therapeutic)." ;
+                       rdfs:label "Biomedical Engineering" .
+
+
+###  https://w3id.org/skgo/modsci#Biophysics
+:Biophysics rdf:type owl:Class ;
+            rdfs:subClassOf :Biology ;
+            rdfs:comment "Biophysics is an interdisciplinary science that applies approaches and methods traditionally used in physics to study biological phenomena." ;
+            rdfs:label "Biophysics" .
+
+
+###  https://w3id.org/skgo/modsci#Biopsychology
+:Biopsychology rdf:type owl:Class ;
+               rdfs:subClassOf :Biology ;
+               rdfs:comment "Biological psychology,is the application of the principles of biology to the study of physiological and developmental mechanisms of behavior in humans and other animals." ;
+               rdfs:label "Biopsychology" .
+
+
+###  https://w3id.org/skgo/modsci#Biostatistics
+:Biostatistics rdf:type owl:Class ;
+               rdfs:subClassOf :Biology ;
+               rdfs:comment "Biostatistics are the development and application of statistical methods to a wide range of topics in biology." ;
+               rdfs:label "Biostatistics" .
+
+
+###  https://w3id.org/skgo/modsci#Biotechnology
+:Biotechnology rdf:type owl:Class ;
+               rdfs:subClassOf :Biology ;
+               rdfs:comment "Biotechnology is a technology based on biology, especially when used in agriculture, food science, medicine, and genetic engineering." ;
+               rdfs:label "Biotechnology" .
+
+
+###  https://w3id.org/skgo/modsci#Botany
+:Botany rdf:type owl:Class ;
+        rdfs:subClassOf :Biology ;
+        rdfs:comment "Botany also called plant science(s), plant biology or phytology, is the science of plant life and a branch of biology." ;
+        rdfs:label "Botany" .
+
+
+###  https://w3id.org/skgo/modsci#CellBiology
+:CellBiology rdf:type owl:Class ;
+             rdfs:subClassOf :Biology ;
+             rdfs:comment "Cell biology is a branch of biology that studies the structure and function of the cell, which is the basic unit of life." ;
+             rdfs:label "Cell Biology" .
+
+
+###  https://w3id.org/skgo/modsci#ChemicalEngineering
+:ChemicalEngineering rdf:type owl:Class ;
+                     rdfs:subClassOf :Chemistry ;
+                     rdfs:comment "Chemical engineering is the application of science, in particular chemistry, fluid physics, and biology, along with mathematics and economics to the human endeavor of converting raw materials or chemicals into more useful or valuable forms." ;
+                     rdfs:label "Chemical Engineering" .
+
+
+###  https://w3id.org/skgo/modsci#Chemistry
+:Chemistry rdf:type owl:Class ;
+           rdfs:subClassOf :NaturalScience ;
+           rdfs:comment "Chemistry is defined as the science of matter, different from physics, in terms of matter's chemical structure, reactivity, properties and reactions or transformations." ;
+           rdfs:label "Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#CognitiveScience
+:CognitiveScience rdf:type owl:Class ;
+                  rdfs:subClassOf :InterdisciplinaryStudies ;
+                  rdfs:comment "Cognitive science is the interdisciplinary, scientific study of the mind and its processes." ;
+                  rdfs:label "Cognitive Science" .
+
+
+###  https://w3id.org/skgo/modsci#ColloidalChemistry
+:ColloidalChemistry rdf:type owl:Class ;
+                    rdfs:subClassOf :Chemistry ;
+                    rdfs:comment "Interface and colloid science is an interdisciplinary intersection of branches of chemistry, physics, nanoscience and other fields dealing with colloids, heterogeneous systems consisting of a mechanical mixture of particles between 1 nm and 1000 nm dispersed in a continuous medium." ;
+                    rdfs:label "Colloidal Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#CommunicationStudies
+:CommunicationStudies rdf:type owl:Class ;
+                      rdfs:subClassOf :SocialSciences ;
+                      rdfs:comment "Communication is the act of conveying meanings from one entity or group to another through the use of mutually understood signs, symbols, and semiotic rules." ;
+                      rdfs:label "Communication" .
+
+
+###  https://w3id.org/skgo/modsci#ComputationalLinguistics
+:ComputationalLinguistics rdf:type owl:Class ;
+                          rdfs:subClassOf :InterdisciplinaryStudies ;
+                          rdfs:comment "Computational linguistics is an interdisciplinary field concerned with the statistical or rule-based modeling of natural language from a computational perspective, as well as the study of appropriate computational approaches to linguistic questions." ;
+                          rdfs:label "Computational Linguistics" .
+
+
+###  https://w3id.org/skgo/modsci#ComputationalPhysics
+:ComputationalPhysics rdf:type owl:Class ;
+                      rdfs:subClassOf :Physics ;
+                      rdfs:comment "Computational physics is the study and implementation of numerical algorithms in order to solve problems in physics for which a quantitative theory already exists." ;
+                      rdfs:label "Computational Physics" .
+
+
+###  https://w3id.org/skgo/modsci#ComputerScience
+:ComputerScience rdf:type owl:Class ;
+                 rdfs:subClassOf :AppliedSciences ;
+                 rdfs:comment "Computer science is the study of processes that interact with data and that can be represented as data in the form of programs." ;
+                 rdfs:label "Computer Science" .
+
+
+###  https://w3id.org/skgo/modsci#CondensedMatterPhysics
+:CondensedMatterPhysics rdf:type owl:Class ;
+                        rdfs:subClassOf :Physics ;
+                        rdfs:comment "Condensed matter physics is the field of physics that deals with the macroscopic physical properties of matter." ;
+                        rdfs:label "Condensed Matter Physics" .
+
+
+###  https://w3id.org/skgo/modsci#Cosmology
+:Cosmology rdf:type owl:Class ;
+           rdfs:subClassOf :Astronomy ;
+           rdfs:comment "Physical cosmology is the study of the largest-scale structures and dynamics of the Universe and is concerned with fundamental questions about its origin, structure, evolution, and ultimate fate." ;
+           rdfs:label "Physical Cosmology" .
+
+
+###  https://w3id.org/skgo/modsci#Cryobiology
+:Cryobiology rdf:type owl:Class ;
+             rdfs:subClassOf :Biology ;
+             rdfs:comment "Cryobiology is the study of living organisms, organs, biological tissues or biological cells at low temperatures." ;
+             rdfs:label "Cryobiology" .
+
+
+###  https://w3id.org/skgo/modsci#Crystallography
+:Crystallography rdf:type owl:Class ;
+                 rdfs:subClassOf :Chemistry ;
+                 rdfs:comment "Crystallography is the scientific study of crystals." ;
+                 rdfs:label "Crystallography" .
+
+
+###  https://w3id.org/skgo/modsci#CulturalStudies
+:CulturalStudies rdf:type owl:Class ;
+                 rdfs:subClassOf :InterdisciplinaryStudies ;
+                 rdfs:comment "Cultural studies is a field of theoretically, politically, and empirically engaged cultural analysis that concentrates upon the political dynamics of contemporary culture, its historical foundations, defining traits, conflicts, and contingencies." ;
+                 rdfs:label "Cultural Studies" .
+
+
+###  https://w3id.org/skgo/modsci#Cybernetics
+:Cybernetics rdf:type owl:Class ;
+             rdfs:subClassOf :InterdisciplinaryStudies ;
+             rdfs:comment "Cybernetics is a transdisciplinary approach for exploring regulatory systems with feedback, their structures, constraints, and possibilities." ;
+             rdfs:label "Cybernetics" .
+
+
+###  https://w3id.org/skgo/modsci#Dentistry
+:Dentistry rdf:type owl:Class ;
+           rdfs:subClassOf :HealthSciences ;
+           rdfs:comment "Dentistry, also known as Dental and Oral Medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity, commonly in the dentition but also the oral mucosa, and of adjacent and related structures and tissues, particularly in the maxillofacial (jaw and facial) area." ;
+           rdfs:label "Dentistry" .
+
+
+###  https://w3id.org/skgo/modsci#DevelopmentalBiology
+:DevelopmentalBiology rdf:type owl:Class ;
+                      rdfs:subClassOf :Biology ;
+                      rdfs:comment "Developmental biology is the study of the process by which animals and plants grow and develop." ;
+                      rdfs:label "Developmental Biology" .
+
+
+###  https://w3id.org/skgo/modsci#EarthScience
+:EarthScience rdf:type owl:Class ;
+              rdfs:subClassOf :NaturalScience ;
+              rdfs:comment "Earth science (also known as geoscience, the geosciences, or the Earth sciences) includes all the sciences related to the planet Earth." ;
+              rdfs:label "Earth Science" .
+
+
+###  https://w3id.org/skgo/modsci#Ecology
+:Ecology rdf:type owl:Class ;
+         rdfs:subClassOf :Biology ,
+                         :EarthScience ;
+         rdfs:comment "Ecology is the branch of science that studies the distribution and interactions between living things and the physical environment." ;
+         rdfs:label "Ecology" .
+
+
+###  https://w3id.org/skgo/modsci#Economics
+:Economics rdf:type owl:Class ;
+           rdfs:subClassOf :SocialSciences ;
+           rdfs:comment "Economics is the social science that studies the production, distribution, and consumption of goods and services." ;
+           rdfs:label "Economics" .
+
+
+###  https://w3id.org/skgo/modsci#Education
+:Education rdf:type owl:Class ;
+           rdfs:subClassOf :AppliedSciences ;
+           rdfs:comment "Education is the teaching or learning of knowledge, especially to develop the reasoning, judgement and skill required in adult life and professional occupations." ;
+           rdfs:label "Education" .
+
+
+###  https://w3id.org/skgo/modsci#Engineering
+:Engineering rdf:type owl:Class ;
+             rdfs:subClassOf :AppliedSciences ;
+             rdfs:comment "Engineering is the practical application of science. This is accomplished through knowledge, mathematics, and practical experience applied to the design of useful objects or processes." ;
+             rdfs:label "Engineering" .
+
+
+###  https://w3id.org/skgo/modsci#EnvironmentalChemistry
+:EnvironmentalChemistry rdf:type owl:Class ;
+                        rdfs:subClassOf :Chemistry ;
+                        rdfs:comment "Environmental chemistry is the scientific study of the physical, chemical and biochemical properties and processes of polluting substances in the environment." ;
+                        rdfs:label "Environmental Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#EnvironmentalScience
+:EnvironmentalScience rdf:type owl:Class ;
+                      rdfs:subClassOf :EarthScience ;
+                      rdfs:comment "Environmental science is the science of the interactions between the physical, chemical, and biological components of the environment, but with particular attention to the effects of humans on the natural environment." ;
+                      rdfs:label "Environmental Science" .
+
+
+###  https://w3id.org/skgo/modsci#Epidemiology
+:Epidemiology rdf:type owl:Class ;
+              rdfs:subClassOf :HealthSciences ;
+              rdfs:comment "Epidemiology is the study and analysis of the distribution (who, when, and where), patterns and determinants of health and disease conditions in defined populations." ;
+              rdfs:label "Epidemiology" .
+
+
+###  https://w3id.org/skgo/modsci#Ergonomics
+:Ergonomics rdf:type owl:Class ;
+            rdfs:subClassOf :AppliedSciences ;
+            rdfs:comment "Human factors and ergonomics is the application of psychological and physiological principles to the (engineering and) design of products, processes, and systems." ;
+            rdfs:label "Ergonomics" .
+
+
+###  https://w3id.org/skgo/modsci#EthnicStudies
+:EthnicStudies rdf:type owl:Class ;
+               rdfs:subClassOf :InterdisciplinaryStudies ;
+               rdfs:comment "Ethnic studies, in the United States, is the interdisciplinary study of difference—chiefly race, ethnicity, and nation, but also sexuality, gender, and other such markings—and power, as expressed by the state, by civil society, and by individuals." ;
+               rdfs:label "Ethnic Studies" .
+
+
+###  https://w3id.org/skgo/modsci#Ethnobiology
+:Ethnobiology rdf:type owl:Class ;
+              rdfs:subClassOf :Biology ;
+              rdfs:comment "Ethnobiology is the scientific study of the way living things are treated or used by different human cultures." ;
+              rdfs:label "Ethnobiology" .
+
+
+###  https://w3id.org/skgo/modsci#Ethnology
+:Ethnology rdf:type owl:Class ;
+           rdfs:subClassOf :SocialSciences ;
+           rdfs:comment "Ethnology is the science that analyzes human cultures and compares them." ;
+           rdfs:label "Ethnology" .
+
+
+###  https://w3id.org/skgo/modsci#Ethology
+:Ethology rdf:type owl:Class ;
+          rdfs:subClassOf :BehaviouralSciences ;
+          rdfs:comment "Ethology is the scientific and objective study of animal behaviour, usually with a focus on behaviour under natural conditions, and viewing behaviour as an evolutionarily adaptive trait." ;
+          rdfs:label "Ethology" .
+
+
+###  https://w3id.org/skgo/modsci#EvolutionaryBiology
+:EvolutionaryBiology rdf:type owl:Class ;
+                     rdfs:subClassOf :Biology ;
+                     rdfs:comment "Evolutionary biology is a sub-field of biology concerned with the study of the evolutionary processes that produced the diversity of life on Earth." ;
+                     rdfs:label "Evolutionary Biology" .
+
+
+###  https://w3id.org/skgo/modsci#EvolutionaryPsychology
+:EvolutionaryPsychology rdf:type owl:Class ;
+                        rdfs:subClassOf :InterdisciplinaryStudies ;
+                        rdfs:comment "Evolutionary psychology is a theoretical approach in the social and natural sciences that examines psychological structure from a modern evolutionary perspective." ;
+                        rdfs:label "Evolutionary Psychology" .
+
+
+###  https://w3id.org/skgo/modsci#ExperimentalPhysics
+:ExperimentalPhysics rdf:type owl:Class ;
+                     rdfs:subClassOf :Physics ;
+                     rdfs:comment "Experimental physics is the category of disciplines and sub-disciplines in the field of physics that are concerned with the observation of physical phenomena and experiments." ;
+                     rdfs:label "Experimental Physics" .
+
+
+###  https://w3id.org/skgo/modsci#ExtragalacticAstronomy
+:ExtragalacticAstronomy rdf:type owl:Class ;
+                        rdfs:subClassOf :Astronomy ;
+                        rdfs:comment "It is the study of all astronomical objects which are not covered by galactic astronomy." ;
+                        rdfs:label "Extragalactic Astronomy" .
+
+
+###  https://w3id.org/skgo/modsci#FoodChemistry
+:FoodChemistry rdf:type owl:Class ;
+               rdfs:subClassOf :Chemistry ;
+               rdfs:comment "Food chemistry is the study of chemical processes and interactions of all biological and non-biological components of foods." ;
+               rdfs:label "Food Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Forensics
+:Forensics rdf:type owl:Class ;
+           rdfs:subClassOf :AppliedSciences ;
+           rdfs:comment "Forensic science, also known as criminalistics, is the application of science to criminal and civil laws, mainly—on the criminal side—during criminal investigation, as governed by the legal standards of admissible evidence and criminal procedure." ;
+           rdfs:label "Forensics" .
+
+
+###  https://w3id.org/skgo/modsci#Forestry
+:Forestry rdf:type owl:Class ;
+          rdfs:subClassOf :Biology ;
+          rdfs:comment "Forestry is the art, science, and practice of studying and managing forests and related natural resources." ;
+          rdfs:label "Forestry" .
+
+
+###  https://w3id.org/skgo/modsci#FormalScience
+:FormalScience rdf:type owl:Class ;
+               rdfs:subClassOf :Science ;
+               rdfs:comment "Formal sciences are a branch of science studying formal language disciplines concerned with formal systems, such as logic, mathematics, statistics, theoretical computer science, artificial intelligence, information theory, game theory, systems theory, decision theory, and theoretical linguistics." ;
+               rdfs:label "Formal Science" .
+
+
+###  https://w3id.org/skgo/modsci#GalacticAstronomy
+:GalacticAstronomy rdf:type owl:Class ;
+                   rdfs:subClassOf :Astronomy ;
+                   rdfs:comment "The study of everything outside our galaxy, including all other galaxies." ;
+                   rdfs:label "Galactic Astronomy" .
+
+
+###  https://w3id.org/skgo/modsci#Genetics
+:Genetics rdf:type owl:Class ;
+          rdfs:subClassOf :Biology ;
+          rdfs:comment "Genetics is the study of genes, heredity, and the variation of organisms, as well as the medical practice of diagnosing, treating, and counseling patients with genetic disorders." ;
+          rdfs:label "Genetics" .
+
+
+###  https://w3id.org/skgo/modsci#Geochemistry
+:Geochemistry rdf:type owl:Class ;
+              rdfs:subClassOf :Chemistry ;
+              rdfs:comment "Geochemistry is the science that uses the tools and principles of chemistry to explain the mechanisms behind major geological systems such as the Earth's crust and its oceans." ;
+              rdfs:label "Geochemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Geodesy
+:Geodesy rdf:type owl:Class ;
+         rdfs:subClassOf :EarthScience ;
+         rdfs:comment "Geodesy is the Earth science of accurately measuring and understanding Earth's geometric shape, orientation in space and gravitational field." ;
+         rdfs:label "Geodesy" .
+
+
+###  https://w3id.org/skgo/modsci#Geography
+:Geography rdf:type owl:Class ;
+           rdfs:subClassOf :EarthScience ;
+           rdfs:comment "Geography is a field of science devoted to the study of the lands, features, inhabitants, and phenomena of the Earth and planets." ;
+           rdfs:label "Geography" .
+
+
+###  https://w3id.org/skgo/modsci#GeologicalSciences
+:GeologicalSciences rdf:type owl:Class ;
+                    rdfs:subClassOf :NaturalScience ;
+                    rdfs:label "Geological Sciences" .
+
+
+###  https://w3id.org/skgo/modsci#Geology
+:Geology rdf:type owl:Class ;
+         rdfs:subClassOf :EarthScience ;
+         rdfs:comment "Geology is an earth science concerned with the solid Earth, the rocks of which it is composed, and the processes by which they change over time." ;
+         rdfs:label "Geology" .
+
+
+###  https://w3id.org/skgo/modsci#Geomorphology
+:Geomorphology rdf:type owl:Class ;
+               rdfs:subClassOf :EarthScience ;
+               rdfs:comment "Geomorphology is the science of surface features and landforms including the forces and processes that create them." ;
+               rdfs:label "Geomorphology" .
+
+
+###  https://w3id.org/skgo/modsci#Geophysics
+:Geophysics rdf:type owl:Class ;
+            rdfs:subClassOf :EarthScience ;
+            rdfs:comment "Geophysics the physics of the Earth and its environment in space, and study of earth sciences using quantitative physics methods." ;
+            rdfs:label "Geophysics" .
+
+
+###  https://w3id.org/skgo/modsci#Gerontology
+:Gerontology rdf:type owl:Class ;
+             rdfs:subClassOf :Biology ;
+             rdfs:comment "Gerontology is the study of the social, cultural, psychological, cognitive, and biological aspects of ageing." ;
+             rdfs:label "Gerontology" .
+
+
+###  https://w3id.org/skgo/modsci#Glaciology
+:Glaciology rdf:type owl:Class ;
+            rdfs:subClassOf :EarthScience ;
+            rdfs:comment "Glaciology is the scientific study of glaciers, or more generally ice and natural phenomena that involve ice." ;
+            rdfs:label "Glaciology" .
+
+
+###  https://w3id.org/skgo/modsci#GreenChemistry
+:GreenChemistry rdf:type owl:Class ;
+                rdfs:subClassOf :Chemistry ;
+                rdfs:comment "Green chemistry is the use of chemistry for pollutant source reduction; the definition encompasses therefore all aspects of chemical processes that reduce impact on human health and on the environment." ;
+                rdfs:label "Green Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Health
+:Health rdf:type owl:Class ;
+        rdfs:subClassOf :InterdisciplinaryStudies ;
+        rdfs:comment "Health is a state of physical, mental and social well-being in which disease and infirmity are absent." ;
+        rdfs:label "Health" .
+
+
+###  https://w3id.org/skgo/modsci#HealthSciences
+:HealthSciences rdf:type owl:Class ;
+                rdfs:subClassOf :Science ;
+                rdfs:comment "Health sciences are those sciences which focus on health, or health care, as core parts of their subject matter." ;
+                rdfs:label "Health Sciences" .
+
+
+###  https://w3id.org/skgo/modsci#Healthcare
+:Healthcare rdf:type owl:Class ;
+            rdfs:subClassOf :HealthSciences ;
+            rdfs:comment "Health care is the maintenance or improvement of health via the prevention, diagnosis, and treatment of disease, illness, injury, and other physical and mental impairments in people." ;
+            rdfs:label "Healthcare" .
+
+
+###  https://w3id.org/skgo/modsci#History
+:History rdf:type owl:Class ;
+         rdfs:subClassOf :FormalScience ;
+         rdfs:comment "The history of science is the study of the development of science and scientific knowledge, including both the natural and social sciences (the history of the arts and humanities is termed history of scholarship)." ;
+         rdfs:label "History of Science" .
+
+
+###  https://w3id.org/skgo/modsci#HumanSciences
+:HumanSciences rdf:type owl:Class ;
+               rdfs:subClassOf :InterdisciplinaryStudies ;
+               rdfs:comment "Human science is a term applied to the investigation of human life and activities by a rational, systematic and verifiable methodology that acknowledges the validity of both data derived by impartial observation of sensory experience (objective phenomena) and data derived by means of impartial observation of psychological experience (subjective phenomena)." ;
+               rdfs:label "Human Sciences" .
+
+
+###  https://w3id.org/skgo/modsci#Hydrology
+:Hydrology rdf:type owl:Class ;
+           rdfs:subClassOf :EarthScience ;
+           rdfs:comment "Hydrology is the scientific study of the movement, distribution, and quality of water on Earth and other planets, including the water cycle, water resources and environmental watershed sustainability." ;
+           rdfs:label "Hydrology" .
+
+
+###  https://w3id.org/skgo/modsci#Immunology
+:Immunology rdf:type owl:Class ;
+            rdfs:subClassOf :Biology ;
+            rdfs:comment "Immunology is the study of the immune system and its reaction to pathogens, as well as its malfunctions (autoimmune diseases, allergies, rejection of organ transplants, immune deficiency)." ;
+            rdfs:label "Immunology" .
+
+
+###  https://w3id.org/skgo/modsci#IndustrialProcess
+:IndustrialProcess rdf:type owl:Class ;
+                   rdfs:subClassOf :AppliedSciences ;
+                   rdfs:comment "An industrial process alters materials or substances." ;
+                   rdfs:label "Industrial Process" .
+
+
+###  https://w3id.org/skgo/modsci#InformationScience
+:InformationScience rdf:type owl:Class ;
+                    rdfs:subClassOf :AppliedSciences ;
+                    rdfs:comment "Information science is a field primarily concerned with the analysis, collection, classification, manipulation, storage, retrieval, movement, dissemination, and protection of information." ;
+                    rdfs:label "Information Science" .
+
+
+###  https://w3id.org/skgo/modsci#InorganicChemistry
+:InorganicChemistry rdf:type owl:Class ;
+                    rdfs:subClassOf :Chemistry ;
+                    rdfs:comment "Inorganic chemistry is a catch-all discipline that covers everything in chemistry that is not organic chemistry." ;
+                    rdfs:label "Inorganic Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#InterdisciplinaryStudies
+:InterdisciplinaryStudies rdf:type owl:Class ;
+                          rdfs:subClassOf :Science ;
+                          rdfs:comment "Interdisciplinarity or interdisciplinary studies involves the combining of two or more academic disciplines into one activity (e.g., a research project)." ;
+                          rdfs:label "Interdisciplinary Studies" .
+
+
+###  https://w3id.org/skgo/modsci#LibraryScience
+:LibraryScience rdf:type owl:Class ;
+                rdfs:subClassOf :AppliedSciences ,
+                                :InterdisciplinaryStudies ;
+                rdfs:comment "Library science is an interdisciplinary or multidisciplinary field that applies the practices, perspectives, and tools of management, information technology, education, and other areas to libraries; the collection, organization, preservation, and dissemination of information resources; and the political economy of information." ;
+                rdfs:label "Library Science" .
+
+
+###  https://w3id.org/skgo/modsci#Limnology
+:Limnology rdf:type owl:Class ;
+           rdfs:subClassOf :Biology ,
+                           :EarthScience ;
+           rdfs:comment "Limnology is a discipline that concerns the study of fresh waters, specifically natural and constructed lakes, ponds, streams, and rivers," ;
+           rdfs:label "Limnology" .
+
+
+###  https://w3id.org/skgo/modsci#Linguistics
+:Linguistics rdf:type owl:Class ;
+             rdfs:subClassOf :SocialSciences ;
+             rdfs:comment "Linguistics is the scientific study of language." ;
+             rdfs:label "Linguistics" .
+
+
+###  https://w3id.org/skgo/modsci#Logic
+:Logic rdf:type owl:Class ;
+       rdfs:subClassOf :InterdisciplinaryStudies ;
+       rdfs:comment "Logic is the study of reasoning, or the study of the principles and criteria of valid inference and demonstration." ;
+       rdfs:label "Logic" .
+
+
+###  https://w3id.org/skgo/modsci#MarineBiology
+:MarineBiology rdf:type owl:Class ;
+               rdfs:subClassOf :Biology ;
+               rdfs:comment "Marine biology is the scientific study of organisms that live in the ocean" ;
+               rdfs:label "Marine Biology" .
+
+
+###  https://w3id.org/skgo/modsci#MaterialsScience
+:MaterialsScience rdf:type owl:Class ;
+                  rdfs:subClassOf :Chemistry ;
+                  rdfs:comment "The interdisciplinary field of materials science is the design and discovery of new materials, particularly solids." ;
+                  rdfs:label "Materials Science" .
+
+
+###  https://w3id.org/skgo/modsci#MathematicalAndTheoreticalBiology
+:MathematicalAndTheoreticalBiology rdf:type owl:Class ;
+                                   rdfs:subClassOf :Biology ;
+                                   rdfs:comment "Mathematical and theoretical biology is a branch of biology which employs theoretical analysis, mathematical models and abstractions of the living organisms to investigate the principles that govern the structure, development and behavior of the systems" ;
+                                   rdfs:label "Mathematical and Theoretical Biology" .
+
+
+###  https://w3id.org/skgo/modsci#MathematicalPhysics
+:MathematicalPhysics rdf:type owl:Class ;
+                     rdfs:subClassOf :InterdisciplinaryStudies ;
+                     rdfs:comment "Mathematical physics refers to the development of mathematical methods for application to problems in physics." ;
+                     rdfs:label "Mathematical Physics" .
+
+
+###  https://w3id.org/skgo/modsci#Mathematics
+:Mathematics rdf:type owl:Class ;
+             rdfs:subClassOf :FormalScience ;
+             rdfs:comment "Mathematics (colloquially, maths, or math), is the body of knowledge centered on concepts such as quantity, structure, space, and change, and also the academic discipline that studies them." ;
+             rdfs:label "Mathematics" .
+
+
+###  https://w3id.org/skgo/modsci#Measurement
+:Measurement rdf:type owl:Class ;
+             rdfs:subClassOf :AppliedSciences ;
+             rdfs:comment "Measurement is the assignment of a number to a characteristic of an object or event, which can be compared with other objects or events." ;
+             rdfs:label "Measurement" .
+
+
+###  https://w3id.org/skgo/modsci#Mechanics
+:Mechanics rdf:type owl:Class ;
+           rdfs:subClassOf :Physics ;
+           rdfs:comment "Mechanics is the branch of science concerned with the behavior of physical bodies when subjected to forces or displacements, and the subsequent effects of the bodies on their environment." ;
+           rdfs:label "Mechanics" .
+
+
+###  https://w3id.org/skgo/modsci#MedicinalChemistry
+:MedicinalChemistry rdf:type owl:Class ;
+                    rdfs:subClassOf :Chemistry ;
+                    rdfs:comment "Medicinal chemistry and pharmaceutical chemistry are disciplines at the intersection of chemistry, especially synthetic organic chemistry, and pharmacology and various other biological specialties, where they are involved with design, chemical synthesis and development for market of pharmaceutical agents, or bio-active molecules (drugs)." ;
+                    rdfs:label "Medicinal Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Medicine
+:Medicine rdf:type owl:Class ;
+          rdfs:subClassOf :HealthSciences ;
+          rdfs:comment "Medicine is a branch of health science concerned with maintaining human health and restoring it by treating disease and injury; it is both an area of knowledge, a science of body systems and diseases and their treatment, and the applied practice of that knowledge." ;
+          rdfs:label "Medicine" .
+
+
+###  https://w3id.org/skgo/modsci#Metabolism
+:Metabolism rdf:type owl:Class ;
+            rdfs:subClassOf :Biology ;
+            rdfs:comment "Metabolism is the set of life-sustaining chemical reactions in organisms." ;
+            rdfs:label "Metabolism" .
+
+
+###  https://w3id.org/skgo/modsci#Metallurgy
+:Metallurgy rdf:type owl:Class ;
+            rdfs:subClassOf :Chemistry ;
+            rdfs:comment "Metallurgy is a domain of materials science and engineering that studies the physical and chemical behavior of metallic elements, their inter-metallic compounds, and their mixtures, which are called alloys." ;
+            rdfs:label "Metallurgy" .
+
+
+###  https://w3id.org/skgo/modsci#Metrology
+:Metrology rdf:type owl:Class ;
+           rdfs:subClassOf :AppliedSciences ;
+           rdfs:comment "Metrology is the science of measurement." ;
+           rdfs:label "Metrology" .
+
+
+###  https://w3id.org/skgo/modsci#MilitaryScience
+:MilitaryScience rdf:type owl:Class ;
+                 rdfs:subClassOf :AppliedSciences ;
+                 rdfs:comment "Military science is the study of military processes, institutions, and behavior, along with the study of warfare, and the theory and application of organized coercive force." ;
+                 rdfs:label "Military Science" .
+
+
+###  https://w3id.org/skgo/modsci#MolecularBiology
+:MolecularBiology rdf:type owl:Class ;
+                  rdfs:subClassOf :Biology ;
+                  rdfs:comment "Molecular biology is the study of biology at a molecular level." ;
+                  rdfs:label "Molecular Biology" .
+
+
+###  https://w3id.org/skgo/modsci#MolecularPhysics
+:MolecularPhysics rdf:type owl:Class ;
+                  rdfs:subClassOf :Chemistry ;
+                  rdfs:comment "Molecular physics deals with the physics and chemistry of molecules." ;
+                  rdfs:label "Molecular Physics" .
+
+
+###  https://w3id.org/skgo/modsci#Museology
+:Museology rdf:type owl:Class ;
+           rdfs:subClassOf :InterdisciplinaryStudies ;
+           rdfs:comment "Museology or museum studies is the study of museums. It explores the history of museums and their role in society, as well as the activities they engage in, including curating, preservation, public programming, and education." ;
+           rdfs:label "Museology" .
+
+
+###  https://w3id.org/skgo/modsci#NaturalScience
+:NaturalScience rdf:type owl:Class ;
+                rdfs:subClassOf :Science ;
+                rdfs:comment "The natural sciences are those branches of empirical science that produce a comprehension of the natural world through the use of data collected from it by observation and measurement to construct deterministic and/or stochastic quantitative models of its phenomena." ;
+                rdfs:label "Natural Sciences" .
+
+
+###  https://w3id.org/skgo/modsci#NeuralEngineering
+:NeuralEngineering rdf:type owl:Class ;
+                   rdfs:subClassOf :InterdisciplinaryStudies ;
+                   rdfs:comment "Neural engineering is a discipline within biomedical engineering that uses engineering techniques to understand, repair, replace, or enhance neural systems." ;
+                   rdfs:label "Neural Engineering" .
+
+
+###  https://w3id.org/skgo/modsci#Neuroscience
+:Neuroscience rdf:type owl:Class ;
+              rdfs:subClassOf :Biology ,
+                              :InterdisciplinaryStudies ;
+              rdfs:comment "Neuroscience is a field of study which deals with the structure, development, genetics, biochemistry, physiology, pharmacology and pathology of the nervous system." ;
+              rdfs:label "Neuroscience" .
+
+
+###  https://w3id.org/skgo/modsci#NuclearChemistry
+:NuclearChemistry rdf:type owl:Class ;
+                  rdfs:subClassOf :Chemistry ;
+                  rdfs:comment "Nuclear chemistry is the subfield of chemistry dealing with radioactivity, nuclear processes, and transformations in the nuclei of atoms, such as nuclear transmutation and nuclear properties." ;
+                  rdfs:label "Nuclear Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Nursing
+:Nursing rdf:type owl:Class ;
+         rdfs:subClassOf :HealthSciences ;
+         rdfs:comment "Nursing is a profession within the health care sector focused on the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life." ;
+         rdfs:label "Nursing" .
+
+
+###  https://w3id.org/skgo/modsci#Oceanography
+:Oceanography rdf:type owl:Class ;
+              rdfs:subClassOf :EarthScience ;
+              rdfs:comment "Oceanography also known as oceanology, is the study of the physical and biological aspects of the ocean." ;
+              rdfs:label "Oceanography" .
+
+
+###  https://w3id.org/skgo/modsci#Optics
+:Optics rdf:type owl:Class ;
+        rdfs:subClassOf :AppliedSciences ;
+        rdfs:comment "Optics is the branch of physics that studies the behaviour and properties of light, including its interactions with matter and the construction of instruments that use or detect it." ;
+        rdfs:label "Optics" .
+
+
+###  https://w3id.org/skgo/modsci#OrganicChemistry
+:OrganicChemistry rdf:type owl:Class ;
+                  rdfs:subClassOf :Chemistry ;
+                  rdfs:comment "Organic chemistry is the study of organic, or carbon based, molecules." ;
+                  rdfs:label "Organic Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#OrganometallicChemistry
+:OrganometallicChemistry rdf:type owl:Class ;
+                         rdfs:subClassOf :Chemistry ;
+                         rdfs:comment "Organometallic chemistry is the study of chemical compounds containing bonds between carbon and a metal." ;
+                         rdfs:label "Organometallic Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Paleoclimatology
+:Paleoclimatology rdf:type owl:Class ;
+                  rdfs:subClassOf :EarthScience ;
+                  rdfs:comment "Paleoclimatology is the study of climates for which systematic measurements were not taken." ;
+                  rdfs:label "Paleoclimatology" .
+
+
+###  https://w3id.org/skgo/modsci#Paleontology
+:Paleontology rdf:type owl:Class ;
+              rdfs:subClassOf :Biology ;
+              rdfs:comment "Paleontology is the study of the developing history of life on earth, of ancient plants and animals based on the fossil record, evidence of their existence preserved in rocks." ;
+              rdfs:label "Paleontology" .
+
+
+###  https://w3id.org/skgo/modsci#Palynology
+:Palynology rdf:type owl:Class ;
+            rdfs:subClassOf :EarthScience ;
+            rdfs:comment "Palynology is literally the \"study of dust\" or of \"particles that are strewn\"." ;
+            rdfs:label "Palynology" .
+
+
+###  https://w3id.org/skgo/modsci#Parasitology
+:Parasitology rdf:type owl:Class ;
+              rdfs:subClassOf :Biology ;
+              rdfs:comment "Parasitology is the study of parasites in host organisms, including humans (medical parasitology)." ;
+              rdfs:label "Parasitology" .
+
+
+###  https://w3id.org/skgo/modsci#ParticlePhysics
+:ParticlePhysics rdf:type owl:Class ;
+                 rdfs:subClassOf :Physics ;
+                 rdfs:comment "Particle physics is a branch of physics that studies the elementary constituents of matter and radiation, and the interactions between them." ;
+                 rdfs:label "Particle Physics" .
+
+
+###  https://w3id.org/skgo/modsci#Pharmacology
+:Pharmacology rdf:type owl:Class ;
+              rdfs:subClassOf :Biology ;
+              rdfs:comment "Pharmacology is the study of how chemical substances interact with living systems." ;
+              rdfs:label "Pharmacology" .
+
+
+###  https://w3id.org/skgo/modsci#Pharmacy
+:Pharmacy rdf:type owl:Class ;
+          rdfs:subClassOf :HealthSciences ;
+          rdfs:comment "Pharmacy is the science and technique of preparing, dispensing, and reviewing drugs and providing additional clinical services." ;
+          rdfs:label "Pharmacy" .
+
+
+###  https://w3id.org/skgo/modsci#Philosophy
+:Philosophy rdf:type owl:Class ;
+            rdfs:subClassOf :FormalScience ;
+            rdfs:comment "Philosophy of science is a branch of philosophy concerned with the foundations, methods, and implications of science." ;
+            rdfs:label "Philosophy of Science" .
+
+
+###  https://w3id.org/skgo/modsci#Photochemistry
+:Photochemistry rdf:type owl:Class ;
+                rdfs:subClassOf :Chemistry ;
+                rdfs:comment "Photochemistry, a sub-discipline of chemistry, is the study of the interactions between atoms, small molecules, and light (or electromagnetic radiation)." ;
+                rdfs:label "Photochemistry" .
+
+
+###  https://w3id.org/skgo/modsci#PhysicalChemistry
+:PhysicalChemistry rdf:type owl:Class ;
+                   rdfs:subClassOf :Chemistry ;
+                   rdfs:comment "Physical chemistry is the study of macroscopic, atomic, subatomic, and particulate phenomena in chemical systems in terms of the principles, practices, and concepts of physics such as motion, energy, force, time, thermodynamics, quantum chemistry, statistical mechanics, analytical dynamics and chemical equilibrium." ;
+                   rdfs:label "Physical Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#PhysicalGeography
+:PhysicalGeography rdf:type owl:Class ;
+                   rdfs:subClassOf :EarthScience ;
+                   rdfs:comment "Physical geography is a subfield of geography, closely related to geology, that focuses on the spatial characteristics of natural processes, within the hydrosphere, biosphere, atmosphere and lithosphere." ;
+                   rdfs:label "Physical Geography" .
+
+
+###  https://w3id.org/skgo/modsci#Physics
+:Physics rdf:type owl:Class ;
+         rdfs:subClassOf :NaturalScience ;
+         rdfs:comment "Physics is the science of the natural world. It deals with matter, energy, and the fundamental forces that govern the interactions between particles." ;
+         rdfs:label "Physics" .
+
+
+###  https://w3id.org/skgo/modsci#Physiology
+:Physiology rdf:type owl:Class ;
+            rdfs:subClassOf :Biology ;
+            rdfs:comment "Physiology is the branch of science that describes the mechanisms of cell, tissue and organ function in organisms." ;
+            rdfs:label "Physiology" .
+
+
+###  https://w3id.org/skgo/modsci#PlanetaryScience
+:PlanetaryScience rdf:type owl:Class ;
+                  rdfs:subClassOf :Astronomy ;
+                  rdfs:comment "Planetary science is a broad field of science that studies all planets." ;
+                  rdfs:label "Planetary Science" .
+
+
+###  https://w3id.org/skgo/modsci#PlasmaPhysics
+:PlasmaPhysics rdf:type owl:Class ;
+               rdfs:subClassOf :Physics ;
+               rdfs:comment "Plasma physics is the study of ionized gases." ;
+               rdfs:label "Plasma Physics" .
+
+
+###  https://w3id.org/skgo/modsci#PoliticalEconomy
+:PoliticalEconomy rdf:type owl:Class ;
+                  rdfs:subClassOf :InterdisciplinaryStudies ;
+                  rdfs:comment "Political economy is the study of production and trade and their relations with law, custom and government; and with the distribution of national income and wealth." ;
+                  rdfs:label "Political Economy" .
+
+
+###  https://w3id.org/skgo/modsci#PoliticalScience
+:PoliticalScience rdf:type owl:Class ;
+                  rdfs:subClassOf :SocialSciences ;
+                  rdfs:comment "Political science is a social science which deals with systems of governance, and the analysis of political activities, political thoughts, and political behavior." ;
+                  rdfs:label "Political Science" .
+
+
+###  https://w3id.org/skgo/modsci#Psychology
+:Psychology rdf:type owl:Class ;
+            rdfs:subClassOf :BehaviouralSciences ;
+            rdfs:comment "Psychology is a collection of academic, clinical and industrial disciplines concerned with the explanation and prediction of behavior, thinking, emotions, motivations, relationships, potentials and pathologies." ;
+            rdfs:label "Psychology" .
+
+
+###  https://w3id.org/skgo/modsci#QuantumMechanics
+:QuantumMechanics rdf:type owl:Class ;
+                  rdfs:subClassOf :Physics ;
+                  rdfs:comment "Quantum mechanics (also called quantum physics or quantum theory) is a physical theory that is believed to be the formalism underlying the description of all physical systems." ;
+                  rdfs:label "Quantum Mechanics" .
+
+
+###  https://w3id.org/skgo/modsci#Radiobiology
+:Radiobiology rdf:type owl:Class ;
+              rdfs:subClassOf :Biology ;
+              rdfs:comment "Radiobiology is a field of clinical and basic medical sciences that involves the study of the action of ionizing radiation on living things, especially health effects of radiation." ;
+              rdfs:label "Radiation Biology" .
+
+
+###  https://w3id.org/skgo/modsci#Radiochemistry
+:Radiochemistry rdf:type owl:Class ;
+                rdfs:subClassOf :Chemistry ;
+                rdfs:comment "Radiochemistry is the chemistry of radioactive materials, where radioactive isotopes of elements are used to study the properties and chemical reactions of non-radioactive isotopes (often within radiochemistry the absence of radioactivity leads to a substance being described as being inactive as the isotopes are stable)." ;
+                rdfs:label "Radiochemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Science
+:Science rdf:type owl:Class ;
+         rdfs:comment "Science is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe." ;
+         rdfs:label "Science" .
+
+
+###  https://w3id.org/skgo/modsci#ScienceAndTechnologyStudies
+:ScienceAndTechnologyStudies rdf:type owl:Class ;
+                             rdfs:subClassOf :InterdisciplinaryStudies ;
+                             rdfs:comment "Science and technology studies is the study of how society, politics, and culture affect scientific research and technological innovation, and how these, in turn, affect society, politics and culture." ;
+                             rdfs:label "Science and Technology Studies" .
+
+
+###  https://w3id.org/skgo/modsci#ScienceStudies
+:ScienceStudies rdf:type owl:Class ;
+                rdfs:subClassOf :InterdisciplinaryStudies ;
+                rdfs:comment "Science studies is an interdisciplinary research area that seeks to situate scientific expertise in broad social, historical, and philosophical contexts." ;
+                rdfs:label "Science Studies" .
+
+
+###  https://w3id.org/skgo/modsci#ScientificMethod
+:ScientificMethod rdf:type owl:Class ;
+                  rdfs:subClassOf :FormalScience ;
+                  rdfs:comment "A scientific method is a sequence or collection of processes that are considered characteristic of scientific investigation and the acquisition of new scientific knowledge based upon physical evidence." ;
+                  rdfs:label "Scientific Method" .
+
+
+###  https://w3id.org/skgo/modsci#ScientificModeling
+:ScientificModeling rdf:type owl:Class ;
+                    rdfs:subClassOf :InterdisciplinaryStudies ;
+                    rdfs:comment "Scientific modelling is a scientific activity, the aim of which is to make a particular part or feature of the world easier to understand, define, quantify, visualize, or simulate by referencing it to existing and usually commonly accepted knowledge." ;
+                    rdfs:label "Scientific Modelling" .
+
+
+###  https://w3id.org/skgo/modsci#Semiotics
+:Semiotics rdf:type owl:Class ;
+           rdfs:subClassOf :InterdisciplinaryStudies ,
+                           :SocialSciences ;
+           rdfs:comment "Semiotics is the study of signs (symbols) and signification systems, or rather semiotics are general theories of signs." ;
+           rdfs:label "Semiotics" .
+
+
+###  https://w3id.org/skgo/modsci#SocialPsychology
+:SocialPsychology rdf:type owl:Class ;
+                  rdfs:subClassOf :BehaviouralSciences ;
+                  rdfs:comment "Social psychology is the scientific study of how people's thoughts, feelings, and behaviors are influenced by the actual, imagined or implied presence of others." ;
+                  rdfs:label "Social Psychology" .
+
+
+###  https://w3id.org/skgo/modsci#SocialSciences
+:SocialSciences rdf:type owl:Class ;
+                rdfs:subClassOf :Science ;
+                rdfs:comment "The social sciences are academic disciplines concerned with the study of the social life of human groups and individuals including anthropology, economics, geography, history, political science, psychology, social studies, and sociology." ;
+                rdfs:label "Social Sciences" .
+
+
+###  https://w3id.org/skgo/modsci#SocialWork
+:SocialWork rdf:type owl:Class ;
+            rdfs:subClassOf :HealthSciences ;
+            rdfs:comment "Social work is an academic discipline and profession that concerns itself with individuals, families, groups and communities in an effort to enhance social functioning and overall well-being." ;
+            rdfs:label "Social Work" .
+
+
+###  https://w3id.org/skgo/modsci#Sociobiology
+:Sociobiology rdf:type owl:Class ;
+              rdfs:subClassOf :BehaviouralSciences ;
+              rdfs:comment "Sociobiology is a field of biology that aims to examine and explain social behavior in terms of evolution." ;
+              rdfs:label "Sociobiology" .
+
+
+###  https://w3id.org/skgo/modsci#Sociology
+:Sociology rdf:type owl:Class ;
+           rdfs:subClassOf :SocialSciences ;
+           rdfs:comment "Sociology is the study of social behaviour or society, including its origins, development, organization, networks, and institutions. and critical analysis to develop a body of knowledge about social order, disorder, and change." ;
+           rdfs:label "Sociology" .
+
+
+###  https://w3id.org/skgo/modsci#SoilBiology
+:SoilBiology rdf:type owl:Class ;
+             rdfs:subClassOf :Biology ;
+             rdfs:comment "Soil biology is the study of microbial and faunal activity and ecology in soil." ;
+             rdfs:label "Soil Biology" .
+
+
+###  https://w3id.org/skgo/modsci#SoilScience
+:SoilScience rdf:type owl:Class ;
+             rdfs:subClassOf :EarthScience ;
+             rdfs:comment "Soil science is the study of soil as a natural resource on the surface of the Earth including soil formation, classification and mapping; physical, chemical, biological, and fertility properties of soils; and these properties in relation to the use and management of soils." ;
+             rdfs:label "Soil Science" .
+
+
+###  https://w3id.org/skgo/modsci#SolidMechanics
+:SolidMechanics rdf:type owl:Class ;
+                rdfs:subClassOf :Physics ;
+                rdfs:comment "Solid mechanics is a mathematical discipline within continuum mechanics, dealing with the mechanical behavior of solid materials." ;
+                rdfs:label "Solid Mechanics" .
+
+
+###  https://w3id.org/skgo/modsci#SolidStateChemistry
+:SolidStateChemistry rdf:type owl:Class ;
+                     rdfs:subClassOf :Chemistry ;
+                     rdfs:comment "Solid-state chemistry, also sometimes referred as materials chemistry, is the study of the synthesis, structure, and properties of solid phase materials, particularly, but not necessarily exclusively of, non-molecular solids." ;
+                     rdfs:label "Solid-State Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#SpaceScience
+:SpaceScience rdf:type owl:Class ;
+              rdfs:subClassOf :EarthScience ;
+              rdfs:comment "Space science encompasses all of the scientific disciplines that involve space exploration and study natural phenomena and physical bodies occurring in outer space, such as space medicine and astrobiology." ;
+              rdfs:label "Space Science" .
+
+
+###  https://w3id.org/skgo/modsci#SportsScience
+:SportsScience rdf:type owl:Class ;
+               rdfs:subClassOf :AppliedSciences ;
+               rdfs:comment "Sports science is a discipline that studies how the healthy human body works during exercise, and how sport and physical activity promote health and performance from cellular to whole body perspectives." ;
+               rdfs:label "Sports Science" .
+
+
+###  https://w3id.org/skgo/modsci#Statistics
+:Statistics rdf:type owl:Class ;
+            rdfs:subClassOf :FormalScience ;
+            rdfs:comment "Statistics is the discipline that concerns the collection, organization, displaying, analysis, interpretation and presentation of data." ;
+            rdfs:label "Statistics" .
+
+
+###  https://w3id.org/skgo/modsci#StellarAstronomy
+:StellarAstronomy rdf:type owl:Class ;
+                  rdfs:subClassOf :Astronomy ;
+                  rdfs:comment "The study of stars and stellar evolution is fundamental to our understanding of the Universe." ;
+                  rdfs:label "Stellar Astronomy" .
+
+
+###  https://w3id.org/skgo/modsci#Stereochemistry
+:Stereochemistry rdf:type owl:Class ;
+                 rdfs:subClassOf :Chemistry ;
+                 rdfs:comment "Stereochemistry, a subdiscipline of chemistry, involves the study of the relative spatial arrangement of atoms that form the structure of molecules and their manipulation." ;
+                 rdfs:label "Stereochemistry" .
+
+
+###  https://w3id.org/skgo/modsci#SupramolecularChemistry
+:SupramolecularChemistry rdf:type owl:Class ;
+                         rdfs:subClassOf :Chemistry ;
+                         rdfs:comment "Supramolecular chemistry is a branch of chemistry that describes self-organization or self-assembly of systems to well-defined molecular architectures." ;
+                         rdfs:label "Supramolecular Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#SurfaceChemistry
+:SurfaceChemistry rdf:type owl:Class ;
+                  rdfs:subClassOf :Chemistry ;
+                  rdfs:comment "Surface chemistry is the study of chemical phenomena that occur at the interface of two phases" ;
+                  rdfs:label "Surface Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#SystemsScience
+:SystemsScience rdf:type owl:Class ;
+                rdfs:subClassOf :InterdisciplinaryStudies ;
+                rdfs:comment "Systems science is the field of science surrounding systems theory, cybernetics, the science of complex systems." ;
+                rdfs:label "Systems Science" .
+
+
+###  https://w3id.org/skgo/modsci#Technology
+:Technology rdf:type owl:Class ;
+            rdfs:subClassOf :FormalScience ;
+            rdfs:comment "Technology is the collection of techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation." ;
+            rdfs:label "Technology" .
+
+
+###  https://w3id.org/skgo/modsci#TheoreticalBiology
+:TheoreticalBiology rdf:type owl:Class ;
+                    rdfs:subClassOf :Biology ;
+                    rdfs:comment "Theoretical biology is a branch of biology which employs theoretical analysis, mathematical models and abstractions of the living organisms to investigate the principles that govern the structure, development and behavior of the systems" ;
+                    rdfs:label "Theoretical Biology" .
+
+
+###  https://w3id.org/skgo/modsci#TheoreticalChemistry
+:TheoreticalChemistry rdf:type owl:Class ;
+                      rdfs:subClassOf :Chemistry ;
+                      rdfs:comment "Theoretical chemistry is the application of theoretical reasoning to chemistry." ;
+                      rdfs:label "Theoretical Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#TheoreticalLinguistics
+:TheoreticalLinguistics rdf:type owl:Class ;
+                        rdfs:subClassOf :FormalScience ;
+                        rdfs:comment "Theoretical linguistics, or general linguistics, is the branch of linguistics which inquires into the nature of language itself and seeks to answer fundamental questions as to what language is; how it works; how universal grammar (UG) as a domain-specific mental organ operates, if it exists at all; what are its unique properties; how does language relate to other cognitive processes, etc." ;
+                        rdfs:label "Theoretical Linguistics" .
+
+
+###  https://w3id.org/skgo/modsci#Thermodynamics
+:Thermodynamics rdf:type owl:Class ;
+                rdfs:subClassOf :Physics ;
+                rdfs:comment "Thermodynamics concerns the physics of heat, work, temperature, energy, and entropy." ;
+                rdfs:label "Thermodynamics" .
+
+
+###  https://w3id.org/skgo/modsci#Toxicology
+:Toxicology rdf:type owl:Class ;
+            rdfs:subClassOf :Biology ;
+            rdfs:comment "Toxicology is a scientific discipline, overlapping with biology, chemistry, pharmacology, and medicine, that involves the study of the adverse effects of chemical substances on living organisms and the practice of diagnosing and treating exposures to toxins and toxicants." ;
+            rdfs:label "Toxicology" .
+
+
+###  https://w3id.org/skgo/modsci#Transdisciplinarity
+:Transdisciplinarity rdf:type owl:Class ;
+                     rdfs:subClassOf :InterdisciplinaryStudies ;
+                     rdfs:comment "Transdisciplinarity connotes a research strategy that crosses many disciplinary boundaries to create a holistic approach." ;
+                     rdfs:label "Transdisciplinarity" .
+
+
+###  https://w3id.org/skgo/modsci#UrbanPlanning
+:UrbanPlanning rdf:type owl:Class ;
+               rdfs:subClassOf :InterdisciplinaryStudies ;
+               rdfs:comment "Urban planning is a technical and political process concerned with the development and design of land use and the built environment, including air, water, and the infrastructure passing into and out of urban areas, such as transportation, communications, and distribution networks." ;
+               rdfs:label "Urban Planning" .
+
+
+###  https://w3id.org/skgo/modsci#VeterinaryMedicine
+:VeterinaryMedicine rdf:type owl:Class ;
+                    rdfs:subClassOf :HealthSciences ;
+                    rdfs:comment "Veterinary medicine is the branch of medicine that deals with the prevention, diagnosis and treatment of disease, disorder and injury in animals." ;
+                    rdfs:label "Veterinary Medicine" .
+
+
+###  https://w3id.org/skgo/modsci#Volcanology
+:Volcanology rdf:type owl:Class ;
+             rdfs:subClassOf :EarthScience ;
+             rdfs:comment "Volcanology is a branch of geology that deals with the study of volcanoes, lava, magma, and related geological phenomena." ;
+             rdfs:label "Volcanology" .
+
+
+###  https://w3id.org/skgo/modsci#Zoology
+:Zoology rdf:type owl:Class ;
+         rdfs:subClassOf :Biology ;
+         rdfs:comment "Zoology is the study of the biology of animals." ;
+         rdfs:label "Zoology" .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
