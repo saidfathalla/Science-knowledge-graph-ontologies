@@ -1,0 +1,2936 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/skgo/dentsci", "http://xmlns.com/foaf/0.1", "http://www.w3.org/2000/10/swap/pim/contact", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "dentsci, The Dentistry Science Ontology."
+    },
+    "iri" : "https://w3id.org/skgo/dentsci#",
+    "version" : "1.0",
+    "author" : [ "Said Fathalla" ],
+    "description" : {
+      "en" : "DentSci is a reference ontology for modelling dental research data."
+    },
+    "labels" : {
+      "en" : "Dentistry Science Ontology"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Said Fathalla",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "en",
+        "value" : "2019-09-01",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "dentsci",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "dentsci, The Dentistry Science Ontology.",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "20",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "34",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "30",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "19",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "42",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "63",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "64",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "102",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "33",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "3",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept",
+      "undefined" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "equivalent" : [ "14" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "subClasses" : [ "11", "12", "13" ],
+    "comment" : {
+      "undefined" : "An agent (eg. person, group, software or physical artifact)."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "20",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Organization",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "Organization"
+    },
+    "comment" : {
+      "undefined" : "An organization."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "5",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://schema.org/CreativeWork",
+    "equivalent" : [ "2" ],
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CreativeWork"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Project",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Project",
+      "undefined" : "Project"
+    },
+    "comment" : {
+      "undefined" : "A project (a collective endeavour of some kind)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "equivalent" : [ "63", "64" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Person"
+    },
+    "comment" : {
+      "undefined" : "A person."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "13",
+    "superClasses" : [ "1", "37" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/skgo/dentsci#DentalMaterials",
+    "baseIri" : "https://w3id.org/skgo/dentsci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DentalMaterials"
+    },
+    "id" : "69"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/PersonalProfileDocument",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PersonalProfileDocument",
+      "undefined" : "PersonalProfileDocument"
+    },
+    "comment" : {
+      "undefined" : "A personal profile RDF document."
+    },
+    "attributes" : [ "external" ],
+    "id" : "71",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialThing",
+      "undefined" : "Spatial Thing"
+    },
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineChatAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OnlineChatAccount",
+      "undefined" : "Online Chat Account"
+    },
+    "comment" : {
+      "undefined" : "An online chat account."
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineGamingAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OnlineGamingAccount",
+      "undefined" : "Online Gaming Account"
+    },
+    "comment" : {
+      "undefined" : "An online gaming account."
+    },
+    "attributes" : [ "external" ],
+    "id" : "83",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/LabelProperty",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LabelProperty",
+      "undefined" : "Label Property"
+    },
+    "comment" : {
+      "undefined" : "A foaf:LabelProperty is any RDF property with texual values that serve as labels."
+    },
+    "attributes" : [ "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "34",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "30",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "19",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "42",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/10/swap/pim/contact#Person",
+    "baseIri" : "http://www.w3.org/2000/10/swap/pim/contact",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://schema.org/Person",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://schema.org/ImageObject",
+    "equivalent" : [ "33" ],
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImageObject"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OnlineAccount",
+      "undefined" : "Online Account"
+    },
+    "subClasses" : [ "77", "86", "83" ],
+    "comment" : {
+      "undefined" : "An online account."
+    },
+    "attributes" : [ "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OnlineEcommerceAccount",
+      "undefined" : "Online E-commerce Account"
+    },
+    "comment" : {
+      "undefined" : "An online e-commerce account."
+    },
+    "attributes" : [ "external" ],
+    "id" : "86",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://purl.org/dc/terms/Agent",
+    "equivalent" : [ "1" ],
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Class",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Class"
+    },
+    "attributes" : [ "external" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Document",
+    "equivalent" : [ "38" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Document",
+      "undefined" : "Document"
+    },
+    "subClasses" : [ "71", "33" ],
+    "comment" : {
+      "undefined" : "A document."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Image",
+    "equivalent" : [ "102" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Image",
+      "undefined" : "Image"
+    },
+    "comment" : {
+      "undefined" : "An image."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "33",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Group",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Group",
+      "undefined" : "Group"
+    },
+    "comment" : {
+      "undefined" : "A class of Agents."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://xmlns.com/foaf/0.1/interest",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "interest",
+      "undefined" : "interest"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A page about a topic of interest to this person."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/mbox_sha1sum",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "mbox_sha1sum",
+      "undefined" : "sha1sum of a personal mailbox URI name"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "The sha1sum of the URI of an Internet mailbox associated with exactly one owner, the  first owner of the mailbox."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/nick",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nick",
+      "undefined" : "nickname"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames)."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/openid",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "openid",
+      "undefined" : "openid"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "An OpenID for an Agent."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/workInfoHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "workInfoHomepage",
+      "undefined" : "work info homepage"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A work info homepage of some person; a page about their work for some organization."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/pastProject",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "pastProject",
+      "undefined" : "past project"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A project this person has previously worked on."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/theme",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "20",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "theme",
+      "undefined" : "theme"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "A theme."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/knows",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "knows",
+      "undefined" : "knows"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A person known by this person (indicating some level of reciprocated interaction between the parties)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/focus",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "30",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "focus",
+      "undefined" : "focus"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "The underlying or 'focal' entity associated with some SKOS-described concept."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/phone",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "20",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "phone",
+      "undefined" : "phone"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "A phone,  specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/depicts",
+    "inverse" : "35",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "34",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "depicts",
+      "undefined" : "depicts"
+    },
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "A thing depicted in this representation."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/based_near",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "based_near",
+      "undefined" : "based near"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "A location that something is based near, for some broadly human notion of near."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/geekcode",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "40",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "geekcode",
+      "undefined" : "geekcode"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A textual geekcode for this person, see http://www.geekcode.com/geek.html"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/page",
+    "inverse" : "43",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "page",
+      "undefined" : "page"
+    },
+    "domain" : "42",
+    "subproperty" : [ "16", "44", "45", "46" ],
+    "comment" : {
+      "undefined" : "A page or document about this thing."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/givenName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "49",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "givenName",
+      "undefined" : "Given name"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "The given name of some person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/primaryTopic",
+    "inverse" : "16",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "primaryTopic",
+      "undefined" : "primary topic"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "The primary topic of some page or document."
+    },
+    "attributes" : [ "object", "functional", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/gender",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "52",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "gender",
+      "undefined" : "gender"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The gender of this Agent (typically but not necessarily 'male' or 'female')."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/schoolHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "schoolHomepage",
+      "undefined" : "schoolHomepage"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A homepage of a school attended by the person."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/dnaChecksum",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dnaChecksum",
+      "undefined" : "DNA checksum"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "A checksum for the DNA of some thing. Joke."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/lastName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "59",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "lastName",
+      "undefined" : "lastName"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "The last name of a person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/status",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "status",
+      "undefined" : "status"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A string expressing what the user is happy for the general public (normally) to know about their current activity."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "25",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "A name for some thing."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/yahooChatID",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "yahooChatID",
+      "undefined" : "Yahoo chat ID"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "A Yahoo chat ID"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/icqChatID",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "57",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "icqChatID",
+      "undefined" : "ICQ chat ID"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "An ICQ chat ID"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/givenname",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "73",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "givenname",
+      "undefined" : "Given name"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "The given name of some person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isPrimaryTopicOf",
+      "undefined" : "is primary topic of"
+    },
+    "superproperty" : [ "41" ],
+    "domain" : "42",
+    "subproperty" : [ "15", "46" ],
+    "comment" : {
+      "undefined" : "A document that this thing is the primary topic of."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "16"
+  }, {
+    "range" : "2",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "2",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "78",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "37",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/accountServiceHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "accountServiceHomepage",
+      "undefined" : "account service homepage"
+    },
+    "domain" : "78",
+    "comment" : {
+      "undefined" : "Indicates a homepage of the service provide for this online account."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/logo",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "20",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "logo",
+      "undefined" : "logo"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "A logo representing some thing."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "81"
+  }, {
+    "range" : "78",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/depiction",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "33",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "depiction",
+      "undefined" : "depiction"
+    },
+    "domain" : "34",
+    "subproperty" : [ "84" ],
+    "comment" : {
+      "undefined" : "A depiction of some thing."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "35"
+  }, {
+    "range" : "78",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/family_name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "62",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "family_name",
+      "undefined" : "family_name"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "The family name of some person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "87"
+  }, {
+    "range" : "1",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "1",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/fundedBy",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "20",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fundedBy",
+      "undefined" : "funded by"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "An organization funding a project or person."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/title",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "92",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "title",
+      "undefined" : "title"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Title (Mr, Mrs, Ms, Dr. etc)"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/accountName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "95",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "accountName",
+      "undefined" : "account name"
+    },
+    "domain" : "78",
+    "comment" : {
+      "undefined" : "Indicates the name (identifier) associated with this online account."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/account",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "78",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "account",
+      "undefined" : "account"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Indicates an account held by this agent."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/jabberID",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "61",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "jabberID",
+      "undefined" : "jabber ID"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "A jabber ID for something."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "97"
+  }, {
+    "range" : "1",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/age",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "101",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "age",
+      "undefined" : "age"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The age in years of some agent."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/homepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "homepage",
+      "undefined" : "homepage"
+    },
+    "superproperty" : [ "16", "41" ],
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "A homepage for some thing."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/tipjar",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "tipjar",
+      "undefined" : "tipjar"
+    },
+    "superproperty" : [ "41" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A tipjar document for this agent, describing means for payment and reward."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/msnChatID",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "47",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "msnChatID",
+      "undefined" : "MSN chat ID"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "An MSN chat ID"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/topic_interest",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "3",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "topic_interest",
+      "undefined" : "topic_interest"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A thing of interest to this person."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/aimChatID",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "106",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "aimChatID",
+      "undefined" : "AIM chat ID"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "An AIM chat ID"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/currentProject",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "currentProject",
+      "undefined" : "current project"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A current project this person works on."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/skypeID",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "skypeID",
+      "undefined" : "Skype ID"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A Skype ID"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/holdsAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "78",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsAccount",
+      "undefined" : "account"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Indicates an account held by this agent."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/thumbnail",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "33",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "thumbnail",
+      "undefined" : "thumbnail"
+    },
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "A derived thumbnail image."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/topic",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "topic",
+      "undefined" : "topic"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "A topic of some page or document."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/weblog",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "weblog",
+      "undefined" : "weblog"
+    },
+    "superproperty" : [ "41" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A weblog of some thing (whether person, group, company etc.)."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/img",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "33",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "img",
+      "undefined" : "image"
+    },
+    "superproperty" : [ "35" ],
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "An image that can be used to represent some thing (ie. those depictions which are particularly representative of something, eg. one's photo on a homepage)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/birthday",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "112",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "birthday",
+      "undefined" : "birthday"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The birthday of this Agent, represented in mm-dd string form, eg. '12-31'."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/sha1",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "99",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sha1",
+      "undefined" : "sha1sum (hex)"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "A sha1sum hash, in hex."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/firstName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "68",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "firstName",
+      "undefined" : "firstName"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "The first name of a person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/made",
+    "inverse" : "116",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "3",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "made",
+      "undefined" : "made"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Something that was made by this agent."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "115"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "60",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/familyName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "119",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "familyName",
+      "undefined" : "familyName"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "The family name of some person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "120"
+  }, {
+    "range" : "60",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "12",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/member",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "member",
+      "undefined" : "member"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "Indicates a member of a Group"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/plan",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "23",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "plan",
+      "undefined" : "plan"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A .plan comment, in the tradition of finger and '.plan' files."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/mbox",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "3",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "mbox",
+      "undefined" : "personal mailbox"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/surname",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "22",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "surname",
+      "undefined" : "Surname"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "The surname of some person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/myersBriggs",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "54",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "myersBriggs",
+      "undefined" : "myersBriggs"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A Myers Briggs (MBTI) personality classification."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/maker",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "maker",
+      "undefined" : "maker"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "An agent that  made this thing."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/publications",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "publications",
+      "undefined" : "publications"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A link to the publications of this person."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/workplaceHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "workplaceHomepage",
+      "undefined" : "workplace homepage"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A workplace homepage of some person; the homepage of an organization they work for."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "130"
+  } ]
+}

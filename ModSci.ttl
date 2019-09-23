@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/skgo/modsci#> .
+@prefix : <https://w3id.org/skgo/modsci##> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -22,6 +22,52 @@
                                  terms:title "ModSci, Modern Science Ontology."@en ;
                                  terms:description "ModSci is a reference ontology for modelling different types of modern sciences."@en ;
                                  terms:created "2019-09-01"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/skgo/modsci#discoveredInScience
+modsci:discoveredInScience rdf:type owl:ObjectProperty ;
+                           rdfs:domain modsci:Phenomena ;
+                           rdfs:range modsci:Science .
+
+
+###  https://w3id.org/skgo/modsci#hasApplications
+modsci:hasApplications rdf:type owl:ObjectProperty ;
+                       rdfs:domain modsci:Science ;
+                       rdfs:range modsci:ApplicationOfScience .
+
+
+###  https://w3id.org/skgo/modsci#hasCloseRelationshipTo
+modsci:hasCloseRelationshipTo rdf:type owl:ObjectProperty ;
+                              rdfs:domain modsci:Science ;
+                              rdfs:range modsci:Science .
+
+
+###  https://w3id.org/skgo/modsci#hasCollburationWith
+modsci:hasCollburationWith rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/skgo/modsci#hasMethodsInspiredFrom
+modsci:hasMethodsInspiredFrom rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/skgo/modsci#isApplicationOfScience
+modsci:isApplicationOfScience rdf:type owl:ObjectProperty ;
+                              rdfs:domain modsci:ApplicationOfScience ;
+                              rdfs:range modsci:Science .
+
+
+###  https://w3id.org/skgo/modsci#takeSunstancesFrom
+modsci:takeSunstancesFrom rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/skgo/modsci#usesTechniquesFrom
+modsci:usesTechniquesFrom rdf:type owl:ObjectProperty ;
+                          rdfs:domain modsci:Science ;
+                          rdfs:range modsci:Science .
+
 
 #################################################################
 #    Classes
@@ -67,6 +113,12 @@ modsci:Anthropology rdf:type owl:Class ;
                     rdfs:subClassOf modsci:SocialSciences ;
                     rdfs:comment "Anthropology is the scientific study of humans, human behavior and societies in the past and present." ;
                     rdfs:label "Anthropology" .
+
+
+###  https://w3id.org/skgo/modsci#ApplicationOfScience
+modsci:ApplicationOfScience rdf:type owl:Class ;
+                            rdfs:comment "An application of science is any use of scientific knowledge for a specific purpose, whether to do more science; to design a product, process, or medical treatment; to develop a new technology; or to predict the impacts of human actions." ;
+                            rdfs:label "Application of science" .
 
 
 ###  https://w3id.org/skgo/modsci#AppliedMathematics
@@ -169,6 +221,11 @@ modsci:Biochemistry rdf:type owl:Class ;
                     rdfs:label "Biochemistry" .
 
 
+###  https://w3id.org/skgo/modsci#Biochip
+modsci:Biochip rdf:type owl:Class ;
+               rdfs:subClassOf modsci:ApplicationOfScience .
+
+
 ###  https://w3id.org/skgo/modsci#Bioengineering
 modsci:Bioengineering rdf:type owl:Class ;
                       rdfs:subClassOf modsci:Biology ,
@@ -197,6 +254,11 @@ modsci:Bioinformatics rdf:type owl:Class ;
                                       modsci:InterdisciplinaryStudies ;
                       rdfs:comment "Bioinformatics and Computational biology are interdisciplinary fields of research, development and application of algorithms, computational and statistical methods for management and analysis of biological data, and for solving basic biological problems." ;
                       rdfs:label "Bioinformatics" .
+
+
+###  https://w3id.org/skgo/modsci#BiologicalPhenomena
+modsci:BiologicalPhenomena rdf:type owl:Class ;
+                           rdfs:subClassOf modsci:Phenomena .
 
 
 ###  https://w3id.org/skgo/modsci#Biology
@@ -260,6 +322,11 @@ modsci:ChemicalEngineering rdf:type owl:Class ;
                            rdfs:subClassOf modsci:Chemistry ;
                            rdfs:comment "Chemical engineering is the application of science, in particular chemistry, fluid physics, and biology, along with mathematics and economics to the human endeavor of converting raw materials or chemicals into more useful or valuable forms." ;
                            rdfs:label "Chemical Engineering" .
+
+
+###  https://w3id.org/skgo/modsci#ChemicalPhenomena
+modsci:ChemicalPhenomena rdf:type owl:Class ;
+                         rdfs:subClassOf modsci:Phenomena .
 
 
 ###  https://w3id.org/skgo/modsci#Chemistry
@@ -647,8 +714,8 @@ modsci:Immunology rdf:type owl:Class ;
                   rdfs:label "Immunology" .
 
 
-###  https://w3id.org/skgo/modsci#IndustrialProcess
-modsci:IndustrialProcess rdf:type owl:Class ;
+###  https://w3id.org/skgo/modsci#IndustrialScience
+modsci:IndustrialScience rdf:type owl:Class ;
                          rdfs:subClassOf modsci:AppliedSciences ;
                          rdfs:comment "An industrial process alters materials or substances." ;
                          rdfs:label "Industrial Process" .
@@ -930,6 +997,10 @@ modsci:Pharmacy rdf:type owl:Class ;
                 rdfs:label "Pharmacy" .
 
 
+###  https://w3id.org/skgo/modsci#Phenomena
+modsci:Phenomena rdf:type owl:Class .
+
+
 ###  https://w3id.org/skgo/modsci#Philosophy
 modsci:Philosophy rdf:type owl:Class ;
                   rdfs:subClassOf modsci:FormalScience ;
@@ -956,6 +1027,11 @@ modsci:PhysicalGeography rdf:type owl:Class ;
                          rdfs:subClassOf modsci:EarthScience ;
                          rdfs:comment "Physical geography is a subfield of geography, closely related to geology, that focuses on the spatial characteristics of natural processes, within the hydrosphere, biosphere, atmosphere and lithosphere." ;
                          rdfs:label "Physical Geography" .
+
+
+###  https://w3id.org/skgo/modsci#PhysicalPhenomena
+modsci:PhysicalPhenomena rdf:type owl:Class ;
+                         rdfs:subClassOf modsci:Phenomena .
 
 
 ###  https://w3id.org/skgo/modsci#Physics
@@ -998,6 +1074,11 @@ modsci:PoliticalScience rdf:type owl:Class ;
                         rdfs:subClassOf modsci:SocialSciences ;
                         rdfs:comment "Political science is a social science which deals with systems of governance, and the analysis of political activities, political thoughts, and political behavior." ;
                         rdfs:label "Political Science" .
+
+
+###  https://w3id.org/skgo/modsci#PsychiatricDrugs
+modsci:PsychiatricDrugs rdf:type owl:Class ;
+                        rdfs:subClassOf modsci:ApplicationOfScience .
 
 
 ###  https://w3id.org/skgo/modsci#Psychology
@@ -1264,6 +1345,37 @@ modsci:Zoology rdf:type owl:Class ;
                rdfs:subClassOf modsci:Biology ;
                rdfs:comment "Zoology is the study of the biology of animals." ;
                rdfs:label "Zoology" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/skgo/modsci#Biochip
+modsci:Biochip rdf:type owl:NamedIndividual ,
+                        modsci:ApplicationOfScience ;
+               modsci:isApplicationOfScience modsci:Studying_biochemical_reactions .
+
+
+###  https://w3id.org/skgo/modsci#Biosensors
+modsci:Biosensors rdf:type owl:NamedIndividual ,
+                           modsci:ApplicationOfScience .
+
+
+###  https://w3id.org/skgo/modsci#Conservation_of_energy
+modsci:Conservation_of_energy rdf:type owl:NamedIndividual ,
+                                       modsci:Phenomena .
+
+
+###  https://w3id.org/skgo/modsci#PsychiatricDrugs
+modsci:PsychiatricDrugs rdf:type owl:NamedIndividual ,
+                                 modsci:ApplicationOfScience .
+
+
+###  https://w3id.org/skgo/modsci#Studying_biochemical_reactions
+modsci:Studying_biochemical_reactions rdf:type owl:NamedIndividual ,
+                                               modsci:MolecularBiology ;
+                                      modsci:isApplicationOfScience modsci:Studying_biochemical_reactions .
 
 
 ###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

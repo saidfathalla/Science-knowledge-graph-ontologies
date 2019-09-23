@@ -1,0 +1,105 @@
+<https://w3id.org/skgo/ChemSci#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/skgo/ChemSci#> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/skgo/ChemSci#> <http://purl.org/dc/elements/1.1/creator> "Said Fathalla" .
+<https://w3id.org/skgo/ChemSci#> <http://purl.org/dc/terms/created> "2019-09-01"@en .
+<https://w3id.org/skgo/ChemSci#> <http://purl.org/dc/terms/description> "ChemSci is a reference ontology for modelling Chemistry research data."@en .
+<https://w3id.org/skgo/ChemSci#> <http://purl.org/dc/terms/title> "ChemSci, Chemistry Science Ontology."@en .
+<https://w3id.org/skgo/ChemSci#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "chemsci" .
+<https://w3id.org/skgo/ChemSci#> <http://www.w3.org/2000/01/rdf-schema#label> "Chemisrty Science  Ontology"@en .
+<https://w3id.org/skgo/ChemSci#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/skgo/ChemSci#hasResults
+<https://w3id.org/skgo/ChemSci#hasResults> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/skgo/ChemSci#Analysis
+<https://w3id.org/skgo/ChemSci#Analysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Application
+<https://w3id.org/skgo/ChemSci#Application> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Article
+<https://w3id.org/skgo/ChemSci#Article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Characterization
+<https://w3id.org/skgo/ChemSci#Characterization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Compound
+<https://w3id.org/skgo/ChemSci#Compound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Electrod
+<https://w3id.org/skgo/ChemSci#Electrod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Evaluation
+<https://w3id.org/skgo/ChemSci#Evaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Experiment
+<https://w3id.org/skgo/ChemSci#Experiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Instruments
+<https://w3id.org/skgo/ChemSci#Instruments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Materials
+<https://w3id.org/skgo/ChemSci#Materials> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Oxidation
+<https://w3id.org/skgo/ChemSci#Oxidation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/ChemSci#Oxidation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/ChemSci#Reaction> .
+# 
+# https://w3id.org/skgo/ChemSci#Product
+<https://w3id.org/skgo/ChemSci#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Reaction
+<https://w3id.org/skgo/ChemSci#Reaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Reduction
+<https://w3id.org/skgo/ChemSci#Reduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/ChemSci#Reduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/skgo/ChemSci#Reaction> .
+# 
+# https://w3id.org/skgo/ChemSci#Results
+<https://w3id.org/skgo/ChemSci#Results> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/skgo/ChemSci#Software
+<https://w3id.org/skgo/ChemSci#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
