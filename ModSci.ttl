@@ -14,8 +14,8 @@
 @base <https://w3id.org/skgo/modsci#> .
 
 <https://w3id.org/skgo/modsci#> rdf:type owl:Ontology ;
-                                 owl:imports <http://www.w3.org/2008/05/skos> ,
-                                             <http://xmlns.com/foaf/0.1/> ;
+                                 owl:imports <http://xmlns.com/foaf/0.1/> ,
+                                             <http://www.w3.org/2004/02/skos/core> ;
                                  owl:versionInfo 1.0 ;
                                  dc:creator "Said Fathalla" ;
                                  rdfs:label "Modern Science Ontology"@en ;
@@ -40,13 +40,6 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 modsci:InspiredFrom rdf:type owl:ObjectProperty ;
                     rdfs:domain modsci:Algorithms ;
                     rdfs:range modsci:ScientificDiscovery .
-
-
-###  https://w3id.org/skgo/modsci#InstrumentusedInScience
-modsci:InstrumentusedInScience rdf:type owl:ObjectProperty ;
-                               rdfs:domain modsci:ScientificInstrument ;
-                               rdfs:range modsci:ModernScience ;
-                               rdfs:label "used In" .
 
 
 ###  https://w3id.org/skgo/modsci#InterestedInStudyingPhenomenon
@@ -104,6 +97,13 @@ modsci:hasCollaborationWith rdf:type owl:ObjectProperty ;
 modsci:hasMethodsInspiredFrom rdf:type owl:ObjectProperty ;
                               rdfs:domain modsci:ModernScience ;
                               rdfs:range modsci:ModernScience .
+
+
+###  https://w3id.org/skgo/modsci#instrumentUsedInScience
+modsci:instrumentUsedInScience rdf:type owl:ObjectProperty ;
+                               rdfs:domain modsci:ScientificInstrument ;
+                               rdfs:range modsci:ModernScience ;
+                               rdfs:label "used In" .
 
 
 ###  https://w3id.org/skgo/modsci#isApplicationOfScience
@@ -1621,7 +1621,7 @@ modsci:Support_Vector_Machines rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/skgo/modsci#Thermometer
 modsci:Thermometer rdf:type owl:NamedIndividual ,
                             modsci:ScientificInstrument ;
-                   modsci:InstrumentusedInScience modsci:Studying_biochemical_reactions ;
+                   modsci:instrumentUsedInScience modsci:Studying_biochemical_reactions ;
                    modsci:InstrumentUsedTo "measure temperature or a temperature gradient." .
 
 
