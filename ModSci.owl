@@ -33,16 +33,16 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Modern Science Ontology</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ModSci is a reference ontology for modelling different branches of modern science.</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">modsci</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:title"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ModSci, Modern Science Ontology.</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="terms:description"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ModSci is a reference ontology for modelling different types of modern sciences.</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:created"/>
