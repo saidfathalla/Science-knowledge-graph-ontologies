@@ -16,20 +16,26 @@
 @base <https://w3id.org/skgo/modsci#> .
 
 <https://w3id.org/skgo/modsci#> rdf:type owl:Ontology ;
+                                 owl:versionIRI <https://w3id.org/skgo/modsci/1.0> ;
                                  owl:imports <http://sweetontology.net/sweetMerged> ,
                                              <http://xmlns.com/foaf/0.1/> ,
                                              <http://www.w3.org/2004/02/skos/core> ;
                                  owl:versionInfo 1.0 ;
                                  dc:creator "Said Fathalla" ;
-                                 rdfs:label "Modern Science Ontology"@en ;
+                                 terms:contributor <https://scholar.google.de/citations?user=JOI-7d0AAAAJ&hl=en> ;
                                  terms:title "ModSci, Modern Science Ontology."@en ;
                                  vann:preferredNamespacePrefix "modsci" ;
                                  terms:description "ModSci is a reference ontology for modelling different types of modern sciences."@en ;
+                                 terms:license <http://creativecommons.org/licenses/by/3.0/> ;
                                  terms:created "2019-09-01"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 skos:prefLabel rdf:type owl:AnnotationProperty .
@@ -137,24 +143,38 @@ modsci:isApplicationOfScience rdf:type owl:ObjectProperty ;
                               rdfs:range modsci:ModernScience .
 
 
-###  https://w3id.org/skgo/modsci#isDiscoverdBy
-modsci:isDiscoverdBy rdf:type owl:ObjectProperty ;
-                     rdfs:domain [ rdf:type owl:Class ;
-                                   owl:unionOf ( sweet:Phenomenon
-                                                 modsci:ScientificDiscovery
+###  https://w3id.org/skgo/modsci#isDiscoveredBy
+modsci:isDiscoveredBy rdf:type owl:ObjectProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( sweet:Phenomenon
+                                                  modsci:ScientificDiscovery
+                                                )
+                                  ] ;
+                      rdfs:range [ rdf:type owl:Class ;
+                                   owl:unionOf ( modsci:ScientificOrganization
+                                                 modsci:Scientist
                                                )
-                                 ] ;
-                     rdfs:range [ rdf:type owl:Class ;
-                                  owl:unionOf ( modsci:ScientificOrganization
-                                                modsci:Scientist
-                                              )
-                                ] .
+                                 ] .
+
+
+###  https://w3id.org/skgo/modsci#isDiscoveredByOrganization
+modsci:isDiscoveredByOrganization rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/skgo/modsci#isDiscoveredByScientist
+modsci:isDiscoveredByScientist rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/skgo/modsci#requiresKnowledgeFrom
 modsci:requiresKnowledgeFrom rdf:type owl:ObjectProperty ;
                              rdfs:domain modsci:ModernScience ;
                              rdfs:range modsci:ModernScience .
+
+
+###  https://w3id.org/skgo/modsci#scientistBelongsTo
+modsci:scientistBelongsTo rdf:type owl:ObjectProperty ;
+                          rdfs:domain modsci:Scientist ;
+                          rdfs:range modsci:ModernScience .
 
 
 ###  https://w3id.org/skgo/modsci#suppliesSubstancesTo
@@ -2312,5 +2332,100 @@ modsci:temperature_gradient rdf:type owl:NamedIndividual ,
 modsci:Metabolism rdfs:label "Metabolism" ;
                   rdfs:comment "Metabolism is the set of life-sustaining chemical reactions in organisms." .
 
+
+#################################################################
+#    Rules
+#################################################################
+
+modsci:x rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+modsci:y rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+modsci:z rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "S3"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> modsci:ScientificOrganization ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> modsci:x
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> modsci:isDiscoveredBy ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> modsci:y ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> modsci:x
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> modsci:isDiscoveredByOrganization ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> modsci:y ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> modsci:x
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "S2"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> modsci:Scientist ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> modsci:x
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> modsci:isDiscoveredBy ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> modsci:y ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> modsci:x
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> modsci:isDiscoveredByScientist ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> modsci:y ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> modsci:x
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "S1"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> modsci:discoveredByScientist ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> modsci:x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> modsci:y
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> modsci:discoveredByScience ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> modsci:x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> modsci:z
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> modsci:scientistBelongsTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> modsci:y ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> modsci:z
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
 
 ###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
