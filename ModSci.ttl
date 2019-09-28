@@ -18,6 +18,7 @@
 <https://w3id.org/skgo/modsci#> rdf:type owl:Ontology ;
                                  owl:versionIRI <https://w3id.org/skgo/modsci/1.0> ;
                                  owl:imports <http://sweetontology.net/sweetMerged> ,
+                                             <http://www.w3.org/TR/2014/REC-rdf-schema-20140225/> ,
                                              <http://xmlns.com/foaf/0.1/> ,
                                              <http://www.w3.org/2004/02/skos/core> ;
                                  owl:versionInfo 1.0 ;
@@ -25,8 +26,8 @@
                                  terms:contributor <https://scholar.google.de/citations?user=JOI-7d0AAAAJ&hl=en> ;
                                  terms:title "ModSci, Modern Science Ontology."@en ;
                                  vann:preferredNamespacePrefix "modsci" ;
-                                 terms:description "ModSci is a reference ontology for modelling different types of modern sciences."@en ;
                                  terms:license <http://creativecommons.org/licenses/by/3.0/> ;
+                                 terms:description "ModSci is a reference ontology for modelling different types of modern sciences and related entities, such as scientific discoveries, renowned scientists, instruments, phenomena ... etc."@en ;
                                  terms:created "2019-09-01"@en .
 
 #################################################################
