@@ -1,12 +1,11 @@
 ---
 Name: Feature request 
-Ontology: Ontology name
 about: Suggest an idea to improve the ontology. 
 
 ---
 
 **Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the feature is. Ex.  reuse a related ontology.
+A clear and concise description of what the feature is and in which ontology, e.g.,  reuse a related ontology.
 
 **Describe the feature/property you'd like**
 A clear and concise description of what you want to add.
