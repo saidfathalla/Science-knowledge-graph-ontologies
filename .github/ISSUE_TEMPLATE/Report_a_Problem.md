@@ -1,6 +1,9 @@
 ---
 name: Problem report
 about: Create a report to help us improve the ontology
+title: "[Problem]"
+labels: bug
+assignees: ''
 
 ---
 
