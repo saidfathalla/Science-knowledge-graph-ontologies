@@ -1,7 +1,6 @@
 ---
 Name: Feature request 
 about: Suggest an idea to improve the ontology. 
-
 ---
 
 **Is your feature request related to a problem? Please describe.**
