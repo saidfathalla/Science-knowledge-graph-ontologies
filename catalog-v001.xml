@@ -4,9 +4,9 @@
     <uri id="Imports Wizard Entry" name="http://sweetontology.net/sweetMerged" uri="http://data.bioontology.org/ontologies/SWEET/submissions/5/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb"/>
     <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="http://xmlns.com/foaf/spec/"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1575844452886" name="https://w3id.org/skgo/ChemSci" uri="doc/ChemSci_doc/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1575844452886" name="https://w3id.org/skgo/dentsci" uri="doc/DentSci_doc/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1575844452886" name="https://w3id.org/skgo/modsci" uri="doc/ModSci_doc/ontology.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1575844452886" name="https://w3id.org/skgo/modsci#" uri="ModSci.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576054658561" name="https://w3id.org/skgo/ChemSci" uri="doc/ChemSci_doc/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1576054658561" name="https://w3id.org/skgo/dentsci" uri="doc/DentSci_doc/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1576054658561" name="https://w3id.org/skgo/modsci" uri="doc/ModSci_doc/ontology.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1576054658561" name="https://w3id.org/skgo/modsci#" uri="ModSci.owl"/>
     </group>
 </catalog>
