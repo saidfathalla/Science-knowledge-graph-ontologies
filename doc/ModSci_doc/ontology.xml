@@ -10,16 +10,24 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:modsci="https://w3id.org/skgo/modsci#">
     <owl:Ontology rdf:about="https://w3id.org/skgo/modsci#">
+        <owl:versionIRI rdf:resource="https://w3id.org/skgo/modsci/1.0"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <dc:creator>Said Fathalla</dc:creator>
+        <terms:contributor rdf:resource="https://scholar.google.de/citations?user=JOI-7d0AAAAJ&amp;hl=en"/>
         <terms:created xml:lang="en">2019-09-01</terms:created>
-        <terms:description xml:lang="en">ModSci is a reference ontology for modelling different types of modern sciences.</terms:description>
+        <terms:description xml:lang="en">ModSci is a reference ontology for modelling different types of modern sciences and related entities, such as scientific discoveries, renowned scientists, instruments, phenomena ... etc.</terms:description>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <terms:title xml:lang="en">ModSci, Modern Science Ontology.</terms:title>
         <vann:preferredNamespacePrefix>modsci</vann:preferredNamespacePrefix>
-        <rdfs:label xml:lang="en">Modern Science Ontology</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
     
@@ -51,17 +59,10 @@
     
 
 
-    <!-- http://purl.org/dc/terms/description -->
+    <!-- http://purl.org/dc/terms/license -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -69,6 +70,579 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#nationality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#nationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/familyName -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/familyName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#appliesLawsFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#appliesLawsFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#appliesLawsFromMathematics -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#appliesLawsFromMathematics">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#appliesLawsFrom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#appliesLawsFromPhysics -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#appliesLawsFromPhysics">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#appliesLawsFrom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#appliesLawsFromStatistics -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#appliesLawsFromStatistics">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#appliesLawsFrom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#appliesLawsFromThermodynamics -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#appliesLawsFromThermodynamics">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#appliesLawsFromPhysics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#discoveredByAppliedSciences -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#discoveredByAppliedSciences">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#discoveredByScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#discoveredByBehaviouralSciences -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#discoveredByBehaviouralSciences">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#discoveredByScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#discoveredByFormalScience -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#discoveredByFormalScience">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#discoveredByScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#discoveredByHealthSciences -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#discoveredByHealthSciences">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#discoveredByScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#discoveredByInterdisciplinaryStudies -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#discoveredByInterdisciplinaryStudies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#discoveredByScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#discoveredByNaturalScience -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#discoveredByNaturalScience">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#discoveredByScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#discoveredByScience -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#discoveredByScience">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://sweetontology.net/phen/Phenomenon"/>
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#discoveredByScientist -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#discoveredByScientist">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://sweetontology.net/phen/Phenomenon"/>
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/skgo/modsci#discoveredByScientist"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/skgo/modsci#discoveredByScientist"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#discoveredBySocialSciences -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#discoveredBySocialSciences">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#discoveredByScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#doingStudies -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#doingStudies">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#followsMethod -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#followsMethod">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ScientificMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#hasApplication -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#hasApplication">
+        <owl:inverseOf rdf:resource="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#hasCloseRelationshipTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#hasCloseRelationshipTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#hasCollaborationWith -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#hasCollaborationWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#hasManufacturer -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#hasManufacturer">
+        <owl:inverseOf rdf:resource="https://w3id.org/skgo/modsci#isManufacturerOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#hasMethodsInspiredFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#hasMethodsInspiredFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#hasScientificInstrumentManufacturer -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#hasScientificInstrumentManufacturer">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#hasManufacturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#inspiredFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#inspiredFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ScientificMethod"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://sweetontology.net/phen/Phenomenon"/>
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#inspiredFromPhenomenon -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#inspiredFromPhenomenon">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#inspiredFrom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#inspiredFromScientificDiscovery -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#inspiredFromScientificDiscovery">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#inspiredFrom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#instrumentInventedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#instrumentInventedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#instrumentUsedInScience -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#instrumentUsedInScience">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:label>instrument used in Science</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#interestedInPhenomenon -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#interestedInPhenomenon">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <rdfs:range rdf:resource="http://sweetontology.net/phen/Phenomenon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isApplicationOfAppliedScience -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isApplicationOfAppliedScience">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isApplicationOfBehaviouralSciences -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isApplicationOfBehaviouralSciences">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isApplicationOfFormalScience -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isApplicationOfFormalScience">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isApplicationOfHealthSciences -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isApplicationOfHealthSciences">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isApplicationOfInterdisciplinaryStudies -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isApplicationOfInterdisciplinaryStudies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isApplicationOfNaturalScience -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isApplicationOfNaturalScience">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isApplicationOfScience -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isApplicationOfScience">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isApplicationOfSocialSciences -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isApplicationOfSocialSciences">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#isApplicationOfScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isDiscoveredBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isDiscoveredBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://sweetontology.net/phen/Phenomenon"/>
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#ScientificOrganization"/>
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#Scientist"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isDiscoveredByOrganization -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isDiscoveredByOrganization">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#isDiscoveredBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isDiscoveredByScientist -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isDiscoveredByScientist">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/skgo/modsci#isDiscoveredBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#isManufacturerOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#isManufacturerOf"/>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#requiresKnowledgeFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#requiresKnowledgeFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#scientistBelongsTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#scientistBelongsTo">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#suppliesSubstancesTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#suppliesSubstancesTo">
+        <owl:inverseOf rdf:resource="https://w3id.org/skgo/modsci#takeSunstancesFrom"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#Industry"/>
+                    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#ModernScience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#takeSunstancesFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#takeSunstancesFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#usesMethodsFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#usesMethodsFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#usesTechniquesFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#usesTechniquesFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#InstrumentFunctionDesription -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/skgo/modsci#InstrumentFunctionDesription">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -81,6 +655,16 @@
      -->
 
 
+    
+
+
+    <!-- http://sweetontology.net/phen/Phenomenon -->
+
+
+    <owl:Class rdf:about="http://sweetontology.net/phen/Phenomenon">
+        <rdfs:comment xml:lang="en">A phenomenon, in a scientific context, is something that is observed to occur or to exist.</rdfs:comment>
+        <rdfs:label xml:lang="en">Phenomenon</rdfs:label>
+    </owl:Class>
     
 
 
@@ -113,6 +697,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
         <rdfs:comment>Agriculture, also known as farming, is the process of producing food, feed, fiber and other desired products by cultivation of certain plants and the raising of domesticated animals.</rdfs:comment>
         <rdfs:label>Agriculture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Algorithms -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Algorithms">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ScientificMethod"/>
+        <rdfs:label>Algorithms</rdfs:label>
     </owl:Class>
     
 
@@ -150,6 +744,16 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#ApplicationOfScience -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ApplicationOfScience">
+        <rdfs:comment>An application of science is any use of scientific knowledge for a specific purpose, whether to do more science; to design a product, process, or medical treatment; to develop a new technology; or to predict the impacts of human actions.</rdfs:comment>
+        <rdfs:label>Application of science</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#AppliedMathematics -->
 
 
@@ -177,7 +781,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/skgo/modsci#AppliedSciences">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Science"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
         <rdfs:comment>Applied science is the use or the study of the use of scientific knowledge to develop technology.</rdfs:comment>
         <rdfs:label>Applied Sciences</rdfs:label>
     </owl:Class>
@@ -250,6 +854,16 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#AstronomicalPhenomena -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#AstronomicalPhenomena">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalPhenomenon"/>
+        <rdfs:label>Astronomical Phenomena</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#Astronomy -->
 
 
@@ -257,6 +871,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalScience"/>
         <rdfs:comment>is a science involving the observation and explanation of events occurring outside Earth and its atmosphere.</rdfs:comment>
         <rdfs:label>Astronomy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#AtmosphericPhenomena -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#AtmosphericPhenomena">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalPhenomenon"/>
+        <rdfs:label>Atmospheric Optical Phenomena</rdfs:label>
     </owl:Class>
     
 
@@ -283,11 +907,33 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#AutomataTheory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#AutomataTheory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#TheoryOfComputation"/>
+        <rdfs:comment>Automata theory is the study of abstract machines and automata, as well as the computational problems that can be solved using them.</rdfs:comment>
+        <rdfs:label>Automata Theory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#AutomatedReasoning -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#AutomatedReasoning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ArtificialIntelligence"/>
+        <rdfs:comment>Automated reasoning is an area of computer science, cognitive science, and mathematical logic dedicated to understanding different aspects of reasoning.</rdfs:comment>
+        <rdfs:label>Automated Reasoning</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#BehaviouralSciences -->
 
 
     <owl:Class rdf:about="https://w3id.org/skgo/modsci#BehaviouralSciences">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Science"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
         <rdfs:comment>Behavioural sciences explore the cognitive processes within organisms and the behavioural interactions between organisms in the natural world.</rdfs:comment>
         <rdfs:label>Behavioural Sciences</rdfs:label>
     </owl:Class>
@@ -348,6 +994,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#InterdisciplinaryStudies"/>
         <rdfs:comment>Bioinformatics and Computational biology are interdisciplinary fields of research, development and application of algorithms, computational and statistical methods for management and analysis of biological data, and for solving basic biological problems.</rdfs:comment>
         <rdfs:label>Bioinformatics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#BiologicalPhenomena -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#BiologicalPhenomena">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalPhenomenon"/>
+        <rdfs:label>Biological Phenomena</rdfs:label>
     </owl:Class>
     
 
@@ -451,6 +1107,16 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#ChemicalPhenomena -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ChemicalPhenomena">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalPhenomenon"/>
+        <rdfs:label>Chemical Phenomena</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#Chemistry -->
 
 
@@ -458,6 +1124,15 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalScience"/>
         <rdfs:comment>Chemistry is defined as the science of matter, different from physics, in terms of matter&apos;s chemical structure, reactivity, properties and reactions or transformations.</rdfs:comment>
         <rdfs:label>Chemistry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ClassificationAlgorithms -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ClassificationAlgorithms">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Algorithms"/>
     </owl:Class>
     
 
@@ -484,6 +1159,16 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#CommunicationAndSecurity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#CommunicationAndSecurity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ComputerScience"/>
+        <rdfs:label>Communication and Security</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#CommunicationStudies -->
 
 
@@ -491,6 +1176,39 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SocialSciences"/>
         <rdfs:comment>Communication is the act of conveying meanings from one entity or group to another through the use of mutually understood signs, symbols, and semiotic rules.</rdfs:comment>
         <rdfs:label>Communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#CompilerTheory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#CompilerTheory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ProgrammingLanguages"/>
+        <rdfs:comment>A compiler implements a formal transformation from a high-level source program to a low-level target program.</rdfs:comment>
+        <rdfs:label>Compiler Theory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ComputabilityTheory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ComputabilityTheory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#TheoryOfComputation"/>
+        <rdfs:comment>Computability theory, also known as recursion theory, is a branch of mathematical logic, of computer science, and of the theory of computation that originated in the 1930s with the study of computable functions and Turing degrees.</rdfs:comment>
+        <rdfs:label>Computability Theory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ComputationalComplexityTheory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ComputationalComplexityTheory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#TheoryOfComputation"/>
+        <rdfs:comment>Computational complexity theory focuses on classifying computational problems according to their inherent difficulty, and relating these classes to each other. A computational problem is a task solved by a computer.</rdfs:comment>
+        <rdfs:label>Computational Complexity Theory</rdfs:label>
     </owl:Class>
     
 
@@ -517,6 +1235,39 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#ComputerArchitecture -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ComputerArchitecture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ComputerScience"/>
+        <rdfs:comment>In computer engineering, computer architecture is a set of rules and methods that describe the functionality, organization, and implementation of computer systems.</rdfs:comment>
+        <rdfs:label>Computer Architecture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ComputerConcurrency -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ComputerConcurrency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#DistributedSystems"/>
+        <rdfs:comment>In computer science, concurrency is the ability of different parts or units of a program, algorithm, or problem to be executed out-of-order or in partial order, without affecting the final outcome. This allows for parallel execution of the concurrent units, which can significantly improve overall speed of the execution in multi-processor and multi-core systems.</rdfs:comment>
+        <rdfs:label>Computer Concurrency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ComputerGraphics -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ComputerGraphics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Graphics"/>
+        <rdfs:comment>Computer graphics are pictures and films created using computers. Usually, the term refers to computer-generated image data created with the help of specialized graphical hardware and software.</rdfs:comment>
+        <rdfs:label>Computer Graphics</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#ComputerScience -->
 
 
@@ -524,6 +1275,28 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
         <rdfs:comment>Computer science is the study of processes that interact with data and that can be represented as data in the form of programs.</rdfs:comment>
         <rdfs:label>Computer Science</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ComputerSecurity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ComputerSecurity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#CommunicationAndSecurity"/>
+        <rdfs:comment>Computer security, cybersecurity or information technology security (IT security) is the protection of computer systems from the theft of or damage to their hardware, software, or electronic data, as well as from the disruption or misdirection of the services they provide.</rdfs:comment>
+        <rdfs:label>Computer Security</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ComputerVision -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ComputerVision">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ArtificialIntelligence"/>
+        <rdfs:comment>Computer vision is an interdisciplinary scientific field that deals with how computers can be made to gain high-level understanding from digital images or videos.</rdfs:comment>
+        <rdfs:label>Computer Vision</rdfs:label>
     </owl:Class>
     
 
@@ -561,6 +1334,17 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#Cryptography -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Cryptography">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#CommunicationAndSecurity"/>
+        <rdfs:comment>Cryptography or cryptology is the practice and study of techniques for secure communication in the presence of third parties called adversaries.</rdfs:comment>
+        <rdfs:label>Cryptography</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#Crystallography -->
 
 
@@ -594,6 +1378,27 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#DataMining -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#DataMining">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Databases"/>
+        <rdfs:comment>Data mining is the process of discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.</rdfs:comment>
+        <rdfs:label>Data Mining</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Databases -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Databases">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ComputerScience"/>
+        <rdfs:label>Databases</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#Dentistry -->
 
 
@@ -612,6 +1417,27 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Biology"/>
         <rdfs:comment>Developmental biology is the study of the process by which animals and plants grow and develop.</rdfs:comment>
         <rdfs:label>Developmental Biology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#DistributedComputing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#DistributedComputing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#DistributedSystems"/>
+        <rdfs:comment>Distributed computing is a field of computer science that studies distributed systems. A distributed system is a system whose components are located on different networked computers, which communicate and coordinate their actions by passing messages to one another.</rdfs:comment>
+        <rdfs:label>Distributed Computing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#DistributedSystems -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#DistributedSystems">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ComputerScience"/>
+        <rdfs:label>Concurrent, Parallel, and Distributed systems</rdfs:label>
     </owl:Class>
     
 
@@ -771,6 +1597,17 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#EvolutionaryComputation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#EvolutionaryComputation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SoftComputing"/>
+        <rdfs:comment>In computer science, evolutionary computation is a family of algorithms for global optimization inspired by biological evolution, and the subfield of artificial intelligence and soft computing studying these algorithms.</rdfs:comment>
+        <rdfs:label>Evolutionary Computation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#EvolutionaryPsychology -->
 
 
@@ -841,7 +1678,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/skgo/modsci#FormalScience">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Science"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
         <rdfs:comment>Formal sciences are a branch of science studying formal language disciplines concerned with formal systems, such as logic, mathematics, statistics, theoretical computer science, artificial intelligence, information theory, game theory, systems theory, decision theory, and theoretical linguistics.</rdfs:comment>
         <rdfs:label>Formal Science</rdfs:label>
     </owl:Class>
@@ -899,6 +1736,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
         <rdfs:comment>Geography is a field of science devoted to the study of the lands, features, inhabitants, and phenomena of the Earth and planets.</rdfs:comment>
         <rdfs:label>Geography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#GeologicalPhenomena -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#GeologicalPhenomena">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalPhenomenon"/>
+        <rdfs:comment>A geological phenomenon is a phenomenon which is explained by or sheds light on the science of geology.</rdfs:comment>
+        <rdfs:label>Geological Phenomena</rdfs:label>
     </owl:Class>
     
 
@@ -968,6 +1816,16 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#Graphics -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Graphics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ComputerScience"/>
+        <rdfs:label>Graphics</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#GreenChemistry -->
 
 
@@ -994,7 +1852,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/skgo/modsci#HealthSciences">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Science"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
         <rdfs:comment>Health sciences are those sciences which focus on health, or health care, as core parts of their subject matter.</rdfs:comment>
         <rdfs:label>Health Sciences</rdfs:label>
     </owl:Class>
@@ -1023,6 +1881,17 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#HumanComputerInteraction -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#HumanComputerInteraction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SoftwareEngineering"/>
+        <rdfs:comment>Human–computer interaction (HCI) researches the design and use of computer technology, focused on the interfaces between people (users) and computers. Researchers in the field of HCI observe the ways in which humans interact with computers and design technologies that let humans interact with computers in novel ways.</rdfs:comment>
+        <rdfs:label>Human Computer Interaction</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#HumanSciences -->
 
 
@@ -1045,6 +1914,17 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#ImageProcessing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ImageProcessing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Graphics"/>
+        <rdfs:comment>In computer science, digital image processing is the use of computer algorithms to perform image processing on digital images.</rdfs:comment>
+        <rdfs:label>Image Processing</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#Immunology -->
 
 
@@ -1056,13 +1936,23 @@
     
 
 
-    <!-- https://w3id.org/skgo/modsci#IndustrialProcess -->
+    <!-- https://w3id.org/skgo/modsci#IndustrialScience -->
 
 
-    <owl:Class rdf:about="https://w3id.org/skgo/modsci#IndustrialProcess">
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#IndustrialScience">
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
         <rdfs:comment>An industrial process alters materials or substances.</rdfs:comment>
         <rdfs:label>Industrial Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Industry -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Industry">
+        <rdfs:comment>An industry is a sector that produces goods or related services within an economy.</rdfs:comment>
+        <rdfs:label>Industry</rdfs:label>
     </owl:Class>
     
 
@@ -1078,6 +1968,17 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#InformationVisualization -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#InformationVisualization">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Graphics"/>
+        <rdfs:comment>Information visualization or information visualisation is the study of (interactive) visual representations of abstract data to reinforce human cognition.</rdfs:comment>
+        <rdfs:label>Information Visualization</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#InorganicChemistry -->
 
 
@@ -1089,13 +1990,30 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#Instruments -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Instruments"/>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#InterdisciplinaryStudies -->
 
 
     <owl:Class rdf:about="https://w3id.org/skgo/modsci#InterdisciplinaryStudies">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Science"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
         <rdfs:comment>Interdisciplinarity or interdisciplinary studies involves the combining of two or more academic disciplines into one activity (e.g., a research project).</rdfs:comment>
         <rdfs:label>Interdisciplinary Studies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#LaboratoryInstrument -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#LaboratoryInstrument">
+        <owl:equivalentClass rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Instruments"/>
     </owl:Class>
     
 
@@ -1142,6 +2060,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#InterdisciplinaryStudies"/>
         <rdfs:comment>Logic is the study of reasoning, or the study of the principles and criteria of valid inference and demonstration.</rdfs:comment>
         <rdfs:label>Logic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MachineLearning -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#MachineLearning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SoftComputing"/>
+        <rdfs:comment>Machine learning (ML) is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead.</rdfs:comment>
+        <rdfs:label>Machine Learning</rdfs:label>
     </owl:Class>
     
 
@@ -1250,8 +2179,6 @@
 
     <owl:Class rdf:about="https://w3id.org/skgo/modsci#Metabolism">
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Biology"/>
-        <rdfs:comment>Metabolism is the set of life-sustaining chemical reactions in organisms.</rdfs:comment>
-        <rdfs:label>Metabolism</rdfs:label>
     </owl:Class>
     
 
@@ -1263,6 +2190,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
         <rdfs:comment>Metallurgy is a domain of materials science and engineering that studies the physical and chemical behavior of metallic elements, their inter-metallic compounds, and their mixtures, which are called alloys.</rdfs:comment>
         <rdfs:label>Metallurgy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MeteorologicalPhenomena -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#MeteorologicalPhenomena">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalPhenomenon"/>
+        <rdfs:label>Meteorological Phenomena</rdfs:label>
     </owl:Class>
     
 
@@ -1283,8 +2220,18 @@
 
     <owl:Class rdf:about="https://w3id.org/skgo/modsci#MilitaryScience">
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
-        <rdfs:comment>Military science is the study of military processes, institutions, and behavior, along with the study of warfare, and the theory and application of organized coercive force.</rdfs:comment>
+        <rdfs:comment>Military science is the study of military processes, dentsciitutions, and behavior, along with the study of warfare, and the theory and application of organized coercive force.</rdfs:comment>
         <rdfs:label>Military Science</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ModernScience -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ModernScience">
+        <rdfs:comment>Science is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe.</rdfs:comment>
+        <rdfs:label>Science</rdfs:label>
     </owl:Class>
     
 
@@ -1322,13 +2269,49 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#NaturalLanguageProcessing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#NaturalLanguageProcessing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ArtificialIntelligence"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ComputerScience"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Linguistics"/>
+        <rdfs:comment>Natural language processing (NLP) is a subfield of linguistics, computer science, information engineering, and artificial intelligence concerned with the interactions between computers and human (natural) languages, in particular how to program computers to process and analyze large amounts of natural language data.</rdfs:comment>
+        <rdfs:label>Natural language processing (NLP)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#NaturalPhenomenon -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#NaturalPhenomenon">
+        <rdfs:subClassOf rdf:resource="http://sweetontology.net/phen/Phenomenon"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/skgo/modsci#SocialPhenomenon"/>
+        <rdfs:comment xml:lang="en">Natural phenomena include gravity, tides, biological processes and oscillation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Natural Phenomenon</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#NaturalScience -->
 
 
     <owl:Class rdf:about="https://w3id.org/skgo/modsci#NaturalScience">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Science"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
         <rdfs:comment>The natural sciences are those branches of empirical science that produce a comprehension of the natural world through the use of data collected from it by observation and measurement to construct deterministic and/or stochastic quantitative models of its phenomena.</rdfs:comment>
         <rdfs:label>Natural Sciences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Networking -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Networking">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#CommunicationAndSecurity"/>
+        <rdfs:comment>A computer network is a digital telecommunications network which allows nodes to share resources.</rdfs:comment>
+        <rdfs:label>Networking</rdfs:label>
     </owl:Class>
     
 
@@ -1378,6 +2361,16 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#OceanographicPhenomena -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#OceanographicPhenomena">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalPhenomenon"/>
+        <rdfs:label>Oceanographic Phenomena</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#Oceanography -->
 
 
@@ -1385,6 +2378,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
         <rdfs:comment>Oceanography also known as oceanology, is the study of the physical and biological aspects of the ocean.</rdfs:comment>
         <rdfs:label>Oceanography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#OperatingSystems -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#OperatingSystems">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ComputerScience"/>
+        <rdfs:comment>An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs.</rdfs:comment>
+        <rdfs:label>Operating Systems</rdfs:label>
     </owl:Class>
     
 
@@ -1455,6 +2459,17 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#ParallelComputing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ParallelComputing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#DistributedSystems"/>
+        <rdfs:comment>Parallel computing is a type of computation in which many calculations or the execution of processes are carried out simultaneously.</rdfs:comment>
+        <rdfs:label>Parallel Computing</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#Parasitology -->
 
 
@@ -1521,6 +2536,17 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#Phylogeny -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Phylogeny">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Biology"/>
+        <rdfs:comment>Phylogenetics is the study of the evolutionary history and relationships among individuals or groups of organisms.</rdfs:comment>
+        <rdfs:label>Phylogeny</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#PhysicalChemistry -->
 
 
@@ -1539,6 +2565,16 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#EarthScience"/>
         <rdfs:comment>Physical geography is a subfield of geography, closely related to geology, that focuses on the spatial characteristics of natural processes, within the hydrosphere, biosphere, atmosphere and lithosphere.</rdfs:comment>
         <rdfs:label>Physical Geography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#PhysicalPhenomena -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#PhysicalPhenomena">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#NaturalPhenomenon"/>
+        <rdfs:label>Physical Phenomena</rdfs:label>
     </owl:Class>
     
 
@@ -1609,6 +2645,38 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#ProgrammingLanguage -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ProgrammingLanguage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ProgrammingLanguages"/>
+        <rdfs:comment>A programming language is a formal language, which comprises a set of instructions that produce various kinds of output. Programming languages are used in computer programming to implement algorithms.</rdfs:comment>
+        <rdfs:label>Programming Language</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ProgrammingLanguageTheory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ProgrammingLanguageTheory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ProgrammingLanguages"/>
+        <rdfs:comment>Programming language theory (PLT) is a branch of computer science that deals with the design, implementation, analysis, characterization, and classification of programming languages and their individual features.</rdfs:comment>
+        <rdfs:label>Programming Language Theory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ProgrammingLanguages -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ProgrammingLanguages">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ComputerScience"/>
+        <rdfs:label>Programming Languages and Compilers</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#Psychology -->
 
 
@@ -1616,6 +2684,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#BehaviouralSciences"/>
         <rdfs:comment>Psychology is a collection of academic, clinical and industrial disciplines concerned with the explanation and prediction of behavior, thinking, emotions, motivations, relationships, potentials and pathologies.</rdfs:comment>
         <rdfs:label>Psychology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#QuantumComputing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#QuantumComputing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#TheoryOfComputation"/>
+        <rdfs:comment>Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. A quantum computer is used to perform such computation, which can be implemented theoretically or physically.</rdfs:comment>
+        <rdfs:label>Quantum Computing</rdfs:label>
     </owl:Class>
     
 
@@ -1653,12 +2732,35 @@
     
 
 
-    <!-- https://w3id.org/skgo/modsci#Science -->
+    <!-- https://w3id.org/skgo/modsci#RelationalDatabases -->
 
 
-    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Science">
-        <rdfs:comment>Science is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe.</rdfs:comment>
-        <rdfs:label>Science</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#RelationalDatabases">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Databases"/>
+        <rdfs:comment>A relational database is a digital database based on the relational model of data, as proposed by E. F. Codd in 1970.</rdfs:comment>
+        <rdfs:label>Relational Databases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ReverseEngineering -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ReverseEngineering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SoftwareEngineering"/>
+        <rdfs:comment>Reverse engineering, also called back engineering, is the process by which a man-made object is deconstructed to reveal its designs, architecture, or to extract knowledge from the object; similar to scientific research, the only difference being that scientific research is about a natural phenomenon.</rdfs:comment>
+        <rdfs:label>Reverse Engineering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Robotics -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Robotics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ArtificialIntelligence"/>
+        <rdfs:comment>Robotics is an interdisciplinary branch of engineering and science that includes mechanical engineering, electronic engineering, information engineering, computer science, and others. Robotics deals with the design, construction, operation, and use of robots, as well as computer systems for their control, sensory feedback, and information processing.</rdfs:comment>
+        <rdfs:label>Robotics</rdfs:label>
     </owl:Class>
     
 
@@ -1685,11 +2787,42 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#ScientificDiscovery -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ScientificDiscovery">
+        <rdfs:comment>Scientific Discovery is the process or product of successful scientific inquiry. Objects of discovery can be things, events, processes, causes, and properties as well as theories and hypotheses and their features (their explanatory power, for example).</rdfs:comment>
+        <rdfs:label>Scientific Discovery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ScientificInstrument -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ScientificInstrument">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Instruments"/>
+        <rdfs:comment xml:lang="en">A scientific instrument is, broadly speaking, a device or tool used for scientific purposes, including the study of both natural phenomena and theoretical research.</rdfs:comment>
+        <rdfs:label>Scientific Instrument</rdfs:label>
+        <skos:prefLabel xml:lang="en">Instrument</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer">
+        <rdfs:comment>Companies manufacturing equipment for scientific sstudies.</rdfs:comment>
+        <rdfs:label>Scientific Instrument Manufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#ScientificMethod -->
 
 
     <owl:Class rdf:about="https://w3id.org/skgo/modsci#ScientificMethod">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#FormalScience"/>
         <rdfs:comment>A scientific method is a sequence or collection of processes that are considered characteristic of scientific investigation and the acquisition of new scientific knowledge based upon physical evidence.</rdfs:comment>
         <rdfs:label>Scientific Method</rdfs:label>
     </owl:Class>
@@ -1707,6 +2840,37 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#ScientificOrganization -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#ScientificOrganization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Scientist -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Scientist">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment xml:lang="en">A scientist is someone who conducts scientific research to advance knowledge in an area of interest.</rdfs:comment>
+        <rdfs:label xml:lang="en">Scientist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Semantics -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Semantics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ProgrammingLanguages"/>
+        <rdfs:comment>In programming language theory, semantics is the field concerned with the rigorous mathematical study of the meaning of programming languages. It does so by evaluating the meaning of syntactically valid strings defined by a specific programming language, showing the computation involved.</rdfs:comment>
+        <rdfs:label>Semantics</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#Semiotics -->
 
 
@@ -1715,6 +2879,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SocialSciences"/>
         <rdfs:comment>Semiotics is the study of signs (symbols) and signification systems, or rather semiotics are general theories of signs.</rdfs:comment>
         <rdfs:label>Semiotics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SocialPhenomenon -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#SocialPhenomenon">
+        <rdfs:subClassOf rdf:resource="http://sweetontology.net/phen/Phenomenon"/>
+        <rdfs:comment xml:lang="en">Social phenomena are those that occur or exist through the actions of groups of humans.</rdfs:comment>
+        <rdfs:label xml:lang="en">Social Phenomenon</rdfs:label>
     </owl:Class>
     
 
@@ -1734,7 +2909,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/skgo/modsci#SocialSciences">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Science"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
         <rdfs:comment>The social sciences are academic disciplines concerned with the study of the social life of human groups and individuals including anthropology, economics, geography, history, political science, psychology, social studies, and sociology.</rdfs:comment>
         <rdfs:label>Social Sciences</rdfs:label>
     </owl:Class>
@@ -1770,6 +2945,28 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#SocialSciences"/>
         <rdfs:comment>Sociology is the study of social behaviour or society, including its origins, development, organization, networks, and institutions. and critical analysis to develop a body of knowledge about social order, disorder, and change.</rdfs:comment>
         <rdfs:label>Sociology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SoftComputing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#SoftComputing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ArtificialIntelligence"/>
+        <rdfs:comment>Soft computing, as opposed to traditional computing, deals with approximate models and gives solutions to complex real-life problems. Unlike hard computing, soft computing is tolerant of imprecision, uncertainty, partial truth, and approximations.</rdfs:comment>
+        <rdfs:label>Soft Computing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#SoftwareEngineering -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#SoftwareEngineering">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ComputerScience"/>
+        <rdfs:comment>Software engineering is the application of engineering to the development of software in a systematic method.</rdfs:comment>
+        <rdfs:label>Software Engineering</rdfs:label>
     </owl:Class>
     
 
@@ -1873,6 +3070,17 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#StructuredStorage -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#StructuredStorage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#Databases"/>
+        <rdfs:comment>Structured storage is computer storage for structured data, often in the form of a distributed database.</rdfs:comment>
+        <rdfs:label>Structured Storage</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#SupramolecularChemistry -->
 
 
@@ -1950,6 +3158,16 @@
     
 
 
+    <!-- https://w3id.org/skgo/modsci#TheoryOfComputation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#TheoryOfComputation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ComputerScience"/>
+        <rdfs:label>Theory of Computation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/skgo/modsci#Thermodynamics -->
 
 
@@ -1979,6 +3197,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#InterdisciplinaryStudies"/>
         <rdfs:comment>Transdisciplinarity connotes a research strategy that crosses many disciplinary boundaries to create a holistic approach.</rdfs:comment>
         <rdfs:label>Transdisciplinarity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#TypeTheory -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#TypeTheory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#ProgrammingLanguages"/>
+        <rdfs:comment>In mathematics, logic, and computer science, a type theory is any of a class of formal systems, some of which can serve as alternatives to set theory as a foundation for all mathematics. In type theory, every &quot;term&quot; has a &quot;type&quot; and operations are restricted to terms of a certain type.</rdfs:comment>
+        <rdfs:label>Type Theory</rdfs:label>
     </owl:Class>
     
 
@@ -2024,6 +3253,1410 @@
         <rdfs:comment>Zoology is the study of the biology of animals.</rdfs:comment>
         <rdfs:label>Zoology</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ADInstruments -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#ADInstruments">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Accelerometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Accelerometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Accumulator -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Accumulator">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <instrumentInventedBy rdf:resource="https://w3id.org/skgo/modsci#Waldemar_Jungner"/>
+        <InstrumentFunctionDesription>Used to store electrical energy</InstrumentFunctionDesription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#AgilentTechnologies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#AgilentTechnologies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Ammeter -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Ammeter">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <instrumentInventedBy rdf:resource="https://w3id.org/skgo/modsci#Friedrich_Drexler"/>
+        <InstrumentFunctionDesription>Measure strength of electric current in amperes.</InstrumentFunctionDesription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Anemometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Anemometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#AntonPaar -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#AntonPaar">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Astronomical_Studies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Astronomical_Studies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Astronomy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Aurora -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Aurora">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#AtmosphericPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Barometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Barometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <instrumentInventedBy rdf:resource="https://w3id.org/skgo/modsci#Evangelista_Torricelli"/>
+        <InstrumentFunctionDesription>Used to measure atmospheric pressure and conditions</InstrumentFunctionDesription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biochip -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Biochip">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+        <isApplicationOfScience rdf:resource="https://w3id.org/skgo/modsci#Studying_biochemical_reactions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biological_Studies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Biological_Studies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Biology"/>
+        <appliesLawsFrom rdf:resource="https://w3id.org/skgo/modsci#Physical_Studies"/>
+        <requiresKnowledgeFrom rdf:resource="https://w3id.org/skgo/modsci#Historical_Studies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biomedical_Signals -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Biomedical_Signals">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Biosensors -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Biosensors">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Boiling -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Boiling">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#PhysicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Breaking_waves -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Breaking_waves">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#OceanographicPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Bruker -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Bruker">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Caliper -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Caliper">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Calorimeter -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Calorimeter">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Chemical_Studies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Chemical_Studies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Chemistry"/>
+        <hasCloseRelationshipTo rdf:resource="https://w3id.org/skgo/modsci#Biological_Studies"/>
+        <hasCloseRelationshipTo rdf:resource="https://w3id.org/skgo/modsci#Physical_Studies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Community_of_European_Solar_Radio_Astronomers -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Community_of_European_Solar_Radio_Astronomers">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificOrganization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Conservation_of_energy -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Conservation_of_energy">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#PhysicalPhenomena"/>
+        <discoveredByScientist rdf:resource="https://w3id.org/skgo/modsci#Julius_von_Mayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Crystal_growth -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Crystal_growth">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#PhysicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#DNA_Sequencer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#DNA_Sequencer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Decision_Trees -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Decision_Trees">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ClassificationAlgorithms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Decomposition -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Decomposition">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#BiologicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Deep_Learning -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Deep_Learning">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificMethod"/>
+        <inspiredFrom rdf:resource="https://w3id.org/skgo/modsci#Biomedical_Signals"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Dynamo -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Dynamo">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <instrumentInventedBy rdf:resource="https://w3id.org/skgo/modsci#Michael_Faraday"/>
+        <InstrumentFunctionDesription>Converts mechanical energy into electrical energy</InstrumentFunctionDesription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Dynamometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Dynamometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#E3G -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#E3G">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificOrganization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#EACSL -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#EACSL">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificOrganization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Earthquake -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Earthquake">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#GeologicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Economic_Studies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Economic_Studies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Economics"/>
+        <usesMethodsFrom rdf:resource="https://w3id.org/skgo/modsci#Statistics_Studies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Electrometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Electrometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Electroscope -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Electroscope">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Elementar -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Elementar">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Ellipsometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Ellipsometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Engineering_Studies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Engineering_Studies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Engineering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Erosion -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Erosion">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#GeologicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Eudiometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Eudiometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Evangelista_Torricelli -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Evangelista_Torricelli">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Mathematical_Studies"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Physical_Studies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Fire -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Fire">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ChemicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Fraunhofer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Fraunhofer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificOrganization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Freezing -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Freezing">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#PhysicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Friedrich_Drexler -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Friedrich_Drexler">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Engineering_Studies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Galvanometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Galvanometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <instrumentInventedBy rdf:resource="https://w3id.org/skgo/modsci#Johann_Schweigger"/>
+        <InstrumentFunctionDesription>Used to reproduce the recorded sound</InstrumentFunctionDesription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Genetic_algorithms -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Genetic_algorithms">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Geological_Studies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Geological_Studies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Geology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Gravitometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Gravitometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Gravity -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Gravity">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#PhysicalPhenomena"/>
+        <discoveredByScientist rdf:resource="https://w3id.org/skgo/modsci#Isaac_Newton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Growth -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Growth">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#BiologicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Guglielmo_Marconi -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Guglielmo_Marconi">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Engineering_Studies"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Physical_Studies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Haze -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Haze">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#AtmosphericPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Historical_Studies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Historical_Studies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#History"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Horiba -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Horiba">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Hydrometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Hydrometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Inclinometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Inclinometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Interferometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Interferometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Isaac_Newton -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Isaac_Newton">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Astronomical_Studies"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Mathematical_Studies"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Physical_Studies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Johann_Schweigger -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Johann_Schweigger">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Chemical_Studies"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Mathematical_Studies"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Physical_Studies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Julius_von_Mayer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Julius_von_Mayer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Chemical_Studies"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Physical_Studies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#KNN_Algorithm -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#KNN_Algorithm">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ClassificationAlgorithms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#LECO_Corporation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#LECO_Corporation">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Light_Bulb -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Light_Bulb">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+        <instrumentInventedBy rdf:resource="https://w3id.org/skgo/modsci#Thomas_Edison"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Light_magnification -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Light_magnification">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Astronomy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Light_pillar -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Light_pillar">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#AtmosphericPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Linear_Regression -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Linear_Regression">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Statistics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Magnetograph -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Magnetograph">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Magnetometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Magnetometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MalvernInstruments -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#MalvernInstruments">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Manometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Manometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#MarkesInternational -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#MarkesInternational">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Mathematical_Studies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Mathematical_Studies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Mathematics"/>
+        <requiresKnowledgeFrom rdf:resource="https://w3id.org/skgo/modsci#Mathematical_Studies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#McPhersonInc -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#McPhersonInc">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Metabolism -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Metabolism">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#BiologicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Michael_Faraday -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Michael_Faraday">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Chemical_Studies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Micrometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Micrometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Microscope -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Microscope">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Movie_camera -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Movie_camera">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+        <instrumentInventedBy rdf:resource="https://w3id.org/skgo/modsci#Thomas_Edison"/>
+        <InstrumentFunctionDesription>take a rapid sequence of photographs on an image sensor or on a film.</InstrumentFunctionDesription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#NASA -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#NASA">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificOrganization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#NovacamTechnologies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#NovacamTechnologies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Ocean_currents -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Ocean_currents">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#OceanographicPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Ohmmeter -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Ohmmeter">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Olaus_Roemer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Olaus_Roemer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <doingStudies rdf:resource="https://w3id.org/skgo/modsci#Astronomical_Studies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#OpenAI_Inc -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#OpenAI_Inc">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificOrganization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Oscilloscope -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Oscilloscope">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Overpopulation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Overpopulation">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#BiologicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#OxfordInstruments -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#OxfordInstruments">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#PallCorp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#PallCorp">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Phonograph -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Phonograph">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <instrumentInventedBy rdf:resource="https://w3id.org/skgo/modsci#Thomas_Edison"/>
+        <InstrumentFunctionDesription>record the mechanical and reproduction of sound.</InstrumentFunctionDesription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Physical_Studies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Physical_Studies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Physics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#PolymerChar -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#PolymerChar">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Population_decrease -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Population_decrease">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#BiologicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#PsychiatricDrugs -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#PsychiatricDrugs">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ApplicationOfScience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Psychological_Studies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Psychological_Studies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Psychology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Racism -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Racism">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#SocialPhenomenon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Radio_Signals -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Radio_Signals">
+        <rdf:type rdf:resource="http://sweetontology.net/phen/Phenomenon"/>
+        <discoveredByScientist rdf:resource="https://w3id.org/skgo/modsci#Guglielmo_Marconi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Rainbow -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Rainbow">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#AtmosphericPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Resampling_Methods -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Resampling_Methods">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Statistics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Rusting -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Rusting">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ChemicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Seismometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Seismometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#ShimadzuCorp -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#ShimadzuCorp">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Shrinkage -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Shrinkage">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Statistics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Spectrogram -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Spectrogram">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Spectrometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Spectrometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Speed_of_light -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Speed_of_light">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificDiscovery"/>
+        <discoveredByScientist rdf:resource="https://w3id.org/skgo/modsci#Olaus_Roemer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Statistics_Studies -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Statistics_Studies">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Statistics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Storm -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Storm">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#MeteorologicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Studying_biochemical_reactions -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Studying_biochemical_reactions">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#MolecularBiology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Subset_Selection -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Subset_Selection">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Statistics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Subsun -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Subsun">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#AtmosphericPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Supernova -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Supernova">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#AstronomicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Support_Vector_Machines -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Support_Vector_Machines">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ClassificationAlgorithms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Techtron -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Techtron">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Telescope -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Telescope">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <instrumentUsedInScience rdf:resource="https://w3id.org/skgo/modsci#Light_magnification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#The_Bridges_Organization -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#The_Bridges_Organization">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificOrganization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#The_Fibonacci_Association -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#The_Fibonacci_Association">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificOrganization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Theodolite -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Theodolite">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Thermocouple -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Thermocouple">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Thermometer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Thermometer">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+        <instrumentUsedInScience rdf:resource="https://w3id.org/skgo/modsci#Studying_biochemical_reactions"/>
+        <InstrumentFunctionDesription>measure temperature or a temperature gradient.</InstrumentFunctionDesription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Thomas_Edison -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Thomas_Edison">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+        <foaf:familyName>Edison</foaf:familyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Time_Series_Analysis -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Time_Series_Analysis">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Statistics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Tsunamis -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Tsunamis">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#OceanographicPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Volcano -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Volcano">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#GeologicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Voltmeter -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Voltmeter">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Waldemar_Jungner -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Waldemar_Jungner">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#WatersCorporation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#WatersCorporation">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Weddings -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#Weddings">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#SocialPhenomenon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#study_of_wetlands -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#study_of_wetlands">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#Ecology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#temperature_gradient -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/skgo/modsci#temperature_gradient">
+        <rdf:type rdf:resource="https://w3id.org/skgo/modsci#PhysicalPhenomena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#Metabolism">
+        <rdfs:comment>Metabolism is the set of life-sustaining chemical reactions in organisms.</rdfs:comment>
+        <rdfs:label>Metabolism</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/skgo/modsci#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/skgo/modsci#ScientificOrganization"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/skgo/modsci#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/skgo/modsci#isDiscoveredBy"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/skgo/modsci#y"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/skgo/modsci#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/skgo/modsci#isDiscoveredByOrganization"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/skgo/modsci#y"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/skgo/modsci#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/skgo/modsci#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/skgo/modsci#isDiscoveredBy"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/skgo/modsci#y"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/skgo/modsci#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/skgo/modsci#isDiscoveredByScientist"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/skgo/modsci#y"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/skgo/modsci#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/skgo/modsci#discoveredByScientist"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/skgo/modsci#x"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/skgo/modsci#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/skgo/modsci#discoveredByScience"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/skgo/modsci#x"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/skgo/modsci#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/skgo/modsci#scientistBelongsTo"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/skgo/modsci#y"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/skgo/modsci#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
 </rdf:RDF>
 
 
