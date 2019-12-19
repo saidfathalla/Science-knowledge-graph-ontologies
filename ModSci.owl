@@ -6,8 +6,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/skgo/modsci#"
-     versionIRI="https://w3id.org/skgo/modsci/1.0">
-    <Prefix name="" IRI="https://w3id.org/skgo/modsci##"/>
+     versionIRI="https://w3id.org/skgo/modsci/1.1">
+    <Prefix name="" IRI="https://w3id.org/skgo/modsci#"/>
     <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -28,7 +28,7 @@
     <Import>http://www.w3.org/2004/02/skos/core</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.1</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
@@ -101,10 +101,10 @@
         <Class IRI="ComputerSecurity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MeteorologicalPhenomena"/>
+        <Class IRI="ProgrammingLanguages"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ProgrammingLanguages"/>
+        <Class IRI="MeteorologicalPhenomena"/>
     </Declaration>
     <Declaration>
         <Class IRI="Ethology"/>
@@ -164,10 +164,10 @@
         <NamedIndividual IRI="Dynamometer"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Waldemar_Jungner"/>
+        <NamedIndividual IRI="Metabolism"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Metabolism"/>
+        <NamedIndividual IRI="Waldemar_Jungner"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="takeSunstancesFrom"/>
@@ -197,10 +197,10 @@
         <NamedIndividual IRI="Thermocouple"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ScientificModeling"/>
+        <Class IRI="MedicinalChemistry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MedicinalChemistry"/>
+        <Class IRI="ScientificModeling"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="MarkesInternational"/>
@@ -215,10 +215,10 @@
         <AnnotationProperty abbreviatedIRI="skos:nationality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Radiochemistry"/>
+        <Class IRI="HealthSciences"/>
     </Declaration>
     <Declaration>
-        <Class IRI="HealthSciences"/>
+        <Class IRI="Radiochemistry"/>
     </Declaration>
     <Declaration>
         <Class IRI="ParallelComputing"/>
@@ -251,10 +251,10 @@
         <NamedIndividual IRI="temperature_gradient"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="sweet:Phenomenon"/>
+        <Class IRI="Anthropology"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Anthropology"/>
+        <Class abbreviatedIRI="sweet:Phenomenon"/>
     </Declaration>
     <Declaration>
         <Class IRI="EvolutionaryPsychology"/>
@@ -263,16 +263,16 @@
         <Class IRI="SupramolecularChemistry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Paleontology"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Education"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Magnetometer"/>
+        <Class IRI="Paleontology"/>
     </Declaration>
     <Declaration>
         <Class IRI="Botany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Magnetometer"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Isaac_Newton"/>
@@ -284,16 +284,16 @@
         <Class IRI="GalacticAstronomy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="HumanComputerInteraction"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="DataMining"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Agriculture"/>
+        <Class IRI="HumanComputerInteraction"/>
     </Declaration>
     <Declaration>
         <Class IRI="SoilBiology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Agriculture"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Phonograph"/>
@@ -326,10 +326,10 @@
         <NamedIndividual IRI="Galvanometer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MathematicalAndTheoreticalBiology"/>
+        <NamedIndividual IRI="Decision_Trees"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Decision_Trees"/>
+        <Class IRI="MathematicalAndTheoreticalBiology"/>
     </Declaration>
     <Declaration>
         <Class IRI="Neuroscience"/>
@@ -380,10 +380,10 @@
         <Class IRI="Paleoclimatology"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Community_of_European_Solar_Radio_Astronomers"/>
+        <Class IRI="PhysicalGeography"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PhysicalGeography"/>
+        <NamedIndividual IRI="Community_of_European_Solar_Radio_Astronomers"/>
     </Declaration>
     <Declaration>
         <Class IRI="Biochemistry"/>
@@ -482,19 +482,19 @@
         <Class IRI="ExperimentalPhysics"/>
     </Declaration>
     <Declaration>
-        <Class IRI="LibraryScience"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="Magnetograph"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Techtron"/>
+        <Class IRI="LibraryScience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ScientificMethod"/>
     </Declaration>
     <Declaration>
         <Class IRI="Forensics"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ScientificMethod"/>
+        <NamedIndividual IRI="Techtron"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Electrometer"/>
@@ -524,10 +524,10 @@
         <NamedIndividual IRI="ShimadzuCorp"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ArtificialIntelligence"/>
+        <ObjectProperty IRI="isApplicationOfFormalScience"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isApplicationOfFormalScience"/>
+        <Class IRI="ArtificialIntelligence"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasMethodsInspiredFrom"/>
@@ -542,19 +542,19 @@
         <Class IRI="SoftwareEngineering"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="The_Bridges_Organization"/>
+        <Class IRI="PhysicalPhenomena"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PhysicalPhenomena"/>
+        <NamedIndividual IRI="The_Bridges_Organization"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="discoveredByHealthSciences"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ImageProcessing"/>
+        <NamedIndividual IRI="Chemical_Studies"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Chemical_Studies"/>
+        <Class IRI="ImageProcessing"/>
     </Declaration>
     <Declaration>
         <Class IRI="ClassificationAlgorithms"/>
@@ -587,10 +587,10 @@
         <NamedIndividual IRI="Rusting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Forestry"/>
+        <Class IRI="BiomedicalEngineering"/>
     </Declaration>
     <Declaration>
-        <Class IRI="BiomedicalEngineering"/>
+        <Class IRI="Forestry"/>
     </Declaration>
     <Declaration>
         <Class IRI="Astrochemistry"/>
@@ -614,10 +614,10 @@
         <Class IRI="QuantumMechanics"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Electroscope"/>
+        <Class IRI="Architecture"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Architecture"/>
+        <NamedIndividual IRI="Electroscope"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="usesMethodsFrom"/>
@@ -632,10 +632,10 @@
         <Class IRI="PoliticalEconomy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Caliper"/>
+        <Class IRI="NaturalPhenomenon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="NaturalPhenomenon"/>
+        <NamedIndividual IRI="Caliper"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Storm"/>
@@ -644,10 +644,10 @@
         <Class IRI="Cybernetics"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Economics"/>
+        <Class IRI="Glaciology"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Glaciology"/>
+        <Class IRI="Economics"/>
     </Declaration>
     <Declaration>
         <Class IRI="Ecology"/>
@@ -656,10 +656,10 @@
         <Class IRI="Industry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ParticlePhysics"/>
+        <Class IRI="Cryptography"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Cryptography"/>
+        <Class IRI="ParticlePhysics"/>
     </Declaration>
     <Declaration>
         <Class IRI="Geochemistry"/>
@@ -698,10 +698,10 @@
         <Class IRI="ComputationalLinguistics"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Pharmacology"/>
+        <Class IRI="PoliticalScience"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PoliticalScience"/>
+        <Class IRI="Pharmacology"/>
     </Declaration>
     <Declaration>
         <Class IRI="Ergonomics"/>
@@ -713,10 +713,10 @@
         <Class IRI="AppliedMathematics"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Metallurgy"/>
+        <Class IRI="EvolutionaryBiology"/>
     </Declaration>
     <Declaration>
-        <Class IRI="EvolutionaryBiology"/>
+        <Class IRI="Metallurgy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="isApplicationOfBehaviouralSciences"/>
@@ -743,16 +743,19 @@
         <NamedIndividual IRI="Thomas_Edison"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Erosion"/>
+        <NamedIndividual IRI="Ohmmeter"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Ohmmeter"/>
+        <NamedIndividual IRI="Erosion"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="NovacamTechnologies"/>
     </Declaration>
     <Declaration>
         <Class IRI="Oceanography"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Hydrology"/>
     </Declaration>
     <Declaration>
         <Class IRI="Phylogeny"/>
@@ -762,9 +765,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="DistributedComputing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Hydrology"/>
     </Declaration>
     <Declaration>
         <Class IRI="Volcanology"/>
@@ -782,13 +782,16 @@
         <NamedIndividual IRI="Evangelista_Torricelli"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ExtragalacticAstronomy"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="appliesLawsFromPhysics"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ExtragalacticAstronomy"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Thermodynamics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LaboratoryInstrument"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Micrometer"/>
@@ -797,10 +800,10 @@
         <Class IRI="Stereochemistry"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Light_pillar"/>
+        <NamedIndividual IRI="Biosensors"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Biosensors"/>
+        <NamedIndividual IRI="Light_pillar"/>
     </Declaration>
     <Declaration>
         <Class IRI="UrbanPlanning"/>
@@ -821,16 +824,16 @@
         <Class IRI="Geography"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Voltmeter"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Chemistry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TheoreticalBiology"/>
+        <NamedIndividual IRI="Voltmeter"/>
     </Declaration>
     <Declaration>
         <Class IRI="ComputerGraphics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TheoreticalBiology"/>
     </Declaration>
     <Declaration>
         <Class IRI="Zoology"/>
@@ -968,16 +971,19 @@
         <ObjectProperty IRI="isApplicationOfInterdisciplinaryStudies"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Instruments"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="Mathematical_Studies"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ReverseEngineering"/>
+        <Class IRI="ChemicalEngineering"/>
     </Declaration>
     <Declaration>
         <Class IRI="ScientificInstrumentManufacturer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ChemicalEngineering"/>
+        <Class IRI="ReverseEngineering"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="PallCorp"/>
@@ -995,10 +1001,10 @@
         <NamedIndividual IRI="Gravity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isApplicationOfHealthSciences"/>
+        <ObjectProperty IRI="hasScientificInstrumentManufacturer"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasScientificInstrumentManufacturer"/>
+        <ObjectProperty IRI="isApplicationOfHealthSciences"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="E3G"/>
@@ -1019,10 +1025,10 @@
         <Class IRI="ComputerVision"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Radiobiology"/>
+        <NamedIndividual IRI="Ocean_currents"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Ocean_currents"/>
+        <Class IRI="Radiobiology"/>
     </Declaration>
     <Declaration>
         <Class IRI="AtmosphericPhenomena"/>
@@ -1046,10 +1052,10 @@
         <Class IRI="VeterinaryMedicine"/>
     </Declaration>
     <Declaration>
-        <Class IRI="QuantumComputing"/>
+        <Class IRI="InorganicChemistry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="InorganicChemistry"/>
+        <Class IRI="QuantumComputing"/>
     </Declaration>
     <Declaration>
         <Class IRI="CompilerTheory"/>
@@ -1073,10 +1079,10 @@
         <Class IRI="NuclearChemistry"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Mechanics"/>
+        <NamedIndividual IRI="DNA_Sequencer"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="DNA_Sequencer"/>
+        <Class IRI="Mechanics"/>
     </Declaration>
     <Declaration>
         <Class IRI="Genetics"/>
@@ -1103,10 +1109,10 @@
         <NamedIndividual IRI="Dynamo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PlasmaPhysics"/>
+        <Class IRI="MathematicalPhysics"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MathematicalPhysics"/>
+        <Class IRI="PlasmaPhysics"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Radio_Signals"/>
@@ -1163,10 +1169,10 @@
         <Class IRI="GeologicalPhenomena"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Spectrometer"/>
+        <Class IRI="AppliedPhysics"/>
     </Declaration>
     <Declaration>
-        <Class IRI="AppliedPhysics"/>
+        <NamedIndividual IRI="Spectrometer"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Anemometer"/>
@@ -1330,6 +1336,10 @@
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="LaboratoryInstrument"/>
+        <Class IRI="ScientificInstrument"/>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="AcidbaseChemistry"/>
         <Class IRI="Chemistry"/>
@@ -1831,6 +1841,10 @@
         <Class IRI="ModernScience"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="LaboratoryInstrument"/>
+        <Class IRI="Instruments"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="LibraryScience"/>
         <Class IRI="AppliedSciences"/>
     </SubClassOf>
@@ -2125,6 +2139,10 @@
     <SubClassOf>
         <Class IRI="ScienceStudies"/>
         <Class IRI="InterdisciplinaryStudies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ScientificInstrument"/>
+        <Class IRI="Instruments"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ScientificModeling"/>
@@ -3302,6 +3320,13 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="discoveredByScientist"/>
         <Class IRI="Scientist"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="discoveredByScientist"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="discoveredByScientist"/>
+            <Class IRI="Scientist"/>
+        </ObjectAllValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="doingStudies"/>

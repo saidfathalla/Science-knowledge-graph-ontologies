@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/skgo/modsci##> .
+@prefix : <https://w3id.org/skgo/modsci#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -17,11 +17,11 @@
 @base <https://w3id.org/skgo/modsci#> .
 
 <https://w3id.org/skgo/modsci#> rdf:type owl:Ontology ;
-                                 owl:versionIRI <https://w3id.org/skgo/modsci/1.0> ;
+                                 owl:versionIRI <https://w3id.org/skgo/modsci/1.1> ;
                                  owl:imports <http://sweetontology.net/sweetMerged> ,
                                              foaf: ,
                                              <http://www.w3.org/2004/02/skos/core> ;
-                                 owl:versionInfo 1.0 ;
+                                 owl:versionInfo 1.1 ;
                                  dc:creator "Said Fathalla" ;
                                  terms:contributor <https://scholar.google.de/citations?user=JOI-7d0AAAAJ&hl=en> ;
                                  terms:title "ModSci, Modern Science Ontology."@en ;
