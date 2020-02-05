@@ -692,7 +692,8 @@ modsci:ColloidalChemistry rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#CommunicationAndSecurity
 modsci:CommunicationAndSecurity rdf:type owl:Class ;
-                                rdfs:subClassOf modsci:ComputerScience ;
+                                rdfs:subClassOf modsci:ComputerSystems ;
+                                rdfs:comment "Communications security is the discipline of preventing unauthorized interceptors from accessing telecommunications in an intelligible form, while still delivering content to the intended recipients." ;
                                 rdfs:label "Communication and Security" .
 
 
@@ -738,9 +739,14 @@ modsci:ComputationalPhysics rdf:type owl:Class ;
                             rdfs:label "Computational Physics" .
 
 
+###  https://w3id.org/skgo/modsci#ComputerApplications
+modsci:ComputerApplications rdf:type owl:Class ;
+                            rdfs:subClassOf modsci:ComputerScience .
+
+
 ###  https://w3id.org/skgo/modsci#ComputerArchitecture
 modsci:ComputerArchitecture rdf:type owl:Class ;
-                            rdfs:subClassOf modsci:ComputerScience ;
+                            rdfs:subClassOf modsci:ComputerSystems ;
                             rdfs:comment "In computer engineering, computer architecture is a set of rules and methods that describe the functionality, organization, and implementation of computer systems." ;
                             rdfs:label "Computer Architecture" .
 
@@ -754,9 +760,12 @@ modsci:ComputerConcurrency rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#ComputerGraphics
 modsci:ComputerGraphics rdf:type owl:Class ;
-                        rdfs:subClassOf modsci:Graphics ;
-                        rdfs:comment "Computer graphics are pictures and films created using computers. Usually, the term refers to computer-generated image data created with the help of specialized graphical hardware and software." ;
-                        rdfs:label "Computer Graphics" .
+                        rdfs:subClassOf modsci:ComputerApplications ,
+                                        modsci:ComputerGraphics ;
+                        rdfs:comment "Computer graphics are pictures and films created using computers. Usually, the term refers to computer-generated image data created with the help of specialized graphical hardware and software." ,
+                                     "Computer graphics is the study of digital visual contents and involves the synthesis and manipulation of image data." ;
+                        rdfs:label "Computer Graphics" ,
+                                   "Graphics" .
 
 
 ###  https://w3id.org/skgo/modsci#ComputerScience
@@ -771,6 +780,11 @@ modsci:ComputerSecurity rdf:type owl:Class ;
                         rdfs:subClassOf modsci:CommunicationAndSecurity ;
                         rdfs:comment "Computer security, cybersecurity or information technology security (IT security) is the protection of computer systems from the theft of or damage to their hardware, software, or electronic data, as well as from the disruption or misdirection of the services they provide." ;
                         rdfs:label "Computer Security" .
+
+
+###  https://w3id.org/skgo/modsci#ComputerSystems
+modsci:ComputerSystems rdf:type owl:Class ;
+                       rdfs:subClassOf modsci:ComputerScience .
 
 
 ###  https://w3id.org/skgo/modsci#ComputerVision
@@ -838,7 +852,8 @@ modsci:DataMining rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#Databases
 modsci:Databases rdf:type owl:Class ;
-                 rdfs:subClassOf modsci:ComputerScience ;
+                 rdfs:subClassOf modsci:ComputerSystems ;
+                 rdfs:comment "Digital databases are managed using database management systems to store, create, maintain, and search data, through database models and query languages." ;
                  rdfs:label "Databases" .
 
 
@@ -865,7 +880,8 @@ modsci:DistributedComputing rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#DistributedSystems
 modsci:DistributedSystems rdf:type owl:Class ;
-                          rdfs:subClassOf modsci:ComputerScience ;
+                          rdfs:subClassOf modsci:ComputerSystems ;
+                          rdfs:comment "Systems in which several computations are executing simultaneously, and potentially interacting with each other." ;
                           rdfs:label "Concurrent, Parallel, and Distributed systems" .
 
 
@@ -1069,6 +1085,7 @@ modsci:GeologicalPhenomena rdf:type owl:Class ;
 ###  https://w3id.org/skgo/modsci#GeologicalSciences
 modsci:GeologicalSciences rdf:type owl:Class ;
                           rdfs:subClassOf modsci:NaturalScience ;
+                          rdfs:comment "The Geological Sciences examine the physical and chemical processes within Earth and on its surface, including the study of natural resources and risks to habitable areas." ;
                           rdfs:label "Geological Sciences" .
 
 
@@ -1107,12 +1124,6 @@ modsci:Glaciology rdf:type owl:Class ;
                   rdfs:label "Glaciology" .
 
 
-###  https://w3id.org/skgo/modsci#Graphics
-modsci:Graphics rdf:type owl:Class ;
-                rdfs:subClassOf modsci:ComputerScience ;
-                rdfs:label "Graphics" .
-
-
 ###  https://w3id.org/skgo/modsci#GreenChemistry
 modsci:GreenChemistry rdf:type owl:Class ;
                       rdfs:subClassOf modsci:Chemistry ;
@@ -1137,7 +1148,7 @@ modsci:HealthSciences rdf:type owl:Class ;
 ###  https://w3id.org/skgo/modsci#Healthcare
 modsci:Healthcare rdf:type owl:Class ;
                   rdfs:subClassOf modsci:HealthSciences ;
-                  rdfs:comment "Health care is the maintenance or improvement of health via the prevention, diagnosis, and treatment of disease, illness, injury, and other physical and mental impairments in people." ;
+                  rdfs:comment "Healthcare is the maintenance or improvement of health via the prevention, diagnosis, and treatment of disease, illness, injury, and other physical and mental impairments in people." ;
                   rdfs:label "Healthcare" .
 
 
@@ -1171,7 +1182,7 @@ modsci:Hydrology rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#ImageProcessing
 modsci:ImageProcessing rdf:type owl:Class ;
-                       rdfs:subClassOf modsci:Graphics ;
+                       rdfs:subClassOf modsci:ComputerGraphics ;
                        rdfs:comment "In computer science, digital image processing is the use of computer algorithms to perform image processing on digital images." ;
                        rdfs:label "Image Processing" .
 
@@ -1205,7 +1216,7 @@ modsci:InformationScience rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#InformationVisualization
 modsci:InformationVisualization rdf:type owl:Class ;
-                                rdfs:subClassOf modsci:Graphics ;
+                                rdfs:subClassOf modsci:ComputerGraphics ;
                                 rdfs:comment "Information visualization or information visualisation is the study of (interactive) visual representations of abstract data to reinforce human cognition." ;
                                 rdfs:label "Information Visualization" .
 
@@ -1396,7 +1407,7 @@ modsci:Museology rdf:type owl:Class ;
 ###  https://w3id.org/skgo/modsci#NaturalLanguageProcessing
 modsci:NaturalLanguageProcessing rdf:type owl:Class ;
                                  rdfs:subClassOf modsci:ArtificialIntelligence ,
-                                                 modsci:ComputerScience ,
+                                                 modsci:ComputerSystems ,
                                                  modsci:Linguistics ;
                                  rdfs:comment "Natural language processing (NLP) is a subfield of linguistics, computer science, information engineering, and artificial intelligence concerned with the interactions between computers and human (natural) languages, in particular how to program computers to process and analyze large amounts of natural language data." ;
                                  rdfs:label "Natural language processing (NLP)" .
@@ -1468,7 +1479,7 @@ modsci:Oceanography rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#OperatingSystems
 modsci:OperatingSystems rdf:type owl:Class ;
-                        rdfs:subClassOf modsci:ComputerScience ;
+                        rdfs:subClassOf modsci:ComputerSystems ;
                         rdfs:comment "An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs." ;
                         rdfs:label "Operating Systems" .
 
@@ -1649,7 +1660,8 @@ modsci:ProgrammingLanguageTheory rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#ProgrammingLanguages
 modsci:ProgrammingLanguages rdf:type owl:Class ;
-                            rdfs:subClassOf modsci:ComputerScience ;
+                            rdfs:subClassOf modsci:ComputerSystems ;
+                            rdfs:comment "Programming languages can be used to accomplish different tasks in different ways." ;
                             rdfs:label "Programming Languages and Compilers" .
 
 
@@ -1834,7 +1846,7 @@ modsci:SoftComputing rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#SoftwareEngineering
 modsci:SoftwareEngineering rdf:type owl:Class ;
-                           rdfs:subClassOf modsci:ComputerScience ;
+                           rdfs:subClassOf modsci:ComputerSystems ;
                            rdfs:comment "Software engineering is the application of engineering to the development of software in a systematic method." ;
                            rdfs:label "Software Engineering" .
 
@@ -1951,6 +1963,11 @@ modsci:TheoreticalChemistry rdf:type owl:Class ;
                             rdfs:label "Theoretical Chemistry" .
 
 
+###  https://w3id.org/skgo/modsci#TheoreticalComputerScience
+modsci:TheoreticalComputerScience rdf:type owl:Class ;
+                                  rdfs:subClassOf modsci:ComputerScience .
+
+
 ###  https://w3id.org/skgo/modsci#TheoreticalLinguistics
 modsci:TheoreticalLinguistics rdf:type owl:Class ;
                               rdfs:subClassOf modsci:FormalScience ;
@@ -1960,7 +1977,8 @@ modsci:TheoreticalLinguistics rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#TheoryOfComputation
 modsci:TheoryOfComputation rdf:type owl:Class ;
-                           rdfs:subClassOf modsci:ComputerScience ;
+                           rdfs:subClassOf modsci:TheoreticalComputerScience ;
+                           rdfs:comment "Theory of computation is focused on answering fundamental questions about what can be computed and what amount of resources are required to perform those computations." ;
                            rdfs:label "Theory of Computation" .
 
 
