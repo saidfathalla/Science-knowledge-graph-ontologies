@@ -56,8 +56,8 @@ function loadTOC(){
       $("#description").load("sections/description-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
-    </script> 
-  </head> 
+    </script>
+</head> 
 
 <body>
 
@@ -68,29 +68,32 @@ function loadTOC(){
 
 
 <dl>
-<dt>This version:</dt>
+<dt><strong>This version:</strong></dt>
 <dd><a href="https://w3id.org/skgo/modsci#">https://w3id.org/skgo/modsci#</a></dd>
-<dt>Revision:</dt>
+<dt><strong>Revision</strong>:</dt>
 <dd>1.1</dd>
-<dt>Authors:</dt>
+<dt><strong>Authors</strong>:</dt>
 <dd>Said Fathalla</dd>
 
-<dt>Contributors:</dt>
+<dt><strong>Contributors</strong>:</dt>
 <dd><a href="http://sda.cs.uni-bonn.de/people/said-fathalla/">Said Fathalla</a></dd>
 <dd><a href="http://sda.cs.uni-bonn.de/people/dr-christoph-lange/">Christoph Lange</a></dd>
 <dd><a href="https://www.tib.eu/en/research-development/data-science-digital-libraries/staff/soeren-auer/">Sören Auer</a></dd>
 
-<dt>Publisher:</dt>
+<dt><strong>Publisher</strong>:</dt>
 <dd>Said Fathalla</dd>
-<dt>Imported Ontologies:</dt>
+<dt><strong>Imported Ontologies:</strong></dt>
 <dd><a href="http://www.w3.org/2004/02/skos/core">SKOS</a></dd>
 <dd><a href="http://xmlns.com/foaf/0.1/">FOAF</a></dd>
 <dd><a href="http://sweetontology.net/">SWEET</a></dd>
  
 
-<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="https://img.shields.io/badge/License-http://creativecommons.org/licenses/by/3.0/-blue.svg" alt="http://creativecommons.org/licenses/by/3.0/" /></a>
-</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
-<dt>Indexed at :</dt>
+<dt><strong>Download serialization:</strong></dt>
+<dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt><strong>License</strong>: </dt>
+<dd><a href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="https://img.shields.io/badge/License-http://creativecommons.org/licenses/by/3.0/-blue.svg" alt="http://creativecommons.org/licenses/by/3.0/" /></a>
+</dd><dt><strong>Visualization</strong>:</dt>
+<dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<dt><strong>Indexed at :</strong></dt>
 <dd><a href="https://lov.linkeddata.es/dataset/lov/vocabs/modsci">LOV</a>, <a href="http://bioportal.bioontology.org/ontologies/MODSCI">BioPortal</a>, and <a href="http://aber-owl.net/ontology/ModSci/">AberOWL</a></dd>
 </dl>
 
@@ -102,7 +105,7 @@ function loadTOC(){
  <div align="center" >
 Enter Science branch to focus (case sensitive): 
 <input type="text" id="focusText" /> <button id="focusButton">Focus</button>
-   <p>&nbsp;</p>
+   <p>* Click on a node to expand its children  and on its parent to collapse<span dir="RTL"> </span></p>
 		<p><br />
 		    <section id="visualisation" style="border: 1px black solid; max-width: 70%;  height:100%;  ">              </section>
 		 
@@ -1365,7 +1368,7 @@ Enter Science branch to focus (case sensitive):
 		  
 		  
 		  
-                </p>
+   </p>
 </div>
 </body>
 </html>
