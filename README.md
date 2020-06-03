@@ -25,4 +25,4 @@ The Wizard for documenting ontologies [WIDOCO](https://github.com/dgarijo/Widoco
 - documentations for SKGO ontologies are available vis their PURL.
 
 ## Citation
-- Fathalla, S., Auer, S., & Lange, C. (2020, March). [Towards the semantic formalization of science](https://dl.acm.org/doi/abs/10.1145/3341105.3374132). In Proceedings of the 35th Annual ACM Symposium on Applied Computing (pp. 2057-2059).
+- Fathalla, S., Auer, S., & Lange, C. (2020, March). [Towards the semantic formalization of science](https://www.researchgate.net/publication/338833599_Towards_the_Semantic_Formalization_of_Science). In Proceedings of the 35th Annual ACM Symposium on Applied Computing (pp. 2057-2059).
