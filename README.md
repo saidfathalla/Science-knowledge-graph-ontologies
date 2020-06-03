@@ -1,12 +1,10 @@
 # Science Knowledge Graph Ontologies (SKGO)
 The Science knowledge graph ontologies, a.k.a. SKGO, is a suite of OWL ontology models to capture the knowledge of scientific research data, via publications, by interlinking domain-specific information, and allow access of these data in a machine-readable, transparent and comparable manner.
-Currently, SKGO comprises five ontologies for scientific work in various fields of science, including:
-- Computer Science (**SemSur**), 
-- Chemistry (**ChemSci**), 
-- Physics (**PhySci**), 
-- Dentistry (**DentSci**),  
-- Pharmaceutical science (**PharmSci**) and 
-- An upper ontology on top of them called Modern Science Ontology (**ModSci**).
+Currently, SKGO comprises four ontologies for scientific work in various fields of science, including:
+- Computer Science (**[SemSur](https://saidfathalla.github.io/SemSur/doc/)**), 
+- Physics (**[PhySci](https://aysegulsay.github.io/PhySci.html)**), 
+- Pharmaceutical science (**[PharmSci](https://zeynepsay.github.io/PharmSci.html)**) and 
+- An upper ontology on top of them called Modern Science Ontology (**[ModSci](https://saidfathalla.github.io/Science-knowledge-graph-ontologies/doc/ModSci_doc/index-en.html)**).
 
 SKGO ontologies capture the knowledge of scientific information typically presented in publications by interlinking domain-specific information in a highly structured format, thus enabling access to these data in a machine-readable, transparent and comparable manner.
 
