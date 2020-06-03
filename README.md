@@ -22,7 +22,7 @@ The SKGO ontologies can be browsed online, through web-based repository front-en
 
 ## Documentation
 The Wizard for documenting ontologies [WIDOCO](https://github.com/dgarijo/Widoco) is used to create HTML documentation for the SKGO ontologies, thus enabling human understandability of the ontologies.
-- documentation for ModSci is available at [http://tiny.cc/ti62dz]
+- documentations for SKGO ontologies are available vis their PURL.
 
 ## Citation
 - Fathalla, S., Auer, S., & Lange, C. (2020, March). [Towards the semantic formalization of science](https://dl.acm.org/doi/abs/10.1145/3341105.3374132). In Proceedings of the 35th Annual ACM Symposium on Applied Computing (pp. 2057-2059).
