@@ -18,8 +18,7 @@
 
 <https://w3id.org/skgo/modsci#> rdf:type owl:Ontology ;
                                  owl:versionIRI <https://w3id.org/skgo/modsci/1.1> ;
-                                 owl:imports <http://sweetontology.net/sweetMerged> ,
-                                             foaf: ,
+                                 owl:imports foaf: ,
                                              <http://www.w3.org/2004/02/skos/core> ;
                                  owl:versionInfo 1.1 ;
                                  dc:creator "Said Fathalla" ;
