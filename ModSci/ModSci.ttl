@@ -399,6 +399,11 @@ modsci:Agriculture rdf:type owl:Class ;
                    rdfs:label "Agriculture" .
 
 
+###  https://w3id.org/skgo/modsci#Algebra
+modsci:Algebra rdf:type owl:Class ;
+               rdfs:subClassOf modsci:PureMathematics .
+
+
 ###  https://w3id.org/skgo/modsci#Algorithms
 modsci:Algorithms rdf:type owl:Class ;
                   rdfs:subClassOf modsci:ScientificMethod ;
@@ -434,7 +439,7 @@ modsci:ApplicationOfScience rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#AppliedMathematics
 modsci:AppliedMathematics rdf:type owl:Class ;
-                          rdfs:subClassOf modsci:AppliedSciences ;
+                          rdfs:subClassOf modsci:Mathematics ;
                           rdfs:comment "Applied mathematics is a branch of mathematics that concerns itself with the application of mathematical knowledge to other domains." ;
                           rdfs:label "Applied Mathematics" .
 
@@ -452,6 +457,16 @@ modsci:AppliedSciences rdf:type owl:Class ;
                        rdfs:subClassOf modsci:ModernScience ;
                        rdfs:comment "Applied science is the use or the study of the use of scientific knowledge to develop technology." ;
                        rdfs:label "Applied Sciences" .
+
+
+###  https://w3id.org/skgo/modsci#Applied_Mechanics
+modsci:Applied_Mechanics rdf:type owl:Class ;
+                         rdfs:subClassOf modsci:AppliedMathematics .
+
+
+###  https://w3id.org/skgo/modsci#ApproximationTheory
+modsci:ApproximationTheory rdf:type owl:Class ;
+                           rdfs:subClassOf modsci:AppliedMathematics .
 
 
 ###  https://w3id.org/skgo/modsci#Archaeology
@@ -588,6 +603,11 @@ modsci:Bioinformatics rdf:type owl:Class ;
                       rdfs:label "Bioinformatics" .
 
 
+###  https://w3id.org/skgo/modsci#BiologicalMathematics
+modsci:BiologicalMathematics rdf:type owl:Class ;
+                             rdfs:subClassOf modsci:AppliedMathematics .
+
+
 ###  https://w3id.org/skgo/modsci#BiologicalPhenomena
 modsci:BiologicalPhenomena rdf:type owl:Class ;
                            rdfs:subClassOf modsci:NaturalPhenomenon ;
@@ -641,6 +661,11 @@ modsci:Botany rdf:type owl:Class ;
               rdfs:subClassOf modsci:Biology ;
               rdfs:comment "Botany also called plant science(s), plant biology or phytology, is the science of plant life and a branch of biology." ;
               rdfs:label "Botany" .
+
+
+###  https://w3id.org/skgo/modsci#CalculusOfVariations
+modsci:CalculusOfVariations rdf:type owl:Class ;
+                            rdfs:subClassOf modsci:AppliedMathematics .
 
 
 ###  https://w3id.org/skgo/modsci#CellBiology
@@ -729,6 +754,11 @@ modsci:ComputationalLinguistics rdf:type owl:Class ;
                                 rdfs:subClassOf modsci:InterdisciplinaryStudies ;
                                 rdfs:comment "Computational linguistics is an interdisciplinary field concerned with the statistical or rule-based modeling of natural language from a computational perspective, as well as the study of appropriate computational approaches to linguistic questions." ;
                                 rdfs:label "Computational Linguistics" .
+
+
+###  https://w3id.org/skgo/modsci#ComputationalMathematics
+modsci:ComputationalMathematics rdf:type owl:Class ;
+                                rdfs:subClassOf modsci:Mathematics .
 
 
 ###  https://w3id.org/skgo/modsci#ComputationalPhysics
@@ -868,6 +898,16 @@ modsci:DevelopmentalBiology rdf:type owl:Class ;
                             rdfs:subClassOf modsci:Biology ;
                             rdfs:comment "Developmental biology is the study of the process by which animals and plants grow and develop." ;
                             rdfs:label "Developmental Biology" .
+
+
+###  https://w3id.org/skgo/modsci#DifferentialEquations
+modsci:DifferentialEquations rdf:type owl:Class ;
+                             rdfs:subClassOf modsci:PureMathematics .
+
+
+###  https://w3id.org/skgo/modsci#DiscreteMathematics
+modsci:DiscreteMathematics rdf:type owl:Class ;
+                           rdfs:subClassOf modsci:PureMathematics .
 
 
 ###  https://w3id.org/skgo/modsci#DistributedComputing
@@ -1011,6 +1051,11 @@ modsci:ExtragalacticAstronomy rdf:type owl:Class ;
                               rdfs:label "Extragalactic Astronomy" .
 
 
+###  https://w3id.org/skgo/modsci#FinancialMathematics
+modsci:FinancialMathematics rdf:type owl:Class ;
+                            rdfs:subClassOf modsci:AppliedMathematics .
+
+
 ###  https://w3id.org/skgo/modsci#FoodChemistry
 modsci:FoodChemistry rdf:type owl:Class ;
                      rdfs:subClassOf modsci:Chemistry ;
@@ -1037,6 +1082,11 @@ modsci:FormalScience rdf:type owl:Class ;
                      rdfs:subClassOf modsci:ModernScience ;
                      rdfs:comment "Formal sciences are a branch of science studying formal language disciplines concerned with formal systems, such as logic, mathematics, statistics, theoretical computer science, artificial intelligence, information theory, game theory, systems theory, decision theory, and theoretical linguistics." ;
                      rdfs:label "Formal Science" .
+
+
+###  https://w3id.org/skgo/modsci#FunctionalAnalysis
+modsci:FunctionalAnalysis rdf:type owl:Class ;
+                          rdfs:subClassOf modsci:PureMathematics .
 
 
 ###  https://w3id.org/skgo/modsci#GalacticAstronomy
@@ -1158,6 +1208,11 @@ modsci:History rdf:type owl:Class ;
                rdfs:label "History of Science" .
 
 
+###  https://w3id.org/skgo/modsci#HomologicalAlgebra
+modsci:HomologicalAlgebra rdf:type owl:Class ;
+                          rdfs:subClassOf modsci:Algebra .
+
+
 ###  https://w3id.org/skgo/modsci#HumanComputerInteraction
 modsci:HumanComputerInteraction rdf:type owl:Class ;
                                 rdfs:subClassOf modsci:SoftwareEngineering ;
@@ -1231,6 +1286,11 @@ modsci:InorganicChemistry rdf:type owl:Class ;
 modsci:Instruments rdf:type owl:Class .
 
 
+###  https://w3id.org/skgo/modsci#IntegralEquations
+modsci:IntegralEquations rdf:type owl:Class ;
+                         rdfs:subClassOf modsci:ComputationalMathematics .
+
+
 ###  https://w3id.org/skgo/modsci#InterdisciplinaryStudies
 modsci:InterdisciplinaryStudies rdf:type owl:Class ;
                                 rdfs:subClassOf modsci:ModernScience ;
@@ -1300,6 +1360,11 @@ modsci:MathematicalAndTheoreticalBiology rdf:type owl:Class ;
                                          rdfs:subClassOf modsci:Biology ;
                                          rdfs:comment "Mathematical and theoretical biology is a branch of biology which employs theoretical analysis, mathematical models and abstractions of the living organisms to investigate the principles that govern the structure, development and behavior of the systems" ;
                                          rdfs:label "Mathematical and Theoretical Biology" .
+
+
+###  https://w3id.org/skgo/modsci#MathematicalLogic
+modsci:MathematicalLogic rdf:type owl:Class ;
+                         rdfs:subClassOf modsci:PureMathematics .
 
 
 ###  https://w3id.org/skgo/modsci#MathematicalPhysics
@@ -1456,6 +1521,16 @@ modsci:NuclearChemistry rdf:type owl:Class ;
                         rdfs:label "Nuclear Chemistry" .
 
 
+###  https://w3id.org/skgo/modsci#NumberTheory
+modsci:NumberTheory rdf:type owl:Class ;
+                    rdfs:subClassOf modsci:PureMathematics .
+
+
+###  https://w3id.org/skgo/modsci#NumericalAnalysis
+modsci:NumericalAnalysis rdf:type owl:Class ;
+                         rdfs:subClassOf modsci:ComputationalMathematics .
+
+
 ###  https://w3id.org/skgo/modsci#Nursing
 modsci:Nursing rdf:type owl:Class ;
                rdfs:subClassOf modsci:HealthSciences ;
@@ -1483,11 +1558,26 @@ modsci:OperatingSystems rdf:type owl:Class ;
                         rdfs:label "Operating Systems" .
 
 
+###  https://w3id.org/skgo/modsci#OperationsResearch
+modsci:OperationsResearch rdf:type owl:Class ;
+                          rdfs:subClassOf modsci:AppliedMathematics .
+
+
 ###  https://w3id.org/skgo/modsci#Optics
 modsci:Optics rdf:type owl:Class ;
               rdfs:subClassOf modsci:AppliedSciences ;
               rdfs:comment "Optics is the branch of physics that studies the behaviour and properties of light, including its interactions with matter and the construction of instruments that use or detect it." ;
               rdfs:label "Optics" .
+
+
+###  https://w3id.org/skgo/modsci#Optimisation
+modsci:Optimisation rdf:type owl:Class ;
+                    rdfs:subClassOf modsci:ComputationalMathematics .
+
+
+###  https://w3id.org/skgo/modsci#OrdinaryDifferentialEquations
+modsci:OrdinaryDifferentialEquations rdf:type owl:Class ;
+                                     rdfs:subClassOf modsci:DifferentialEquations .
 
 
 ###  https://w3id.org/skgo/modsci#OrganicChemistry
@@ -1537,6 +1627,11 @@ modsci:Parasitology rdf:type owl:Class ;
                     rdfs:subClassOf modsci:Biology ;
                     rdfs:comment "Parasitology is the study of parasites in host organisms, including humans (medical parasitology)." ;
                     rdfs:label "Parasitology" .
+
+
+###  https://w3id.org/skgo/modsci#PartialDifferentialEquations
+modsci:PartialDifferentialEquations rdf:type owl:Class ;
+                                    rdfs:subClassOf modsci:DifferentialEquations .
 
 
 ###  https://w3id.org/skgo/modsci#ParticlePhysics
@@ -1669,6 +1764,11 @@ modsci:Psychology rdf:type owl:Class ;
                   rdfs:subClassOf modsci:BehaviouralSciences ;
                   rdfs:comment "Psychology is a collection of academic, clinical and industrial disciplines concerned with the explanation and prediction of behavior, thinking, emotions, motivations, relationships, potentials and pathologies." ;
                   rdfs:label "Psychology" .
+
+
+###  https://w3id.org/skgo/modsci#PureMathematics
+modsci:PureMathematics rdf:type owl:Class ;
+                       rdfs:subClassOf modsci:Mathematics .
 
 
 ###  https://w3id.org/skgo/modsci#QuantumComputing
@@ -1988,6 +2088,11 @@ modsci:Thermodynamics rdf:type owl:Class ;
                       rdfs:label "Thermodynamics" .
 
 
+###  https://w3id.org/skgo/modsci#Topology
+modsci:Topology rdf:type owl:Class ;
+                rdfs:subClassOf modsci:PureMathematics .
+
+
 ###  https://w3id.org/skgo/modsci#Toxicology
 modsci:Toxicology rdf:type owl:Class ;
                   rdfs:subClassOf modsci:Biology ;
@@ -2007,6 +2112,11 @@ modsci:TypeTheory rdf:type owl:Class ;
                   rdfs:subClassOf modsci:ProgrammingLanguages ;
                   rdfs:comment "In mathematics, logic, and computer science, a type theory is any of a class of formal systems, some of which can serve as alternatives to set theory as a foundation for all mathematics. In type theory, every \"term\" has a \"type\" and operations are restricted to terms of a certain type." ;
                   rdfs:label "Type Theory" .
+
+
+###  https://w3id.org/skgo/modsci#UniversalAlgebra
+modsci:UniversalAlgebra rdf:type owl:Class ;
+                        rdfs:subClassOf modsci:Algebra .
 
 
 ###  https://w3id.org/skgo/modsci#UrbanPlanning
