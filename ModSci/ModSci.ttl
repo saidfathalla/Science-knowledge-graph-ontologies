@@ -387,7 +387,7 @@ modsci:AcidbaseChemistry rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#Acoustics
 modsci:Acoustics rdf:type owl:Class ;
-                 rdfs:subClassOf modsci:AppliedSciences ;
+                 rdfs:subClassOf modsci:ClassicalPhysics ;
                  rdfs:comment "Acoustics is a branch of continuum mechanics and is the study of sound, mechanical waves in gases, liquids, and solids." ;
                  rdfs:label "Acoustics" .
 
@@ -397,6 +397,11 @@ modsci:Agriculture rdf:type owl:Class ;
                    rdfs:subClassOf modsci:AppliedSciences ;
                    rdfs:comment "Agriculture, also known as farming, is the process of producing food, feed, fiber and other desired products by cultivation of certain plants and the raising of domesticated animals." ;
                    rdfs:label "Agriculture" .
+
+
+###  https://w3id.org/skgo/modsci#Agronomy
+modsci:Agronomy rdf:type owl:Class ;
+                rdfs:subClassOf modsci:Agriculture .
 
 
 ###  https://w3id.org/skgo/modsci#Algebra
@@ -417,11 +422,21 @@ modsci:AnalyticalChemistry rdf:type owl:Class ;
                            rdfs:label "Analytical Chemistry" .
 
 
+###  https://w3id.org/skgo/modsci#AnalyticalSpectrometry
+modsci:AnalyticalSpectrometry rdf:type owl:Class ;
+                              rdfs:subClassOf modsci:AnalyticalChemistry .
+
+
 ###  https://w3id.org/skgo/modsci#Anatomy
 modsci:Anatomy rdf:type owl:Class ;
                rdfs:subClassOf modsci:Biology ;
                rdfs:comment "Anatomy is the study of the structure and organization of living things." ;
                rdfs:label "Anatomy" .
+
+
+###  https://w3id.org/skgo/modsci#AnimalProduction
+modsci:AnimalProduction rdf:type owl:Class ;
+                        rdfs:subClassOf modsci:Agriculture .
 
 
 ###  https://w3id.org/skgo/modsci#Anthropology
@@ -444,6 +459,11 @@ modsci:AppliedMathematics rdf:type owl:Class ;
                           rdfs:label "Applied Mathematics" .
 
 
+###  https://w3id.org/skgo/modsci#AppliedMechanics
+modsci:AppliedMechanics rdf:type owl:Class ;
+                        rdfs:subClassOf modsci:AppliedMathematics .
+
+
 ###  https://w3id.org/skgo/modsci#AppliedPhysics
 modsci:AppliedPhysics rdf:type owl:Class ;
                       rdfs:subClassOf modsci:InterdisciplinaryStudies ,
@@ -457,11 +477,6 @@ modsci:AppliedSciences rdf:type owl:Class ;
                        rdfs:subClassOf modsci:ModernScience ;
                        rdfs:comment "Applied science is the use or the study of the use of scientific knowledge to develop technology." ;
                        rdfs:label "Applied Sciences" .
-
-
-###  https://w3id.org/skgo/modsci#Applied_Mechanics
-modsci:Applied_Mechanics rdf:type owl:Class ;
-                         rdfs:subClassOf modsci:AppliedMathematics .
 
 
 ###  https://w3id.org/skgo/modsci#ApproximationTheory
@@ -485,7 +500,7 @@ modsci:Architecture rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#ArtificialIntelligence
 modsci:ArtificialIntelligence rdf:type owl:Class ;
-                              rdfs:subClassOf modsci:InterdisciplinaryStudies ;
+                              rdfs:subClassOf modsci:ComputerScience ;
                               rdfs:comment "In computer science, artificial intelligence (AI), sometimes called machine intelligence, is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans. Colloquially, the term \"artificial intelligence\" is often used to describe machines (or computers) that mimic \"cognitive\" functions that humans associate with the human mind, such as \"learning\" and \"problem solving\"." ;
                               rdfs:label "Artificial Intelligence" .
 
@@ -537,11 +552,12 @@ modsci:AtmosphericSciences rdf:type owl:Class ;
                            rdfs:label "Atmospheric Sciences" .
 
 
-###  https://w3id.org/skgo/modsci#Atomic
-modsci:Atomic rdf:type owl:Class ;
-              rdfs:subClassOf modsci:Physics ;
-              rdfs:comment "Atomic, molecular, and optical physics (AMO) is the study of matter-matter and light-matter interactions; at the scale of one or a few atoms and energy scales around several electron volts." ;
-              rdfs:label "Atomic, Molecular, and Optical Physics" .
+###  https://w3id.org/skgo/modsci#AtomicPhysics
+modsci:AtomicPhysics rdf:type owl:Class ;
+                     owl:equivalentClass modsci:MolecularPhysics ;
+                     rdfs:subClassOf modsci:Physics ;
+                     rdfs:comment "Atomic, molecular, and optical physics (AMO) is the study of matter-matter and light-matter interactions; at the scale of one or a few atoms and energy scales around several electron volts." ;
+                     rdfs:label "Atomic, Molecular, and Optical Physics" .
 
 
 ###  https://w3id.org/skgo/modsci#AutomataTheory
@@ -556,6 +572,11 @@ modsci:AutomatedReasoning rdf:type owl:Class ;
                           rdfs:subClassOf modsci:ArtificialIntelligence ;
                           rdfs:comment "Automated reasoning is an area of computer science, cognitive science, and mathematical logic dedicated to understanding different aspects of reasoning." ;
                           rdfs:label "Automated Reasoning" .
+
+
+###  https://w3id.org/skgo/modsci#BasinAnalysis
+modsci:BasinAnalysis rdf:type owl:Class ;
+                     rdfs:subClassOf modsci:Geology .
 
 
 ###  https://w3id.org/skgo/modsci#BehaviouralSciences
@@ -603,9 +624,24 @@ modsci:Bioinformatics rdf:type owl:Class ;
                       rdfs:label "Bioinformatics" .
 
 
+###  https://w3id.org/skgo/modsci#BioinformaticsSoftware
+modsci:BioinformaticsSoftware rdf:type owl:Class ;
+                              rdfs:subClassOf modsci:ComputerSoftware .
+
+
+###  https://w3id.org/skgo/modsci#BioinorganicChemistry
+modsci:BioinorganicChemistry rdf:type owl:Class ;
+                             rdfs:subClassOf modsci:InorganicChemistry .
+
+
 ###  https://w3id.org/skgo/modsci#BiologicalMathematics
 modsci:BiologicalMathematics rdf:type owl:Class ;
                              rdfs:subClassOf modsci:AppliedMathematics .
+
+
+###  https://w3id.org/skgo/modsci#BiologicalOceanography
+modsci:BiologicalOceanography rdf:type owl:Class ;
+                              rdfs:subClassOf modsci:Oceanography .
 
 
 ###  https://w3id.org/skgo/modsci#BiologicalPhenomena
@@ -668,11 +704,21 @@ modsci:CalculusOfVariations rdf:type owl:Class ;
                             rdfs:subClassOf modsci:AppliedMathematics .
 
 
+###  https://w3id.org/skgo/modsci#Catalysis
+modsci:Catalysis rdf:type owl:Class ;
+                 rdfs:subClassOf modsci:PhysicalChemistry .
+
+
 ###  https://w3id.org/skgo/modsci#CellBiology
 modsci:CellBiology rdf:type owl:Class ;
                    rdfs:subClassOf modsci:Biology ;
                    rdfs:comment "Cell biology is a branch of biology that studies the structure and function of the cell, which is the basic unit of life." ;
                    rdfs:label "Cell Biology" .
+
+
+###  https://w3id.org/skgo/modsci#ChemicalCharacterisationOfMaterials
+modsci:ChemicalCharacterisationOfMaterials rdf:type owl:Class ;
+                                           rdfs:subClassOf modsci:MaterialsChemistry .
 
 
 ###  https://w3id.org/skgo/modsci#ChemicalEngineering
@@ -682,10 +728,20 @@ modsci:ChemicalEngineering rdf:type owl:Class ;
                            rdfs:label "Chemical Engineering" .
 
 
+###  https://w3id.org/skgo/modsci#ChemicalOceanography
+modsci:ChemicalOceanography rdf:type owl:Class ;
+                            rdfs:subClassOf modsci:Oceanography .
+
+
 ###  https://w3id.org/skgo/modsci#ChemicalPhenomena
 modsci:ChemicalPhenomena rdf:type owl:Class ;
                          rdfs:subClassOf modsci:NaturalPhenomenon ;
                          rdfs:label "Chemical Phenomena" .
+
+
+###  https://w3id.org/skgo/modsci#ChemicalThermodynamics
+modsci:ChemicalThermodynamics rdf:type owl:Class ;
+                              rdfs:subClassOf modsci:PhysicalChemistry .
 
 
 ###  https://w3id.org/skgo/modsci#Chemistry
@@ -695,9 +751,24 @@ modsci:Chemistry rdf:type owl:Class ;
                  rdfs:label "Chemistry" .
 
 
+###  https://w3id.org/skgo/modsci#ClassicalPhysics
+modsci:ClassicalPhysics rdf:type owl:Class ;
+                        rdfs:subClassOf modsci:Physics .
+
+
 ###  https://w3id.org/skgo/modsci#ClassificationAlgorithms
 modsci:ClassificationAlgorithms rdf:type owl:Class ;
                                 rdfs:subClassOf modsci:Algorithms .
+
+
+###  https://w3id.org/skgo/modsci#CoalGeology
+modsci:CoalGeology rdf:type owl:Class ;
+                   rdfs:subClassOf modsci:Geology .
+
+
+###  https://w3id.org/skgo/modsci#CodingAndInformationTheory
+modsci:CodingAndInformationTheory rdf:type owl:Class ;
+                                  rdfs:subClassOf modsci:DataFormat .
 
 
 ###  https://w3id.org/skgo/modsci#CognitiveScience
@@ -705,6 +776,11 @@ modsci:CognitiveScience rdf:type owl:Class ;
                         rdfs:subClassOf modsci:InterdisciplinaryStudies ;
                         rdfs:comment "Cognitive science is the interdisciplinary, scientific study of the mind and its processes." ;
                         rdfs:label "Cognitive Science" .
+
+
+###  https://w3id.org/skgo/modsci#Colloid
+modsci:Colloid rdf:type owl:Class ;
+               rdfs:subClassOf modsci:PhysicalChemistry .
 
 
 ###  https://w3id.org/skgo/modsci#ColloidalChemistry
@@ -716,7 +792,7 @@ modsci:ColloidalChemistry rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#CommunicationAndSecurity
 modsci:CommunicationAndSecurity rdf:type owl:Class ;
-                                rdfs:subClassOf modsci:ComputerSystems ;
+                                rdfs:subClassOf modsci:ComputerSoftware ;
                                 rdfs:comment "Communications security is the discipline of preventing unauthorized interceptors from accessing telecommunications in an intelligible form, while still delivering content to the intended recipients." ;
                                 rdfs:label "Communication and Security" .
 
@@ -768,16 +844,14 @@ modsci:ComputationalPhysics rdf:type owl:Class ;
                             rdfs:label "Computational Physics" .
 
 
+###  https://w3id.org/skgo/modsci#Computer-HumanInteraction
+modsci:Computer-HumanInteraction rdf:type owl:Class ;
+                                 rdfs:subClassOf modsci:InformationSystems .
+
+
 ###  https://w3id.org/skgo/modsci#ComputerApplications
 modsci:ComputerApplications rdf:type owl:Class ;
                             rdfs:subClassOf modsci:ComputerScience .
-
-
-###  https://w3id.org/skgo/modsci#ComputerArchitecture
-modsci:ComputerArchitecture rdf:type owl:Class ;
-                            rdfs:subClassOf modsci:ComputerSystems ;
-                            rdfs:comment "In computer engineering, computer architecture is a set of rules and methods that describe the functionality, organization, and implementation of computer systems." ;
-                            rdfs:label "Computer Architecture" .
 
 
 ###  https://w3id.org/skgo/modsci#ComputerConcurrency
@@ -789,8 +863,8 @@ modsci:ComputerConcurrency rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#ComputerGraphics
 modsci:ComputerGraphics rdf:type owl:Class ;
-                        rdfs:subClassOf modsci:ComputerApplications ,
-                                        modsci:ComputerGraphics ;
+                        rdfs:subClassOf modsci:ComputerGraphics ,
+                                        modsci:ImageProcessing ;
                         rdfs:comment "Computer graphics are pictures and films created using computers. Usually, the term refers to computer-generated image data created with the help of specialized graphical hardware and software." ,
                                      "Computer graphics is the study of digital visual contents and involves the synthesis and manipulation of image data." ;
                         rdfs:label "Computer Graphics" ,
@@ -811,9 +885,16 @@ modsci:ComputerSecurity rdf:type owl:Class ;
                         rdfs:label "Computer Security" .
 
 
-###  https://w3id.org/skgo/modsci#ComputerSystems
-modsci:ComputerSystems rdf:type owl:Class ;
-                       rdfs:subClassOf modsci:ComputerScience .
+###  https://w3id.org/skgo/modsci#ComputerSoftware
+modsci:ComputerSoftware rdf:type owl:Class ;
+                        rdfs:subClassOf modsci:ComputerScience .
+
+
+###  https://w3id.org/skgo/modsci#ComputerSystemArchitecture
+modsci:ComputerSystemArchitecture rdf:type owl:Class ;
+                                  rdfs:subClassOf modsci:ComputerSoftware ;
+                                  rdfs:comment "In computer engineering, computer architecture is a set of rules and methods that describe the functionality, organization, and implementation of computer systems." ;
+                                  rdfs:label "Computer Architecture" .
 
 
 ###  https://w3id.org/skgo/modsci#ComputerVision
@@ -821,6 +902,11 @@ modsci:ComputerVision rdf:type owl:Class ;
                       rdfs:subClassOf modsci:ArtificialIntelligence ;
                       rdfs:comment "Computer vision is an interdisciplinary scientific field that deals with how computers can be made to gain high-level understanding from digital images or videos." ;
                       rdfs:label "Computer Vision" .
+
+
+###  https://w3id.org/skgo/modsci#ConceptualModelling
+modsci:ConceptualModelling rdf:type owl:Class ;
+                           rdfs:subClassOf modsci:InformationSystems .
 
 
 ###  https://w3id.org/skgo/modsci#CondensedMatterPhysics
@@ -835,6 +921,11 @@ modsci:Cosmology rdf:type owl:Class ;
                  rdfs:subClassOf modsci:Astronomy ;
                  rdfs:comment "Physical cosmology is the study of the largest-scale structures and dynamics of the Universe and is concerned with fundamental questions about its origin, structure, evolution, and ultimate fate." ;
                  rdfs:label "Physical Cosmology" .
+
+
+###  https://w3id.org/skgo/modsci#CropProduction
+modsci:CropProduction rdf:type owl:Class ;
+                      rdfs:subClassOf modsci:Agriculture .
 
 
 ###  https://w3id.org/skgo/modsci#Cryobiology
@@ -872,18 +963,38 @@ modsci:Cybernetics rdf:type owl:Class ;
                    rdfs:label "Cybernetics" .
 
 
+###  https://w3id.org/skgo/modsci#DataEncryption
+modsci:DataEncryption rdf:type owl:Class ;
+                      rdfs:subClassOf modsci:DataFormat .
+
+
+###  https://w3id.org/skgo/modsci#DataFormat
+modsci:DataFormat rdf:type owl:Class ;
+                  rdfs:subClassOf modsci:ComputerScience .
+
+
 ###  https://w3id.org/skgo/modsci#DataMining
 modsci:DataMining rdf:type owl:Class ;
-                  rdfs:subClassOf modsci:Databases ;
+                  rdfs:subClassOf modsci:DatabaseManagement ;
                   rdfs:comment "Data mining is the process of discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems." ;
                   rdfs:label "Data Mining" .
 
 
-###  https://w3id.org/skgo/modsci#Databases
-modsci:Databases rdf:type owl:Class ;
-                 rdfs:subClassOf modsci:ComputerSystems ;
-                 rdfs:comment "Digital databases are managed using database management systems to store, create, maintain, and search data, through database models and query languages." ;
-                 rdfs:label "Databases" .
+###  https://w3id.org/skgo/modsci#DataStructures
+modsci:DataStructures rdf:type owl:Class ;
+                      rdfs:subClassOf modsci:DataFormat .
+
+
+###  https://w3id.org/skgo/modsci#DatabaseManagement
+modsci:DatabaseManagement rdf:type owl:Class ;
+                          rdfs:subClassOf modsci:InformationSystems ;
+                          rdfs:comment "Digital databases are managed using database management systems to store, create, maintain, and search data, through database models and query languages." ;
+                          rdfs:label "Databases" .
+
+
+###  https://w3id.org/skgo/modsci#DecisionSupportSystems
+modsci:DecisionSupportSystems rdf:type owl:Class ;
+                              rdfs:subClassOf modsci:InformationSystems .
 
 
 ###  https://w3id.org/skgo/modsci#Dentistry
@@ -919,7 +1030,7 @@ modsci:DistributedComputing rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#DistributedSystems
 modsci:DistributedSystems rdf:type owl:Class ;
-                          rdfs:subClassOf modsci:ComputerSystems ;
+                          rdfs:subClassOf modsci:ComputerSoftware ;
                           rdfs:comment "Systems in which several computations are executing simultaneously, and potentially interacting with each other." ;
                           rdfs:label "Concurrent, Parallel, and Distributed systems" .
 
@@ -929,6 +1040,11 @@ modsci:EarthScience rdf:type owl:Class ;
                     rdfs:subClassOf modsci:NaturalScience ;
                     rdfs:comment "Earth science (also known as geoscience, the geosciences, or the Earth sciences) includes all the sciences related to the planet Earth." ;
                     rdfs:label "Earth Science" .
+
+
+###  https://w3id.org/skgo/modsci#EcologicalApplications
+modsci:EcologicalApplications rdf:type owl:Class ;
+                              rdfs:subClassOf modsci:EnvironmentalScience .
 
 
 ###  https://w3id.org/skgo/modsci#Ecology
@@ -951,6 +1067,26 @@ modsci:Education rdf:type owl:Class ;
                  rdfs:subClassOf modsci:AppliedSciences ;
                  rdfs:comment "Education is the teaching or learning of knowledge, especially to develop the reasoning, judgement and skill required in adult life and professional occupations." ;
                  rdfs:label "Education" .
+
+
+###  https://w3id.org/skgo/modsci#ElectroanalyticalChemistry
+modsci:ElectroanalyticalChemistry rdf:type owl:Class ;
+                                  rdfs:subClassOf modsci:AnalyticalChemistry .
+
+
+###  https://w3id.org/skgo/modsci#Electrochemistry
+modsci:Electrochemistry rdf:type owl:Class ;
+                        rdfs:subClassOf modsci:PhysicalChemistry .
+
+
+###  https://w3id.org/skgo/modsci#Electrodynamics
+modsci:Electrodynamics rdf:type owl:Class ;
+                       rdfs:subClassOf modsci:ClassicalPhysics .
+
+
+###  https://w3id.org/skgo/modsci#Electrostatics
+modsci:Electrostatics rdf:type owl:Class ;
+                      rdfs:subClassOf modsci:ClassicalPhysics .
 
 
 ###  https://w3id.org/skgo/modsci#Engineering
@@ -1051,9 +1187,29 @@ modsci:ExtragalacticAstronomy rdf:type owl:Class ;
                               rdfs:label "Extragalactic Astronomy" .
 
 
+###  https://w3id.org/skgo/modsci#ExtraterrestrialGeology
+modsci:ExtraterrestrialGeology rdf:type owl:Class ;
+                               rdfs:subClassOf modsci:Geology .
+
+
 ###  https://w3id.org/skgo/modsci#FinancialMathematics
 modsci:FinancialMathematics rdf:type owl:Class ;
                             rdfs:subClassOf modsci:AppliedMathematics .
+
+
+###  https://w3id.org/skgo/modsci#FisheriesSciences
+modsci:FisheriesSciences rdf:type owl:Class ;
+                         rdfs:subClassOf modsci:Agriculture .
+
+
+###  https://w3id.org/skgo/modsci#FlowAnalysis
+modsci:FlowAnalysis rdf:type owl:Class ;
+                    rdfs:subClassOf modsci:AnalyticalChemistry .
+
+
+###  https://w3id.org/skgo/modsci#FluidPhysics
+modsci:FluidPhysics rdf:type owl:Class ;
+                    rdfs:subClassOf modsci:ClassicalPhysics .
 
 
 ###  https://w3id.org/skgo/modsci#FoodChemistry
@@ -1077,11 +1233,21 @@ modsci:Forestry rdf:type owl:Class ;
                 rdfs:label "Forestry" .
 
 
+###  https://w3id.org/skgo/modsci#ForestrySciences
+modsci:ForestrySciences rdf:type owl:Class ;
+                        rdfs:subClassOf modsci:Agriculture .
+
+
 ###  https://w3id.org/skgo/modsci#FormalScience
 modsci:FormalScience rdf:type owl:Class ;
                      rdfs:subClassOf modsci:ModernScience ;
                      rdfs:comment "Formal sciences are a branch of science studying formal language disciplines concerned with formal systems, such as logic, mathematics, statistics, theoretical computer science, artificial intelligence, information theory, game theory, systems theory, decision theory, and theoretical linguistics." ;
                      rdfs:label "Formal Science" .
+
+
+###  https://w3id.org/skgo/modsci#FreeRadicalChemistry
+modsci:FreeRadicalChemistry rdf:type owl:Class ;
+                            rdfs:subClassOf modsci:OrganicChemistry .
 
 
 ###  https://w3id.org/skgo/modsci#FunctionalAnalysis
@@ -1105,9 +1271,15 @@ modsci:Genetics rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#Geochemistry
 modsci:Geochemistry rdf:type owl:Class ;
-                    rdfs:subClassOf modsci:Chemistry ;
+                    rdfs:subClassOf modsci:Chemistry ,
+                                    modsci:Geology ;
                     rdfs:comment "Geochemistry is the science that uses the tools and principles of chemistry to explain the mechanisms behind major geological systems such as the Earth's crust and its oceans." ;
                     rdfs:label "Geochemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Geochronology
+modsci:Geochronology rdf:type owl:Class ;
+                     rdfs:subClassOf modsci:Geology .
 
 
 ###  https://w3id.org/skgo/modsci#Geodesy
@@ -1115,6 +1287,11 @@ modsci:Geodesy rdf:type owl:Class ;
                rdfs:subClassOf modsci:EarthScience ;
                rdfs:comment "Geodesy is the Earth science of accurately measuring and understanding Earth's geometric shape, orientation in space and gravitational field." ;
                rdfs:label "Geodesy" .
+
+
+###  https://w3id.org/skgo/modsci#Geodynamics
+modsci:Geodynamics rdf:type owl:Class ;
+                   rdfs:subClassOf modsci:Geophysics .
 
 
 ###  https://w3id.org/skgo/modsci#Geography
@@ -1152,11 +1329,21 @@ modsci:Geomorphology rdf:type owl:Class ;
                      rdfs:label "Geomorphology" .
 
 
+###  https://w3id.org/skgo/modsci#GeophysicalFluidDynamics
+modsci:GeophysicalFluidDynamics rdf:type owl:Class ;
+                                rdfs:subClassOf modsci:Geophysics .
+
+
 ###  https://w3id.org/skgo/modsci#Geophysics
 modsci:Geophysics rdf:type owl:Class ;
                   rdfs:subClassOf modsci:EarthScience ;
                   rdfs:comment "Geophysics the physics of the Earth and its environment in space, and study of earth sciences using quantitative physics methods." ;
                   rdfs:label "Geophysics" .
+
+
+###  https://w3id.org/skgo/modsci#Geothermics
+modsci:Geothermics rdf:type owl:Class ;
+                   rdfs:subClassOf modsci:Geophysics .
 
 
 ###  https://w3id.org/skgo/modsci#Gerontology
@@ -1171,6 +1358,16 @@ modsci:Glaciology rdf:type owl:Class ;
                   rdfs:subClassOf modsci:EarthScience ;
                   rdfs:comment "Glaciology is the scientific study of glaciers, or more generally ice and natural phenomena that involve ice." ;
                   rdfs:label "Glaciology" .
+
+
+###  https://w3id.org/skgo/modsci#GlobalInformationSystems
+modsci:GlobalInformationSystems rdf:type owl:Class ;
+                                rdfs:subClassOf modsci:InformationSystems .
+
+
+###  https://w3id.org/skgo/modsci#Gravimetrics
+modsci:Gravimetrics rdf:type owl:Class ;
+                    rdfs:subClassOf modsci:Geophysics .
 
 
 ###  https://w3id.org/skgo/modsci#GreenChemistry
@@ -1213,6 +1410,11 @@ modsci:HomologicalAlgebra rdf:type owl:Class ;
                           rdfs:subClassOf modsci:Algebra .
 
 
+###  https://w3id.org/skgo/modsci#HorticulturalProduction
+modsci:HorticulturalProduction rdf:type owl:Class ;
+                               rdfs:subClassOf modsci:Agriculture .
+
+
 ###  https://w3id.org/skgo/modsci#HumanComputerInteraction
 modsci:HumanComputerInteraction rdf:type owl:Class ;
                                 rdfs:subClassOf modsci:SoftwareEngineering ;
@@ -1236,7 +1438,7 @@ modsci:Hydrology rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#ImageProcessing
 modsci:ImageProcessing rdf:type owl:Class ;
-                       rdfs:subClassOf modsci:ComputerGraphics ;
+                       rdfs:subClassOf modsci:ComputerScience ;
                        rdfs:comment "In computer science, digital image processing is the use of computer algorithms to perform image processing on digital images." ;
                        rdfs:label "Image Processing" .
 
@@ -1261,11 +1463,31 @@ modsci:Industry rdf:type owl:Class ;
                 rdfs:label "Industry" .
 
 
+###  https://w3id.org/skgo/modsci#InformationRetrieval
+modsci:InformationRetrieval rdf:type owl:Class ;
+                            rdfs:subClassOf modsci:InformationSystems .
+
+
 ###  https://w3id.org/skgo/modsci#InformationScience
 modsci:InformationScience rdf:type owl:Class ;
                           rdfs:subClassOf modsci:AppliedSciences ;
                           rdfs:comment "Information science is a field primarily concerned with the analysis, collection, classification, manipulation, storage, retrieval, movement, dissemination, and protection of information." ;
                           rdfs:label "Information Science" .
+
+
+###  https://w3id.org/skgo/modsci#InformationSystems
+modsci:InformationSystems rdf:type owl:Class ;
+                          rdfs:subClassOf modsci:ComputerScience .
+
+
+###  https://w3id.org/skgo/modsci#InformationSystemsManagement
+modsci:InformationSystemsManagement rdf:type owl:Class ;
+                                    rdfs:subClassOf modsci:InformationSystems .
+
+
+###  https://w3id.org/skgo/modsci#InformationSystemsTheory
+modsci:InformationSystemsTheory rdf:type owl:Class ;
+                                rdfs:subClassOf modsci:InformationSystems .
 
 
 ###  https://w3id.org/skgo/modsci#InformationVisualization
@@ -1275,11 +1497,21 @@ modsci:InformationVisualization rdf:type owl:Class ;
                                 rdfs:label "Information Visualization" .
 
 
+###  https://w3id.org/skgo/modsci#Informetrics
+modsci:Informetrics rdf:type owl:Class ;
+                    rdfs:subClassOf modsci:InformationSystems .
+
+
 ###  https://w3id.org/skgo/modsci#InorganicChemistry
 modsci:InorganicChemistry rdf:type owl:Class ;
                           rdfs:subClassOf modsci:Chemistry ;
                           rdfs:comment "Inorganic chemistry is a catch-all discipline that covers everything in chemistry that is not organic chemistry." ;
                           rdfs:label "Inorganic Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#InorganicGreenChemistry
+modsci:InorganicGreenChemistry rdf:type owl:Class ;
+                               rdfs:subClassOf modsci:InorganicChemistry .
 
 
 ###  https://w3id.org/skgo/modsci#Instruments
@@ -1298,10 +1530,25 @@ modsci:InterdisciplinaryStudies rdf:type owl:Class ;
                                 rdfs:label "Interdisciplinary Studies" .
 
 
+###  https://w3id.org/skgo/modsci#InterorganisationalInformationSystems
+modsci:InterorganisationalInformationSystems rdf:type owl:Class ;
+                                             rdfs:subClassOf modsci:InformationSystems .
+
+
+###  https://w3id.org/skgo/modsci#KnowledgeSystems
+modsci:KnowledgeSystems rdf:type owl:Class ;
+                        rdfs:subClassOf modsci:InformationSystems .
+
+
 ###  https://w3id.org/skgo/modsci#LaboratoryInstrument
 modsci:LaboratoryInstrument rdf:type owl:Class ;
                             owl:equivalentClass modsci:ScientificInstrument ;
                             rdfs:subClassOf modsci:Instruments .
+
+
+###  https://w3id.org/skgo/modsci#Lasers
+modsci:Lasers rdf:type owl:Class ;
+              rdfs:subClassOf modsci:OpticalPhysics .
 
 
 ###  https://w3id.org/skgo/modsci#LibraryScience
@@ -1341,6 +1588,16 @@ modsci:MachineLearning rdf:type owl:Class ;
                        rdfs:label "Machine Learning" .
 
 
+###  https://w3id.org/skgo/modsci#Magnetism
+modsci:Magnetism rdf:type owl:Class ;
+                 rdfs:subClassOf modsci:Geophysics .
+
+
+###  https://w3id.org/skgo/modsci#MainGroupMetalChemistry
+modsci:MainGroupMetalChemistry rdf:type owl:Class ;
+                               rdfs:subClassOf modsci:InorganicChemistry .
+
+
 ###  https://w3id.org/skgo/modsci#MarineBiology
 modsci:MarineBiology rdf:type owl:Class ;
                      rdfs:subClassOf modsci:Biology ;
@@ -1348,11 +1605,16 @@ modsci:MarineBiology rdf:type owl:Class ;
                      rdfs:label "Marine Biology" .
 
 
-###  https://w3id.org/skgo/modsci#MaterialsScience
-modsci:MaterialsScience rdf:type owl:Class ;
-                        rdfs:subClassOf modsci:Chemistry ;
-                        rdfs:comment "The interdisciplinary field of materials science is the design and discovery of new materials, particularly solids." ;
-                        rdfs:label "Materials Science" .
+###  https://w3id.org/skgo/modsci#MarkupLanguages
+modsci:MarkupLanguages rdf:type owl:Class ;
+                       rdfs:subClassOf modsci:DataFormat .
+
+
+###  https://w3id.org/skgo/modsci#MaterialsChemistry
+modsci:MaterialsChemistry rdf:type owl:Class ;
+                          rdfs:subClassOf modsci:Chemistry ;
+                          rdfs:comment "The interdisciplinary field of materials science is the design and discovery of new materials, particularly solids." ;
+                          rdfs:label "Materials Science" .
 
 
 ###  https://w3id.org/skgo/modsci#MathematicalAndTheoreticalBiology
@@ -1395,6 +1657,11 @@ modsci:Mechanics rdf:type owl:Class ;
                  rdfs:label "Mechanics" .
 
 
+###  https://w3id.org/skgo/modsci#MechanismsOfReactions
+modsci:MechanismsOfReactions rdf:type owl:Class ;
+                             rdfs:subClassOf modsci:PhysicalChemistry .
+
+
 ###  https://w3id.org/skgo/modsci#MedicinalChemistry
 modsci:MedicinalChemistry rdf:type owl:Class ;
                           rdfs:subClassOf modsci:Chemistry ;
@@ -1421,10 +1688,20 @@ modsci:Metallurgy rdf:type owl:Class ;
                   rdfs:label "Metallurgy" .
 
 
+###  https://w3id.org/skgo/modsci#MetamorphicPetrology
+modsci:MetamorphicPetrology rdf:type owl:Class ;
+                            rdfs:subClassOf modsci:Geology .
+
+
 ###  https://w3id.org/skgo/modsci#MeteorologicalPhenomena
 modsci:MeteorologicalPhenomena rdf:type owl:Class ;
                                rdfs:subClassOf modsci:NaturalPhenomenon ;
                                rdfs:label "Meteorological Phenomena" .
+
+
+###  https://w3id.org/skgo/modsci#MetrologicalChemistry
+modsci:MetrologicalChemistry rdf:type owl:Class ;
+                             rdfs:subClassOf modsci:AnalyticalChemistry .
 
 
 ###  https://w3id.org/skgo/modsci#Metrology
@@ -1439,6 +1716,16 @@ modsci:MilitaryScience rdf:type owl:Class ;
                        rdfs:subClassOf modsci:AppliedSciences ;
                        rdfs:comment "Military science is the study of military processes, dentsciitutions, and behavior, along with the study of warfare, and the theory and application of organized coercive force." ;
                        rdfs:label "Military Science" .
+
+
+###  https://w3id.org/skgo/modsci#Mineralogy
+modsci:Mineralogy rdf:type owl:Class ;
+                  rdfs:subClassOf modsci:Geology .
+
+
+###  https://w3id.org/skgo/modsci#MobileTechnologies
+modsci:MobileTechnologies rdf:type owl:Class ;
+                          rdfs:subClassOf modsci:DistributedSystems .
 
 
 ###  https://w3id.org/skgo/modsci#ModernScience
@@ -1456,9 +1743,14 @@ modsci:MolecularBiology rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#MolecularPhysics
 modsci:MolecularPhysics rdf:type owl:Class ;
-                        rdfs:subClassOf modsci:Chemistry ;
+                        rdfs:subClassOf modsci:Physics ;
                         rdfs:comment "Molecular physics deals with the physics and chemistry of molecules." ;
                         rdfs:label "Molecular Physics" .
+
+
+###  https://w3id.org/skgo/modsci#MultimediaProgramming
+modsci:MultimediaProgramming rdf:type owl:Class ;
+                             rdfs:subClassOf modsci:ComputerSoftware .
 
 
 ###  https://w3id.org/skgo/modsci#Museology
@@ -1468,10 +1760,15 @@ modsci:Museology rdf:type owl:Class ;
                  rdfs:label "Museology" .
 
 
+###  https://w3id.org/skgo/modsci#Nanochemistry
+modsci:Nanochemistry rdf:type owl:Class ;
+                     rdfs:subClassOf modsci:MaterialsChemistry .
+
+
 ###  https://w3id.org/skgo/modsci#NaturalLanguageProcessing
 modsci:NaturalLanguageProcessing rdf:type owl:Class ;
                                  rdfs:subClassOf modsci:ArtificialIntelligence ,
-                                                 modsci:ComputerSystems ,
+                                                 modsci:ComputerSoftware ,
                                                  modsci:Linguistics ;
                                  rdfs:comment "Natural language processing (NLP) is a subfield of linguistics, computer science, information engineering, and artificial intelligence concerned with the interactions between computers and human (natural) languages, in particular how to program computers to process and analyze large amounts of natural language data." ;
                                  rdfs:label "Natural language processing (NLP)" .
@@ -1483,6 +1780,11 @@ modsci:NaturalPhenomenon rdf:type owl:Class ;
                          owl:disjointWith modsci:SocialPhenomenon ;
                          rdfs:comment "Natural phenomena include gravity, tides, biological processes and oscillation."@en ;
                          rdfs:label "Natural Phenomenon"@en .
+
+
+###  https://w3id.org/skgo/modsci#NaturalProductsChemistry
+modsci:NaturalProductsChemistry rdf:type owl:Class ;
+                                rdfs:subClassOf modsci:OrganicChemistry .
 
 
 ###  https://w3id.org/skgo/modsci#NaturalScience
@@ -1514,11 +1816,31 @@ modsci:Neuroscience rdf:type owl:Class ;
                     rdfs:label "Neuroscience" .
 
 
+###  https://w3id.org/skgo/modsci#Non-equilibriumProcesses
+modsci:Non-equilibriumProcesses rdf:type owl:Class ;
+                                rdfs:subClassOf modsci:PhysicalChemistry .
+
+
+###  https://w3id.org/skgo/modsci#Non-metalChemistry
+modsci:Non-metalChemistry rdf:type owl:Class ;
+                          rdfs:subClassOf modsci:InorganicChemistry .
+
+
+###  https://w3id.org/skgo/modsci#NonlinearOptics
+modsci:NonlinearOptics rdf:type owl:Class ;
+                       rdfs:subClassOf modsci:OpticalPhysics .
+
+
 ###  https://w3id.org/skgo/modsci#NuclearChemistry
 modsci:NuclearChemistry rdf:type owl:Class ;
                         rdfs:subClassOf modsci:Chemistry ;
                         rdfs:comment "Nuclear chemistry is the subfield of chemistry dealing with radioactivity, nuclear processes, and transformations in the nuclei of atoms, such as nuclear transmutation and nuclear properties." ;
                         rdfs:label "Nuclear Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#NuclearPhysics
+modsci:NuclearPhysics rdf:type owl:Class ;
+                      rdfs:subClassOf modsci:Physics .
 
 
 ###  https://w3id.org/skgo/modsci#NumberTheory
@@ -1553,7 +1875,7 @@ modsci:Oceanography rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#OperatingSystems
 modsci:OperatingSystems rdf:type owl:Class ;
-                        rdfs:subClassOf modsci:ComputerSystems ;
+                        rdfs:subClassOf modsci:ComputerSoftware ;
                         rdfs:comment "An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs." ;
                         rdfs:label "Operating Systems" .
 
@@ -1561,6 +1883,17 @@ modsci:OperatingSystems rdf:type owl:Class ;
 ###  https://w3id.org/skgo/modsci#OperationsResearch
 modsci:OperationsResearch rdf:type owl:Class ;
                           rdfs:subClassOf modsci:AppliedMathematics .
+
+
+###  https://w3id.org/skgo/modsci#OpticalCommunications
+modsci:OpticalCommunications rdf:type owl:Class ;
+                             rdfs:subClassOf modsci:OpticalPhysics .
+
+
+###  https://w3id.org/skgo/modsci#OpticalPhysics
+modsci:OpticalPhysics rdf:type owl:Class ;
+                      owl:equivalentClass modsci:Optics ;
+                      rdfs:subClassOf modsci:Physics .
 
 
 ###  https://w3id.org/skgo/modsci#Optics
@@ -1575,9 +1908,24 @@ modsci:Optimisation rdf:type owl:Class ;
                     rdfs:subClassOf modsci:ComputationalMathematics .
 
 
+###  https://w3id.org/skgo/modsci#Optoelectronics
+modsci:Optoelectronics rdf:type owl:Class ;
+                       rdfs:subClassOf modsci:OpticalPhysics .
+
+
 ###  https://w3id.org/skgo/modsci#OrdinaryDifferentialEquations
 modsci:OrdinaryDifferentialEquations rdf:type owl:Class ;
                                      rdfs:subClassOf modsci:DifferentialEquations .
+
+
+###  https://w3id.org/skgo/modsci#OreDepositPetrology
+modsci:OreDepositPetrology rdf:type owl:Class ;
+                           rdfs:subClassOf modsci:Geology .
+
+
+###  https://w3id.org/skgo/modsci#OrganicChemicalSynthesis
+modsci:OrganicChemicalSynthesis rdf:type owl:Class ;
+                                rdfs:subClassOf modsci:OrganicChemistry .
 
 
 ###  https://w3id.org/skgo/modsci#OrganicChemistry
@@ -1587,11 +1935,26 @@ modsci:OrganicChemistry rdf:type owl:Class ;
                         rdfs:label "Organic Chemistry" .
 
 
+###  https://w3id.org/skgo/modsci#OrganicGreenChemistry
+modsci:OrganicGreenChemistry rdf:type owl:Class ;
+                             rdfs:subClassOf modsci:OrganicChemistry .
+
+
 ###  https://w3id.org/skgo/modsci#OrganometallicChemistry
 modsci:OrganometallicChemistry rdf:type owl:Class ;
                                rdfs:subClassOf modsci:Chemistry ;
                                rdfs:comment "Organometallic chemistry is the study of chemical compounds containing bonds between carbon and a metal." ;
                                rdfs:label "Organometallic Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#Palaeomagnetism
+modsci:Palaeomagnetism rdf:type owl:Class ;
+                       rdfs:subClassOf modsci:Geophysics .
+
+
+###  https://w3id.org/skgo/modsci#Palaeontology
+modsci:Palaeontology rdf:type owl:Class ;
+                     rdfs:subClassOf modsci:Geology .
 
 
 ###  https://w3id.org/skgo/modsci#Paleoclimatology
@@ -1641,6 +2004,21 @@ modsci:ParticlePhysics rdf:type owl:Class ;
                        rdfs:label "Particle Physics" .
 
 
+###  https://w3id.org/skgo/modsci#PastureProduction
+modsci:PastureProduction rdf:type owl:Class ;
+                         rdfs:subClassOf modsci:Agriculture .
+
+
+###  https://w3id.org/skgo/modsci#PatternRecognition
+modsci:PatternRecognition rdf:type owl:Class ;
+                          rdfs:subClassOf modsci:ArtificialIntelligence .
+
+
+###  https://w3id.org/skgo/modsci#PetroleumGeology
+modsci:PetroleumGeology rdf:type owl:Class ;
+                        rdfs:subClassOf modsci:Geology .
+
+
 ###  https://w3id.org/skgo/modsci#Pharmacology
 modsci:Pharmacology rdf:type owl:Class ;
                     rdfs:subClassOf modsci:Biology ;
@@ -1669,6 +2047,11 @@ modsci:Photochemistry rdf:type owl:Class ;
                       rdfs:label "Photochemistry" .
 
 
+###  https://w3id.org/skgo/modsci#Photonics
+modsci:Photonics rdf:type owl:Class ;
+                 rdfs:subClassOf modsci:OpticalPhysics .
+
+
 ###  https://w3id.org/skgo/modsci#Phylogeny
 modsci:Phylogeny rdf:type owl:Class ;
                  rdfs:subClassOf modsci:Biology ;
@@ -1688,6 +2071,16 @@ modsci:PhysicalGeography rdf:type owl:Class ;
                          rdfs:subClassOf modsci:EarthScience ;
                          rdfs:comment "Physical geography is a subfield of geography, closely related to geology, that focuses on the spatial characteristics of natural processes, within the hydrosphere, biosphere, atmosphere and lithosphere." ;
                          rdfs:label "Physical Geography" .
+
+
+###  https://w3id.org/skgo/modsci#PhysicalOceanography
+modsci:PhysicalOceanography rdf:type owl:Class ;
+                            rdfs:subClassOf modsci:Oceanography .
+
+
+###  https://w3id.org/skgo/modsci#PhysicalOrganicChemistry
+modsci:PhysicalOrganicChemistry rdf:type owl:Class ;
+                                rdfs:subClassOf modsci:OrganicChemistry .
 
 
 ###  https://w3id.org/skgo/modsci#PhysicalPhenomena
@@ -1738,6 +2131,11 @@ modsci:PoliticalScience rdf:type owl:Class ;
                         rdfs:label "Political Science" .
 
 
+###  https://w3id.org/skgo/modsci#PolymerisationMechanisms
+modsci:PolymerisationMechanisms rdf:type owl:Class ;
+                                rdfs:subClassOf modsci:MaterialsChemistry .
+
+
 ###  https://w3id.org/skgo/modsci#ProgrammingLanguage
 modsci:ProgrammingLanguage rdf:type owl:Class ;
                            rdfs:subClassOf modsci:ProgrammingLanguages ;
@@ -1754,7 +2152,7 @@ modsci:ProgrammingLanguageTheory rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#ProgrammingLanguages
 modsci:ProgrammingLanguages rdf:type owl:Class ;
-                            rdfs:subClassOf modsci:ComputerSystems ;
+                            rdfs:subClassOf modsci:ComputerSoftware ;
                             rdfs:comment "Programming languages can be used to accomplish different tasks in different ways." ;
                             rdfs:label "Programming Languages and Compilers" .
 
@@ -1785,6 +2183,16 @@ modsci:QuantumMechanics rdf:type owl:Class ;
                         rdfs:label "Quantum Mechanics" .
 
 
+###  https://w3id.org/skgo/modsci#QuantumOptics
+modsci:QuantumOptics rdf:type owl:Class ;
+                     rdfs:subClassOf modsci:QuantumPhysics .
+
+
+###  https://w3id.org/skgo/modsci#QuantumPhysics
+modsci:QuantumPhysics rdf:type owl:Class ;
+                      rdfs:subClassOf modsci:Physics .
+
+
 ###  https://w3id.org/skgo/modsci#Radiobiology
 modsci:Radiobiology rdf:type owl:Class ;
                     rdfs:subClassOf modsci:Biology ;
@@ -1799,9 +2207,14 @@ modsci:Radiochemistry rdf:type owl:Class ;
                       rdfs:label "Radiochemistry" .
 
 
+###  https://w3id.org/skgo/modsci#Radiometrics
+modsci:Radiometrics rdf:type owl:Class ;
+                    rdfs:subClassOf modsci:Geophysics .
+
+
 ###  https://w3id.org/skgo/modsci#RelationalDatabases
 modsci:RelationalDatabases rdf:type owl:Class ;
-                           rdfs:subClassOf modsci:Databases ;
+                           rdfs:subClassOf modsci:DatabaseManagement ;
                            rdfs:comment "A relational database is a digital database based on the relational model of data, as proposed by E. F. Codd in 1970." ;
                            rdfs:label "Relational Databases" .
 
@@ -1879,6 +2292,21 @@ modsci:Scientist rdf:type owl:Class ;
                  rdfs:label "Scientist"@en .
 
 
+###  https://w3id.org/skgo/modsci#Sedimentology
+modsci:Sedimentology rdf:type owl:Class ;
+                     rdfs:subClassOf modsci:Geology .
+
+
+###  https://w3id.org/skgo/modsci#SeismicExploration
+modsci:SeismicExploration rdf:type owl:Class ;
+                          rdfs:subClassOf modsci:Geophysics .
+
+
+###  https://w3id.org/skgo/modsci#Seismology
+modsci:Seismology rdf:type owl:Class ;
+                  rdfs:subClassOf modsci:Geophysics .
+
+
 ###  https://w3id.org/skgo/modsci#Semantics
 modsci:Semantics rdf:type owl:Class ;
                  rdfs:subClassOf modsci:ProgrammingLanguages ;
@@ -1892,6 +2320,11 @@ modsci:Semiotics rdf:type owl:Class ;
                                  modsci:SocialSciences ;
                  rdfs:comment "Semiotics is the study of signs (symbols) and signification systems, or rather semiotics are general theories of signs." ;
                  rdfs:label "Semiotics" .
+
+
+###  https://w3id.org/skgo/modsci#SeparationScience
+modsci:SeparationScience rdf:type owl:Class ;
+                         rdfs:subClassOf modsci:AnalyticalChemistry .
 
 
 ###  https://w3id.org/skgo/modsci#SocialPhenomenon
@@ -1945,7 +2378,7 @@ modsci:SoftComputing rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#SoftwareEngineering
 modsci:SoftwareEngineering rdf:type owl:Class ;
-                           rdfs:subClassOf modsci:ComputerSystems ;
+                           rdfs:subClassOf modsci:ComputerSoftware ;
                            rdfs:comment "Software engineering is the application of engineering to the development of software in a systematic method." ;
                            rdfs:label "Software Engineering" .
 
@@ -1964,6 +2397,11 @@ modsci:SoilScience rdf:type owl:Class ;
                    rdfs:label "Soil Science" .
 
 
+###  https://w3id.org/skgo/modsci#SoilSciences
+modsci:SoilSciences rdf:type owl:Class ;
+                    rdfs:subClassOf modsci:EnvironmentalScience .
+
+
 ###  https://w3id.org/skgo/modsci#SolidMechanics
 modsci:SolidMechanics rdf:type owl:Class ;
                       rdfs:subClassOf modsci:Physics ;
@@ -1973,9 +2411,14 @@ modsci:SolidMechanics rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#SolidStateChemistry
 modsci:SolidStateChemistry rdf:type owl:Class ;
-                           rdfs:subClassOf modsci:Chemistry ;
+                           rdfs:subClassOf modsci:InorganicChemistry ;
                            rdfs:comment "Solid-state chemistry, also sometimes referred as materials chemistry, is the study of the synthesis, structure, and properties of solid phase materials, particularly, but not necessarily exclusively of, non-molecular solids." ;
                            rdfs:label "Solid-State Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#SolutionChemistry
+modsci:SolutionChemistry rdf:type owl:Class ;
+                         rdfs:subClassOf modsci:PhysicalChemistry .
 
 
 ###  https://w3id.org/skgo/modsci#SpaceScience
@@ -1983,6 +2426,11 @@ modsci:SpaceScience rdf:type owl:Class ;
                     rdfs:subClassOf modsci:EarthScience ;
                     rdfs:comment "Space science encompasses all of the scientific disciplines that involve space exploration and study natural phenomena and physical bodies occurring in outer space, such as space medicine and astrobiology." ;
                     rdfs:label "Space Science" .
+
+
+###  https://w3id.org/skgo/modsci#Spectroscopy
+modsci:Spectroscopy rdf:type owl:Class ;
+                    rdfs:subClassOf modsci:OpticalPhysics .
 
 
 ###  https://w3id.org/skgo/modsci#SportsScience
@@ -2013,25 +2461,45 @@ modsci:Stereochemistry rdf:type owl:Class ;
                        rdfs:label "Stereochemistry" .
 
 
+###  https://w3id.org/skgo/modsci#Stratigraphy
+modsci:Stratigraphy rdf:type owl:Class ;
+                    rdfs:subClassOf modsci:Geology .
+
+
+###  https://w3id.org/skgo/modsci#StructuralChemistry
+modsci:StructuralChemistry rdf:type owl:Class ;
+                           rdfs:subClassOf modsci:PhysicalChemistry .
+
+
+###  https://w3id.org/skgo/modsci#StructuralGeology
+modsci:StructuralGeology rdf:type owl:Class ;
+                         rdfs:subClassOf modsci:Geology .
+
+
 ###  https://w3id.org/skgo/modsci#StructuredStorage
 modsci:StructuredStorage rdf:type owl:Class ;
-                         rdfs:subClassOf modsci:Databases ;
+                         rdfs:subClassOf modsci:DatabaseManagement ;
                          rdfs:comment "Structured storage is computer storage for structured data, often in the form of a distributed database." ;
                          rdfs:label "Structured Storage" .
 
 
 ###  https://w3id.org/skgo/modsci#SupramolecularChemistry
 modsci:SupramolecularChemistry rdf:type owl:Class ;
-                               rdfs:subClassOf modsci:Chemistry ;
+                               rdfs:subClassOf modsci:MaterialsChemistry ;
                                rdfs:comment "Supramolecular chemistry is a branch of chemistry that describes self-organization or self-assembly of systems to well-defined molecular architectures." ;
                                rdfs:label "Supramolecular Chemistry" .
 
 
 ###  https://w3id.org/skgo/modsci#SurfaceChemistry
 modsci:SurfaceChemistry rdf:type owl:Class ;
-                        rdfs:subClassOf modsci:Chemistry ;
+                        rdfs:subClassOf modsci:PhysicalChemistry ;
                         rdfs:comment "Surface chemistry is the study of chemical phenomena that occur at the interface of two phases" ;
                         rdfs:label "Surface Chemistry" .
+
+
+###  https://w3id.org/skgo/modsci#SynthesisOfMaterials
+modsci:SynthesisOfMaterials rdf:type owl:Class ;
+                            rdfs:subClassOf modsci:MaterialsChemistry .
 
 
 ###  https://w3id.org/skgo/modsci#SystemsScience
@@ -2046,6 +2514,11 @@ modsci:Technology rdf:type owl:Class ;
                   rdfs:subClassOf modsci:FormalScience ;
                   rdfs:comment "Technology is the collection of techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation." ;
                   rdfs:label "Technology" .
+
+
+###  https://w3id.org/skgo/modsci#Tectonics
+modsci:Tectonics rdf:type owl:Class ;
+                 rdfs:subClassOf modsci:Geology .
 
 
 ###  https://w3id.org/skgo/modsci#TheoreticalBiology
@@ -2074,6 +2547,11 @@ modsci:TheoreticalLinguistics rdf:type owl:Class ;
                               rdfs:label "Theoretical Linguistics" .
 
 
+###  https://w3id.org/skgo/modsci#TheoryAndDesignOfMaterials
+modsci:TheoryAndDesignOfMaterials rdf:type owl:Class ;
+                                  rdfs:subClassOf modsci:MaterialsChemistry .
+
+
 ###  https://w3id.org/skgo/modsci#TheoryOfComputation
 modsci:TheoryOfComputation rdf:type owl:Class ;
                            rdfs:subClassOf modsci:TheoreticalComputerScience ;
@@ -2083,7 +2561,7 @@ modsci:TheoryOfComputation rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#Thermodynamics
 modsci:Thermodynamics rdf:type owl:Class ;
-                      rdfs:subClassOf modsci:Physics ;
+                      rdfs:subClassOf modsci:ClassicalPhysics ;
                       rdfs:comment "Thermodynamics concerns the physics of heat, work, temperature, energy, and entropy." ;
                       rdfs:label "Thermodynamics" .
 
@@ -2107,11 +2585,21 @@ modsci:Transdisciplinarity rdf:type owl:Class ;
                            rdfs:label "Transdisciplinarity" .
 
 
+###  https://w3id.org/skgo/modsci#TransitionMetalChemistry
+modsci:TransitionMetalChemistry rdf:type owl:Class ;
+                                rdfs:subClassOf modsci:InorganicChemistry .
+
+
 ###  https://w3id.org/skgo/modsci#TypeTheory
 modsci:TypeTheory rdf:type owl:Class ;
                   rdfs:subClassOf modsci:ProgrammingLanguages ;
                   rdfs:comment "In mathematics, logic, and computer science, a type theory is any of a class of formal systems, some of which can serve as alternatives to set theory as a foundation for all mathematics. In type theory, every \"term\" has a \"type\" and operations are restricted to terms of a certain type." ;
                   rdfs:label "Type Theory" .
+
+
+###  https://w3id.org/skgo/modsci#UbiquitousComputing
+modsci:UbiquitousComputing rdf:type owl:Class ;
+                           rdfs:subClassOf modsci:DistributedSystems .
 
 
 ###  https://w3id.org/skgo/modsci#UniversalAlgebra
@@ -2133,11 +2621,41 @@ modsci:VeterinaryMedicine rdf:type owl:Class ;
                           rdfs:label "Veterinary Medicine" .
 
 
+###  https://w3id.org/skgo/modsci#VeterinarySciences
+modsci:VeterinarySciences rdf:type owl:Class ;
+                          rdfs:subClassOf modsci:Agriculture .
+
+
+###  https://w3id.org/skgo/modsci#VirtualReality
+modsci:VirtualReality rdf:type owl:Class ;
+                      rdfs:subClassOf modsci:ComputerGraphics .
+
+
 ###  https://w3id.org/skgo/modsci#Volcanology
 modsci:Volcanology rdf:type owl:Class ;
-                   rdfs:subClassOf modsci:EarthScience ;
+                   rdfs:subClassOf modsci:Geology ;
                    rdfs:comment "Volcanology is a branch of geology that deals with the study of volcanoes, lava, magma, and related geological phenomena." ;
                    rdfs:label "Volcanology" .
+
+
+###  https://w3id.org/skgo/modsci#Waves
+modsci:Waves rdf:type owl:Class ;
+             rdfs:subClassOf modsci:ClassicalPhysics .
+
+
+###  https://w3id.org/skgo/modsci#WebSearch
+modsci:WebSearch rdf:type owl:Class ;
+                 rdfs:subClassOf modsci:InformationRetrieval .
+
+
+###  https://w3id.org/skgo/modsci#WebServices
+modsci:WebServices rdf:type owl:Class ;
+                   rdfs:subClassOf modsci:InformationSystems .
+
+
+###  https://w3id.org/skgo/modsci#WebTechnologies
+modsci:WebTechnologies rdf:type owl:Class ;
+                       rdfs:subClassOf modsci:DistributedSystems .
 
 
 ###  https://w3id.org/skgo/modsci#Zoology
@@ -2145,6 +2663,11 @@ modsci:Zoology rdf:type owl:Class ;
                rdfs:subClassOf modsci:Biology ;
                rdfs:comment "Zoology is the study of the biology of animals." ;
                rdfs:label "Zoology" .
+
+
+###  https://w3id.org/skgo/modsci#f-BlockChemistry
+modsci:f-BlockChemistry rdf:type owl:Class ;
+                        rdfs:subClassOf modsci:InorganicChemistry .
 
 
 #################################################################
