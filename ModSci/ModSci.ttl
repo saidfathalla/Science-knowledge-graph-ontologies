@@ -107,6 +107,11 @@ modsci:discoveredByInterdisciplinaryStudies rdf:type owl:ObjectProperty ;
                                             rdfs:subPropertyOf modsci:discoveredByScience .
 
 
+###  https://w3id.org/skgo/modsci#discoveredByMachine
+modsci:discoveredByMachine rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty .
+
+
 ###  https://w3id.org/skgo/modsci#discoveredByNaturalScience
 modsci:discoveredByNaturalScience rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf modsci:discoveredByScience .
@@ -146,12 +151,6 @@ modsci:discoveredByScientist rdf:type owl:ObjectProperty ,
 ###  https://w3id.org/skgo/modsci#discoveredBySocialSciences
 modsci:discoveredBySocialSciences rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf modsci:discoveredByScience .
-
-
-###  https://w3id.org/skgo/modsci#doingStudies
-modsci:doingStudies rdf:type owl:ObjectProperty ;
-                    rdfs:domain modsci:Scientist ;
-                    rdfs:range modsci:ModernScience .
 
 
 ###  https://w3id.org/skgo/modsci#followsMethod
@@ -312,6 +311,12 @@ modsci:isDiscoveredByScientist rdf:type owl:ObjectProperty ;
 modsci:isManufacturerOf rdf:type owl:ObjectProperty .
 
 
+###  https://w3id.org/skgo/modsci#isStudentOf
+modsci:isStudentOf rdf:type owl:ObjectProperty ;
+                   rdfs:domain modsci:Scientist ;
+                   rdfs:range modsci:Scientist .
+
+
 ###  https://w3id.org/skgo/modsci#requiresKnowledgeFrom
 modsci:requiresKnowledgeFrom rdf:type owl:ObjectProperty ,
                                       owl:ReflexiveProperty ;
@@ -341,6 +346,12 @@ modsci:suppliesSubstancesTo rdf:type owl:ObjectProperty ;
 modsci:takeSunstancesFrom rdf:type owl:ObjectProperty ,
                                    owl:ReflexiveProperty ;
                           rdfs:domain modsci:ModernScience ;
+                          rdfs:range modsci:ModernScience .
+
+
+###  https://w3id.org/skgo/modsci#undertakesResearch
+modsci:undertakesResearch rdf:type owl:ObjectProperty ;
+                          rdfs:domain modsci:Scientist ;
                           rdfs:range modsci:ModernScience .
 
 
@@ -1016,6 +1027,16 @@ modsci:DifferentialEquations rdf:type owl:Class ;
                              rdfs:subClassOf modsci:PureMathematics .
 
 
+###  https://w3id.org/skgo/modsci#DiscoveryOfMethods
+modsci:DiscoveryOfMethods rdf:type owl:Class ;
+                          rdfs:subClassOf modsci:ScientificDiscovery .
+
+
+###  https://w3id.org/skgo/modsci#DiscoveryOfPhenomenon
+modsci:DiscoveryOfPhenomenon rdf:type owl:Class ;
+                             rdfs:subClassOf modsci:ScientificDiscovery .
+
+
 ###  https://w3id.org/skgo/modsci#DiscreteMathematics
 modsci:DiscreteMathematics rdf:type owl:Class ;
                            rdfs:subClassOf modsci:PureMathematics .
@@ -1310,14 +1331,14 @@ modsci:GeologicalPhenomena rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#GeologicalSciences
 modsci:GeologicalSciences rdf:type owl:Class ;
-                          rdfs:subClassOf modsci:NaturalScience ;
+                          rdfs:subClassOf modsci:EarthScience ;
                           rdfs:comment "The Geological Sciences examine the physical and chemical processes within Earth and on its surface, including the study of natural resources and risks to habitable areas." ;
                           rdfs:label "Geological Sciences" .
 
 
 ###  https://w3id.org/skgo/modsci#Geology
 modsci:Geology rdf:type owl:Class ;
-               rdfs:subClassOf modsci:EarthScience ;
+               rdfs:subClassOf modsci:GeologicalSciences ;
                rdfs:comment "Geology is an earth science concerned with the solid Earth, the rocks of which it is composed, and the processes by which they change over time." ;
                rdfs:label "Geology" .
 
@@ -2357,7 +2378,8 @@ modsci:SocialWork rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#Sociobiology
 modsci:Sociobiology rdf:type owl:Class ;
-                    rdfs:subClassOf modsci:BehaviouralSciences ;
+                    rdfs:subClassOf modsci:BehaviouralSciences ,
+                                    modsci:Biology ;
                     rdfs:comment "Sociobiology is a field of biology that aims to examine and explain social behavior in terms of evolution." ;
                     rdfs:label "Sociobiology" .
 
@@ -2893,8 +2915,9 @@ modsci:Eudiometer rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/skgo/modsci#Evangelista_Torricelli
 modsci:Evangelista_Torricelli rdf:type owl:NamedIndividual ,
                                        modsci:Scientist ;
-                              modsci:doingStudies modsci:Mathematical_Studies ,
-                                                  modsci:Physical_Studies .
+                              modsci:isStudentOf modsci:Galileo ;
+                              modsci:undertakesResearch modsci:Mathematical_Studies ,
+                                                        modsci:Physical_Studies .
 
 
 ###  https://w3id.org/skgo/modsci#Fire
@@ -2915,7 +2938,12 @@ modsci:Freezing rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/skgo/modsci#Friedrich_Drexler
 modsci:Friedrich_Drexler rdf:type owl:NamedIndividual ,
                                   modsci:Scientist ;
-                         modsci:doingStudies modsci:Engineering_Studies .
+                         modsci:undertakesResearch modsci:Engineering_Studies .
+
+
+###  https://w3id.org/skgo/modsci#Galileo
+modsci:Galileo rdf:type owl:NamedIndividual ,
+                        modsci:Scientist .
 
 
 ###  https://w3id.org/skgo/modsci#Galvanometer
@@ -2954,8 +2982,8 @@ modsci:Growth rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/skgo/modsci#Guglielmo_Marconi
 modsci:Guglielmo_Marconi rdf:type owl:NamedIndividual ,
                                   modsci:Scientist ;
-                         modsci:doingStudies modsci:Engineering_Studies ,
-                                             modsci:Physical_Studies .
+                         modsci:undertakesResearch modsci:Engineering_Studies ,
+                                                   modsci:Physical_Studies .
 
 
 ###  https://w3id.org/skgo/modsci#Haze
@@ -2991,24 +3019,24 @@ modsci:Interferometer rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/skgo/modsci#Isaac_Newton
 modsci:Isaac_Newton rdf:type owl:NamedIndividual ,
                              modsci:Scientist ;
-                    modsci:doingStudies modsci:Astronomical_Studies ,
-                                        modsci:Mathematical_Studies ,
-                                        modsci:Physical_Studies .
+                    modsci:undertakesResearch modsci:Astronomical_Studies ,
+                                              modsci:Mathematical_Studies ,
+                                              modsci:Physical_Studies .
 
 
 ###  https://w3id.org/skgo/modsci#Johann_Schweigger
 modsci:Johann_Schweigger rdf:type owl:NamedIndividual ,
                                   modsci:Scientist ;
-                         modsci:doingStudies modsci:Chemical_Studies ,
-                                             modsci:Mathematical_Studies ,
-                                             modsci:Physical_Studies .
+                         modsci:undertakesResearch modsci:Chemical_Studies ,
+                                                   modsci:Mathematical_Studies ,
+                                                   modsci:Physical_Studies .
 
 
 ###  https://w3id.org/skgo/modsci#Julius_von_Mayer
 modsci:Julius_von_Mayer rdf:type owl:NamedIndividual ,
                                  modsci:Scientist ;
-                        modsci:doingStudies modsci:Chemical_Studies ,
-                                            modsci:Physical_Studies .
+                        modsci:undertakesResearch modsci:Chemical_Studies ,
+                                                  modsci:Physical_Studies .
 
 
 ###  https://w3id.org/skgo/modsci#KNN_Algorithm
@@ -3086,7 +3114,7 @@ modsci:Metabolism rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/skgo/modsci#Michael_Faraday
 modsci:Michael_Faraday rdf:type owl:NamedIndividual ,
                                 modsci:Scientist ;
-                       modsci:doingStudies modsci:Chemical_Studies .
+                       modsci:undertakesResearch modsci:Chemical_Studies .
 
 
 ###  https://w3id.org/skgo/modsci#Micrometer
@@ -3129,7 +3157,7 @@ modsci:Ohmmeter rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/skgo/modsci#Olaus_Roemer
 modsci:Olaus_Roemer rdf:type owl:NamedIndividual ,
                              modsci:Scientist ;
-                    modsci:doingStudies modsci:Astronomical_Studies .
+                    modsci:undertakesResearch modsci:Astronomical_Studies .
 
 
 ###  https://w3id.org/skgo/modsci#OpenAI_Inc
