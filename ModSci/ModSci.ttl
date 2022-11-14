@@ -56,8 +56,7 @@ foaf:familyName rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/skgo/modsci#appliesLawsFrom
 modsci:appliesLawsFrom rdf:type owl:ObjectProperty ,
-                                owl:AsymmetricProperty ,
-                                owl:ReflexiveProperty ;
+                                owl:AsymmetricProperty ;
                        rdfs:domain modsci:ModernScience ;
                        rdfs:range modsci:ModernScience .
 
