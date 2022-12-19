@@ -22,7 +22,7 @@
                                  dc:creator <https://orcid.org/0000-0002-2818-5890> ;
                                  terms:contributor <https://orcid.org/0000-0001-9879-3827> ,
                                                    <https://orcid.org/0000-0002-0698-2864> ;
-                                 terms:created "2019-09-01"@en ;
+                                 terms:issued "2019-09-01"@en ;
                                  terms:description "ModSci is a reference ontology for modelling different types of modern sciences and related entities, such as scientific discoveries, renowned scientists, instruments, phenomena ... etc."@en ;
                                  terms:license <http://creativecommons.org/licenses/by/3.0/> ;
                                  terms:modified "2022-12-18" ;
