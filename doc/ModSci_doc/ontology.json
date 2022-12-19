@@ -55,7 +55,7 @@
     "@list" : [ {
       "@id" : "_:genid25"
     }, {
-      "@id" : "_:genid2147483674"
+      "@id" : "_:genid23"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
@@ -64,19 +64,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid2147483674",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#y"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#x"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#isDiscoveredBy"
-  } ]
-}, {
-  "@id" : "_:genid2147483675",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/skgo/modsci#y"
@@ -123,18 +111,30 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid31"
+      "@id" : "_:genid32"
     }, {
-      "@id" : "_:genid2147483675"
+      "@id" : "_:genid30"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid33"
+      "@id" : "_:genid34"
     } ]
   } ]
 }, {
-  "@id" : "_:genid31",
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#isDiscoveredBy"
+  } ]
+}, {
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/skgo/modsci#x"
@@ -143,7 +143,7 @@
     "@id" : "https://w3id.org/skgo/modsci#Scientist"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/skgo/modsci#y"
@@ -155,7 +155,7 @@
     "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByScientist"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -169,18 +169,18 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid38"
+      "@id" : "_:genid39"
     }, {
-      "@id" : "_:genid36"
+      "@id" : "_:genid37"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid40"
+      "@id" : "_:genid41"
     } ]
   } ]
 }, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/skgo/modsci#x"
@@ -192,7 +192,7 @@
     "@id" : "https://w3id.org/skgo/modsci#discoveredByScience"
   } ]
 }, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/skgo/modsci#x"
@@ -214,7 +214,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid40",
+  "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/skgo/modsci#y"
@@ -261,11 +261,61 @@
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "[W3CDTF] http://www.w3.org/TR/NOTE-datetime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en-us",
+    "@value" : "Date may be used to express temporal information at any level of granularity. Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/TR/NOTE-datetime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en-us",
+    "@value" : "A point or period of time associated with an event in the lifecycle of the resource."
+  } ]
+}, {
   "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-us",
+    "@value" : "Date Modified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en-us",
+    "@value" : "Date on which the resource was changed."
+  } ]
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -293,16 +343,24 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/familyName",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Said Fathalla"
+    "@id" : "https://orcid.org/0000-0002-2818-5890"
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
-    "@id" : "https://scholar.google.de/citations?user=JOI-7d0AAAAJ&hl=en"
+    "@id" : "https://orcid.org/0000-0001-9879-3827"
+  }, {
+    "@id" : "https://orcid.org/0000-0002-0698-2864"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@language" : "en",
@@ -315,6 +373,9 @@
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "http://creativecommons.org/licenses/by/3.0/"
   } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2022-12-18"
+  } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
     "@value" : "ModSci, Modern Science Ontology."
@@ -324,15 +385,13 @@
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core"
-  }, {
-    "@id" : "http://xmlns.com/foaf/0.1/"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/skgo/modsci/1.0"
+    "@id" : "https://w3id.org/skgo/modsci/1.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "1.0"
+    "@value" : "1.1"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#ADInstruments",
@@ -371,7 +430,7 @@
     "@value" : "Acoustics"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#AppliedSciences"
+    "@id" : "https://w3id.org/skgo/modsci#ClassicalPhysics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#AgilentTechnologies",
@@ -387,6 +446,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#AppliedSciences"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Agronomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Agriculture"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Algebra",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PureMathematics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Algorithms",
@@ -419,6 +490,12 @@
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#AnalyticalSpectrometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#AnalyticalChemistry"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Anatomy",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -433,6 +510,12 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Anemometer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#AnimalProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Agriculture"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Anthropology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -467,7 +550,13 @@
     "@value" : "Applied Mathematics"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#AppliedSciences"
+    "@id" : "https://w3id.org/skgo/modsci#Mathematics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#AppliedMechanics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#AppliedMathematics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#AppliedPhysics",
@@ -494,6 +583,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#ApproximationTheory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#AppliedMathematics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Archaeology",
@@ -529,7 +624,7 @@
     "@value" : "Artificial Intelligence"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies"
+    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Astrobiology",
@@ -613,7 +708,7 @@
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Atomic",
+  "@id" : "https://w3id.org/skgo/modsci#AtomicPhysics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Atomic, molecular, and optical physics (AMO) is the study of matter-matter and light-matter interactions; at the scale of one or a few atoms and energy scales around several electron volts."
@@ -623,6 +718,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Physics"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#MolecularPhysics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Aurora",
@@ -659,6 +757,12 @@
   } ],
   "https://w3id.org/skgo/modsci#instrumentInventedBy" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Evangelista_Torricelli"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#BasinAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#BehaviouralSciences",
@@ -743,6 +847,30 @@
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   }, {
     "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#BioinformaticsSoftware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ComputerSoftware"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#BioinorganicChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InorganicChemistry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#BiologicalMathematics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#AppliedMathematics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#BiologicalOceanography",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Oceanography"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#BiologicalPhenomena",
@@ -862,11 +990,23 @@
   "@id" : "https://w3id.org/skgo/modsci#Bruker",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#CalculusOfVariations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#AppliedMathematics"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Caliper",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Calorimeter",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Catalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PhysicalChemistry"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#CellBiology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -878,6 +1018,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Biology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#ChemicalCharacterisationOfMaterials",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#MaterialsChemistry"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#ChemicalEngineering",
@@ -892,6 +1038,12 @@
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#ChemicalOceanography",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Oceanography"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#ChemicalPhenomena",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -899,6 +1051,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#NaturalPhenomenon"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#ChemicalThermodynamics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PhysicalChemistry"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Chemical_Studies",
@@ -921,10 +1079,28 @@
     "@id" : "https://w3id.org/skgo/modsci#NaturalScience"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#ClassicalPhysics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Physics"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#ClassificationAlgorithms",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Algorithms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#CoalGeology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#CodingAndInformationTheory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#DataFormat"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#CognitiveScience",
@@ -937,6 +1113,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Colloid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PhysicalChemistry"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#ColloidalChemistry",
@@ -953,11 +1135,14 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#CommunicationAndSecurity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Communications security is the discipline of preventing unauthorized interceptors from accessing telecommunications in an intelligible form, while still delivering content to the intended recipients."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Communication and Security"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+    "@id" : "https://w3id.org/skgo/modsci#ComputerSoftware"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#CommunicationStudies",
@@ -1023,6 +1208,12 @@
     "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#ComputationalMathematics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Mathematics"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#ComputationalPhysics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1035,14 +1226,14 @@
     "@id" : "https://w3id.org/skgo/modsci#Physics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#ComputerArchitecture",
+  "@id" : "https://w3id.org/skgo/modsci#Computer-HumanInteraction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "In computer engineering, computer architecture is a set of rules and methods that describe the functionality, organization, and implementation of computer systems."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Computer Architecture"
-  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#ComputerApplications",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
   } ]
@@ -1063,12 +1254,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Computer graphics are pictures and films created using computers. Usually, the term refers to computer-generated image data created with the help of specialized graphical hardware and software."
+  }, {
+    "@value" : "Computer graphics is the study of digital visual contents and involves the synthesis and manipulation of image data."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Computer Graphics"
+  }, {
+    "@value" : "Graphics"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Graphics"
+    "@id" : "https://w3id.org/skgo/modsci#ComputerGraphics"
+  }, {
+    "@id" : "https://w3id.org/skgo/modsci#ImageProcessing"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#ComputerScience",
@@ -1095,6 +1292,24 @@
     "@id" : "https://w3id.org/skgo/modsci#CommunicationAndSecurity"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#ComputerSoftware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#ComputerSystemArchitecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "In computer engineering, computer architecture is a set of rules and methods that describe the functionality, organization, and implementation of computer systems."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Computer Architecture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ComputerSoftware"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#ComputerVision",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1105,6 +1320,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ArtificialIntelligence"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#ConceptualModelling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#CondensedMatterPhysics",
@@ -1135,6 +1356,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Astronomy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#CropProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Agriculture"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Cryobiology",
@@ -1203,6 +1430,18 @@
   "@id" : "https://w3id.org/skgo/modsci#DNA_Sequencer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#DataEncryption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#DataFormat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#DataFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#DataMining",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1212,16 +1451,31 @@
     "@value" : "Data Mining"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Databases"
+    "@id" : "https://w3id.org/skgo/modsci#DatabaseManagement"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Databases",
+  "@id" : "https://w3id.org/skgo/modsci#DataStructures",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#DataFormat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#DatabaseManagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Digital databases are managed using database management systems to store, create, maintain, and search data, through database models and query languages."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Databases"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+    "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#DecisionSupportSystems",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Decision_Trees",
@@ -1260,6 +1514,30 @@
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#DifferentialEquations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PureMathematics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#DiscoveryOfMethods",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ScientificDiscovery"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#DiscoveryOfPhenomenon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ScientificDiscovery"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#DiscreteMathematics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PureMathematics"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#DistributedComputing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1274,11 +1552,14 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#DistributedSystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Systems in which several computations are executing simultaneously, and potentially interacting with each other."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Concurrent, Parallel, and Distributed systems"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+    "@id" : "https://w3id.org/skgo/modsci#ComputerSoftware"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Dynamo",
@@ -1313,6 +1594,12 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Earthquake",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#GeologicalPhenomena" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#EcologicalApplications",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#EnvironmentalScience"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Ecology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1358,11 +1645,35 @@
     "@id" : "https://w3id.org/skgo/modsci#AppliedSciences"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#ElectroanalyticalChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#AnalyticalChemistry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Electrochemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PhysicalChemistry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Electrodynamics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ClassicalPhysics"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Electrometer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Electroscope",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Electrostatics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ClassicalPhysics"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Elementar",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
@@ -1489,7 +1800,10 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Evangelista_Torricelli",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#doingStudies" : [ {
+  "https://w3id.org/skgo/modsci#isStudentOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Galileo"
+  } ],
+  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Mathematical_Studies"
   }, {
     "@id" : "https://w3id.org/skgo/modsci#Physical_Studies"
@@ -1555,8 +1869,38 @@
     "@id" : "https://w3id.org/skgo/modsci#Astronomy"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#ExtraterrestrialGeology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#FinancialMathematics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#AppliedMathematics"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Fire",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ChemicalPhenomena" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#FisheriesSciences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Agriculture"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#FlowAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#AnalyticalChemistry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#FluidPhysics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ClassicalPhysics"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#FoodChemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1594,6 +1938,12 @@
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#ForestrySciences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Agriculture"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#FormalScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1609,13 +1959,25 @@
   "@id" : "https://w3id.org/skgo/modsci#Fraunhofer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificOrganization" ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#FreeRadicalChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#OrganicChemistry"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Freezing",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#PhysicalPhenomena" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Friedrich_Drexler",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#doingStudies" : [ {
+  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Engineering_Studies"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#FunctionalAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PureMathematics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#GalacticAstronomy",
@@ -1629,6 +1991,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Astronomy"
   } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Galileo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Galvanometer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ],
@@ -1664,6 +2029,14 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
+  }, {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Geochronology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Geodesy",
@@ -1676,6 +2049,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Geodynamics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geophysics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Geography",
@@ -1704,11 +2083,14 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#GeologicalSciences",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Geological Sciences examine the physical and chemical processes within Earth and on its surface, including the study of natural resources and risks to habitable areas."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Geological Sciences"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#NaturalScience"
+    "@id" : "https://w3id.org/skgo/modsci#EarthScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Geological_Studies",
@@ -1723,7 +2105,7 @@
     "@value" : "Geology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#EarthScience"
+    "@id" : "https://w3id.org/skgo/modsci#GeologicalSciences"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Geomorphology",
@@ -1738,6 +2120,12 @@
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#GeophysicalFluidDynamics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geophysics"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Geophysics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1748,6 +2136,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Geothermics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geophysics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Gerontology",
@@ -1774,13 +2168,16 @@
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Graphics",
+  "@id" : "https://w3id.org/skgo/modsci#GlobalInformationSystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Graphics"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+    "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Gravimetrics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geophysics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Gravitometer",
@@ -1809,7 +2206,7 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Guglielmo_Marconi",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#doingStudies" : [ {
+  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Engineering_Studies"
   }, {
     "@id" : "https://w3id.org/skgo/modsci#Physical_Studies"
@@ -1845,7 +2242,7 @@
   "@id" : "https://w3id.org/skgo/modsci#Healthcare",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Health care is the maintenance or improvement of health via the prevention, diagnosis, and treatment of disease, illness, injury, and other physical and mental impairments in people."
+    "@value" : "Healthcare is the maintenance or improvement of health via the prevention, diagnosis, and treatment of disease, illness, injury, and other physical and mental impairments in people."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Healthcare"
@@ -1869,8 +2266,20 @@
     "@id" : "https://w3id.org/skgo/modsci#FormalScience"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#HomologicalAlgebra",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Algebra"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Horiba",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#HorticulturalProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Agriculture"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#HumanComputerInteraction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1920,7 +2329,7 @@
     "@value" : "Image Processing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Graphics"
+    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Immunology",
@@ -1959,6 +2368,12 @@
     "@value" : "Industry"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#InformationRetrieval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#InformationScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1971,6 +2386,24 @@
     "@id" : "https://w3id.org/skgo/modsci#AppliedSciences"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#InformationSystems",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#InformationSystemsManagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#InformationSystemsTheory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#InformationVisualization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1980,7 +2413,13 @@
     "@value" : "Information Visualization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Graphics"
+    "@id" : "https://w3id.org/skgo/modsci#ComputerGraphics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Informetrics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#InorganicChemistry",
@@ -1995,6 +2434,23 @@
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#InorganicGreenChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InorganicChemistry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Instrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A tool or implement, especially one for precision work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Instrument"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#InstrumentFunctionDesription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -2004,8 +2460,11 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Instruments",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "https://w3id.org/skgo/modsci#IntegralEquations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ComputationalMathematics"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2022,9 +2481,15 @@
   "@id" : "https://w3id.org/skgo/modsci#Interferometer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#InterorganisationalInformationSystems",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Isaac_Newton",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#doingStudies" : [ {
+  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Astronomical_Studies"
   }, {
     "@id" : "https://w3id.org/skgo/modsci#Mathematical_Studies"
@@ -2034,7 +2499,7 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Johann_Schweigger",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#doingStudies" : [ {
+  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Chemical_Studies"
   }, {
     "@id" : "https://w3id.org/skgo/modsci#Mathematical_Studies"
@@ -2044,7 +2509,7 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Julius_von_Mayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#doingStudies" : [ {
+  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Chemical_Studies"
   }, {
     "@id" : "https://w3id.org/skgo/modsci#Physical_Studies"
@@ -2053,16 +2518,36 @@
   "@id" : "https://w3id.org/skgo/modsci#KNN_Algorithm",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ClassificationAlgorithms" ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#KnowledgeSystems",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#LECO_Corporation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#LaboratoryInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An instrument needed for operations in various laboratories, synthesis and analysis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Laboratory Instrument"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Instruments"
+    "@id" : "https://w3id.org/skgo/modsci#Instrument"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ScientificInstrument"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Lasers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#OpticalPhysics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#LibraryScience",
@@ -2144,11 +2629,23 @@
     "@id" : "https://w3id.org/skgo/modsci#SoftComputing"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#Magnetism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geophysics"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Magnetograph",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Magnetometer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#MainGroupMetalChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InorganicChemistry"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#MalvernInstruments",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
@@ -2171,7 +2668,13 @@
   "@id" : "https://w3id.org/skgo/modsci#MarkesInternational",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#MaterialsScience",
+  "@id" : "https://w3id.org/skgo/modsci#MarkupLanguages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#DataFormat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#MaterialsChemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The interdisciplinary field of materials science is the design and discovery of new materials, particularly solids."
@@ -2193,6 +2696,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Biology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#MathematicalLogic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PureMathematics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#MathematicalPhysics",
@@ -2252,6 +2761,12 @@
     "@id" : "https://w3id.org/skgo/modsci#Physics"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#MechanismsOfReactions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PhysicalChemistry"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#MedicinalChemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2300,6 +2815,12 @@
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#MetamorphicPetrology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#MeteorologicalPhenomena",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -2307,6 +2828,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#NaturalPhenomenon"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#MetrologicalChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#AnalyticalChemistry"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Metrology",
@@ -2323,7 +2850,7 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Michael_Faraday",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#doingStudies" : [ {
+  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Chemical_Studies"
   } ]
 }, {
@@ -2343,6 +2870,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#AppliedSciences"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Mineralogy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#MobileTechnologies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#DistributedSystems"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#ModernScience",
@@ -2375,7 +2914,7 @@
     "@value" : "Molecular Physics"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Chemistry"
+    "@id" : "https://w3id.org/skgo/modsci#Physics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Movie_camera",
@@ -2385,6 +2924,12 @@
   } ],
   "https://w3id.org/skgo/modsci#instrumentInventedBy" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Thomas_Edison"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#MultimediaProgramming",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ComputerSoftware"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Museology",
@@ -2402,6 +2947,12 @@
   "@id" : "https://w3id.org/skgo/modsci#NASA",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificOrganization" ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#Nanochemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#MaterialsChemistry"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#NaturalLanguageProcessing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2413,7 +2964,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ArtificialIntelligence"
   }, {
-    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+    "@id" : "https://w3id.org/skgo/modsci#ComputerSoftware"
   }, {
     "@id" : "https://w3id.org/skgo/modsci#Linguistics"
   } ]
@@ -2433,6 +2984,12 @@
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/skgo/modsci#SocialPhenomenon"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#NaturalProductsChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#OrganicChemistry"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#NaturalScience",
@@ -2485,6 +3042,24 @@
     "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#Non-equilibriumProcesses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PhysicalChemistry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Non-metalChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InorganicChemistry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#NonlinearOptics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#OpticalPhysics"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#NovacamTechnologies",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
@@ -2498,6 +3073,24 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#NuclearPhysics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Physics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#NumberTheory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PureMathematics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#NumericalAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ComputationalMathematics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Nursing",
@@ -2541,7 +3134,7 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Olaus_Roemer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#doingStudies" : [ {
+  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Astronomical_Studies"
   } ]
 }, {
@@ -2557,7 +3150,28 @@
     "@value" : "Operating Systems"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+    "@id" : "https://w3id.org/skgo/modsci#ComputerSoftware"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#OperationsResearch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#AppliedMathematics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#OpticalCommunications",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#OpticalPhysics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#OpticalPhysics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Physics"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Optics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Optics",
@@ -2572,6 +3186,36 @@
     "@id" : "https://w3id.org/skgo/modsci#AppliedSciences"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#Optimisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ComputationalMathematics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Optoelectronics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#OpticalPhysics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#OrdinaryDifferentialEquations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#DifferentialEquations"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#OreDepositPetrology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#OrganicChemicalSynthesis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#OrganicChemistry"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#OrganicChemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2582,6 +3226,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#OrganicGreenChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#OrganicChemistry"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#OrganometallicChemistry",
@@ -2604,6 +3254,18 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#OxfordInstruments",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Palaeomagnetism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geophysics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Palaeontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Paleoclimatology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2668,6 +3330,12 @@
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#PartialDifferentialEquations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#DifferentialEquations"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#ParticlePhysics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2678,6 +3346,24 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Physics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#PastureProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Agriculture"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#PatternRecognition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ArtificialIntelligence"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#PetroleumGeology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Pharmacology",
@@ -2737,6 +3423,12 @@
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#Photonics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#OpticalPhysics"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Phylogeny",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2771,6 +3463,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#PhysicalOceanography",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Oceanography"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#PhysicalOrganicChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#OrganicChemistry"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#PhysicalPhenomena",
@@ -2860,6 +3564,12 @@
   "@id" : "https://w3id.org/skgo/modsci#PolymerChar",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#PolymerisationMechanisms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#MaterialsChemistry"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Population_decrease",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#BiologicalPhenomena" ]
 }, {
@@ -2889,11 +3599,14 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#ProgrammingLanguages",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Programming languages can be used to accomplish different tasks in different ways."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Programming Languages and Compilers"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+    "@id" : "https://w3id.org/skgo/modsci#ComputerSoftware"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#PsychiatricDrugs",
@@ -2912,6 +3625,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#BehaviouralSciences"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#PureMathematics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Mathematics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#QuantumComputing",
@@ -2934,6 +3653,18 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Quantum Mechanics"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Physics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#QuantumOptics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#QuantumPhysics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#QuantumPhysics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Physics"
   } ]
@@ -2971,6 +3702,12 @@
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#Radiometrics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geophysics"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Rainbow",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#AtmosphericPhenomena" ]
 }, {
@@ -2983,7 +3720,7 @@
     "@value" : "Relational Databases"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Databases"
+    "@id" : "https://w3id.org/skgo/modsci#DatabaseManagement"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Resampling_Methods",
@@ -3059,7 +3796,7 @@
     "@value" : "Scientific Instrument"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Instruments"
+    "@id" : "https://w3id.org/skgo/modsci#Instrument"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3098,6 +3835,14 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#ScientificOrganization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An organization which is created for the purpose of scientific research and development."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Scientific Organization"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ]
@@ -3114,6 +3859,24 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Sedimentology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#SeismicExploration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geophysics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Seismology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geophysics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Seismometer",
@@ -3143,6 +3906,12 @@
     "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies"
   }, {
     "@id" : "https://w3id.org/skgo/modsci#SocialSciences"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#SeparationScience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#AnalyticalChemistry"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#ShimadzuCorp",
@@ -3211,6 +3980,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#BehaviouralSciences"
+  }, {
+    "@id" : "https://w3id.org/skgo/modsci#Biology"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Sociology",
@@ -3246,7 +4017,7 @@
     "@value" : "Software Engineering"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+    "@id" : "https://w3id.org/skgo/modsci#ComputerSoftware"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#SoilBiology",
@@ -3273,6 +4044,12 @@
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#SoilSciences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#EnvironmentalScience"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#SolidMechanics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3294,7 +4071,13 @@
     "@value" : "Solid-State Chemistry"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Chemistry"
+    "@id" : "https://w3id.org/skgo/modsci#InorganicChemistry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#SolutionChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PhysicalChemistry"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#SpaceScience",
@@ -3314,6 +4097,12 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Spectrometer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Spectroscopy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#OpticalPhysics"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Speed_of_light",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificDiscovery" ],
@@ -3375,6 +4164,24 @@
   "@id" : "https://w3id.org/skgo/modsci#Storm",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#MeteorologicalPhenomena" ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#Stratigraphy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#StructuralChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PhysicalChemistry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#StructuralGeology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#StructuredStorage",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3384,7 +4191,7 @@
     "@value" : "Structured Storage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Databases"
+    "@id" : "https://w3id.org/skgo/modsci#DatabaseManagement"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Studying_biochemical_reactions",
@@ -3411,7 +4218,7 @@
     "@value" : "Supramolecular Chemistry"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Chemistry"
+    "@id" : "https://w3id.org/skgo/modsci#MaterialsChemistry"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#SurfaceChemistry",
@@ -3423,7 +4230,13 @@
     "@value" : "Surface Chemistry"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Chemistry"
+    "@id" : "https://w3id.org/skgo/modsci#PhysicalChemistry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#SynthesisOfMaterials",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#MaterialsChemistry"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#SystemsScience",
@@ -3452,6 +4265,12 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Techtron",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Tectonics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Telescope",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ],
@@ -3492,6 +4311,12 @@
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#TheoreticalComputerScience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#TheoreticalLinguistics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3504,13 +4329,22 @@
     "@id" : "https://w3id.org/skgo/modsci#FormalScience"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#TheoryAndDesignOfMaterials",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#MaterialsChemistry"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#TheoryOfComputation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Theory of computation is focused on answering fundamental questions about what can be computed and what amount of resources are required to perform those computations."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Theory of Computation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#ComputerScience"
+    "@id" : "https://w3id.org/skgo/modsci#TheoreticalComputerScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Thermocouple",
@@ -3525,7 +4359,7 @@
     "@value" : "Thermodynamics"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Physics"
+    "@id" : "https://w3id.org/skgo/modsci#ClassicalPhysics"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Thermometer",
@@ -3545,6 +4379,12 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Time_Series_Analysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Statistics" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Topology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#PureMathematics"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Toxicology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -3570,6 +4410,12 @@
     "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#TransitionMetalChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InorganicChemistry"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Tsunamis",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#OceanographicPhenomena" ]
 }, {
@@ -3583,6 +4429,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ProgrammingLanguages"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#UbiquitousComputing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#DistributedSystems"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#UniversalAlgebra",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Algebra"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#UrbanPlanning",
@@ -3609,6 +4467,18 @@
     "@id" : "https://w3id.org/skgo/modsci#HealthSciences"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#VeterinarySciences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Agriculture"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#VirtualReality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ComputerGraphics"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#Volcano",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#GeologicalPhenomena" ]
 }, {
@@ -3621,7 +4491,7 @@
     "@value" : "Volcanology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#EarthScience"
+    "@id" : "https://w3id.org/skgo/modsci#Geology"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Voltmeter",
@@ -3632,6 +4502,30 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#WatersCorporation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Waves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ClassicalPhysics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#WebSearch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InformationRetrieval"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#WebServices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#WebTechnologies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#DistributedSystems"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Weddings",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#SocialPhenomenon" ]
@@ -3649,7 +4543,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#appliesLawsFrom",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
   } ],
@@ -3711,6 +4605,12 @@
     "@id" : "https://w3id.org/skgo/modsci#discoveredByScience"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#discoveredByMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#discoveredByNaturalScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
@@ -3745,13 +4645,10 @@
     "@id" : "https://w3id.org/skgo/modsci#discoveredByScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#doingStudies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Scientist"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  "@id" : "https://w3id.org/skgo/modsci#f-BlockChemistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#InorganicChemistry"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#followsMethod",
@@ -3946,6 +4843,15 @@
   "@id" : "https://w3id.org/skgo/modsci#isManufacturerOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#isStudentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Scientist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Scientist"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#requiresKnowledgeFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -3990,6 +4896,15 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#temperature_gradient",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#PhysicalPhenomena" ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#undertakesResearch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Scientist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#usesMethodsFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
