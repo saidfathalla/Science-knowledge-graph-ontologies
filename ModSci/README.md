@@ -3,6 +3,11 @@ Modern Science Ontology (ModSci) is an upper ontology for modeling relationships
 ModSci provides a unifying framework for the various domain ontologies that make up the Science Knowledge Graph Ontology Suite. 
 ModSci is a poly-hierarchical ontology that can be utilized in semantic web applications. 
 
+## Schema diagram
+The following figure shows the core concepts in the ontoilogy.
+![modsci schema](https://user-images.githubusercontent.com/21238109/208491436-2d950157-25d2-47a1-b470-eaaf900dc6e7.png)
+
+
 ## Ontology Publishing
 The ontology is published under a persistent URL (https://w3id.org/skgo/modsci#) with dereferenceable URIs. 
 We configured the server to provide human-readable HTML content from the vocabulary URI using the recipes provided in [Best Practice Recipes for Publishing RDF Vocabularies](https://www.w3.org/TR/swbp-vocab-pub/).
