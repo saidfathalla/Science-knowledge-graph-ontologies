@@ -30,4 +30,8 @@ An interactive visualization for browsing ModSci hierarchy has been developed us
 ## Use cases
 ModSci powers two projects for semantically representing scholarly information: 
 - [Open Research Knowledge Graph](https://www.orkg.org/orkg/): for the categorization of research papers 
-- [OpenResearch.org](https://www.openresearch.org/wiki/Main_Page):for the categorization of the information about scientific events, research projects, scientific papers, publishers, and journals.
+- [OpenResearch.org](https://www.openresearch.org/wiki/Main_Page): for the categorization of the information about scientific events, research projects, scientific papers, publishers, and journals.
+[NFDI Core Ontology](https://github.com/ISE-FIZKarlsruhe/nfdicore/tree/v1.0.0): reuse some modsci classes.
+
+## Community collaboration
+Community collaboration is very welcome. In order to become a contributor, you can contribute by [Report a problem](https://github.com/saidfathalla/Science-knowledge-graph-ontologies/issues/new?assignees=&labels=bug&template=Report_a_Problem.md&title=%5BProblem%5D) and/or [Improvement request](https://github.com/saidfathalla/Science-knowledge-graph-ontologies/issues/new?assignees=&labels=documentation%2C+enhancement&template=improvement-request.md&title=%5BImprovement%5D).
