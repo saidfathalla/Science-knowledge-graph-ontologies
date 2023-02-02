@@ -22,7 +22,6 @@
                                  dc:creator <https://orcid.org/0000-0002-2818-5890> ;
                                  terms:contributor <https://orcid.org/0000-0001-9879-3827> ,
                                                    <https://orcid.org/0000-0002-0698-2864> ;
-                                 terms:issued "2019-09-01"@en ;
                                  terms:description "ModSci is a reference ontology for modelling different types of modern sciences and related entities, such as scientific discoveries, renowned scientists, instruments, phenomena ... etc."@en ;
                                  terms:license <http://creativecommons.org/licenses/by/3.0/> ;
                                  terms:modified "2022-12-18" ;
@@ -242,6 +241,16 @@ modsci:hasMethodsInspiredFrom rdf:type owl:ObjectProperty ,
 ###  https://w3id.org/skgo/modsci#hasScientificInstrumentManufacturer
 modsci:hasScientificInstrumentManufacturer rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf modsci:hasManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#helpInDiscoveryOfPhenomenon
+modsci:helpInDiscoveryOfPhenomenon rdf:type owl:ObjectProperty ,
+                                            owl:FunctionalProperty ;
+                                   rdfs:domain modsci:helpInDiscovery ;
+                                   rdfs:range [ rdf:type owl:Restriction ;
+                                                owl:onProperty modsci:helpInDiscoveryOfPhenomenon ;
+                                                owl:allValuesFrom sweet:Phenomenon
+                                              ] .
 
 
 ###  https://w3id.org/skgo/modsci#inspiredFrom
@@ -2749,6 +2758,12 @@ modsci:f-BlockChemistry rdf:type owl:Class ;
                         rdfs:subClassOf modsci:InorganicChemistry .
 
 
+###  https://w3id.org/skgo/modsci#helpInDiscovery
+modsci:helpInDiscovery rdf:type owl:Class ;
+                       rdfs:comment "represents an n-ary properties that encapsulating sciences that helped in the discovery of the phenomenon"@en ;
+                       rdfs:label "Help in Discovery"@en .
+
+
 #################################################################
 #    Individuals
 #################################################################
@@ -2867,12 +2882,6 @@ modsci:Chemical_Studies rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/skgo/modsci#Community_of_European_Solar_Radio_Astronomers
 modsci:Community_of_European_Solar_Radio_Astronomers rdf:type owl:NamedIndividual ,
                                                               modsci:ScientificOrganization .
-
-
-###  https://w3id.org/skgo/modsci#Conservation_of_energy
-modsci:Conservation_of_energy rdf:type owl:NamedIndividual ,
-                                       modsci:PhysicalPhenomena ;
-                              modsci:discoveredByScientist modsci:Julius_von_Mayer .
 
 
 ###  https://w3id.org/skgo/modsci#Crystal_growth
@@ -3443,6 +3452,30 @@ modsci:WatersCorporation rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/skgo/modsci#Weddings
 modsci:Weddings rdf:type owl:NamedIndividual ,
                          modsci:SocialPhenomenon .
+
+
+###  https://w3id.org/skgo/modsci#energy_conservation
+modsci:energy_conservation rdf:type owl:NamedIndividual ,
+                                    modsci:PhysicalPhenomena ;
+                           modsci:discoveredByScientist modsci:Julius_von_Mayer .
+
+
+###  https://w3id.org/skgo/modsci#helpInDiscoveryOfEnergyConservation
+modsci:helpInDiscoveryOfEnergyConservation rdf:type owl:NamedIndividual ,
+                                                    modsci:helpInDiscovery ;
+                                           modsci:discoveredByScience modsci:study-of-heat-energy ,
+                                                                      modsci:study-properties-of-matter ;
+                                           modsci:helpInDiscoveryOfPhenomenon modsci:energy_conservation .
+
+
+###  https://w3id.org/skgo/modsci#study-of-heat-energy
+modsci:study-of-heat-energy rdf:type owl:NamedIndividual ,
+                                     modsci:Thermodynamics .
+
+
+###  https://w3id.org/skgo/modsci#study-properties-of-matter
+modsci:study-properties-of-matter rdf:type owl:NamedIndividual ,
+                                           modsci:Physics .
 
 
 ###  https://w3id.org/skgo/modsci#study_of_wetlands
