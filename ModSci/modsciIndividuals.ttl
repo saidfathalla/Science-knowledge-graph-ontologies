@@ -1,0 +1,743 @@
+@prefix : <https://w3id.org/skgo/modsci#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix role: <http://purl.obolibrary.org/obo/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix sweet: <http://sweetontology.net/phen/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix modsci: <https://w3id.org/skgo/modsci#> .
+@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@base <https://w3id.org/skgo/modsci#> .
+
+
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/skgo/modsci#ADInstruments
+modsci:ADInstruments rdf:type owl:NamedIndividual ,
+                              modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Accelerometer
+modsci:Accelerometer rdf:type owl:NamedIndividual ,
+                              modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Accumulator
+modsci:Accumulator rdf:type owl:NamedIndividual ,
+                            modsci:ScientificInstrument ;
+                   modsci:instrumentInventedBy modsci:Waldemar_Jungner ;
+                   modsci:InstrumentFunctionDesription "Used to store electrical energy" .
+
+
+###  https://w3id.org/skgo/modsci#AgilentTechnologies
+modsci:AgilentTechnologies rdf:type owl:NamedIndividual ,
+                                    modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Ammeter
+modsci:Ammeter rdf:type owl:NamedIndividual ,
+                        modsci:ScientificInstrument ;
+               modsci:instrumentInventedBy modsci:Friedrich_Drexler ;
+               modsci:InstrumentFunctionDesription "Measure strength of electric current in amperes." .
+
+
+###  https://w3id.org/skgo/modsci#Anemometer
+modsci:Anemometer rdf:type owl:NamedIndividual ,
+                           modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#AntonPaar
+modsci:AntonPaar rdf:type owl:NamedIndividual ,
+                          modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Astronomical_Studies
+modsci:Astronomical_Studies rdf:type owl:NamedIndividual ,
+                                     modsci:Astronomy .
+
+
+###  https://w3id.org/skgo/modsci#Aurora
+modsci:Aurora rdf:type owl:NamedIndividual ,
+                       modsci:AtmosphericPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Barometer
+modsci:Barometer rdf:type owl:NamedIndividual ,
+                          modsci:ScientificInstrument ;
+                 modsci:instrumentInventedBy modsci:Evangelista_Torricelli ;
+                 modsci:InstrumentFunctionDesription "Used to measure atmospheric pressure and conditions" .
+
+
+###  https://w3id.org/skgo/modsci#Biochip
+modsci:Biochip rdf:type owl:NamedIndividual ,
+                        modsci:ApplicationOfScience ;
+               modsci:isApplicationOfScience modsci:Studying_biochemical_reactions .
+
+
+###  https://w3id.org/skgo/modsci#Biological_Studies
+modsci:Biological_Studies rdf:type owl:NamedIndividual ,
+                                   modsci:Biology ;
+                          modsci:appliesLawsFrom modsci:Physical_Studies ;
+                          modsci:requiresKnowledgeFrom modsci:Historical_Studies .
+
+
+###  https://w3id.org/skgo/modsci#Biomedical_Signals
+modsci:Biomedical_Signals rdf:type owl:NamedIndividual ,
+                                   modsci:ScientificDiscovery .
+
+
+###  https://w3id.org/skgo/modsci#Biosensors
+modsci:Biosensors rdf:type owl:NamedIndividual ,
+                           modsci:ApplicationOfScience .
+
+
+###  https://w3id.org/skgo/modsci#Boiling
+modsci:Boiling rdf:type owl:NamedIndividual ,
+                        modsci:PhysicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Breaking_waves
+modsci:Breaking_waves rdf:type owl:NamedIndividual ,
+                               modsci:OceanographicPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Bruker
+modsci:Bruker rdf:type owl:NamedIndividual ,
+                       modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Caliper
+modsci:Caliper rdf:type owl:NamedIndividual ,
+                        modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Calorimeter
+modsci:Calorimeter rdf:type owl:NamedIndividual ,
+                            modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Chemical_Studies
+modsci:Chemical_Studies rdf:type owl:NamedIndividual ,
+                                 modsci:Chemistry ;
+                        modsci:hasCloseRelationshipTo modsci:Biological_Studies ,
+                                                      modsci:Physical_Studies .
+
+
+###  https://w3id.org/skgo/modsci#Community_of_European_Solar_Radio_Astronomers
+modsci:Community_of_European_Solar_Radio_Astronomers rdf:type owl:NamedIndividual ,
+                                                              modsci:ScientificOrganization .
+
+
+###  https://w3id.org/skgo/modsci#Crystal_growth
+modsci:Crystal_growth rdf:type owl:NamedIndividual ,
+                               modsci:PhysicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#DNA_Sequencer
+modsci:DNA_Sequencer rdf:type owl:NamedIndividual ,
+                              modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Decision_Trees
+modsci:Decision_Trees rdf:type owl:NamedIndividual ,
+                               modsci:ClassificationAlgorithms .
+
+
+###  https://w3id.org/skgo/modsci#Decomposition
+modsci:Decomposition rdf:type owl:NamedIndividual ,
+                              modsci:BiologicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Deep_Learning
+modsci:Deep_Learning rdf:type owl:NamedIndividual ,
+                              modsci:ScientificMethod ;
+                     modsci:inspiredBy modsci:Biomedical_Signals .
+
+
+###  https://w3id.org/skgo/modsci#Dynamo
+modsci:Dynamo rdf:type owl:NamedIndividual ,
+                       modsci:ScientificInstrument ;
+              modsci:instrumentInventedBy modsci:Michael_Faraday ;
+              modsci:InstrumentFunctionDesription "Converts mechanical energy into electrical energy" .
+
+
+###  https://w3id.org/skgo/modsci#Dynamometer
+modsci:Dynamometer rdf:type owl:NamedIndividual ,
+                            modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#E3G
+modsci:E3G rdf:type owl:NamedIndividual ,
+                    modsci:ScientificOrganization .
+
+
+###  https://w3id.org/skgo/modsci#EACSL
+modsci:EACSL rdf:type owl:NamedIndividual ,
+                      modsci:ScientificOrganization .
+
+
+###  https://w3id.org/skgo/modsci#Earthquake
+modsci:Earthquake rdf:type owl:NamedIndividual ,
+                           modsci:GeologicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Economic_Studies
+modsci:Economic_Studies rdf:type owl:NamedIndividual ,
+                                 modsci:Economics ;
+                        modsci:usesMethodsFrom modsci:Statistics_Studies .
+
+
+###  https://w3id.org/skgo/modsci#Electrometer
+modsci:Electrometer rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Electroscope
+modsci:Electroscope rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Elementar
+modsci:Elementar rdf:type owl:NamedIndividual ,
+                          modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Ellipsometer
+modsci:Ellipsometer rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Engineering_Studies
+modsci:Engineering_Studies rdf:type owl:NamedIndividual ,
+                                    modsci:Engineering .
+
+
+###  https://w3id.org/skgo/modsci#Erosion
+modsci:Erosion rdf:type owl:NamedIndividual ,
+                        modsci:GeologicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Eudiometer
+modsci:Eudiometer rdf:type owl:NamedIndividual ,
+                           modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Evangelista_Torricelli
+modsci:Evangelista_Torricelli rdf:type owl:NamedIndividual ,
+                                       modsci:Scientist ;
+                              modsci:isStudentOf modsci:Galileo ;
+                              modsci:undertakesResearch modsci:Mathematical_Studies ,
+                                                        modsci:Physical_Studies .
+
+
+###  https://w3id.org/skgo/modsci#Fire
+modsci:Fire rdf:type owl:NamedIndividual ,
+                     modsci:ChemicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Fraunhofer
+modsci:Fraunhofer rdf:type owl:NamedIndividual ,
+                           modsci:ScientificOrganization .
+
+
+###  https://w3id.org/skgo/modsci#Freezing
+modsci:Freezing rdf:type owl:NamedIndividual ,
+                         modsci:PhysicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Friedrich_Drexler
+modsci:Friedrich_Drexler rdf:type owl:NamedIndividual ,
+                                  modsci:Scientist ;
+                         modsci:undertakesResearch modsci:Engineering_Studies .
+
+
+###  https://w3id.org/skgo/modsci#Galileo
+modsci:Galileo rdf:type owl:NamedIndividual ,
+                        modsci:Scientist .
+
+
+###  https://w3id.org/skgo/modsci#Galvanometer
+modsci:Galvanometer rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrument ;
+                    modsci:instrumentInventedBy modsci:Johann_Schweigger ;
+                    modsci:InstrumentFunctionDesription "Used to reproduce the recorded sound" .
+
+
+###  https://w3id.org/skgo/modsci#Genetic_algorithms
+modsci:Genetic_algorithms rdf:type owl:NamedIndividual ,
+                                   modsci:ScientificMethod .
+
+
+###  https://w3id.org/skgo/modsci#Geological_Studies
+modsci:Geological_Studies rdf:type owl:NamedIndividual ,
+                                   modsci:Geology .
+
+
+###  https://w3id.org/skgo/modsci#Gravitometer
+modsci:Gravitometer rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Gravity
+modsci:Gravity rdf:type owl:NamedIndividual ,
+                        modsci:PhysicalPhenomena ;
+               modsci:discoveredByScientist modsci:Isaac_Newton .
+
+
+###  https://w3id.org/skgo/modsci#Growth
+modsci:Growth rdf:type owl:NamedIndividual ,
+                       modsci:BiologicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Guglielmo_Marconi
+modsci:Guglielmo_Marconi rdf:type owl:NamedIndividual ,
+                                  modsci:Scientist ;
+                         modsci:undertakesResearch modsci:Engineering_Studies ,
+                                                   modsci:Physical_Studies .
+
+
+###  https://w3id.org/skgo/modsci#Haze
+modsci:Haze rdf:type owl:NamedIndividual ,
+                     modsci:AtmosphericPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Historical_Studies
+modsci:Historical_Studies rdf:type owl:NamedIndividual ,
+                                   modsci:History .
+
+
+###  https://w3id.org/skgo/modsci#Horiba
+modsci:Horiba rdf:type owl:NamedIndividual ,
+                       modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Hydrometer
+modsci:Hydrometer rdf:type owl:NamedIndividual ,
+                           modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Inclinometer
+modsci:Inclinometer rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Interferometer
+modsci:Interferometer rdf:type owl:NamedIndividual ,
+                               modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Isaac_Newton
+modsci:Isaac_Newton rdf:type owl:NamedIndividual ,
+                             modsci:Scientist ;
+                    modsci:undertakesResearch modsci:Astronomical_Studies ,
+                                              modsci:Mathematical_Studies ,
+                                              modsci:Physical_Studies .
+
+
+###  https://w3id.org/skgo/modsci#Johann_Schweigger
+modsci:Johann_Schweigger rdf:type owl:NamedIndividual ,
+                                  modsci:Scientist ;
+                         modsci:undertakesResearch modsci:Chemical_Studies ,
+                                                   modsci:Mathematical_Studies ,
+                                                   modsci:Physical_Studies .
+
+
+###  https://w3id.org/skgo/modsci#Julius_von_Mayer
+modsci:Julius_von_Mayer rdf:type owl:NamedIndividual ,
+                                 modsci:Scientist ;
+                        modsci:undertakesResearch modsci:Chemical_Studies ,
+                                                  modsci:Physical_Studies .
+
+
+###  https://w3id.org/skgo/modsci#KNN_Algorithm
+modsci:KNN_Algorithm rdf:type owl:NamedIndividual ,
+                              modsci:ClassificationAlgorithms .
+
+
+###  https://w3id.org/skgo/modsci#LECO_Corporation
+modsci:LECO_Corporation rdf:type owl:NamedIndividual ,
+                                 modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Light_Bulb
+modsci:Light_Bulb rdf:type owl:NamedIndividual ,
+                           modsci:ScientificDiscovery ;
+                  modsci:instrumentInventedBy modsci:Thomas_Edison .
+
+
+###  https://w3id.org/skgo/modsci#Light_magnification
+modsci:Light_magnification rdf:type owl:NamedIndividual ,
+                                    modsci:Astronomy .
+
+
+###  https://w3id.org/skgo/modsci#Light_pillar
+modsci:Light_pillar rdf:type owl:NamedIndividual ,
+                             modsci:AtmosphericPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Linear_Regression
+modsci:Linear_Regression rdf:type owl:NamedIndividual ,
+                                  modsci:Statistics .
+
+
+###  https://w3id.org/skgo/modsci#Magnetograph
+modsci:Magnetograph rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Magnetometer
+modsci:Magnetometer rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#MalvernInstruments
+modsci:MalvernInstruments rdf:type owl:NamedIndividual ,
+                                   modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Manometer
+modsci:Manometer rdf:type owl:NamedIndividual ,
+                          modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#MarkesInternational
+modsci:MarkesInternational rdf:type owl:NamedIndividual ,
+                                    modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Mathematical_Studies
+modsci:Mathematical_Studies rdf:type owl:NamedIndividual ,
+                                     modsci:Mathematics ;
+                            modsci:requiresKnowledgeFrom modsci:Mathematical_Studies .
+
+
+###  https://w3id.org/skgo/modsci#McPhersonInc
+modsci:McPhersonInc rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Metabolism
+modsci:Metabolism rdf:type owl:NamedIndividual ,
+                           modsci:BiologicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Michael_Faraday
+modsci:Michael_Faraday rdf:type owl:NamedIndividual ,
+                                modsci:Scientist ;
+                       modsci:undertakesResearch modsci:Chemical_Studies .
+
+
+###  https://w3id.org/skgo/modsci#Micrometer
+modsci:Micrometer rdf:type owl:NamedIndividual ,
+                           modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Microscope
+modsci:Microscope rdf:type owl:NamedIndividual ,
+                           modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Movie_camera
+modsci:Movie_camera rdf:type owl:NamedIndividual ,
+                             modsci:ScientificDiscovery ;
+                    modsci:instrumentInventedBy modsci:Thomas_Edison ;
+                    modsci:InstrumentFunctionDesription "take a rapid sequence of photographs on an image sensor or on a film." .
+
+
+###  https://w3id.org/skgo/modsci#NASA
+modsci:NASA rdf:type owl:NamedIndividual ,
+                     modsci:ScientificOrganization .
+
+
+###  https://w3id.org/skgo/modsci#NovacamTechnologies
+modsci:NovacamTechnologies rdf:type owl:NamedIndividual ,
+                                    modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Ocean_currents
+modsci:Ocean_currents rdf:type owl:NamedIndividual ,
+                               modsci:OceanographicPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Ohmmeter
+modsci:Ohmmeter rdf:type owl:NamedIndividual ,
+                         modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Olaus_Roemer
+modsci:Olaus_Roemer rdf:type owl:NamedIndividual ,
+                             modsci:Scientist ;
+                    modsci:undertakesResearch modsci:Astronomical_Studies .
+
+
+###  https://w3id.org/skgo/modsci#OpenAI_Inc
+modsci:OpenAI_Inc rdf:type owl:NamedIndividual ,
+                           modsci:ScientificOrganization .
+
+
+###  https://w3id.org/skgo/modsci#Oscilloscope
+modsci:Oscilloscope rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Overpopulation
+modsci:Overpopulation rdf:type owl:NamedIndividual ,
+                               modsci:BiologicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#OxfordInstruments
+modsci:OxfordInstruments rdf:type owl:NamedIndividual ,
+                                  modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#PallCorp
+modsci:PallCorp rdf:type owl:NamedIndividual ,
+                         modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Phonograph
+modsci:Phonograph rdf:type owl:NamedIndividual ,
+                           modsci:ScientificInstrument ;
+                  modsci:instrumentInventedBy modsci:Thomas_Edison ;
+                  modsci:InstrumentFunctionDesription "record the mechanical and reproduction of sound." .
+
+
+###  https://w3id.org/skgo/modsci#Physical_Studies
+modsci:Physical_Studies rdf:type owl:NamedIndividual ,
+                                 modsci:Physics .
+
+
+###  https://w3id.org/skgo/modsci#PolymerChar
+modsci:PolymerChar rdf:type owl:NamedIndividual ,
+                            modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Population_decrease
+modsci:Population_decrease rdf:type owl:NamedIndividual ,
+                                    modsci:BiologicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#PsychiatricDrugs
+modsci:PsychiatricDrugs rdf:type owl:NamedIndividual ,
+                                 modsci:ApplicationOfScience .
+
+
+###  https://w3id.org/skgo/modsci#Psychological_Studies
+modsci:Psychological_Studies rdf:type owl:NamedIndividual ,
+                                      modsci:Psychology .
+
+
+###  https://w3id.org/skgo/modsci#Racism
+modsci:Racism rdf:type owl:NamedIndividual ,
+                       modsci:SocialPhenomenon .
+
+
+###  https://w3id.org/skgo/modsci#Radio_Signals
+modsci:Radio_Signals rdf:type owl:NamedIndividual ,
+                              sweet:Phenomenon ;
+                     modsci:discoveredByScientist modsci:Guglielmo_Marconi .
+
+
+###  https://w3id.org/skgo/modsci#Rainbow
+modsci:Rainbow rdf:type owl:NamedIndividual ,
+                        modsci:AtmosphericPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Resampling_Methods
+modsci:Resampling_Methods rdf:type owl:NamedIndividual ,
+                                   modsci:Statistics .
+
+
+###  https://w3id.org/skgo/modsci#Rusting
+modsci:Rusting rdf:type owl:NamedIndividual ,
+                        modsci:ChemicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Seismometer
+modsci:Seismometer rdf:type owl:NamedIndividual ,
+                            modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#ShimadzuCorp
+modsci:ShimadzuCorp rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Shrinkage
+modsci:Shrinkage rdf:type owl:NamedIndividual ,
+                          modsci:Statistics .
+
+
+###  https://w3id.org/skgo/modsci#Spectrogram
+modsci:Spectrogram rdf:type owl:NamedIndividual ,
+                            modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Spectrometer
+modsci:Spectrometer rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Speed_of_light
+modsci:Speed_of_light rdf:type owl:NamedIndividual ,
+                               modsci:ScientificDiscovery ;
+                      modsci:discoveredByScientist modsci:Olaus_Roemer .
+
+
+###  https://w3id.org/skgo/modsci#Statistics_Studies
+modsci:Statistics_Studies rdf:type owl:NamedIndividual ,
+                                   modsci:Statistics .
+
+
+###  https://w3id.org/skgo/modsci#Storm
+modsci:Storm rdf:type owl:NamedIndividual ,
+                      modsci:MeteorologicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Studying_biochemical_reactions
+modsci:Studying_biochemical_reactions rdf:type owl:NamedIndividual ,
+                                               modsci:MolecularBiology .
+
+
+###  https://w3id.org/skgo/modsci#Subset_Selection
+modsci:Subset_Selection rdf:type owl:NamedIndividual ,
+                                 modsci:Statistics .
+
+
+###  https://w3id.org/skgo/modsci#Subsun
+modsci:Subsun rdf:type owl:NamedIndividual ,
+                       modsci:AtmosphericPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Supernova
+modsci:Supernova rdf:type owl:NamedIndividual ,
+                          modsci:AstronomicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Support_Vector_Machines
+modsci:Support_Vector_Machines rdf:type owl:NamedIndividual ,
+                                        modsci:ClassificationAlgorithms .
+
+
+###  https://w3id.org/skgo/modsci#Techtron
+modsci:Techtron rdf:type owl:NamedIndividual ,
+                         modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Telescope
+modsci:Telescope rdf:type owl:NamedIndividual ,
+                          modsci:ScientificInstrument ;
+                 modsci:instrumentUsedInScience modsci:Light_magnification .
+
+
+###  https://w3id.org/skgo/modsci#The_Bridges_Organization
+modsci:The_Bridges_Organization rdf:type owl:NamedIndividual ,
+                                         modsci:ScientificOrganization .
+
+
+###  https://w3id.org/skgo/modsci#The_Fibonacci_Association
+modsci:The_Fibonacci_Association rdf:type owl:NamedIndividual ,
+                                          modsci:ScientificOrganization .
+
+
+###  https://w3id.org/skgo/modsci#Theodolite
+modsci:Theodolite rdf:type owl:NamedIndividual ,
+                           modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Thermocouple
+modsci:Thermocouple rdf:type owl:NamedIndividual ,
+                             modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Thermometer
+modsci:Thermometer rdf:type owl:NamedIndividual ,
+                            modsci:ScientificInstrument ;
+                   modsci:instrumentUsedInScience modsci:Studying_biochemical_reactions ;
+                   modsci:InstrumentFunctionDesription "measure temperature or a temperature gradient." .
+
+
+###  https://w3id.org/skgo/modsci#Thomas_Edison
+modsci:Thomas_Edison rdf:type owl:NamedIndividual ,
+                              modsci:Scientist ;
+                     foaf:familyName "Edison" .
+
+
+###  https://w3id.org/skgo/modsci#Time_Series_Analysis
+modsci:Time_Series_Analysis rdf:type owl:NamedIndividual ,
+                                     modsci:Statistics .
+
+
+###  https://w3id.org/skgo/modsci#Tsunamis
+modsci:Tsunamis rdf:type owl:NamedIndividual ,
+                         modsci:OceanographicPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Volcano
+modsci:Volcano rdf:type owl:NamedIndividual ,
+                        modsci:GeologicalPhenomena .
+
+
+###  https://w3id.org/skgo/modsci#Voltmeter
+modsci:Voltmeter rdf:type owl:NamedIndividual ,
+                          modsci:ScientificInstrument .
+
+
+###  https://w3id.org/skgo/modsci#Waldemar_Jungner
+modsci:Waldemar_Jungner rdf:type owl:NamedIndividual ,
+                                 modsci:Scientist .
+
+
+###  https://w3id.org/skgo/modsci#WatersCorporation
+modsci:WatersCorporation rdf:type owl:NamedIndividual ,
+                                  modsci:ScientificInstrumentManufacturer .
+
+
+###  https://w3id.org/skgo/modsci#Weddings
+modsci:Weddings rdf:type owl:NamedIndividual ,
+                         modsci:SocialPhenomenon .
+
+
+###  https://w3id.org/skgo/modsci#energy_conservation
+modsci:energy_conservation rdf:type owl:NamedIndividual ,
+                                    modsci:PhysicalPhenomena ;
+                           modsci:discoveredByScientist modsci:Julius_von_Mayer .
+
+
+###  https://w3id.org/skgo/modsci#helpInDiscoveryOfEnergyConservation
+modsci:helpInDiscoveryOfEnergyConservation rdf:type owl:NamedIndividual ,
+                                                    modsci:helpInDiscovery ;
+                                           modsci:discoveredByScience modsci:study-of-heat-energy ,
+                                                                      modsci:study-properties-of-matter ;
+                                           modsci:helpInDiscoveryOfPhenomenon modsci:energy_conservation .
+
+
+###  https://w3id.org/skgo/modsci#study-of-heat-energy
+modsci:study-of-heat-energy rdf:type owl:NamedIndividual ,
+                                     modsci:Thermodynamics .
+
+
+###  https://w3id.org/skgo/modsci#study-properties-of-matter
+modsci:study-properties-of-matter rdf:type owl:NamedIndividual ,
+                                           modsci:Physics .
+
+
+###  https://w3id.org/skgo/modsci#study_of_wetlands
+modsci:study_of_wetlands rdf:type owl:NamedIndividual ,
+                                  modsci:Ecology .
+
+
+###  https://w3id.org/skgo/modsci#temperature_gradient
+modsci:temperature_gradient rdf:type owl:NamedIndividual ,
+                                     modsci:PhysicalPhenomena .
