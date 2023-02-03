@@ -25,13 +25,42 @@
                                  terms:description "ModSci is a reference ontology for modelling different types of modern sciences and related entities, such as scientific discoveries, renowned scientists, instruments, phenomena ... etc."@en ;
                                  terms:license <http://creativecommons.org/licenses/by/3.0/> ;
                                  terms:modified "2022-12-18" ;
-                                 terms:title "ModSci, Modern Science Ontology."@en ;
+                                 terms:title "Modern Science Ontology"@en ;
                                  vann:preferredNamespacePrefix "modsci" ;
-                                 owl:versionInfo 1.1 .
+                                 owl:versionInfo 1.1 ;
+                                 foaf:homepage <https://w3id.org/skgo/modsci> .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000179
+role:BFO_0000179 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000180
+role:BFO_0000180 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000112
+role:IAO_0000112 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+role:IAO_0000116 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000600
+role:IAO_0000600 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000602
+role:IAO_0000602 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0010000
+role:IAO_0010000 rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/elements/1.1/creator
 dc:creator rdf:type owl:AnnotationProperty .
@@ -80,6 +109,10 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#nationality
 skos:nationality rdf:type owl:AnnotationProperty ;
                  rdfs:subPropertyOf rdfs:comment .
@@ -93,9 +126,25 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 foaf:familyName rdf:type owl:AnnotationProperty .
 
 
+###  http://xmlns.com/foaf/0.1/homepage
+foaf:homepage rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://xmlns.com/foaf/0.1/homepage
+foaf:homepage rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf foaf:page ;
+              rdf:type owl:InverseFunctionalProperty ;
+              rdfs:domain foaf:Agent ;
+              rdfs:range foaf:Document .
+
+
+###  http://xmlns.com/foaf/0.1/page
+foaf:page rdf:type owl:ObjectProperty .
+
 
 ###  https://w3id.org/skgo/modsci#appliesLawsFrom
 modsci:appliesLawsFrom rdf:type owl:ObjectProperty ,
@@ -238,6 +287,12 @@ modsci:hasMethodsInspiredFrom rdf:type owl:ObjectProperty ,
                               rdfs:range modsci:ModernScience .
 
 
+###  https://w3id.org/skgo/modsci#hasRoleIn
+modsci:hasRoleIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain modsci:Scientist ;
+                 rdfs:range modsci:ScientificDiscovery .
+
+
 ###  https://w3id.org/skgo/modsci#hasScientificInstrumentManufacturer
 modsci:hasScientificInstrumentManufacturer rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf modsci:hasManufacturer .
@@ -253,25 +308,25 @@ modsci:helpInDiscoveryOfPhenomenon rdf:type owl:ObjectProperty ,
                                               ] .
 
 
-###  https://w3id.org/skgo/modsci#inspiredFrom
-modsci:inspiredFrom rdf:type owl:ObjectProperty ,
-                             owl:FunctionalProperty ;
-                    rdfs:domain modsci:ScientificMethod ;
-                    rdfs:range [ rdf:type owl:Class ;
-                                 owl:unionOf ( sweet:Phenomenon
-                                               modsci:ScientificDiscovery
-                                             )
-                               ] .
+###  https://w3id.org/skgo/modsci#inspiredBy
+modsci:inspiredBy rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain modsci:ScientificMethod ;
+                  rdfs:range [ rdf:type owl:Class ;
+                               owl:unionOf ( sweet:Phenomenon
+                                             modsci:ScientificDiscovery
+                                           )
+                             ] .
 
 
 ###  https://w3id.org/skgo/modsci#inspiredFromPhenomenon
 modsci:inspiredFromPhenomenon rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf modsci:inspiredFrom .
+                              rdfs:subPropertyOf modsci:inspiredBy .
 
 
 ###  https://w3id.org/skgo/modsci#inspiredFromScientificDiscovery
 modsci:inspiredFromScientificDiscovery rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf modsci:inspiredFrom .
+                                       rdfs:subPropertyOf modsci:inspiredBy .
 
 
 ###  https://w3id.org/skgo/modsci#instrumentInventedBy
@@ -435,10 +490,60 @@ modsci:InstrumentFunctionDesription rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
+###  http://purl.obolibrary.org/obo/BFO_0000016
+role:BFO_0000016 rdf:type owl:Class ;
+                 owl:disjointWith role:BFO_0000023 .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000017
+role:BFO_0000017 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000023
+role:BFO_0000023 rdf:type owl:Class ;
+                 rdfs:subClassOf role:BFO_0000017 ;
+                 role:BFO_0000179 "role" ;
+                 role:BFO_0000180 "Role" ;
+                 role:IAO_0000112 "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married."@en ,
+                                  "the priest role"@en ,
+                                  "the role of a boundary to demarcate two neighboring administrative territories"@en ,
+                                  "the role of a building in serving as a military target"@en ,
+                                  "the role of a stone in marking a property boundary"@en ,
+                                  "the role of subject in a clinical trial"@en ,
+                                  "the student role"@en ;
+                 role:IAO_0000116 "BFO 2 Reference: One major family of examples of non-rigid universals involves roles, and ontologies developed for corresponding administrative purposes may consist entirely of representatives of entities of this sort. Thus ‘professor’, defined as follows,b instance_of professor at t =Def. there is some c, c instance_of professor role & c inheres_in b at t.denotes a non-rigid universal and so also do ‘nurse’, ‘student’, ‘colonel’, ‘taxpayer’, and so forth. (These terms are all, in the jargon of philosophy, phase sortals.) By using role terms in definitions, we can create a BFO conformant treatment of such entities drawing on the fact that, while an instance of professor may be simultaneously an instance of trade union member, no instance of the type professor role is also (at any time) an instance of the type trade union member role (any more than any instance of the type color is at any time an instance of the type length).If an ontology of employment positions should be defined in terms of roles following the above pattern, this enables the ontology to do justice to the fact that individuals instantiate the corresponding universals –  professor, sergeant, nurse – only during certain phases in their lives."@en ;
+                 role:IAO_0000600 "b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])"@en ;
+                 role:IAO_0000602 "(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] " ;
+                 rdfs:isDefinedBy role:bfo.owl ;
+                 rdfs:label "role"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource role:BFO_0000023 ;
+   owl:annotatedProperty role:IAO_0000600 ;
+   owl:annotatedTarget "b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])"@en ;
+   role:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/061-001>
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource role:BFO_0000023 ;
+   owl:annotatedProperty role:IAO_0000602 ;
+   owl:annotatedTarget "(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] " ;
+   role:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/061-001>
+ ] .
+
+
 ###  http://sweetontology.net/phen/Phenomenon
 sweet:Phenomenon rdf:type owl:Class ;
                  rdfs:comment "A phenomenon, in a scientific context, is something that is observed to occur or to exist."@en ;
                  rdfs:label "Phenomenon"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Document
+foaf:Document rdf:type owl:Class .
 
 
 ###  http://xmlns.com/foaf/0.1/Organization
@@ -2907,7 +3012,7 @@ modsci:Decomposition rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/skgo/modsci#Deep_Learning
 modsci:Deep_Learning rdf:type owl:NamedIndividual ,
                               modsci:ScientificMethod ;
-                     modsci:inspiredFrom modsci:Biomedical_Signals .
+                     modsci:inspiredBy modsci:Biomedical_Signals .
 
 
 ###  https://w3id.org/skgo/modsci#Dynamo
@@ -3491,6 +3596,12 @@ modsci:temperature_gradient rdf:type owl:NamedIndividual ,
 #################################################################
 #    Annotations
 #################################################################
+
+foaf:homepage rdfs:label "homepage" ;
+              rdfs:isDefinedBy foaf: ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" ;
+              rdfs:comment "A homepage for some thing." .
+
 
 modsci:Metabolism rdfs:label "Metabolism" ;
                   rdfs:comment "Metabolism is the set of life-sustaining chemical reactions in organisms." .
