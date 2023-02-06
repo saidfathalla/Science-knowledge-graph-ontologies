@@ -7,6 +7,8 @@ ModSci is a poly-hierarchical ontology that can be utilized in semantic web appl
 The following figure shows the core concepts in the ontology.
 ![CoreConcepts](https://user-images.githubusercontent.com/21238109/217017331-cdea8663-4c83-4a4f-8930-69114e2d218d.png)
 
+The following figure presents a part of the ModSci class hierarchy (max depth=4). For conciseness, many classes have been omitted as indicated by dots between sibling classes. Arrows with open arrowheads denote the `rdfs:subClassOf` relation between the classes, and arrows with a black circle indicate classes with multiple super-classes.
+![modsci-heirarchy](https://user-images.githubusercontent.com/21238109/217018589-974e45dc-80e5-48bd-971e-055c48fb30b6.png)
 
 ## Ontology Publishing
 The ontology is published under a persistent URL (https://w3id.org/skgo/modsci#) with dereferenceable URIs. 
