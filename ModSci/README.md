@@ -1,11 +1,11 @@
 # Modern Science Ontology (ModSci)
-Modern Science Ontology (ModSci) is an upper ontology for modeling relationships between modern science branches and related entities, such as scientific discoveries, phenomena, renowned scientists, instruments, etc. 
+Modern Science Ontology (ModSci) is an upper ontology for modelling relationships between modern science branches and related entities, such as scientific discoveries, phenomena, renowned scientists, instruments, etc. 
 ModSci provides a unifying framework for the various domain ontologies that make up the Science Knowledge Graph Ontology Suite. 
 ModSci is a poly-hierarchical ontology that can be utilized in semantic web applications. 
 
 ## Schema diagram
-The following figure shows the core concepts in the ontoilogy.
-![modsci schema](https://user-images.githubusercontent.com/21238109/208491436-2d950157-25d2-47a1-b470-eaaf900dc6e7.png)
+The following figure shows the core concepts in the ontology.
+![CoreConcepts](https://user-images.githubusercontent.com/21238109/217017331-cdea8663-4c83-4a4f-8930-69114e2d218d.png)
 
 
 ## Ontology Publishing
@@ -23,7 +23,7 @@ ModSci can be browsed online, through a web-based repository front-end for brows
  
 
 ## Documentation and visualization
-The Wizard for documenting ontologies [WIDOCO](https://github.com/dgarijo/Widoco) is used to create HTML documentation for the ontology (available via [https://w3id.org/skgo/modsci#]), thus enabling human understandability of the ontologies.
+The Wizard for documenting ontologies [WIDOCO](https://github.com/dgarijo/Widoco) is used to create HTML documentation for the ontology (available via [https://w3id.org/skgo/modsci#]), thus enabling human-understandability of the ontologies.
 Besides, the \texttt{rdfs:comment} property is used to provide a human-readable description of each resource. 
 An interactive visualization for browsing ModSci hierarchy has been developed using [D3.JS](https://d3js.org/) libraries.
 
