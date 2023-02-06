@@ -150,112 +150,108 @@ modsci:appliesLawsFrom rdf:type owl:ObjectProperty ,
                                 owl:AsymmetricProperty ;
                        rdfs:domain modsci:ModernScience ;
                        rdfs:range modsci:ModernScience ;
+                       rdfs:comment "Science applies lows from anthoer one."@en ;
                        rdfs:label "applies laws from"@en .
 
 
 ###  https://w3id.org/skgo/modsci#appliesLawsFromMathematics
 modsci:appliesLawsFromMathematics rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf modsci:appliesLawsFrom ;
+                                  rdfs:comment "Science applies laws from Mathematics."@en ;
                                   rdfs:label "applies laws from Mathematics"@en .
 
 
 ###  https://w3id.org/skgo/modsci#appliesLawsFromPhysics
 modsci:appliesLawsFromPhysics rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf modsci:appliesLawsFrom ;
+                              rdfs:comment "Science applies laws from Physics."@en ;
                               rdfs:label "applies laws from Physics"@en .
 
 
 ###  https://w3id.org/skgo/modsci#appliesLawsFromStatistics
 modsci:appliesLawsFromStatistics rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf modsci:appliesLawsFrom ;
+                                 rdfs:comment "Science applies laws from Statistics."@en ;
                                  rdfs:label "applies laws from Statistics"@en .
 
 
 ###  https://w3id.org/skgo/modsci#appliesLawsFromThermodynamics
 modsci:appliesLawsFromThermodynamics rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf modsci:appliesLawsFromPhysics ;
+                                     rdfs:comment "Science applies laws from Thermodynamics."@en ;
                                      rdfs:label "applies laws from Thermodynamics"@en .
+
+
+###  https://w3id.org/skgo/modsci#belongsToScience
+modsci:belongsToScience rdf:type owl:ObjectProperty ;
+                        owl:inverseOf modsci:hasScientist ;
+                        rdfs:domain modsci:Scientist ;
+                        rdfs:range modsci:ModernScience ;
+                        rdfs:comment "A scientist belongs to a science."@en ;
+                        rdfs:label "belongs to science"@en .
 
 
 ###  https://w3id.org/skgo/modsci#discoveredByAppliedSciences
 modsci:discoveredByAppliedSciences rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf modsci:discoveredByScience ;
+                                   rdfs:subPropertyOf modsci:isDiscoveredByScience ;
                                    rdfs:label "discovered by applied science"@en .
 
 
 ###  https://w3id.org/skgo/modsci#discoveredByBehaviouralSciences
 modsci:discoveredByBehaviouralSciences rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf modsci:discoveredByScience ;
+                                       rdfs:subPropertyOf modsci:isDiscoveredByScience ;
                                        rdfs:label "discovered by behavioural science"@en .
 
 
 ###  https://w3id.org/skgo/modsci#discoveredByFormalScience
 modsci:discoveredByFormalScience rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf modsci:discoveredByScience ;
+                                 rdfs:subPropertyOf modsci:isDiscoveredByScience ;
                                  rdfs:label "discovered by formal science"@en .
 
 
 ###  https://w3id.org/skgo/modsci#discoveredByHealthSciences
 modsci:discoveredByHealthSciences rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf modsci:discoveredByScience ;
+                                  rdfs:subPropertyOf modsci:isDiscoveredByScience ;
                                   rdfs:label "discovered by health science"@en .
 
 
 ###  https://w3id.org/skgo/modsci#discoveredByInterdisciplinaryStudies
 modsci:discoveredByInterdisciplinaryStudies rdf:type owl:ObjectProperty ;
-                                            rdfs:subPropertyOf modsci:discoveredByScience ;
+                                            rdfs:subPropertyOf modsci:isDiscoveredByScience ;
                                             rdfs:label "discovered by Interdisciplinary studies"@en .
 
 
 ###  https://w3id.org/skgo/modsci#discoveredByNaturalScience
 modsci:discoveredByNaturalScience rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf modsci:discoveredByScience ;
+                                  rdfs:subPropertyOf modsci:isDiscoveredByScience ;
                                   rdfs:label "discovered by natural science"@en .
-
-
-###  https://w3id.org/skgo/modsci#discoveredByScience
-modsci:discoveredByScience rdf:type owl:ObjectProperty ,
-                                    owl:FunctionalProperty ;
-                           rdfs:domain [ rdf:type owl:Class ;
-                                         owl:unionOf ( sweet:Phenomenon
-                                                       modsci:ScientificDiscovery
-                                                     )
-                                       ] ;
-                           rdfs:range modsci:ModernScience ;
-                           rdfs:label "discovered by science"@en .
-
-
-###  https://w3id.org/skgo/modsci#discoveredByScientist
-modsci:discoveredByScientist rdf:type owl:ObjectProperty ,
-                                      owl:FunctionalProperty ;
-                             rdfs:domain [ rdf:type owl:Class ;
-                                           owl:unionOf ( sweet:Phenomenon
-                                                         modsci:ScientificDiscovery
-                                                       )
-                                         ] ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty modsci:discoveredByScientist ;
-                                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                           owl:onClass modsci:Scientist
-                                         ] ;
-                             rdfs:range modsci:Scientist ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty modsci:discoveredByScientist ;
-                                          owl:allValuesFrom modsci:Scientist
-                                        ] ;
-                             rdfs:label "discovered by Scientist"@en .
 
 
 ###  https://w3id.org/skgo/modsci#discoveredBySocialSciences
 modsci:discoveredBySocialSciences rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf modsci:discoveredByScience ;
+                                  rdfs:subPropertyOf modsci:isDiscoveredByScience ;
                                   rdfs:label "discovered by social science"@en .
+
+
+###  https://w3id.org/skgo/modsci#discovers
+modsci:discovers rdf:type owl:ObjectProperty ;
+                 owl:inverseOf modsci:isDiscoveredBy ;
+                 rdfs:comment "A scientist or an organization discovers a phenomenon."@en ;
+                 rdfs:label "discovers"@en .
+
+
+###  https://w3id.org/skgo/modsci#followedByScientist
+modsci:followedByScientist rdf:type owl:ObjectProperty ;
+                           owl:inverseOf modsci:followsMethod ;
+                           rdfs:comment "A scientific method is followed by a scientist."@en ;
+                           rdfs:label "followed by scientist"@en .
 
 
 ###  https://w3id.org/skgo/modsci#followsMethod
 modsci:followsMethod rdf:type owl:ObjectProperty ;
                      rdfs:domain modsci:Scientist ;
                      rdfs:range modsci:ScientificMethod ;
+                     rdfs:comment "A scientist follows a scientific method."@en ;
                      rdfs:label "follows method"@en .
 
 
@@ -264,6 +260,7 @@ modsci:hasApplication rdf:type owl:ObjectProperty ;
                       owl:inverseOf modsci:isApplicationOfScience ;
                       rdfs:domain modsci:ModernScience ;
                       rdfs:range modsci:ApplicationOfScience ;
+                      rdfs:comment "A science has an application."@en ;
                       rdfs:label "has application"@en .
 
 
@@ -273,6 +270,7 @@ modsci:hasCloseRelationshipTo rdf:type owl:ObjectProperty ,
                                        owl:ReflexiveProperty ;
                               rdfs:domain modsci:ModernScience ;
                               rdfs:range modsci:ModernScience ;
+                              rdfs:comment "A science has a close relationship to another one."@en ;
                               rdfs:label "has close relationship to"@en .
 
 
@@ -282,6 +280,7 @@ modsci:hasCollaborationWith rdf:type owl:ObjectProperty ,
                                      owl:ReflexiveProperty ;
                             rdfs:domain modsci:ModernScience ;
                             rdfs:range modsci:ModernScience ;
+                            rdfs:comment "Science has a close collaboration with another one."@en ;
                             rdfs:label "has collaboration with"@en .
 
 
@@ -290,28 +289,44 @@ modsci:hasManufacturer rdf:type owl:ObjectProperty ;
                        owl:inverseOf modsci:isManufacturerOf ;
                        rdfs:domain modsci:ScientificInstrument ;
                        rdfs:range modsci:ScientificInstrumentManufacturer ;
+                       rdfs:comment "A scientific instrument has a particular manufacturer."@en ;
                        rdfs:label "has manufacturer"@en .
 
 
 ###  https://w3id.org/skgo/modsci#hasMethodsInspiredFrom
-modsci:hasMethodsInspiredFrom rdf:type owl:ObjectProperty ,
-                                       owl:ReflexiveProperty ;
+modsci:hasMethodsInspiredFrom rdf:type owl:ObjectProperty ;
                               rdfs:domain modsci:ModernScience ;
                               rdfs:range modsci:ModernScience ;
+                              rdfs:comment "Science has methods inspired from another science."@en ;
                               rdfs:label "has methods inspired from"@en .
+
+
+###  https://w3id.org/skgo/modsci#hasResearchBy
+modsci:hasResearchBy rdf:type owl:ObjectProperty ;
+                     owl:inverseOf modsci:undertakesResearch ;
+                     rdfs:comment "A science has research done by a scientist."@en ;
+                     rdfs:label "has research by"@en .
 
 
 ###  https://w3id.org/skgo/modsci#hasRoleIn
 modsci:hasRoleIn rdf:type owl:ObjectProperty ;
                  rdfs:domain modsci:Scientist ;
                  rdfs:range modsci:ScientificDiscovery ;
+                 rdfs:comment "A scientist has a role in a scientific discovery."@en ;
                  rdfs:label "has role in"@en .
 
 
 ###  https://w3id.org/skgo/modsci#hasScientificInstrumentManufacturer
 modsci:hasScientificInstrumentManufacturer rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf modsci:hasManufacturer ;
+                                           rdfs:comment "A scientific instrument has a scientific instrument manufacturer."@en ;
                                            rdfs:label "has scientific instrument manufacturer"@en .
+
+
+###  https://w3id.org/skgo/modsci#hasScientist
+modsci:hasScientist rdf:type owl:ObjectProperty ;
+                    rdfs:comment "Science has a scientist that it belongs to."@en ;
+                    rdfs:label "has scientist"@en .
 
 
 ###  https://w3id.org/skgo/modsci#helpInDiscoveryOfPhenomenon
@@ -322,87 +337,116 @@ modsci:helpInDiscoveryOfPhenomenon rdf:type owl:ObjectProperty ,
                                                 owl:onProperty modsci:helpInDiscoveryOfPhenomenon ;
                                                 owl:allValuesFrom sweet:Phenomenon
                                               ] ;
+                                   rdfs:comment "This relation represents that one or more sciences helped in the discovery of the phenomenon."@en ;
                                    rdfs:label "help in discovery of phenomenon"@en .
 
 
 ###  https://w3id.org/skgo/modsci#inspiredBy
-modsci:inspiredBy rdf:type owl:ObjectProperty ,
-                           owl:FunctionalProperty ;
+modsci:inspiredBy rdf:type owl:ObjectProperty ;
+                  owl:inverseOf modsci:inspiresMethod ;
+                  rdf:type owl:FunctionalProperty ;
                   rdfs:domain modsci:ScientificMethod ;
                   rdfs:range [ rdf:type owl:Class ;
                                owl:unionOf ( sweet:Phenomenon
                                              modsci:ScientificDiscovery
                                            )
                              ] ;
+                  rdfs:comment "A scientific method is inspired by a phenomenon or a scientific discovery."@en ;
                   rdfs:label "inspired by"@en .
 
 
 ###  https://w3id.org/skgo/modsci#inspiredFromPhenomenon
 modsci:inspiredFromPhenomenon rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf modsci:inspiredBy ;
+                              rdfs:comment "A scientific method is inspired by a phenomenon."@en ;
                               rdfs:label "inspired by phenomenon"@en .
 
 
 ###  https://w3id.org/skgo/modsci#inspiredFromScientificDiscovery
 modsci:inspiredFromScientificDiscovery rdf:type owl:ObjectProperty ;
                                        rdfs:subPropertyOf modsci:inspiredBy ;
+                                       rdfs:comment "A scientific method is inspired by a scientific discovery."@en ;
                                        rdfs:label "inspired by scientific discovery"@en .
+
+
+###  https://w3id.org/skgo/modsci#inspiresMethod
+modsci:inspiresMethod rdf:type owl:ObjectProperty ;
+                      rdfs:comment "A phenomenon or a scientific discovery inspires a scientific method."@en ;
+                      rdfs:label "inspires method"@en .
 
 
 ###  https://w3id.org/skgo/modsci#instrumentInventedBy
 modsci:instrumentInventedBy rdf:type owl:ObjectProperty ;
+                            owl:inverseOf modsci:inventsInstrument ;
                             rdfs:domain modsci:ScientificInstrument ;
                             rdfs:range modsci:Scientist ;
+                            rdfs:comment "An instrument is invented by a sciientist."@en ;
                             rdfs:label "instrument invented by"@en .
 
 
 ###  https://w3id.org/skgo/modsci#instrumentUsedInScience
 modsci:instrumentUsedInScience rdf:type owl:ObjectProperty ;
+                               owl:inverseOf modsci:usesInstrument ;
                                rdfs:domain modsci:ScientificInstrument ;
                                rdfs:range modsci:ModernScience ;
+                               rdfs:comment "An instrument is used in science."@en ;
                                rdfs:label "instrument used in Science" .
 
 
 ###  https://w3id.org/skgo/modsci#interestedInPhenomenon
 modsci:interestedInPhenomenon rdf:type owl:ObjectProperty ;
+                              owl:inverseOf modsci:isInterestingToScientist ;
                               rdfs:domain modsci:Scientist ;
                               rdfs:range sweet:Phenomenon ;
+                              rdfs:comment "A scientist is interested in phenomenon."@en ;
                               rdfs:label "interested in phenomenon"@en .
+
+
+###  https://w3id.org/skgo/modsci#inventsInstrument
+modsci:inventsInstrument rdf:type owl:ObjectProperty ;
+                         rdfs:comment "A sciientist invents an instrument ."@en ;
+                         rdfs:label "invents instrument"@en .
 
 
 ###  https://w3id.org/skgo/modsci#isApplicationOfAppliedScience
 modsci:isApplicationOfAppliedScience rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf modsci:isApplicationOfScience ;
+                                     rdfs:comment "An application is an application of applied science."@en ;
                                      rdfs:label "is application of applied science"@en .
 
 
 ###  https://w3id.org/skgo/modsci#isApplicationOfBehaviouralSciences
 modsci:isApplicationOfBehaviouralSciences rdf:type owl:ObjectProperty ;
                                           rdfs:subPropertyOf modsci:isApplicationOfScience ;
+                                          rdfs:comment "An application is an application of behavioural science."@en ;
                                           rdfs:label "is application of behavioural science"@en .
 
 
 ###  https://w3id.org/skgo/modsci#isApplicationOfFormalScience
 modsci:isApplicationOfFormalScience rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf modsci:isApplicationOfScience ;
+                                    rdfs:comment "An application is an application of formal science."@en ;
                                     rdfs:label "is application of formal science"@en .
 
 
 ###  https://w3id.org/skgo/modsci#isApplicationOfHealthSciences
 modsci:isApplicationOfHealthSciences rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf modsci:isApplicationOfScience ;
+                                     rdfs:comment "An application is an application of health science."@en ;
                                      rdfs:label "is application of health science"@en .
 
 
 ###  https://w3id.org/skgo/modsci#isApplicationOfInterdisciplinaryStudies
 modsci:isApplicationOfInterdisciplinaryStudies rdf:type owl:ObjectProperty ;
                                                rdfs:subPropertyOf modsci:isApplicationOfScience ;
+                                               rdfs:comment "An application is an application of interdisciplinary science."@en ;
                                                rdfs:label "is application of interdisciplinary studies"@en .
 
 
 ###  https://w3id.org/skgo/modsci#isApplicationOfNaturalScience
 modsci:isApplicationOfNaturalScience rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf modsci:isApplicationOfScience ;
+                                     rdfs:comment "An application is an application of natural science."@en ;
                                      rdfs:label "is application of natural science"@en .
 
 
@@ -410,12 +454,14 @@ modsci:isApplicationOfNaturalScience rdf:type owl:ObjectProperty ;
 modsci:isApplicationOfScience rdf:type owl:ObjectProperty ;
                               rdfs:domain modsci:ApplicationOfScience ;
                               rdfs:range modsci:ModernScience ;
+                              rdfs:comment "An application is an application of science."@en ;
                               rdfs:label "is application of science"@en .
 
 
 ###  https://w3id.org/skgo/modsci#isApplicationOfSocialSciences
 modsci:isApplicationOfSocialSciences rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf modsci:isApplicationOfScience ;
+                                     rdfs:comment "An application is an application of social science."@en ;
                                      rdfs:label "is application of social science"@en .
 
 
@@ -432,23 +478,47 @@ modsci:isDiscoveredBy rdf:type owl:ObjectProperty ,
                                                  modsci:Scientist
                                                )
                                  ] ;
+                      rdfs:comment "A phenomenon or a scientific discovery is discovered by either a scientist or an organization."@en ;
                       rdfs:label "is discovered by"@en .
 
 
 ###  https://w3id.org/skgo/modsci#isDiscoveredByOrganization
 modsci:isDiscoveredByOrganization rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf modsci:isDiscoveredBy ;
+                                  rdfs:comment "A phenomenon or a scientific discovery is discovered by an organization."@en ;
                                   rdfs:label "is discovered by organization"@en .
+
+
+###  https://w3id.org/skgo/modsci#isDiscoveredByScience
+modsci:isDiscoveredByScience rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf modsci:isDiscoveredBy ;
+                             rdf:type owl:FunctionalProperty ;
+                             rdfs:domain [ rdf:type owl:Class ;
+                                           owl:unionOf ( sweet:Phenomenon
+                                                         modsci:ScientificDiscovery
+                                                       )
+                                         ] ;
+                             rdfs:range modsci:ModernScience ;
+                             rdfs:comment "A phenomenon or a scientific discovery is discovered by science."@en ;
+                             rdfs:label "is discovered by science"@en .
 
 
 ###  https://w3id.org/skgo/modsci#isDiscoveredByScientist
 modsci:isDiscoveredByScientist rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf modsci:isDiscoveredBy ;
+                               rdfs:comment "A phenomenon or a scientific discovery is discovered by a scientist."@en ;
                                rdfs:label "is discovered by scientist"@en .
+
+
+###  https://w3id.org/skgo/modsci#isInterestingToScientist
+modsci:isInterestingToScientist rdf:type owl:ObjectProperty ;
+                                rdfs:comment "A phenomenon is interesting to a scientist."@en ;
+                                rdfs:label "is Interesting to scientist"@en .
 
 
 ###  https://w3id.org/skgo/modsci#isManufacturerOf
 modsci:isManufacturerOf rdf:type owl:ObjectProperty ;
+                        rdfs:comment "A manufacturer of a scientific instrument."@en ;
                         rdfs:label "is manufacturer of"@en .
 
 
@@ -456,6 +526,7 @@ modsci:isManufacturerOf rdf:type owl:ObjectProperty ;
 modsci:isStudentOf rdf:type owl:ObjectProperty ;
                    rdfs:domain modsci:Scientist ;
                    rdfs:range modsci:Scientist ;
+                   rdfs:comment "A scientist is a student of another scientist."@en ;
                    rdfs:label "is student of"@en .
 
 
@@ -464,14 +535,8 @@ modsci:requiresKnowledgeFrom rdf:type owl:ObjectProperty ,
                                       owl:ReflexiveProperty ;
                              rdfs:domain modsci:ModernScience ;
                              rdfs:range modsci:ModernScience ;
+                             rdfs:comment "A science requires a knowledge from another science."@en ;
                              rdfs:label "requires knowledge from"@en .
-
-
-###  https://w3id.org/skgo/modsci#scientistBelongsTo
-modsci:scientistBelongsTo rdf:type owl:ObjectProperty ;
-                          rdfs:domain modsci:Scientist ;
-                          rdfs:range modsci:ModernScience ;
-                          rdfs:label "scientist belongs to"@en .
 
 
 ###  https://w3id.org/skgo/modsci#suppliesSubstancesTo
@@ -484,6 +549,7 @@ modsci:suppliesSubstancesTo rdf:type owl:ObjectProperty ;
                                                        modsci:ModernScience
                                                      )
                                        ] ;
+                            rdfs:comment "A science supplies substances to the industry of another science."@en ;
                             rdfs:label "supplies substances to"@en .
 
 
@@ -492,6 +558,7 @@ modsci:takeSunstancesFrom rdf:type owl:ObjectProperty ,
                                    owl:ReflexiveProperty ;
                           rdfs:domain modsci:ModernScience ;
                           rdfs:range modsci:ModernScience ;
+                          rdfs:comment "A science takes substances from another science."@en ;
                           rdfs:label "take sunstances from"@en .
 
 
@@ -499,7 +566,14 @@ modsci:takeSunstancesFrom rdf:type owl:ObjectProperty ,
 modsci:undertakesResearch rdf:type owl:ObjectProperty ;
                           rdfs:domain modsci:Scientist ;
                           rdfs:range modsci:ModernScience ;
+                          rdfs:comment "A scientist undertakes research research in a science."@en ;
                           rdfs:label "undertakes research"@en .
+
+
+###  https://w3id.org/skgo/modsci#usesInstrument
+modsci:usesInstrument rdf:type owl:ObjectProperty ;
+                      rdfs:comment "A science uses an instrument."@en ;
+                      rdfs:label "uses instrument"@en .
 
 
 ###  https://w3id.org/skgo/modsci#usesMethodsFrom
@@ -507,6 +581,7 @@ modsci:usesMethodsFrom rdf:type owl:ObjectProperty ,
                                 owl:ReflexiveProperty ;
                        rdfs:domain modsci:ModernScience ;
                        rdfs:range modsci:ModernScience ;
+                       rdfs:comment "A science uses methods from another science."@en ;
                        rdfs:label "uses methods from"@en .
 
 
@@ -515,6 +590,7 @@ modsci:usesTechniquesFrom rdf:type owl:ObjectProperty ,
                                    owl:ReflexiveProperty ;
                           rdfs:domain modsci:ModernScience ;
                           rdfs:range modsci:ModernScience ;
+                          rdfs:comment "A science uses techniques from another science."@en ;
                           rdfs:label "uses techniques from"@en .
 
 
@@ -525,7 +601,8 @@ modsci:usesTechniquesFrom rdf:type owl:ObjectProperty ,
 ###  https://w3id.org/skgo/modsci#InstrumentFunctionDesription
 modsci:InstrumentFunctionDesription rdf:type owl:DatatypeProperty ;
                                     rdfs:domain modsci:ScientificInstrument ;
-                                    rdfs:range xsd:string .
+                                    rdfs:range xsd:string ;
+                                    rdfs:label "Instrument function desription"@en .
 
 
 #################################################################
@@ -2931,8 +3008,6 @@ modsci:x rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 modsci:y rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-modsci:z rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-
 [ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
    rdfs:comment ""^^xsd:string ;
    rdfs:label "S3"^^xsd:string ;
@@ -2984,35 +3059,6 @@ modsci:z rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> modsci:isDiscoveredByScientist ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> modsci:y ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> modsci:x
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment ""^^xsd:string ;
-   rdfs:label "S1"^^xsd:string ;
-   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> modsci:discoveredByScientist ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> modsci:x ;
-                                                       <http://www.w3.org/2003/11/swrl#argument2> modsci:y
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> modsci:discoveredByScience ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> modsci:x ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> modsci:z
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> modsci:scientistBelongsTo ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> modsci:y ;
-                                                       <http://www.w3.org/2003/11/swrl#argument2> modsci:z
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]
