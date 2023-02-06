@@ -1,5 +1,14 @@
 [ {
   "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://sweetontology.net/phen/Phenomenon"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#helpInDiscoveryOfPhenomenon"
+  } ]
+}, {
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -9,27 +18,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://sweetontology.net/phen/Phenomenon"
-    }, {
-      "@id" : "https://w3id.org/skgo/modsci#ScientificDiscovery"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/skgo/modsci#ScientificOrganization"
-    }, {
-      "@id" : "https://w3id.org/skgo/modsci#Scientist"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -39,7 +28,38 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid21",
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://purl.obolibrary.org/obo/IAO_0010000" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/bfo/axiom/061-001"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/IAO_0000600"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@language" : "en",
+    "@value" : "b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://purl.obolibrary.org/obo/IAO_0010000" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/bfo/axiom/061-001"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/IAO_0000602"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@value" : "(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] "
+  } ]
+}, {
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -53,18 +73,28 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid25"
-    }, {
       "@id" : "_:genid23"
+    }, {
+      "@id" : "_:genid21"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid27"
+      "@id" : "_:genid25"
     } ]
   } ]
 }, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://sweetontology.net/phen/Phenomenon"
+    }, {
+      "@id" : "https://w3id.org/skgo/modsci#ScientificDiscovery"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/skgo/modsci#y"
@@ -76,7 +106,7 @@
     "@id" : "https://w3id.org/skgo/modsci#isDiscoveredBy"
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/skgo/modsci#x"
@@ -85,7 +115,7 @@
     "@id" : "https://w3id.org/skgo/modsci#ScientificOrganization"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/skgo/modsci#y"
@@ -97,7 +127,7 @@
     "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByOrganization"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -111,18 +141,18 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid32"
-    }, {
       "@id" : "_:genid30"
+    }, {
+      "@id" : "_:genid28"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid34"
+      "@id" : "_:genid32"
     } ]
   } ]
 }, {
-  "@id" : "_:genid30",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/skgo/modsci#y"
@@ -134,7 +164,7 @@
     "@id" : "https://w3id.org/skgo/modsci#isDiscoveredBy"
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/skgo/modsci#x"
@@ -143,7 +173,7 @@
     "@id" : "https://w3id.org/skgo/modsci#Scientist"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "https://w3id.org/skgo/modsci#y"
@@ -155,56 +185,7 @@
     "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByScientist"
   } ]
 }, {
-  "@id" : "_:genid35",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "S1"
-  } ],
-  "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ {
-      "@id" : "_:genid39"
-    }, {
-      "@id" : "_:genid37"
-    } ]
-  } ],
-  "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid41"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid37",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#x"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#z"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#discoveredByScience"
-  } ]
-}, {
-  "@id" : "_:genid39",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#x"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#y"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#discoveredByScientist"
-  } ]
-}, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -212,51 +193,99 @@
     }, {
       "@id" : "https://w3id.org/skgo/modsci#ScientificDiscovery"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid41",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#y"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#z"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#scientistBelongsTo"
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Scientist"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#discoveredByScientist"
   } ]
 }, {
   "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Scientist"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#discoveredByScientist"
-  } ]
-}, {
-  "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://sweetontology.net/phen/Phenomenon"
+      "@id" : "https://w3id.org/skgo/modsci#ScientificOrganization"
     }, {
-      "@id" : "https://w3id.org/skgo/modsci#ScientificDiscovery"
+      "@id" : "https://w3id.org/skgo/modsci#Scientist"
     } ]
   } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000016",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000017",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000023",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/BFO_0000179" : [ {
+    "@value" : "role"
+  } ],
+  "http://purl.obolibrary.org/obo/BFO_0000180" : [ {
+    "@value" : "Role"
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000112" : [ {
+    "@language" : "en",
+    "@value" : "John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married."
+  }, {
+    "@language" : "en",
+    "@value" : "the priest role"
+  }, {
+    "@language" : "en",
+    "@value" : "the role of a boundary to demarcate two neighboring administrative territories"
+  }, {
+    "@language" : "en",
+    "@value" : "the role of a building in serving as a military target"
+  }, {
+    "@language" : "en",
+    "@value" : "the role of a stone in marking a property boundary"
+  }, {
+    "@language" : "en",
+    "@value" : "the role of subject in a clinical trial"
+  }, {
+    "@language" : "en",
+    "@value" : "the student role"
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000116" : [ {
+    "@language" : "en",
+    "@value" : "BFO 2 Reference: One major family of examples of non-rigid universals involves roles, and ontologies developed for corresponding administrative purposes may consist entirely of representatives of entities of this sort. Thus ‘professor’, defined as follows,b instance_of professor at t =Def. there is some c, c instance_of professor role & c inheres_in b at t.denotes a non-rigid universal and so also do ‘nurse’, ‘student’, ‘colonel’, ‘taxpayer’, and so forth. (These terms are all, in the jargon of philosophy, phase sortals.) By using role terms in definitions, we can create a BFO conformant treatment of such entities drawing on the fact that, while an instance of professor may be simultaneously an instance of trade union member, no instance of the type professor role is also (at any time) an instance of the type trade union member role (any more than any instance of the type color is at any time an instance of the type length).If an ontology of employment positions should be defined in terms of roles following the above pattern, this enables the ontology to do justice to the fact that individuals instantiate the corresponding universals –  professor, sergeant, nurse – only during certain phases in their lives."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000600" : [ {
+    "@language" : "en",
+    "@value" : "b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])"
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000602" : [ {
+    "@value" : "(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/bfo.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000017"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000179",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000180",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000600",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000602",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0010000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -334,6 +363,9 @@
   "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/2004/02/skos/core#nationality",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
@@ -342,6 +374,12 @@
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -352,6 +390,33 @@
   "@id" : "http://xmlns.com/foaf/0.1/familyName",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A homepage for some thing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "homepage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/page"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/page",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
@@ -361,10 +426,6 @@
     "@id" : "https://orcid.org/0000-0001-9879-3827"
   }, {
     "@id" : "https://orcid.org/0000-0002-0698-2864"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@language" : "en",
-    "@value" : "2019-09-01"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -378,7 +439,7 @@
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
-    "@value" : "ModSci, Modern Science Ontology."
+    "@value" : "Modern Science Ontology"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "modsci"
@@ -392,21 +453,6 @@
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "1.1"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#ADInstruments",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Accelerometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Accumulator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ],
-  "https://w3id.org/skgo/modsci#InstrumentFunctionDesription" : [ {
-    "@value" : "Used to store electrical energy"
-  } ],
-  "https://w3id.org/skgo/modsci#instrumentInventedBy" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Waldemar_Jungner"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#AcidbaseChemistry",
@@ -432,9 +478,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ClassicalPhysics"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#AgilentTechnologies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Agriculture",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -469,15 +512,6 @@
     "@id" : "https://w3id.org/skgo/modsci#ScientificMethod"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Ammeter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ],
-  "https://w3id.org/skgo/modsci#InstrumentFunctionDesription" : [ {
-    "@value" : "Measure strength of electric current in amperes."
-  } ],
-  "https://w3id.org/skgo/modsci#instrumentInventedBy" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Friedrich_Drexler"
-  } ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#AnalyticalChemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -508,9 +542,6 @@
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Anemometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#AnimalProduction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -528,9 +559,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#SocialSciences"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#AntonPaar",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#ApplicationOfScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -672,9 +700,6 @@
     "@id" : "https://w3id.org/skgo/modsci#NaturalPhenomenon"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Astronomical_Studies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Astronomy" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Astronomy",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -723,9 +748,6 @@
     "@id" : "https://w3id.org/skgo/modsci#MolecularPhysics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Aurora",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#AtmosphericPhenomena" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#AutomataTheory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -748,15 +770,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ArtificialIntelligence"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Barometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ],
-  "https://w3id.org/skgo/modsci#InstrumentFunctionDesription" : [ {
-    "@value" : "Used to measure atmospheric pressure and conditions"
-  } ],
-  "https://w3id.org/skgo/modsci#instrumentInventedBy" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Evangelista_Torricelli"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#BasinAnalysis",
@@ -789,12 +802,6 @@
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   }, {
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Biochip",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ApplicationOfScience" ],
-  "https://w3id.org/skgo/modsci#isApplicationOfScience" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Studying_biochemical_reactions"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Bioengineering",
@@ -882,15 +889,6 @@
     "@id" : "https://w3id.org/skgo/modsci#NaturalPhenomenon"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Biological_Studies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Biology" ],
-  "https://w3id.org/skgo/modsci#appliesLawsFrom" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Physical_Studies"
-  } ],
-  "https://w3id.org/skgo/modsci#requiresKnowledgeFrom" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Historical_Studies"
-  } ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Biology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -914,9 +912,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Biomedical_Signals",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificDiscovery" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Biophysics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -942,9 +937,6 @@
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Biosensors",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ApplicationOfScience" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Biostatistics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -969,9 +961,6 @@
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Boiling",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#PhysicalPhenomena" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Botany",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -984,23 +973,11 @@
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Breaking_waves",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#OceanographicPhenomena" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Bruker",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#CalculusOfVariations",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#AppliedMathematics"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Caliper",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Calorimeter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Catalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1057,14 +1034,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#PhysicalChemistry"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Chemical_Studies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Chemistry" ],
-  "https://w3id.org/skgo/modsci#hasCloseRelationshipTo" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Biological_Studies"
-  }, {
-    "@id" : "https://w3id.org/skgo/modsci#Physical_Studies"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Chemistry",
@@ -1156,9 +1125,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#SocialSciences"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Community_of_European_Solar_Radio_Astronomers",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificOrganization" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#CompilerTheory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1340,12 +1306,6 @@
     "@id" : "https://w3id.org/skgo/modsci#Physics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Conservation_of_energy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#PhysicalPhenomena" ],
-  "https://w3id.org/skgo/modsci#discoveredByScientist" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Julius_von_Mayer"
-  } ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Cosmology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1388,9 +1348,6 @@
     "@id" : "https://w3id.org/skgo/modsci#CommunicationAndSecurity"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Crystal_growth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#PhysicalPhenomena" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Crystallography",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1426,9 +1383,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#DNA_Sequencer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#DataEncryption",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1476,18 +1430,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Decision_Trees",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ClassificationAlgorithms" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Decomposition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#BiologicalPhenomena" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Deep_Learning",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificMethod" ],
-  "https://w3id.org/skgo/modsci#inspiredFrom" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Biomedical_Signals"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Dentistry",
@@ -1562,24 +1504,6 @@
     "@id" : "https://w3id.org/skgo/modsci#ComputerSoftware"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Dynamo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ],
-  "https://w3id.org/skgo/modsci#InstrumentFunctionDesription" : [ {
-    "@value" : "Converts mechanical energy into electrical energy"
-  } ],
-  "https://w3id.org/skgo/modsci#instrumentInventedBy" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Michael_Faraday"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Dynamometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#E3G",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificOrganization" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#EACSL",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificOrganization" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#EarthScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1591,9 +1515,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#NaturalScience"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Earthquake",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#GeologicalPhenomena" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#EcologicalApplications",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1613,12 +1534,6 @@
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   }, {
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Economic_Studies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Economics" ],
-  "https://w3id.org/skgo/modsci#usesMethodsFrom" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Statistics_Studies"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Economics",
@@ -1663,23 +1578,11 @@
     "@id" : "https://w3id.org/skgo/modsci#ClassicalPhysics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Electrometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Electroscope",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Electrostatics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ClassicalPhysics"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Elementar",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Ellipsometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Engineering",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1692,9 +1595,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#AppliedSciences"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Engineering_Studies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Engineering" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#EnvironmentalChemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1744,9 +1644,6 @@
     "@id" : "https://w3id.org/skgo/modsci#AppliedSciences"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Erosion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#GeologicalPhenomena" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#EthnicStudies",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1793,20 +1690,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#BehaviouralSciences"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Eudiometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Evangelista_Torricelli",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#isStudentOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Galileo"
-  } ],
-  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Mathematical_Studies"
-  }, {
-    "@id" : "https://w3id.org/skgo/modsci#Physical_Studies"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#EvolutionaryBiology",
@@ -1881,9 +1764,6 @@
     "@id" : "https://w3id.org/skgo/modsci#AppliedMathematics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Fire",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ChemicalPhenomena" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#FisheriesSciences",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -1956,22 +1836,10 @@
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Fraunhofer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificOrganization" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#FreeRadicalChemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#OrganicChemistry"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Freezing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#PhysicalPhenomena" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Friedrich_Drexler",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Engineering_Studies"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#FunctionalAnalysis",
@@ -1991,21 +1859,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Astronomy"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Galileo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Galvanometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ],
-  "https://w3id.org/skgo/modsci#InstrumentFunctionDesription" : [ {
-    "@value" : "Used to reproduce the recorded sound"
-  } ],
-  "https://w3id.org/skgo/modsci#instrumentInventedBy" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Johann_Schweigger"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Genetic_algorithms",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificMethod" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Genetics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2093,9 +1946,6 @@
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Geological_Studies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Geology" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Geology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2180,15 +2030,6 @@
     "@id" : "https://w3id.org/skgo/modsci#Geophysics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Gravitometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Gravity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#PhysicalPhenomena" ],
-  "https://w3id.org/skgo/modsci#discoveredByScientist" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Isaac_Newton"
-  } ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#GreenChemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2200,20 +2041,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Growth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#BiologicalPhenomena" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Guglielmo_Marconi",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Engineering_Studies"
-  }, {
-    "@id" : "https://w3id.org/skgo/modsci#Physical_Studies"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Haze",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#AtmosphericPhenomena" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Health",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2251,9 +2078,6 @@
     "@id" : "https://w3id.org/skgo/modsci#HealthSciences"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Historical_Studies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#History" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#History",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2271,9 +2095,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Algebra"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Horiba",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#HorticulturalProduction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2317,9 +2138,6 @@
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Hydrometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#ImageProcessing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2343,9 +2161,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Inclinometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#IndustrialScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2456,6 +2271,10 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ScientificInstrument"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Instrument function desription"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
@@ -2478,54 +2297,17 @@
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Interferometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#InterorganisationalInformationSystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Isaac_Newton",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Astronomical_Studies"
-  }, {
-    "@id" : "https://w3id.org/skgo/modsci#Mathematical_Studies"
-  }, {
-    "@id" : "https://w3id.org/skgo/modsci#Physical_Studies"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Johann_Schweigger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Chemical_Studies"
-  }, {
-    "@id" : "https://w3id.org/skgo/modsci#Mathematical_Studies"
-  }, {
-    "@id" : "https://w3id.org/skgo/modsci#Physical_Studies"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Julius_von_Mayer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Chemical_Studies"
-  }, {
-    "@id" : "https://w3id.org/skgo/modsci#Physical_Studies"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#KNN_Algorithm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ClassificationAlgorithms" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#KnowledgeSystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#InformationSystems"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#LECO_Corporation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#LaboratoryInstrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2564,18 +2346,6 @@
     "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Light_Bulb",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificDiscovery" ],
-  "https://w3id.org/skgo/modsci#instrumentInventedBy" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Thomas_Edison"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Light_magnification",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Astronomy" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Light_pillar",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#AtmosphericPhenomena" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Limnology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2589,9 +2359,6 @@
   }, {
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Linear_Regression",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Statistics" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Linguistics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2635,23 +2402,11 @@
     "@id" : "https://w3id.org/skgo/modsci#Geophysics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Magnetograph",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Magnetometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#MainGroupMetalChemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#InorganicChemistry"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#MalvernInstruments",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Manometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#MarineBiology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2664,9 +2419,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#MarkesInternational",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#MarkupLanguages",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2716,12 +2468,6 @@
     "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Mathematical_Studies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Mathematics" ],
-  "https://w3id.org/skgo/modsci#requiresKnowledgeFrom" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Mathematical_Studies"
-  } ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Mathematics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2733,9 +2479,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#FormalScience"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#McPhersonInc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Measurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2792,7 +2535,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Metabolism",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#BiologicalPhenomena" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Metabolism is the set of life-sustaining chemical reactions in organisms."
   } ],
@@ -2847,18 +2590,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#AppliedSciences"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Michael_Faraday",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Chemical_Studies"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Micrometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Microscope",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#MilitaryScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -2917,15 +2648,6 @@
     "@id" : "https://w3id.org/skgo/modsci#Physics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Movie_camera",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificDiscovery" ],
-  "https://w3id.org/skgo/modsci#InstrumentFunctionDesription" : [ {
-    "@value" : "take a rapid sequence of photographs on an image sensor or on a film."
-  } ],
-  "https://w3id.org/skgo/modsci#instrumentInventedBy" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Thomas_Edison"
-  } ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#MultimediaProgramming",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -2943,9 +2665,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#InterdisciplinaryStudies"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#NASA",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificOrganization" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Nanochemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -3060,9 +2779,6 @@
     "@id" : "https://w3id.org/skgo/modsci#OpticalPhysics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#NovacamTechnologies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#NuclearChemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3105,9 +2821,6 @@
     "@id" : "https://w3id.org/skgo/modsci#HealthSciences"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Ocean_currents",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#OceanographicPhenomena" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#OceanographicPhenomena",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -3128,18 +2841,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Ohmmeter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Olaus_Roemer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "https://w3id.org/skgo/modsci#undertakesResearch" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Astronomical_Studies"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#OpenAI_Inc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificOrganization" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#OperatingSystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -3246,15 +2947,6 @@
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Oscilloscope",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Overpopulation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#BiologicalPhenomena" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#OxfordInstruments",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Palaeomagnetism",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -3290,9 +2982,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Biology"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#PallCorp",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Palynology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -3402,15 +3091,6 @@
     "@id" : "https://w3id.org/skgo/modsci#FormalScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Phonograph",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ],
-  "https://w3id.org/skgo/modsci#InstrumentFunctionDesription" : [ {
-    "@value" : "record the mechanical and reproduction of sound."
-  } ],
-  "https://w3id.org/skgo/modsci#instrumentInventedBy" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Thomas_Edison"
-  } ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Photochemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3486,9 +3166,6 @@
     "@id" : "https://w3id.org/skgo/modsci#NaturalPhenomenon"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Physical_Studies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Physics" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Physics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3561,17 +3238,11 @@
     "@id" : "https://w3id.org/skgo/modsci#SocialSciences"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#PolymerChar",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#PolymerisationMechanisms",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#MaterialsChemistry"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Population_decrease",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#BiologicalPhenomena" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#ProgrammingLanguage",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -3608,12 +3279,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ComputerSoftware"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#PsychiatricDrugs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ApplicationOfScience" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Psychological_Studies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Psychology" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Psychology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -3669,15 +3334,6 @@
     "@id" : "https://w3id.org/skgo/modsci#Physics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Racism",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#SocialPhenomenon" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Radio_Signals",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://sweetontology.net/phen/Phenomenon" ],
-  "https://w3id.org/skgo/modsci#discoveredByScientist" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Guglielmo_Marconi"
-  } ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Radiobiology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3708,9 +3364,6 @@
     "@id" : "https://w3id.org/skgo/modsci#Geophysics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Rainbow",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#AtmosphericPhenomena" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#RelationalDatabases",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3722,9 +3375,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#DatabaseManagement"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Resampling_Methods",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Statistics" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#ReverseEngineering",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -3749,9 +3399,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ArtificialIntelligence"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Rusting",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ChemicalPhenomena" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#ScienceAndTechnologyStudies",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -3879,9 +3526,6 @@
     "@id" : "https://w3id.org/skgo/modsci#Geophysics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Seismometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Semantics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3913,12 +3557,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#AnalyticalChemistry"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#ShimadzuCorp",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Shrinkage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Statistics" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#SocialPhenomenon",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -4092,22 +3730,10 @@
     "@id" : "https://w3id.org/skgo/modsci#EarthScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Spectrogram",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Spectrometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Spectroscopy",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#OpticalPhysics"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Speed_of_light",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificDiscovery" ],
-  "https://w3id.org/skgo/modsci#discoveredByScientist" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Olaus_Roemer"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#SportsScience",
@@ -4134,9 +3760,6 @@
     "@id" : "https://w3id.org/skgo/modsci#FormalScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Statistics_Studies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Statistics" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#StellarAstronomy",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -4160,9 +3783,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Chemistry"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Storm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#MeteorologicalPhenomena" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Stratigraphy",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -4193,21 +3813,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#DatabaseManagement"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Studying_biochemical_reactions",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#MolecularBiology" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Subset_Selection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Statistics" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Subsun",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#AtmosphericPhenomena" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Supernova",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#AstronomicalPhenomena" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Support_Vector_Machines",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ClassificationAlgorithms" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#SupramolecularChemistry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -4263,29 +3868,11 @@
     "@id" : "https://w3id.org/skgo/modsci#FormalScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Techtron",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Tectonics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Geology"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Telescope",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ],
-  "https://w3id.org/skgo/modsci#instrumentUsedInScience" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Light_magnification"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#The_Bridges_Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificOrganization" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#The_Fibonacci_Association",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificOrganization" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Theodolite",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#TheoreticalBiology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -4347,9 +3934,6 @@
     "@id" : "https://w3id.org/skgo/modsci#TheoreticalComputerScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Thermocouple",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Thermodynamics",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -4361,24 +3945,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ClassicalPhysics"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Thermometer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ],
-  "https://w3id.org/skgo/modsci#InstrumentFunctionDesription" : [ {
-    "@value" : "measure temperature or a temperature gradient."
-  } ],
-  "https://w3id.org/skgo/modsci#instrumentUsedInScience" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Studying_biochemical_reactions"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Thomas_Edison",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ],
-  "http://xmlns.com/foaf/0.1/familyName" : [ {
-    "@value" : "Edison"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Time_Series_Analysis",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Statistics" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Topology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -4415,9 +3981,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#InorganicChemistry"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Tsunamis",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#OceanographicPhenomena" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#TypeTheory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -4479,9 +4042,6 @@
     "@id" : "https://w3id.org/skgo/modsci#ComputerGraphics"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Volcano",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#GeologicalPhenomena" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Volcanology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -4493,15 +4053,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Geology"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Voltmeter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrument" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#Waldemar_Jungner",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Scientist" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#WatersCorporation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#Waves",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -4527,9 +4078,6 @@
     "@id" : "https://w3id.org/skgo/modsci#DistributedSystems"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#Weddings",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#SocialPhenomenon" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#Zoology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -4544,8 +4092,16 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#appliesLawsFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Science applies lows from anthoer one."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "applies laws from"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
@@ -4553,96 +4109,162 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#appliesLawsFromMathematics",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Science applies laws from Mathematics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "applies laws from Mathematics"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#appliesLawsFrom"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#appliesLawsFromPhysics",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Science applies laws from Physics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "applies laws from Physics"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#appliesLawsFrom"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#appliesLawsFromStatistics",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Science applies laws from Statistics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "applies laws from Statistics"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#appliesLawsFrom"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#appliesLawsFromThermodynamics",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Science applies laws from Thermodynamics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "applies laws from Thermodynamics"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#appliesLawsFromPhysics"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#belongsToScience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientist belongs to a science."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Scientist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs to science"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#hasScientist"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#discoveredByAppliedSciences",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "discovered by applied science"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#discoveredByScience"
+    "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#discoveredByBehaviouralSciences",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "discovered by behavioural science"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#discoveredByScience"
+    "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#discoveredByFormalScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "discovered by formal science"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#discoveredByScience"
+    "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#discoveredByHealthSciences",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "discovered by health science"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#discoveredByScience"
+    "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#discoveredByInterdisciplinaryStudies",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "discovered by Interdisciplinary studies"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#discoveredByScience"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#discoveredByMachine",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#discoveredByNaturalScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "discovered by natural science"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#discoveredByScience"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#discoveredByScience",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid1"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#ModernScience"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#discoveredByScientist",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid4"
-  }, {
-    "@id" : "_:genid7"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Scientist"
-  }, {
-    "@id" : "_:genid8"
+    "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#discoveredBySocialSciences",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "discovered by social science"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#discoveredByScience"
+    "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByScience"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#discovers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientist or an organization discovers a phenomenon."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "discovers"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#isDiscoveredBy"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#f-BlockChemistry",
@@ -4651,10 +4273,32 @@
     "@id" : "https://w3id.org/skgo/modsci#InorganicChemistry"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#followedByScientist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientific method is followed by a scientist."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "followed by scientist"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#followsMethod"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#followsMethod",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientist follows a scientific method."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Scientist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "follows method"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ScientificMethod"
@@ -4662,8 +4306,16 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#hasApplication",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A science has an application."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has application"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ApplicationOfScience"
@@ -4674,8 +4326,16 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#hasCloseRelationshipTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A science has a close relationship to another one."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has close relationship to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
@@ -4683,8 +4343,16 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#hasCollaborationWith",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Science has a close collaboration with another one."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has collaboration with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
@@ -4692,8 +4360,16 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#hasManufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientific instrument has a particular manufacturer."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ScientificInstrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer"
@@ -4703,52 +4379,191 @@
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#hasMethodsInspiredFrom",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Science has methods inspired from another science."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has methods inspired from"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#hasResearchBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A science has research done by a scientist."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has research by"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#undertakesResearch"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#hasRoleIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientist has a role in a scientific discovery."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Scientist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has role in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ScientificDiscovery"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#hasScientificInstrumentManufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientific instrument has a scientific instrument manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has scientific instrument manufacturer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#hasManufacturer"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#inspiredFrom",
+  "@id" : "https://w3id.org/skgo/modsci#hasScientist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Science has a scientist that it belongs to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has scientist"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#helpInDiscovery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "represents an n-ary properties that encapsulating sciences that helped in the discovery of the phenomenon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Help in Discovery"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#helpInDiscoveryOfPhenomenon",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This relation represents that one or more sciences helped in the discovery of the phenomenon."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#helpInDiscovery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "help in discovery of phenomenon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#inspiredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientific method is inspired by a phenomenon or a scientific discovery."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ScientificMethod"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "inspired by"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid9"
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#inspiresMethod"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#inspiredFromPhenomenon",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientific method is inspired by a phenomenon."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "inspired by phenomenon"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#inspiredFrom"
+    "@id" : "https://w3id.org/skgo/modsci#inspiredBy"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#inspiredFromScientificDiscovery",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientific method is inspired by a scientific discovery."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "inspired by scientific discovery"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#inspiredFrom"
+    "@id" : "https://w3id.org/skgo/modsci#inspiredBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#inspiresMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A phenomenon or a scientific discovery inspires a scientific method."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "inspires method"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#instrumentInventedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An instrument is invented by a sciientist."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ScientificInstrument"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "instrument invented by"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Scientist"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#inventsInstrument"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#instrumentUsedInScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An instrument is used in science."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ScientificInstrument"
   } ],
@@ -4757,57 +4572,138 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#usesInstrument"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#interestedInPhenomenon",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientist is interested in phenomenon."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Scientist"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "interested in phenomenon"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://sweetontology.net/phen/Phenomenon"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#isInterestingToScientist"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#inventsInstrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A sciientist invents an instrument ."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "invents instrument"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#isApplicationOfAppliedScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An application is an application of applied science."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is application of applied science"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#isApplicationOfScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#isApplicationOfBehaviouralSciences",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An application is an application of behavioural science."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is application of behavioural science"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#isApplicationOfScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#isApplicationOfFormalScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An application is an application of formal science."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is application of formal science"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#isApplicationOfScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#isApplicationOfHealthSciences",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An application is an application of health science."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is application of health science"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#isApplicationOfScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#isApplicationOfInterdisciplinaryStudies",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An application is an application of interdisciplinary science."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is application of interdisciplinary studies"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#isApplicationOfScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#isApplicationOfNaturalScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An application is an application of natural science."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is application of natural science"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#isApplicationOfScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#isApplicationOfScience",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An application is an application of science."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ApplicationOfScience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is application of science"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
@@ -4815,38 +4711,117 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#isApplicationOfSocialSciences",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An application is an application of social science."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is application of social science"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#isApplicationOfScience"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#isDiscoveredBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A phenomenon or a scientific discovery is discovered by either a scientist or an organization."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid12"
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is discovered by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid15"
+    "@id" : "_:genid8"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByOrganization",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A phenomenon or a scientific discovery is discovered by an organization."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is discovered by organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#isDiscoveredBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByScience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A phenomenon or a scientific discovery is discovered by science."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is discovered by science"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#isDiscoveredBy"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#isDiscoveredByScientist",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A phenomenon or a scientific discovery is discovered by a scientist."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is discovered by scientist"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#isDiscoveredBy"
   } ]
 }, {
+  "@id" : "https://w3id.org/skgo/modsci#isInterestingToScientist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A phenomenon is interesting to a scientist."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Interesting to scientist"
+  } ]
+}, {
   "@id" : "https://w3id.org/skgo/modsci#isManufacturerOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A manufacturer of a scientific instrument."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is manufacturer of"
+  } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#isStudentOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientist is a student of another scientist."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Scientist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is student of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Scientist"
@@ -4854,32 +4829,36 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#requiresKnowledgeFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A science requires a knowledge from another science."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "requires knowledge from"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
   } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#scientistBelongsTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#Scientist"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/skgo/modsci#ModernScience"
-  } ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#study_of_wetlands",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#Ecology" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#suppliesSubstancesTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A science supplies substances to the industry of another science."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "supplies substances to"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid18"
+    "@id" : "_:genid14"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/skgo/modsci#takeSunstancesFrom"
@@ -4887,29 +4866,61 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#takeSunstancesFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A science takes substances from another science."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "take sunstances from"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
   } ]
 }, {
-  "@id" : "https://w3id.org/skgo/modsci#temperature_gradient",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/skgo/modsci#PhysicalPhenomena" ]
-}, {
   "@id" : "https://w3id.org/skgo/modsci#undertakesResearch",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A scientist undertakes research research in a science."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#Scientist"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "undertakes research"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#usesInstrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A science uses an instrument."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "uses instrument"
   } ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#usesMethodsFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A science uses methods from another science."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "uses methods from"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
@@ -4917,8 +4928,16 @@
 }, {
   "@id" : "https://w3id.org/skgo/modsci#usesTechniquesFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A science uses techniques from another science."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "uses techniques from"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/skgo/modsci#ModernScience"
@@ -4928,8 +4947,5 @@
   "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
 }, {
   "@id" : "https://w3id.org/skgo/modsci#y",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
-}, {
-  "@id" : "https://w3id.org/skgo/modsci#z",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
 } ]
