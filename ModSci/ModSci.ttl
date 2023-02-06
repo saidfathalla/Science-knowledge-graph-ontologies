@@ -559,7 +559,7 @@ modsci:takeSunstancesFrom rdf:type owl:ObjectProperty ,
                           rdfs:domain modsci:ModernScience ;
                           rdfs:range modsci:ModernScience ;
                           rdfs:comment "A science takes substances from another science."@en ;
-                          rdfs:label "take sunstances from"@en .
+                          rdfs:label "takes sunstances from"@en .
 
 
 ###  https://w3id.org/skgo/modsci#undertakesResearch
@@ -2558,6 +2558,12 @@ modsci:ScienceStudies rdf:type owl:Class ;
                       rdfs:label "Science Studies" .
 
 
+###  https://w3id.org/skgo/modsci#ScientificAgent
+modsci:ScientificAgent rdf:type owl:Class ;
+                       rdfs:comment "An agent that have a contribution to the scientific community."@en ;
+                       rdfs:label "Scientific Agent"@en .
+
+
 ###  https://w3id.org/skgo/modsci#ScientificDiscovery
 modsci:ScientificDiscovery rdf:type owl:Class ;
                            rdfs:comment "Scientific Discovery is the process or product of successful scientific inquiry. Objects of discovery can be things, events, processes, causes, and properties as well as theories and hypotheses and their features (their explanatory power, for example)." ;
@@ -2593,14 +2599,16 @@ modsci:ScientificModeling rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#ScientificOrganization
 modsci:ScientificOrganization rdf:type owl:Class ;
-                              rdfs:subClassOf foaf:Organization ;
+                              rdfs:subClassOf foaf:Organization ,
+                                              modsci:ScientificAgent ;
                               rdfs:comment "An organization which is created for the purpose of scientific research and development."@en ;
                               rdfs:label "Scientific Organization"@en .
 
 
 ###  https://w3id.org/skgo/modsci#Scientist
 modsci:Scientist rdf:type owl:Class ;
-                 rdfs:subClassOf foaf:Person ;
+                 rdfs:subClassOf foaf:Person ,
+                                 modsci:ScientificAgent ;
                  rdfs:comment "A scientist is someone who conducts scientific research to advance knowledge in an area of interest."@en ;
                  rdfs:label "Scientist"@en .
 
