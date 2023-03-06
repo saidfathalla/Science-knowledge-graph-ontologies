@@ -134,6 +134,26 @@ foaf:homepage rdf:type owl:AnnotationProperty ;
 #    Object Properties
 #################################################################
 
+###  http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#hasTimePeriodMeasurementUnit
+<http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#hasTimePeriodMeasurementUnit> rdf:type owl:ObjectProperty ;
+                                                                                           owl:inverseOf <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#isTimePeriodMeasurementUnitOf> ;
+                                                                                           rdf:type owl:FunctionalProperty ;
+                                                                                           rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod> ;
+                                                                                           rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriodMeasurementUnit> ;
+                                                                                           rdfs:comment "This property relates a time period to its measurement unit."@en ;
+                                                                                           rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl> ;
+                                                                                           rdfs:label "has time period measurement unit"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#isTimePeriodMeasurementUnitOf
+<http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#isTimePeriodMeasurementUnitOf> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriodMeasurementUnit> ;
+                                                                                            rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod> ;
+                                                                                            rdfs:comment "This property relates the measurement unit to the time period."@en ;
+                                                                                            rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl> ;
+                                                                                            rdfs:label "is time period measurement unit of"@en .
+
+
 ###  http://xmlns.com/foaf/0.1/homepage
 foaf:homepage rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf foaf:page ;
@@ -530,6 +550,14 @@ modsci:isStudentOf rdf:type owl:ObjectProperty ;
                    rdfs:label "is student of"@en .
 
 
+###  https://w3id.org/skgo/modsci#livedInTimePeriod
+modsci:livedInTimePeriod rdf:type owl:ObjectProperty ;
+                         rdfs:domain modsci:Scientist ;
+                         rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod> ;
+                         rdfs:comment "A scientist lived in a specific time period."@en ;
+                         rdfs:label "lived in time period"@en .
+
+
 ###  https://w3id.org/skgo/modsci#requiresKnowledgeFrom
 modsci:requiresKnowledgeFrom rdf:type owl:ObjectProperty ,
                                       owl:ReflexiveProperty ;
@@ -598,6 +626,16 @@ modsci:usesTechniquesFrom rdf:type owl:ObjectProperty ,
 #    Data properties
 #################################################################
 
+###  http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#timePeriodValue
+<http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#timePeriodValue> rdf:type owl:DatatypeProperty ,
+                                                                                       owl:FunctionalProperty ;
+                                                                              rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod> ;
+                                                                              rdfs:range xsd:integer ;
+                                                                              rdfs:comment "This property represents the value of a time period."@en ;
+                                                                              rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl> ;
+                                                                              rdfs:label "time period value"@en .
+
+
 ###  https://w3id.org/skgo/modsci#InstrumentFunctionDesription
 modsci:InstrumentFunctionDesription rdf:type owl:DatatypeProperty ;
                                     rdfs:domain modsci:ScientificInstrument ;
@@ -655,6 +693,21 @@ role:BFO_0000023 rdf:type owl:Class ;
 sweet:Phenomenon rdf:type owl:Class ;
                  rdfs:comment "A phenomenon, in a scientific context, is something that is observed to occur or to exist."@en ;
                  rdfs:label "Phenomenon"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod
+<http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriodMeasurementUnit
+<http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriodMeasurementUnit> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#isTimePeriodMeasurementUnitOf> ;
+                                                                                                          owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl#TimePeriod>
+                                                                                                        ] ;
+                                                                                        rdfs:comment "The Time Period Measurement Unit is the unit for measuring a Time Period (e.g. year, month, week)."@en ;
+                                                                                        rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeperiod.owl> ;
+                                                                                        rdfs:label "Time Period Measurement Unit"@en .
 
 
 ###  http://xmlns.com/foaf/0.1/Agent
@@ -2560,6 +2613,7 @@ modsci:ScienceStudies rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#ScientificAgent
 modsci:ScientificAgent rdf:type owl:Class ;
+                       rdfs:subClassOf foaf:Agent ;
                        rdfs:comment "An agent that have a contribution to the scientific community."@en ;
                        rdfs:label "Scientific Agent"@en .
 
