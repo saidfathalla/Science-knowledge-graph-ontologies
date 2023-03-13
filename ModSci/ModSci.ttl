@@ -22,7 +22,8 @@
                                  dc:creator <https://orcid.org/0000-0002-2818-5890> ;
                                  terms:contributor <https://orcid.org/0000-0001-9879-3827> ,
                                                    <https://orcid.org/0000-0002-0698-2864> ;
-                                 terms:description "ModSci is a reference ontology for modelling different types of modern sciences and related entities, such as scientific discoveries, renowned scientists, instruments, phenomena ... etc."@en ;
+                                 terms:description """ModSci is an upper ontology for providing a taxonomy of research fields, or fields of science.
+ModSci is a poly-hierarchical ontology that provides a hierarchical classification of various fields of science, with general fields subdivided into subsidiary fields."""@en ;
                                  terms:license <http://creativecommons.org/licenses/by/3.0/> ;
                                  terms:modified "2022-12-18" ;
                                  terms:title "Modern Science Ontology"@en ;
