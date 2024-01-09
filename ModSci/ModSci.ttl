@@ -408,7 +408,7 @@ modsci:instrumentInventedBy rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/skgo/modsci#instrumentUsedInScience
 modsci:instrumentUsedInScience rdf:type owl:ObjectProperty ;
                                owl:inverseOf modsci:usesInstrument ;
-                               rdfs:domain modsci:ScientificInstrument ;
+                               rdfs:domain modsci:Instrument ;
                                rdfs:range modsci:ModernScience ;
                                rdfs:comment "An instrument is used in science."@en ;
                                rdfs:label "instrument used in Science" .
@@ -585,7 +585,11 @@ modsci:suppliesSubstancesTo rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/skgo/modsci#takeSunstancesFrom
 modsci:takeSunstancesFrom rdf:type owl:ObjectProperty ,
                                    owl:ReflexiveProperty ;
-                          rdfs:domain modsci:ModernScience ;
+                          rdfs:domain [ rdf:type owl:Class ;
+                                        owl:unionOf ( modsci:Industry
+                                                      modsci:ModernScience
+                                                    )
+                                      ] ;
                           rdfs:range modsci:ModernScience ;
                           rdfs:comment "A science takes substances from another science."@en ;
                           rdfs:label "takes sunstances from"@en .
@@ -725,6 +729,13 @@ foaf:Organization rdf:type owl:Class .
 
 ###  http://xmlns.com/foaf/0.1/Person
 foaf:Person rdf:type owl:Class .
+
+
+###  https://w3id.org/skgo/modsci#AMOPhysics
+modsci:AMOPhysics rdf:type owl:Class ;
+                  rdfs:subClassOf modsci:Physics ;
+                  rdfs:comment "Atomic, molecular, and optical physics (AMO) is the study of matter-matter and light-matter interactions; at the scale of one or a few atoms and energy scales around several electron volts." ;
+                  rdfs:label "AMO Physics" .
 
 
 ###  https://w3id.org/skgo/modsci#AcidbaseChemistry
@@ -899,14 +910,6 @@ modsci:AtmosphericSciences rdf:type owl:Class ;
                            rdfs:subClassOf modsci:EarthScience ;
                            rdfs:comment "Atmospheric science is an umbrella term for the study of the atmosphere and its processes." ;
                            rdfs:label "Atmospheric Sciences" .
-
-
-###  https://w3id.org/skgo/modsci#AtomicPhysics
-modsci:AtomicPhysics rdf:type owl:Class ;
-                     owl:equivalentClass modsci:MolecularPhysics ;
-                     rdfs:subClassOf modsci:Physics ;
-                     rdfs:comment "Atomic, molecular, and optical physics (AMO) is the study of matter-matter and light-matter interactions; at the scale of one or a few atoms and energy scales around several electron volts." ;
-                     rdfs:label "Atomic, Molecular, and Optical Physics" .
 
 
 ###  https://w3id.org/skgo/modsci#AutomataTheory
@@ -1903,7 +1906,6 @@ modsci:KnowledgeSystems rdf:type owl:Class ;
 
 ###  https://w3id.org/skgo/modsci#LaboratoryInstrument
 modsci:LaboratoryInstrument rdf:type owl:Class ;
-                            owl:equivalentClass modsci:ScientificInstrument ;
                             rdfs:subClassOf modsci:Instrument ;
                             rdfs:comment "An instrument needed for operations in various laboratories, synthesis and analysis."@en ;
                             rdfs:label "Laboratory Instrument"@en .
