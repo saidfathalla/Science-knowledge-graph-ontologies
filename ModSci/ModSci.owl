@@ -26,8 +26,7 @@
         <dc:creator rdf:resource="https://orcid.org/0000-0002-2818-5890"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9879-3827"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0698-2864"/>
-        <terms:description xml:lang="en">ModSci is an upper ontology for providing a taxonomy of research fields, or fields of science.
-ModSci is a poly-hierarchical ontology that provides a hierarchical classification of various fields of science, with general fields subdivided into subsidiary fields.</terms:description>
+        <terms:description xml:lang="en">ModSci is an upper ontology for providing a taxonomy of research fields, or fields of science. ModSci is a poly-hierarchical ontology that provides a hierarchical classification of various fields of science, with general fields subdivided into subsidiary fields.</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <terms:modified>2022-12-18</terms:modified>
         <terms:title xml:lang="en">Modern Science Ontology</terms:title>
@@ -250,7 +249,7 @@ ModSci is a poly-hierarchical ontology that provides a hierarchical classificati
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
         <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
-        <rdfs:comment xml:lang="en">Science applies lows from anthoer one.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Science applies lows from another one.</rdfs:comment>
         <rdfs:label xml:lang="en">applies laws from</rdfs:label>
     </owl:ObjectProperty>
     
@@ -575,7 +574,7 @@ ModSci is a poly-hierarchical ontology that provides a hierarchical classificati
         <owl:inverseOf rdf:resource="https://w3id.org/skgo/modsci#inventsInstrument"/>
         <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
         <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#Scientist"/>
-        <rdfs:comment xml:lang="en">An instrument is invented by a sciientist.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An instrument is invented by a scientist.</rdfs:comment>
         <rdfs:label xml:lang="en">instrument invented by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -608,7 +607,7 @@ ModSci is a poly-hierarchical ontology that provides a hierarchical classificati
     <!-- https://w3id.org/skgo/modsci#inventsInstrument -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/skgo/modsci#inventsInstrument">
-        <rdfs:comment xml:lang="en">A sciientist invents an instrument .</rdfs:comment>
+        <rdfs:comment xml:lang="en">A scientist invents an instrument .</rdfs:comment>
         <rdfs:label xml:lang="en">invents instrument</rdfs:label>
     </owl:ObjectProperty>
     
@@ -840,7 +839,7 @@ ModSci is a poly-hierarchical ontology that provides a hierarchical classificati
         <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
         <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#ModernScience"/>
         <rdfs:comment xml:lang="en">A science takes substances from another science.</rdfs:comment>
-        <rdfs:label xml:lang="en">takes sunstances from</rdfs:label>
+        <rdfs:label xml:lang="en">takes substances from</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -918,7 +917,7 @@ ModSci is a poly-hierarchical ontology that provides a hierarchical classificati
     <owl:DatatypeProperty rdf:about="https://w3id.org/skgo/modsci#InstrumentFunctionDesription">
         <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#ScientificInstrument"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">Instrument function desription</rdfs:label>
+        <rdfs:label xml:lang="en">Instrument function description</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3029,7 +3028,7 @@ ModSci is a poly-hierarchical ontology that provides a hierarchical classificati
 
     <owl:Class rdf:about="https://w3id.org/skgo/modsci#MilitaryScience">
         <rdfs:subClassOf rdf:resource="https://w3id.org/skgo/modsci#AppliedSciences"/>
-        <rdfs:comment>Military science is the study of military processes, dentsciitutions, and behavior, along with the study of warfare, and the theory and application of organized coercive force.</rdfs:comment>
+        <rdfs:comment>Military science is the study of military processes, institutions, and behavior, along with the study of warfare, and the theory and application of organized coercive force.</rdfs:comment>
         <rdfs:label>Military Science</rdfs:label>
     </owl:Class>
     
@@ -3852,7 +3851,7 @@ ModSci is a poly-hierarchical ontology that provides a hierarchical classificati
     <!-- https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer -->
 
     <owl:Class rdf:about="https://w3id.org/skgo/modsci#ScientificInstrumentManufacturer">
-        <rdfs:comment>Companies manufacturing equipment for scientific sstudies.</rdfs:comment>
+        <rdfs:comment>Companies manufacturing equipment for scientific studies.</rdfs:comment>
         <rdfs:label>Scientific Instrument Manufacturer</rdfs:label>
     </owl:Class>
     
