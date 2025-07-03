@@ -1,0 +1,3 @@
+[submodule "ModSci"]
+	path = ModSci
+	url = https://github.com/saidfathalla/modsci-ontology.git
